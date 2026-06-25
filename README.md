@@ -12,8 +12,8 @@ It provides navigation, conceptual alignment, dependency orientation, shared gov
 
 **Kai Stefan Dietrich**  
 Independent Researcher  
-GitHub: `@kai.stefan.dietrich`  
-Email: `kai.stefan.dietrich@gmail.com`
+GitHub: <https://github.com/integrity-nexus-kai>  
+Email: <kai.physics@protonmail.ch>
 
 See also: `AUTHOR.md` and `CITATION.cff`.
 
@@ -130,5 +130,8 @@ It does not claim to complete, validate, or replace the research programs it con
 # Attribution
 
 Created and authored by **Kai Stefan Dietrich**, Independent Researcher.
+
+Official contact: <kai.physics@protonmail.ch>  
+GitHub: <https://github.com/integrity-nexus-kai>
 
 Repository architecture, governance model, and research operating system design by Kai Stefan Dietrich.
