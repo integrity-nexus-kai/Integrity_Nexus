@@ -1,0 +1,13 @@
+# Integrity Nexus Objects Package 04
+# Maximum 10 files
+
+objects/README.md
+objects/object_model.md
+objects/object_lifecycle.md
+objects/claims/README.md
+objects/open_problems/README.md
+objects/dependencies/README.md
+objects/proof_obligations/README.md
+objects/publications/README.md
+objects/repositories/README.md
+objects/audits/README.md
