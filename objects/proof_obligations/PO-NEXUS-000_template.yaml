@@ -1,0 +1,15 @@
+id: "PO-NEXUS-000"
+type: "proof_obligation"
+title: "Template Proof Obligation"
+status: "draft"
+priority: "medium"
+repository: "Integrity Nexus"
+statement: "Template only. Replace with a precise proof obligation."
+required_for: []
+dependencies: []
+proof_status: "not_started"
+linked_claims: []
+linked_open_problems: []
+created: "2026-06-25"
+last_updated: "2026-06-25"
+next_action: "Create a concrete proof obligation object."
