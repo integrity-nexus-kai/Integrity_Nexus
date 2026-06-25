@@ -1,0 +1,13 @@
+# Integrity Nexus Governance Package 02
+# Maximum 10 files
+
+governance/README.md
+governance/repository_constitution.md
+governance/repository_standard.md
+governance/claim_boundary_standard.md
+governance/citation_standard.md
+governance/subrepo_governance_protocol.md
+governance/maturity_model.md
+registry/repository_status.md
+audit/audit_protocol.md
+metrics/governance_metrics.md
