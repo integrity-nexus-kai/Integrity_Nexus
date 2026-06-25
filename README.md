@@ -96,6 +96,9 @@ strategy/       objectives, priorities, metrics, long-term direction
 operations/     weekly review, decisions, risks, changes, research board
 metrics/        dashboards for maturity, publication, dependencies, governance
 objects/        canonical research objects and object templates
+exports/        compact audit exports for external review tools
+ingestion/      upload workflows and ten-file package manifests
+tools/          export and package generation utilities
 ```
 
 ---
@@ -114,6 +117,8 @@ Start here:
 - `architecture/research_program_map.md` — one-minute ecosystem map.
 - `roadmap/master_research_program.md` — active research program.
 - `metrics/maturity_dashboard.md` — current maturity dashboard.
+- `exports/Integrity_Nexus_AUDIT_EXPORT.md` — compact audit export.
+- `ingestion/NOTEBOOKLM_UPLOAD_WORKFLOW.md` — NotebookLM upload workflow.
 
 ---
 
@@ -121,7 +126,7 @@ Start here:
 
 Integrity Nexus is an early-stage research operating system for the connected integrity-oriented research repositories.
 
-It currently provides navigation, orientation, governance, roadmap, publication, audit, strategy, operations, metrics, and object-model layers.
+It currently provides navigation, orientation, governance, roadmap, publication, audit, strategy, operations, metrics, object-model, export, ingestion, and tooling layers.
 
 It does not claim to complete, validate, or replace the research programs it connects.
 
