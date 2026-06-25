@@ -19,11 +19,21 @@ See also: `AUTHOR.md`, `AUTHORS.md`, and `CITATION.cff`.
 
 ---
 
-# License
+# License and Canonical Status
 
-This repository is licensed under the **Apache License 2.0**.
+This repository is governed by the **Canonical Integrity License v1.0**.
 
-See: `LICENSE`.
+See: `LICENSE` and `CANONICAL_STATUS.md`.
+
+Core rule:
+
+```text
+Share: yes.
+Cite: yes.
+Study: yes.
+Independent further development: yes.
+Modify or redistribute canonical Integrity Nexus material as canonical: no.
+```
 
 ---
 
@@ -119,7 +129,8 @@ Start here:
 - `AUTHOR.md` — author and repository architect attribution.
 - `AUTHORS.md` — plural authorship alias for reviewer/tool compatibility.
 - `CITATION.cff` — citation metadata.
-- `LICENSE` — project license terms; Apache License 2.0.
+- `LICENSE` — Canonical Integrity License v1.0.
+- `CANONICAL_STATUS.md` — canonical repository and modification policy.
 - `REPOSITORY_MAP.md` — map of connected repositories.
 - `COMMON_DENOMINATOR.md` — shared research principle.
 - `NAVIGATION.md` — reading guide by audience and purpose.
@@ -152,6 +163,6 @@ Created and authored by **Kai Stefan Dietrich**, Independent Researcher.
 
 Official contact: <kai.physics@protonmail.ch>  
 GitHub: <https://github.com/integrity-nexus-kai>  
-License: Apache License 2.0 — see `LICENSE`.
+License: Canonical Integrity License v1.0 — see `LICENSE`.
 
 Repository architecture, governance model, and research operating system design by Kai Stefan Dietrich.
