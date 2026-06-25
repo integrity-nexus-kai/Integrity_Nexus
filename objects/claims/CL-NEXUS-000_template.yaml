@@ -1,0 +1,16 @@
+id: "CL-NEXUS-000"
+type: "claim"
+title: "Template Claim"
+status: "draft"
+priority: "medium"
+repository: "Integrity Nexus"
+claim_class: "C0"
+evidence_status: "not_applicable"
+proof_status: "not_applicable"
+boundary: "Template only. Not an active claim."
+dependencies: []
+linked_open_problems: []
+linked_publications: []
+created: "2026-06-25"
+last_updated: "2026-06-25"
+summary: "Template for future claim objects."
