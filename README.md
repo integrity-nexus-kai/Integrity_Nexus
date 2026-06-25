@@ -19,6 +19,14 @@ See also: `AUTHOR.md` and `CITATION.cff`.
 
 ---
 
+# License
+
+This repository is licensed under the **Apache License 2.0**.
+
+See: `LICENSE`.
+
+---
+
 # Purpose
 
 Integrity Nexus answers five questions:
@@ -110,11 +118,16 @@ Start here:
 - `EXECUTIVE_SUMMARY.md` — short overview for reviewers.
 - `AUTHOR.md` — author and repository architect attribution.
 - `CITATION.cff` — citation metadata.
+- `LICENSE` — Apache License 2.0.
 - `REPOSITORY_MAP.md` — map of connected repositories.
 - `COMMON_DENOMINATOR.md` — shared research principle.
 - `NAVIGATION.md` — reading guide by audience and purpose.
 - `ARCHITECTURE.md` — structural map of the meta-repository.
 - `architecture/research_program_map.md` — one-minute ecosystem map.
+- `registry/cross_repo_dependencies.md` — cross-repository dependency graph.
+- `objects/README.md` — object-centered research model overview.
+- `objects/object_model.md` — canonical object schema.
+- `objects/object_lifecycle.md` — research object lifecycle.
 - `roadmap/master_research_program.md` — active research program.
 - `metrics/maturity_dashboard.md` — current maturity dashboard.
 - `exports/Integrity_Nexus_AUDIT_EXPORT.md` — compact audit export.
