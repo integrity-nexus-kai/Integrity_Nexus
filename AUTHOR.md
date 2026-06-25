@@ -4,8 +4,8 @@
 
 **Kai Stefan Dietrich**  
 Independent Researcher  
-GitHub: `@kai.stefan.dietrich`  
-Email: `kai.stefan.dietrich@gmail.com`
+GitHub: <https://github.com/integrity-nexus-kai>  
+Email: <kai.physics@protonmail.ch>
 
 ---
 
