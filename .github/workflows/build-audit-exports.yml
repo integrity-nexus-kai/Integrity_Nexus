@@ -1,0 +1,121 @@
+name: Build Audit Exports
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'README.md'
+      - 'EXECUTIVE_SUMMARY.md'
+      - 'AUTHOR.md'
+      - 'AUTHORS.md'
+      - 'CITATION.cff'
+      - 'LICENSE'
+      - 'CANONICAL_STATUS.md'
+      - 'ARCHITECTURE.md'
+      - 'NAVIGATION.md'
+      - 'COMMON_DENOMINATOR.md'
+      - 'REPOSITORY_MAP.md'
+      - 'governance/**'
+      - 'registry/**'
+      - 'objects/**'
+      - 'audit/**'
+      - 'metrics/**'
+      - 'roadmap/**'
+      - 'publication/**'
+      - 'strategy/**'
+      - 'operations/**'
+      - 'ingestion/**'
+      - 'tools/**'
+      - '.github/workflows/build-audit-exports.yml'
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build-audit-exports:
+    name: Build audit and NotebookLM exports
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Create export directories
+        run: |
+          mkdir -p exports/generated
+          mkdir -p exports/notebooklm_packages
+
+      - name: Build audit export
+        run: |
+          if [ -f tools/build_audit_export.py ]; then
+            python tools/build_audit_export.py \
+              --root . \
+              --manifest tools/audit_export_manifest.txt \
+              --output exports/generated/Integrity_Nexus_AUDIT_EXPORT.generated.md
+          else
+            echo "tools/build_audit_export.py not found"
+            exit 1
+          fi
+
+      - name: Build NotebookLM packages
+        run: |
+          if [ -f tools/build_notebooklm_packages.py ]; then
+            python tools/build_notebooklm_packages.py \
+              --root . \
+              --manifest-dir ingestion/packages \
+              --output-dir exports/notebooklm_packages
+          else
+            echo "tools/build_notebooklm_packages.py not found"
+            exit 1
+          fi
+
+      - name: Validate NotebookLM package file limits
+        run: |
+          python - <<'PY'
+          import zipfile
+          from pathlib import Path
+
+          package_dir = Path('exports/notebooklm_packages')
+          zips = sorted(package_dir.glob('*.zip'))
+
+          if not zips:
+              raise SystemExit('No NotebookLM ZIP packages were generated.')
+
+          failures = []
+          for zip_path in zips:
+              with zipfile.ZipFile(zip_path, 'r') as archive:
+                  files = [name for name in archive.namelist() if not name.endswith('/')]
+              count = len(files)
+              print(f'{zip_path}: {count} files')
+              if count > 10:
+                  failures.append((str(zip_path), count))
+
+          if failures:
+              details = ', '.join(f'{name}={count}' for name, count in failures)
+              raise SystemExit(f'NotebookLM package file limit exceeded: {details}')
+          PY
+
+      - name: Upload audit export artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: integrity-nexus-audit-export
+          path: exports/generated/Integrity_Nexus_AUDIT_EXPORT.generated.md
+          if-no-files-found: error
+
+      - name: Upload NotebookLM package artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: integrity-nexus-notebooklm-packages
+          path: exports/notebooklm_packages/*.zip
+          if-no-files-found: error
