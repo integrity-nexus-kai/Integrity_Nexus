@@ -15,7 +15,7 @@ Independent Researcher
 GitHub: <https://github.com/integrity-nexus-kai>  
 Email: <kai.physics@protonmail.ch>
 
-See also: `AUTHOR.md` and `CITATION.cff`.
+See also: `AUTHOR.md`, `AUTHORS.md`, and `CITATION.cff`.
 
 ---
 
@@ -117,6 +117,7 @@ Start here:
 
 - `EXECUTIVE_SUMMARY.md` — short overview for reviewers.
 - `AUTHOR.md` — author and repository architect attribution.
+- `AUTHORS.md` — plural authorship alias for reviewer/tool compatibility.
 - `CITATION.cff` — citation metadata.
 - `LICENSE` — project license terms; Apache License 2.0.
 - `REPOSITORY_MAP.md` — map of connected repositories.
