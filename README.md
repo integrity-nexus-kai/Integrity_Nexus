@@ -118,7 +118,7 @@ Start here:
 - `EXECUTIVE_SUMMARY.md` — short overview for reviewers.
 - `AUTHOR.md` — author and repository architect attribution.
 - `CITATION.cff` — citation metadata.
-- `LICENSE` — Apache License 2.0.
+- `LICENSE` — project license terms; Apache License 2.0.
 - `REPOSITORY_MAP.md` — map of connected repositories.
 - `COMMON_DENOMINATOR.md` — shared research principle.
 - `NAVIGATION.md` — reading guide by audience and purpose.
@@ -150,6 +150,7 @@ It does not claim to complete, validate, or replace the research programs it con
 Created and authored by **Kai Stefan Dietrich**, Independent Researcher.
 
 Official contact: <kai.physics@protonmail.ch>  
-GitHub: <https://github.com/integrity-nexus-kai>
+GitHub: <https://github.com/integrity-nexus-kai>  
+License: Apache License 2.0 — see `LICENSE`.
 
 Repository architecture, governance model, and research operating system design by Kai Stefan Dietrich.
