@@ -1,0 +1,18 @@
+id: "REPO-NEXUS-000"
+type: "repository"
+title: "Template Repository"
+status: "active"
+priority: "medium"
+repository_name: ""
+repository_url: ""
+domain: ""
+role: ""
+maturity: "M0"
+linked_open_problems: []
+linked_claims: []
+linked_dependencies: []
+linked_publications: []
+audit_status: "not_started"
+created: "2026-06-25"
+last_updated: "2026-06-25"
+next_action: "Create a concrete repository object."
