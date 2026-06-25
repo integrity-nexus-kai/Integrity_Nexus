@@ -1,0 +1,16 @@
+id: "OP-NEXUS-000"
+type: "open_problem"
+title: "Template Open Problem"
+status: "draft"
+priority: "medium"
+repository: "Integrity Nexus"
+problem_statement: "Template only. Replace with a precise unresolved problem."
+why_it_matters: "Template only."
+dependencies: []
+blocked_by: []
+linked_claims: []
+linked_proof_obligations: []
+linked_publications: []
+created: "2026-06-25"
+last_updated: "2026-06-25"
+next_action: "Create a concrete open problem object."
