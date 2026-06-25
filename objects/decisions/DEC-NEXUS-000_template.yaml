@@ -1,0 +1,15 @@
+id: "DEC-NEXUS-000"
+type: "decision"
+title: "Template Decision"
+status: "draft"
+priority: "medium"
+decision: "Template only. Replace with a concrete decision."
+rationale: "Template only."
+impact: "Template only."
+affected_repositories: []
+linked_risks: []
+linked_audits: []
+linked_publications: []
+created: "2026-06-25"
+last_updated: "2026-06-25"
+next_action: "Create a concrete decision object."
