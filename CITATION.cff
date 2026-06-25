@@ -5,9 +5,11 @@ authors:
   - family-names: "Dietrich"
     given-names: "Kai Stefan"
     affiliation: "Independent Researcher"
+    email: "kai.physics@protonmail.ch"
 version: "0.1.0"
 date-released: "2026-06-25"
 repository-code: "https://github.com/integrity-nexus-kai/Integrity_Nexus"
+url: "https://github.com/integrity-nexus-kai/Integrity_Nexus"
 abstract: "Integrity Nexus is a meta-repository for research governance, dependency mapping, cross-repository integrity architecture, and operational research-program management."
 keywords:
   - research governance
