@@ -1,0 +1,13 @@
+# Integrity Nexus Operations Package 05
+# Maximum 10 files
+
+roadmap/master_research_program.md
+roadmap/active_research_tracks.md
+publication/publication_pipeline.md
+publication/publication_status.md
+publication/publication_checklist.md
+audit/audit_schedule.md
+audit/open_audit_findings.md
+strategy/strategic_priorities.md
+operations/research_board.md
+operations/risk_register.md
