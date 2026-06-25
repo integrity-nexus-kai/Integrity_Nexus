@@ -8,6 +8,17 @@ It provides navigation, conceptual alignment, dependency orientation, shared gov
 
 ---
 
+# Author
+
+**Kai Stefan Dietrich**  
+Independent Researcher  
+GitHub: `@kai.stefan.dietrich`  
+Email: `kai.stefan.dietrich@gmail.com`
+
+See also: `AUTHOR.md` and `CITATION.cff`.
+
+---
+
 # Purpose
 
 Integrity Nexus answers five questions:
@@ -84,6 +95,7 @@ audit/          audit protocol, schedule, log, and findings
 strategy/       objectives, priorities, metrics, long-term direction
 operations/     weekly review, decisions, risks, changes, research board
 metrics/        dashboards for maturity, publication, dependencies, governance
+objects/        canonical research objects and object templates
 ```
 
 ---
@@ -93,6 +105,8 @@ metrics/        dashboards for maturity, publication, dependencies, governance
 Start here:
 
 - `EXECUTIVE_SUMMARY.md` — short overview for reviewers.
+- `AUTHOR.md` — author and repository architect attribution.
+- `CITATION.cff` — citation metadata.
 - `REPOSITORY_MAP.md` — map of connected repositories.
 - `COMMON_DENOMINATOR.md` — shared research principle.
 - `NAVIGATION.md` — reading guide by audience and purpose.
@@ -107,6 +121,14 @@ Start here:
 
 Integrity Nexus is an early-stage research operating system for the connected integrity-oriented research repositories.
 
-It currently provides navigation, orientation, governance, roadmap, publication, audit, strategy, operations, and metrics layers.
+It currently provides navigation, orientation, governance, roadmap, publication, audit, strategy, operations, metrics, and object-model layers.
 
 It does not claim to complete, validate, or replace the research programs it connects.
+
+---
+
+# Attribution
+
+Created and authored by **Kai Stefan Dietrich**, Independent Researcher.
+
+Repository architecture, governance model, and research operating system design by Kai Stefan Dietrich.
