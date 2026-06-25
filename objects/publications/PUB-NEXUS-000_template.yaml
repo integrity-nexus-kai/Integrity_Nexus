@@ -1,0 +1,17 @@
+id: "PUB-NEXUS-000"
+type: "publication"
+title: "Template Publication"
+status: "draft"
+priority: "medium"
+repository: "Integrity Nexus"
+publication_type: "template"
+stage: "idea"
+linked_claims: []
+linked_open_problems: []
+linked_proof_obligations: []
+linked_dependencies: []
+audit_required: true
+audit_status: "not_started"
+created: "2026-06-25"
+last_updated: "2026-06-25"
+next_action: "Create a concrete publication object."
