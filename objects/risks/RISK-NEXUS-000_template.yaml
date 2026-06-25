@@ -1,0 +1,17 @@
+id: "RISK-NEXUS-000"
+type: "risk"
+title: "Template Risk"
+status: "draft"
+priority: "medium"
+severity: "medium"
+probability: "unknown"
+risk_statement: "Template only. Replace with a concrete risk."
+impact: "Template only."
+mitigation: "Template only."
+owner: ""
+linked_audits: []
+linked_decisions: []
+linked_open_problems: []
+created: "2026-06-25"
+last_updated: "2026-06-25"
+next_action: "Create a concrete risk object."
