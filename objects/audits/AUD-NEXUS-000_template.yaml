@@ -1,0 +1,15 @@
+id: "AUD-NEXUS-000"
+type: "audit"
+title: "Template Audit"
+status: "draft"
+priority: "medium"
+audit_scope: ""
+audit_type: ""
+repository: "Integrity Nexus"
+result: ""
+findings: []
+linked_risks: []
+linked_decisions: []
+created: "2026-06-25"
+last_updated: "2026-06-25"
+next_action: "Create a concrete audit object."
