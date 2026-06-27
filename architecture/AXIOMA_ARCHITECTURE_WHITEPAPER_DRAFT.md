@@ -1,14 +1,18 @@
-# AXIOMA Architecture Whitepaper — Draft v0.1
+# AXIOMA Architecture Whitepaper — Draft v0.2
 
 ## Status
 
-Draft / Audit Mode
+Draft / Audit Mode / v0.2
 
 ## Repository Role
 
 This document belongs to the Integrity Nexus meta-repository.
 
 It is intended to become the dominant architectural entry document for the AXIOMA ecosystem and the conceptual foundation for the future public website navigation layer.
+
+Integrity Nexus remains the canonical meta-repository and architectural source of truth.
+
+The future AXIOMA website is intended to become the public navigation interface, not the canonical source of record.
 
 ## Claim Boundary
 
@@ -18,9 +22,11 @@ It does not claim that TIG-E has produced a validated physical theory.
 
 It does not claim that SSC solves AI alignment.
 
+It does not claim that Research OS is a finished commercial product.
+
 It does not claim that AXIOMA is a finished platform.
 
-It defines an architecture, a navigation model, a governance philosophy, and a roadmap for integrity-preserving knowledge generation.
+It defines an architecture, a navigation model, a governance philosophy, maturity labels, and a roadmap for integrity-preserving knowledge generation.
 
 ---
 
@@ -36,7 +42,7 @@ Complex intelligence systems require integrity-preserving governance before thei
 
 AXIOMA therefore does not begin with answers.
 
-It begins with admissibility, constraints, audits, claim boundaries, dependencies, open questions, and controlled crystallization.
+It begins with admissibility, constraints, audits, claim boundaries, dependencies, open questions, maturity labels, and controlled crystallization.
 
 The architecture is designed to support research programs that are too complex to be safely managed through informal notes, isolated documents, or unconstrained generative reasoning.
 
@@ -95,6 +101,46 @@ In repository terms:
 ```text
 No document becomes canonical without status, scope, dependencies, and claim boundary.
 ```
+
+---
+
+# Maturity Labels
+
+AXIOMA uses explicit maturity labels to prevent premature escalation.
+
+```text
+Draft
+```
+
+A document, idea, or layer exists as exploratory material. It is not canonical and may be incomplete.
+
+```text
+Working Layer
+```
+
+A structure has a defined role and is actively being refined, but it has not yet passed final crystallization.
+
+```text
+Crystallized
+```
+
+A structure has passed internal audit and is accepted as a stable repository layer within its stated claim boundary.
+
+```text
+Externally Reviewed
+```
+
+A crystallized layer or research output has been examined by external reviewers or domain specialists.
+
+```text
+Productized
+```
+
+A method, workflow, or software component has been translated into a usable product or service layer with its own commercial and operational claim boundaries.
+
+Maturity labels do not automatically validate scientific truth.
+
+They describe repository and process status.
 
 ---
 
@@ -242,7 +288,13 @@ Integrity Nexus is the architectural source of truth.
 
 Research OS is the operational interpretation of the AXIOMA method.
 
-It treats research as a governed lifecycle:
+It is not identical with Integrity Nexus.
+
+Integrity Nexus is the canonical meta-repository and control layer.
+
+Research OS is the execution model, workflow logic, and potential product-facing infrastructure derived from that control layer.
+
+Research OS treats research as a governed lifecycle:
 
 ```text
 idea
@@ -260,6 +312,8 @@ idea
 Research OS is not a claim engine.
 
 It is a disciplined process engine for preventing premature claim escalation.
+
+Commercial or product-facing Research OS components require separate product maturity labels and commercial claim boundaries.
 
 ---
 
@@ -299,6 +353,41 @@ It should show AXIOMA as:
 ```text
 Integrity -> Governance -> Knowledge -> Execution -> Applications
 ```
+
+---
+
+# Canonical Entry Strategy
+
+The AXIOMA ecosystem should be entered in three layers.
+
+## Entry 1 — Meta Repository First
+
+Integrity Nexus is the canonical entry point for architecture, roadmap, dependencies, governance, maturity, and claim boundaries.
+
+It should answer:
+
+```text
+What is AXIOMA?
+How are the repositories related?
+What is canonical?
+What is still draft?
+What is active research?
+What is externally reviewed?
+```
+
+## Entry 2 — Website Second
+
+The website should translate the canonical architecture into public navigation.
+
+It should make the ecosystem readable for scientists, AI researchers, developers, investors, reviewers, and future collaborators.
+
+The website should link back to canonical repository documents rather than replacing them.
+
+## Entry 3 — Domain Repositories Third
+
+Domain-specific repositories such as SSC, TIG-E, and SIR should be reached through the architecture map, audience routes, or direct technical references.
+
+They remain the canonical homes of their own domain-specific research materials.
 
 ---
 
@@ -377,6 +466,16 @@ commercial roadmap
 risk boundaries
 scientific credibility
 ```
+
+Investor Risk Boundary:
+
+```text
+The investor route must distinguish platform opportunity from scientific validation status.
+```
+
+Commercially relevant infrastructure may be discussed through Research OS, audit tooling, governance workflows, and knowledge-navigation products.
+
+Unresolved physics or unresolved AI-alignment research must not be presented as validated commercial technology.
 
 ## Reviewers
 
@@ -552,6 +651,9 @@ Which parts of Research OS should become product-facing while preserving open re
 
 OQ-AXIOMA-005
 How should website language distinguish active research, validated results, working layers, and platform claims?
+
+OQ-AXIOMA-006
+How should maturity labels be displayed publicly without implying scientific validation?
 ```
 
 ---
@@ -565,8 +667,11 @@ Before this document becomes canonical, verify:
 [ ] SSC is not described as solved AI alignment.
 [ ] TIG-E is not described as validated physics.
 [ ] Research OS is not described as finished product unless implemented.
+[ ] Integrity Nexus and Research OS are clearly distinguished.
 [ ] Website role is navigation, not claim escalation.
 [ ] Investor narrative remains platform-focused.
+[ ] Investor route separates commercial opportunity from scientific validation status.
+[ ] Maturity labels are clear and not confused with proof or validation.
 [ ] All repository references match actual repo structure.
 [ ] Architecture diagram is consistent with Integrity Nexus README.
 [ ] Roadmap entry P8 remains synchronized with this document.
@@ -577,7 +682,8 @@ Before this document becomes canonical, verify:
 # Current Audit Status
 
 ```text
-Draft created.
+Draft refined to v0.2.
+Required v0.1 refinements incorporated.
 Audit pending.
 Not canonical yet.
 Not website-ready yet.
@@ -588,6 +694,7 @@ Not investor-ready yet.
 
 ```text
 Draft Layer
+Refined
 Not crystallized
 Audit Mode Active
 ```
