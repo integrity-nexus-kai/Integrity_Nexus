@@ -49,6 +49,44 @@ Integrity Nexus answers five questions:
 
 ---
 
+# Foundational Research Question
+
+The current upper organizing question across the research ecosystem is:
+
+```text
+What is the underlying structure from which both spacetime and quantum mechanics emerge?
+```
+
+German formulation:
+
+```text
+Was ist es, aus dem Raumzeit und Quantenmechanik gemeinsam emergieren?
+```
+
+This question is registered as:
+
+```text
+FRQ-001 — Common Emergence Question
+```
+
+Meta-level registry:
+
+```text
+registry/foundational_questions.md
+```
+
+Local TIG-E projection:
+
+```text
+research/foundational_questions/FRQ-001_common_emergence_question.md
+```
+
+This is a research question only.
+
+It does not identify a completed common substrate, derive spacetime, derive quantum mechanics, introduce a field equation, or select a physical ontology.
+
+---
+
 # Common Denominator
 
 Across the connected repositories, the central research object is:
@@ -118,51 +156,3 @@ exports/        compact audit exports for external review tools
 ingestion/      upload workflows and ten-file package manifests
 tools/          export and package generation utilities
 ```
-
----
-
-# Navigation
-
-Start here:
-
-- `EXECUTIVE_SUMMARY.md` — short overview for reviewers.
-- `AUTHOR.md` — author and repository architect attribution.
-- `AUTHORS.md` — plural authorship alias for reviewer/tool compatibility.
-- `CITATION.cff` — citation metadata.
-- `LICENSE` — Canonical Integrity License v1.0.
-- `CANONICAL_STATUS.md` — canonical repository and modification policy.
-- `REPOSITORY_MAP.md` — map of connected repositories.
-- `COMMON_DENOMINATOR.md` — shared research principle.
-- `NAVIGATION.md` — reading guide by audience and purpose.
-- `ARCHITECTURE.md` — structural map of the meta-repository.
-- `architecture/research_program_map.md` — one-minute ecosystem map.
-- `registry/cross_repo_dependencies.md` — cross-repository dependency graph.
-- `objects/README.md` — object-centered research model overview.
-- `objects/object_model.md` — canonical object schema.
-- `objects/object_lifecycle.md` — research object lifecycle.
-- `roadmap/master_research_program.md` — active research program.
-- `metrics/maturity_dashboard.md` — current maturity dashboard.
-- `exports/Integrity_Nexus_AUDIT_EXPORT.md` — compact audit export.
-- `ingestion/NOTEBOOKLM_UPLOAD_WORKFLOW.md` — NotebookLM upload workflow.
-
----
-
-# Status
-
-Integrity Nexus is an early-stage research operating system for the connected integrity-oriented research repositories.
-
-It currently provides navigation, orientation, governance, roadmap, publication, audit, strategy, operations, metrics, object-model, export, ingestion, and tooling layers.
-
-It does not claim to complete, validate, or replace the research programs it connects.
-
----
-
-# Attribution
-
-Created and authored by **Kai Stefan Dietrich**, Independent Researcher.
-
-Official contact: <kai.physics@protonmail.ch>  
-GitHub: <https://github.com/integrity-nexus-kai>  
-License: Canonical Integrity License v1.0 — see `LICENSE`.
-
-Repository architecture, governance model, and research operating system design by Kai Stefan Dietrich.
