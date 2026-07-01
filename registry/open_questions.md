@@ -6,6 +6,24 @@ These questions concern navigation, governance, dependency mapping, and cross-re
 
 ---
 
+# FRQ-001 — Common Emergence Question
+
+What is the underlying structure from which both spacetime and quantum mechanics emerge?
+
+German formulation:
+
+```text
+Was ist es, aus dem Raumzeit und Quantenmechanik gemeinsam emergieren?
+```
+
+Status: active foundational research question.
+
+Canonical registry: `registry/foundational_questions.md`.
+
+Boundary: This is a research question only. It does not identify a common substrate, derive spacetime, derive quantum mechanics, introduce a field equation, or select a physical ontology.
+
+---
+
 # OQ-NEXUS-001 — Cross-Repository Claim Boundaries
 
 How can Integrity Nexus show relationships between repositories without inflating cross-domain claims?
