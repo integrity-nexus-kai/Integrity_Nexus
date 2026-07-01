@@ -56,6 +56,34 @@ Repository-specific files may contain local projections of the question when rel
 
 ---
 
+## Field-Equation Selection Constraint
+
+`FRQ-001` establishes a necessary selection constraint for any future TIG field-equation candidate:
+
+```text
+The equation must be compatible with a common-emergence structure underlying both spacetime and quantum mechanics.
+```
+
+This is a constraint on future candidates, not a field equation.
+
+A future field-equation candidate must therefore be evaluated not only for spacetime-side plausibility, but also for compatibility with the shared emergence problem.
+
+Within TIG-E governance, this means:
+
+```text
+FieldEquationCandidate(E)
+=>
+Registerable_E(E)
+and
+Gate_E(E)
+and
+Pres_QM(E)
+and
+FRQ-001 compatibility
+```
+
+---
+
 ## Duplication Policy
 
 `FRQ-001` may exist in two forms:
@@ -103,6 +131,10 @@ It is canonical only as a research question.
 
 It is not canonical as an answer.
 
+The field-equation selection constraint is canonical only as a necessary constraint on future candidates.
+
+It is not canonical as an explicit field equation.
+
 ---
 
 ## Governance Effect
@@ -148,6 +180,9 @@ foundational research question
 
 Canonical status:
 canonical as question only
+
+Field-equation role:
+necessary selection constraint for future candidates only
 
 Answer status:
 not established
