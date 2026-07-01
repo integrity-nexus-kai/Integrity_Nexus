@@ -1,8 +1,8 @@
-# External LM Consistency Audit Package 001
+# External LM Consistency Audit Package 001 v1.1
 
 ## Status
 
-Audit Package / External LM / Integrity Nexus / TIG-E Alignment
+Audit Package / External LM / Integrity Nexus / TIG-E Alignment / Cube Block Expanded
 
 ## Maturity
 
@@ -39,7 +39,8 @@ The goal is to ask whether the repository ecosystem is internally consistent aft
 2. QIC/QM gate batch execution,
 3. Kai Review registration,
 4. roadmap discovery in Integrity Nexus,
-5. existing Cube research block confirmation.
+5. existing Cube research block confirmation,
+6. Cube foundation and recursive-constraint corpus expansion.
 ```
 
 ---
@@ -207,59 +208,251 @@ L3 preparation authorized != derivation completed
 
 ---
 
-# Existing Cube Research Block
+# Existing Cube Research Block — Expanded Inventory
 
-An existing Cube research block is confirmed in TIG-E.
+A substantial Cube research block is confirmed in TIG-E.
 
-Known confirmed file:
+The external LM must treat this as existing source material, not as a blank area.
+
+## Foundation Files
+
+```text
+docs/foundations/cube_state_space.md
+```
+
+```text
+docs/foundations/cube_state_hypothesis.md
+```
+
+```text
+docs/foundations/cube_state_transitions.md
+```
 
 ```text
 docs/foundations/cube_coupling_principle.md
 ```
 
-Current status inside that file:
-
 ```text
-ACTIVE RESEARCH
+docs/foundations/cube_minimal_properties.md
 ```
 
-Category:
-
 ```text
-Cube Theory
+docs/foundations/minimal_cube_state.md
 ```
 
-Key registered idea:
+```text
+docs/foundations/minimal_cube_pattern.md
+```
+
+```text
+docs/foundations/stacked_cube_network.md
+```
+
+```text
+docs/foundations/local_cube_scale_rule.md
+```
+
+```text
+docs/foundations/local_cube_scale_driver.md
+```
+
+```text
+docs/foundations/three_cube_pattern_classification.md
+```
+
+## Recursive Constraint / Scale Files
+
+```text
+docs/recursive_constraints/cube_scale_derivation.md
+```
+
+```text
+docs/recursive_constraints/cube_density_framework.md
+```
+
+```text
+docs/recursive_constraints/cube_scale_constraints.md
+```
+
+```text
+docs/recursive_constraints/cube_occupancy_candidates.md
+```
+
+```text
+docs/recursive_constraints/cube_scale_research_outlook.md
+```
+
+```text
+docs/recursive_constraints/cube_scale_function_analysis.md
+```
+
+```text
+docs/recursive_constraints/cube_scale_compression_result.md
+```
+
+```text
+docs/recursive_constraints/cube_scale_working_hypothesis.md
+```
+
+```text
+docs/recursive_constraints/cube_scale_candidate_evaluation.md
+```
+
+```text
+docs/recursive_constraints/fundamental_cube_volume.md
+```
+
+```text
+docs/recursive_constraints/minimal_observable_cube_scale.md
+```
+
+```text
+docs/recursive_constraints/minimal_observable_cube_volume.md
+```
+
+```text
+docs/recursive_constraints/cubic_uniqueness_test.md
+```
+
+```text
+docs/recursive_constraints/cubic_uniqueness_analysis.md
+```
+
+```text
+docs/recursive_constraints/cubic_structure_analysis.md
+```
+
+```text
+docs/recursive_constraints/cubic_constraint_reduction.md
+```
+
+```text
+docs/recursive_constraints/cubic_horizon_derivation_attempt.md
+```
+
+---
+
+# Confirmed Cube Content Summary
+
+Confirmed from `docs/foundations/cube_state_space.md`:
+
+```text
+The cube is investigated as a dynamic carrier of admissible states.
+```
+
+Confirmed state representation:
+
+```text
+S_cube = (A, L, T, O, C, I)
+```
+
+where:
+
+```text
+A = admissibility state
+L = effective observable scale
+T = torsional state
+O = orientation state
+C = coupling state
+I = information state
+```
+
+Confirmed core hypothesis:
+
+```text
+The cube is not fundamentally defined by geometry.
+The cube is fundamentally defined by state.
+Geometry emerges from state.
+```
+
+Confirmed from `docs/foundations/cube_state_hypothesis.md`:
+
+```text
+The cube is no longer treated primarily as a rigid geometric object.
+Instead, the cube is treated as a dynamic state carrier.
+```
+
+Confirmed from `docs/foundations/cube_state_transitions.md`:
+
+```text
+S1 -> S2
+```
+
+and:
+
+```text
+Only transitions satisfying admissibility constraints may occur.
+```
+
+Confirmed from `docs/foundations/cube_coupling_principle.md`:
 
 ```text
 Two cubes are coupled if a state transition in one cube modifies the admissible future states of the other cube.
 ```
 
-Important boundary:
+Confirmed from `docs/foundations/cube_minimal_properties.md`:
 
 ```text
-Cube coupling is not initially defined through distance, geometry, force, or energy.
+Current minimal cube = (State, Neighbor Relations)
 ```
 
-Instead:
+Confirmed from `docs/recursive_constraints/cube_scale_working_hypothesis.md`:
 
 ```text
-Coupling is defined through influence on future evolution.
+The Planck length is adopted as the smallest stable observable manifestation of cube structure.
 ```
 
-Open questions registered in the Cube file include:
+Boundary also confirmed:
 
 ```text
-Is coupling binary or continuous?
-Can coupling strength be measured?
-How many couplings may a cube possess?
-Can coupling generate distance?
-Can coupling generate curvature?
+Cube != Planck Length
 ```
 
-The external LM must not invent a new Cube ontology.
+and:
 
-It must treat the existing Cube documents as source material.
+```text
+The Planck scale is interpreted as the smallest currently observable manifestation of cube structure, not the fundamental definition of the cube.
+```
+
+---
+
+# Cube Audit Boundary
+
+The external LM must not:
+
+```text
+invent a new Cube ontology
+```
+
+```text
+reduce the Cube block to only cube_coupling_principle.md
+```
+
+```text
+treat cubes as simple geometric voxels
+```
+
+```text
+treat Cube = Planck length
+```
+
+```text
+claim cube-state theory is complete
+```
+
+```text
+claim geometry has been derived from cube states
+```
+
+```text
+claim field equations have been derived from cube transitions
+```
+
+```text
+claim Cube theory proves gravity
+```
+
+The external LM should instead audit whether the roadmap correctly represents this existing Cube research block as a major TIG-E research track or dependency family.
 
 ---
 
@@ -276,10 +469,11 @@ It should check:
 4. Whether the roadmap should distinguish operational queue completion from scientific claim completion.
 5. Whether QIC/QM L3 preparation status is reflected correctly in meta-roadmap documents.
 6. Whether the Cube research block is visible in the roadmap or missing as a research track/blocker.
-7. Whether any document overclaims TIG-E, QIC, QM, Cube theory, or gravity status.
-8. Whether dependency milestones should be updated after TIG-E queue synchronization.
-9. Whether active research tracks need a TIG-E / Cube / QIC-QM track split.
-10. Whether next-generation blockers are clearly separated from completed operational gates.
+7. Whether the Cube research block should be split into foundations, recursive scale constraints, and field-equation bridge blockers.
+8. Whether any document overclaims TIG-E, QIC, QM, Cube theory, or gravity status.
+9. Whether dependency milestones should be updated after TIG-E queue synchronization.
+10. Whether active research tracks need a TIG-E / Cube / QIC-QM track split.
+11. Whether next-generation blockers are clearly separated from completed operational gates.
 ```
 
 ---
@@ -328,8 +522,6 @@ merge roadmap items without dependency analysis
 
 # Required Audit Questions
 
-The external LM must answer the following questions.
-
 ## Q1 — Roadmap Consistency
 
 ```text
@@ -354,25 +546,31 @@ Are QIC/QM gates correctly treated as reviewed and bounded, but not scientifical
 Is the existing Cube research block properly represented in the roadmap, or is it missing as an active track or dependency milestone?
 ```
 
-## Q5 — Stale Status Detection
+## Q5 — Cube Internal Consistency
 
 ```text
-Which roadmap or audit files contain stale status language after the QIC/QM sync?
+Are the Cube foundation files and recursive-constraint files internally consistent regarding state, geometry, scale, Planck manifestation, and admissible transitions?
 ```
 
-## Q6 — Dependency Completeness
+## Q6 — Stale Status Detection
+
+```text
+Which roadmap or audit files contain stale status language after the QIC/QM sync and Cube block confirmation?
+```
+
+## Q7 — Dependency Completeness
 
 ```text
 Which dependency milestones should be updated or added after the recent TIG-E work?
 ```
 
-## Q7 — Overclaim Detection
+## Q8 — Overclaim Detection
 
 ```text
-Does any document imply that TIG-E has derived QM, Born rule, Hilbert space, unitary dynamics, field equation closure, or gravity proof?
+Does any document imply that TIG-E has derived QM, Born rule, Hilbert space, unitary dynamics, field equation closure, Cube geometry emergence, or gravity proof?
 ```
 
-## Q8 — Next-Gate Recommendation
+## Q9 — Next-Gate Recommendation
 
 ```text
 What are the next repository-governance gates that should be registered, without solving scientific content?
@@ -409,16 +607,24 @@ The external LM should produce output in the following structure.
 
 6. Cube Research Representation
    - whether Cube block is represented adequately
+   - whether Cube block should be split into subtracks
    - recommended roadmap treatment
    - do not rewrite Cube theory
 
-7. Recommended Next Gates
+7. Cube Internal Consistency Notes
+   - state-space consistency
+   - transition consistency
+   - coupling consistency
+   - scale/Planck-manifestation consistency
+   - unresolved blockers
+
+8. Recommended Next Gates
    - gate id
    - title
    - output path
    - purpose
 
-8. Strict Non-Claims
+9. Strict Non-Claims
    - list of claims that remain forbidden
 ```
 
@@ -457,7 +663,19 @@ Unitary dynamics audited != quantum dynamics derived
 ```
 
 ```text
+Cube state-space research != completed Cube ontology
+```
+
+```text
 Cube coupling principle != proven spacetime microstructure
+```
+
+```text
+Planck manifestation != Cube = Planck length
+```
+
+```text
+Cube scale working hypothesis != final physical scale derivation
 ```
 
 ```text
@@ -481,9 +699,10 @@ roadmap/active_research_tracks.md
 roadmap/dependency_milestones.md
 roadmap/six_week_sprint.md
 audit/README.md
+audit/external_lm_consistency_audit_package_001.md
 ```
 
-## TIG-E
+## TIG-E Registry / QIC-QM
 
 ```text
 registry/open_gate_queue.md
@@ -491,7 +710,44 @@ registry/qic_qm_consistency_sync_003.md
 registry/kai_review_qic_qm_batch_001.md
 registry/l3_preparation_queue_qic_qm_batch_001.md
 docs/consistency_critique_status_map_v2.md
+```
+
+## TIG-E Cube Foundation
+
+```text
+docs/foundations/cube_state_space.md
+docs/foundations/cube_state_hypothesis.md
+docs/foundations/cube_state_transitions.md
 docs/foundations/cube_coupling_principle.md
+docs/foundations/cube_minimal_properties.md
+docs/foundations/minimal_cube_state.md
+docs/foundations/minimal_cube_pattern.md
+docs/foundations/stacked_cube_network.md
+docs/foundations/local_cube_scale_rule.md
+docs/foundations/local_cube_scale_driver.md
+docs/foundations/three_cube_pattern_classification.md
+```
+
+## TIG-E Cube Recursive Constraints
+
+```text
+docs/recursive_constraints/cube_scale_derivation.md
+docs/recursive_constraints/cube_density_framework.md
+docs/recursive_constraints/cube_scale_constraints.md
+docs/recursive_constraints/cube_occupancy_candidates.md
+docs/recursive_constraints/cube_scale_research_outlook.md
+docs/recursive_constraints/cube_scale_function_analysis.md
+docs/recursive_constraints/cube_scale_compression_result.md
+docs/recursive_constraints/cube_scale_working_hypothesis.md
+docs/recursive_constraints/cube_scale_candidate_evaluation.md
+docs/recursive_constraints/fundamental_cube_volume.md
+docs/recursive_constraints/minimal_observable_cube_scale.md
+docs/recursive_constraints/minimal_observable_cube_volume.md
+docs/recursive_constraints/cubic_uniqueness_test.md
+docs/recursive_constraints/cubic_uniqueness_analysis.md
+docs/recursive_constraints/cubic_structure_analysis.md
+docs/recursive_constraints/cubic_constraint_reduction.md
+docs/recursive_constraints/cubic_horizon_derivation_attempt.md
 ```
 
 ---
@@ -500,12 +756,12 @@ docs/foundations/cube_coupling_principle.md
 
 ```text
 EXTERNAL LM AUDIT PACKAGE STATUS:
-REGISTERED
+REGISTERED / UPDATED TO v1.1
 ```
 
 ```text
 AUDIT TYPE:
-Repository consistency / roadmap alignment / claim-boundary audit
+Repository consistency / roadmap alignment / claim-boundary audit / Cube-block visibility audit
 ```
 
 ```text
@@ -515,7 +771,7 @@ Integrity_Nexus roadmap vs TIG-E synchronized registry state
 
 ```text
 SPECIAL AUDIT FOCUS:
-Existing Cube research block representation
+Existing Cube research block representation and internal status consistency
 ```
 
 ```text
@@ -526,5 +782,5 @@ No scientific derivation or theory validation
 Repository status:
 
 ```text
-EXTERNAL LM CONSISTENCY AUDIT PACKAGE READY
+EXTERNAL LM CONSISTENCY AUDIT PACKAGE READY — CUBE BLOCK EXPANDED
 ```
