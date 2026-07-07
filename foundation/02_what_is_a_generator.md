@@ -8,7 +8,7 @@ A generator is not merely a cause in a local chain. It is the structural source 
 
 ## Projection
 
-A **projection** is an observable or model-level expression of a deeper mechanism.
+A **projection** is an observable, model-level, or domain-level expression of a deeper mechanism.
 
 A projection may be valid, useful, measurable, and necessary inside a domain, while still being non-fundamental relative to a deeper generator.
 
@@ -23,7 +23,7 @@ TIG-E treats this distinction as a primary governance rule.
 
 ## Explanation Depth Criterion
 
-An explanation is not considered complete merely because it is plausible, elegant, coherent, or locally useful.
+An explanation is not considered complete merely because it is plausible, elegant, coherent, useful, or locally supported.
 
 It remains methodically incomplete if it can still be understood as the projection of a deeper mechanism.
 
@@ -63,10 +63,27 @@ In product strategy, a generator may be the core user need below visible feature
 
 The domain changes. The generator/projection test remains.
 
-## Abbruchbedingung / Stop Condition
+## Stop Condition
 
 TIG-E does not stop when an answer sounds correct.
 
 It stops only provisionally when the current explanation cannot, under the available model and evidence, be reduced to a deeper generator without introducing unsupported assumptions.
 
 This stop condition is provisional and auditable.
+
+## Governance Rule
+
+```text
+A candidate explanation must be classified as generator, projection, unresolved, or rejected before it can be used as a structural basis for further work.
+```
+
+## Relation to Search Space Compression
+
+Generator identification compresses the search space.
+
+Once a projection is identified as non-fundamental, it is not deleted. It is marked as something that must eventually be explained by deeper structure.
+
+This prevents two errors at once:
+
+1. treating emergent structures as primitives,
+2. losing useful projection data that may guide later reconstruction.
