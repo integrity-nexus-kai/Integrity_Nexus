@@ -4,12 +4,12 @@
 
 Search Space Compression is the process by which TIG-E reduces an initially unbounded or weakly structured problem space into a smaller, governed, auditable set of candidate paths.
 
-The goal is not to guess the answer faster. The goal is to remove invalid, redundant, misplaced, or non-fundamental paths before costly work begins.
+The goal is not to guess the answer faster. The goal is to remove invalid, redundant, misplaced, circular, or non-fundamental paths before costly work begins.
 
 ## Definition
 
 ```text
-Search Space Compression = structured reduction of possible solution paths by governance, dependency mapping, candidate classification, and generator/projection testing.
+Search Space Compression = structured reduction of possible solution paths by governance, dependency mapping, candidate classification, level control, and generator/projection testing.
 ```
 
 ## Why It Matters
@@ -23,7 +23,8 @@ TIG-E reduces this risk by asking:
 - Which candidates are being introduced?
 - Are they generators or projections?
 - Which dependencies must be solved first?
-- Which paths are circular, domain-specific, or premature?
+- Which paths are circular, domain-specific, premature, or misplaced?
+- Which structures are useful projections but not admissible foundations?
 
 ## Compression Methods
 
@@ -36,7 +37,7 @@ TIG-E compresses search spaces by:
    - Identify hidden premises and dependency chains.
 
 3. **Candidate Classification**
-   - Mark candidates as fundamental, emergent, rejected, or open.
+   - Mark candidates as fundamental, emergent, rejected, open, or review-required.
 
 4. **Dependency Mapping**
    - Determine which questions must precede others.
@@ -47,7 +48,10 @@ TIG-E compresses search spaces by:
 6. **Contradiction Detection**
    - Identify circular reasoning, missing premises, and invalid mixture of levels.
 
-7. **Review Routing**
+7. **Projection Marking**
+   - Preserve useful emergent structures without admitting them as primitives.
+
+8. **Review Routing**
    - Send unresolved or high-impact structures to human review.
 
 ## Output
@@ -61,6 +65,7 @@ It produces:
 - clearer dependencies,
 - visible open questions,
 - explicit rejection reasons,
+- preserved projection data,
 - and a structured route for further work.
 
 ## Governance Rule
@@ -76,3 +81,15 @@ If an iteration produces neither, it is not a successful TIG-E step.
 Search Space Compression prepares the conditions under which useful emergence may occur.
 
 Emergence is not invoked as magic. It is prepared by removing invalid structures until the remaining candidate space can produce new configurations under controlled review.
+
+## Relation to Domain Packs
+
+Search-space compression is universal.
+
+The criteria used to compress a specific search space are domain-specific.
+
+A physics domain pack may compress by separating fundamental and emergent physical structures.
+
+A pharma domain pack may compress by separating mechanism candidates, molecular candidates, pathways, evidence levels, and clinical endpoints.
+
+The domain changes. The compression logic remains.
