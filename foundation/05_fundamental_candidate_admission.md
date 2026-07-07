@@ -1,5 +1,11 @@
 # Fundamental Candidate Admission Criteria
 
+## Locked Mode Scope
+
+This document defines admission rules for candidate classification.
+
+It does not declare any candidate fundamental, solve any domain problem, or promote any structure into canonical status.
+
 ## Purpose
 
 This document defines the admission rules by which TIG-E classifies candidates before they may enter a fundamental candidate pool.
@@ -25,6 +31,7 @@ A candidate may be marked as:
 - **Needs Evidence** — requires empirical, textual, formal, or domain-specific support.
 - **Needs Formalization** — conceptually useful but not yet structurally defined.
 - **Open Question** — cannot be classified without resolving a dependency.
+- **Review Required** — classification cannot proceed without explicit reviewer decision.
 
 ## Mark, Do Not Delete
 
@@ -46,13 +53,15 @@ Every candidate must be tested against the following questions:
 4. Is it domain-specific or domain-general?
 5. Does it introduce circular reasoning?
 6. Does it rely on concepts that are themselves emergent in the active domain?
-7. What evidence or formalization is required before promotion?
+7. Is the candidate sufficiently defined to be reviewed?
+8. What evidence or formalization is required before promotion?
+9. Which registry entry records its current status?
 
 ## Domain Examples
 
 In a physics domain pack, time, space, mass, metric, curvature, or energy may be marked as emergent projections if the active hypothesis treats them as non-fundamental.
 
-In a pharmaceutical domain pack, molecular candidates, biological pathways, receptor interactions, or clinical endpoints may require a completely different candidate ontology.
+In a pharmaceutical domain pack, molecular candidates, biological pathways, receptor interactions, or clinical endpoints may require a different candidate ontology.
 
 Therefore, no universal document may hard-code a domain-specific candidate list as globally fundamental or globally emergent.
 
@@ -64,12 +73,27 @@ Fundamentality is always evaluated relative to the active domain model and the c
 
 ## Review Requirement
 
-No candidate may be promoted from Candidate or Open Question to Fundamental Candidate without a recorded rationale.
+No candidate may be promoted from Candidate, Open Question, Emergent Projection, Needs Evidence, Needs Formalization, or Review Required to Fundamental Candidate without a recorded rationale.
 
 The rationale must include:
 
 - admission reason,
+- active domain,
+- generator/projection assessment,
 - known dependencies,
 - known risks,
 - rejected alternatives if applicable,
-- and current evidence status.
+- evidence status,
+- formalization status,
+- and reviewer decision.
+
+## Locked Mode Constraint
+
+```text
+Candidate ≠ final.
+Fundamental Candidate ≠ proven fundamental.
+Admission ≠ derivation.
+Registry status ≠ truth claim.
+```
+
+Admission controls research workflow. It does not establish final ontology.
