@@ -1,10 +1,14 @@
 # TIG-E Operations Protocol
 
-## Purpose
+## Locked Mode Scope
 
 This protocol defines the operational workflow for TIG-E as a universal discovery engine.
 
-It specifies who does what, in which order, and under which governance constraints.
+It does not authorize automated canonization, final research decisions, or domain-theory creation.
+
+## Purpose
+
+This protocol specifies who or what acts at each stage, what is produced, what is reviewed, and what may be written back into the repository ecosystem.
 
 ## Mission
 
@@ -14,7 +18,7 @@ Automate the governance of discovery, not the final research result.
 
 ## Phase 1 — Input Submission
 
-**Responsible:** Human researcher or external user.
+**Responsible:** Human researcher or authorized domain user.
 
 The user submits:
 
@@ -25,6 +29,7 @@ The user submits:
 - observation,
 - issue,
 - commit,
+- paper fragment,
 - or domain-specific problem statement.
 
 The system must preserve expressive freedom at the input boundary.
@@ -35,14 +40,22 @@ The system must preserve expressive freedom at the input boundary.
 
 The agent converts input into structured objects:
 
-- Claim
-- Assumptions
-- Candidate structures
-- Dependencies
-- Open Questions
-- Evidence requirements
-- Possible generator/projection relations
-- Domain context
+- claim,
+- assumptions,
+- candidate structures,
+- dependencies,
+- open questions,
+- evidence requirements,
+- possible generator/projection relations,
+- domain context,
+- and review risks.
+
+Structuring does not validate the claim.
+
+```text
+Extracted ≠ accepted.
+Structured ≠ true.
+```
 
 ## Phase 3 — Fundamentality Filter
 
@@ -56,13 +69,14 @@ Is this candidate being treated as a generator, or is it already a projection?
 
 Output classifications include:
 
-- Fundamental Candidate
-- Candidate
-- Emergent Projection
-- Rejected
-- Needs Evidence
-- Needs Formalization
-- Open Question
+- Fundamental Candidate,
+- Candidate,
+- Emergent Projection,
+- Rejected,
+- Needs Evidence,
+- Needs Formalization,
+- Open Question,
+- Review Required.
 
 ## Phase 4 — Integrity Filter
 
@@ -77,13 +91,14 @@ The filter checks for:
 - unresolved dependencies,
 - contradictory claims,
 - premature finalization,
+- unsupported escalation,
 - and invalid mixture of fundamental and emergent structures.
 
-## Phase 5 — Candidate Registry Update
+## Phase 5 — Candidate Registry Update Draft
 
 **Responsible:** Registry agent.
 
-The registry records:
+The registry draft records:
 
 - candidate status,
 - rationale,
@@ -91,7 +106,11 @@ The registry records:
 - open questions,
 - rejection reasons,
 - review status,
+- evidence status,
+- formalization status,
 - and traceability links.
+
+Registry drafts are not canonical until reviewed.
 
 ## Phase 6 — Review Queue
 
@@ -99,7 +118,17 @@ The registry records:
 
 TIG-E generates reviewable proposals only.
 
-The reviewer decides whether a structure is accepted, rejected, deferred, split, merged, reclassified, or escalated.
+The reviewer decides whether a structure is:
+
+- accepted,
+- rejected,
+- deferred,
+- split,
+- merged,
+- reclassified,
+- escalated,
+- returned for evidence,
+- or returned for formalization.
 
 ## Phase 7 — GitHub Actions / CI Governance
 
@@ -111,6 +140,7 @@ Triggered by:
 - issue update,
 - candidate submission,
 - registry edit,
+- foundation edit,
 - or domain-pack update.
 
 Actions may run:
@@ -119,7 +149,9 @@ Actions may run:
 - Integrity Filter,
 - Registry Check,
 - Open Question Dependency Check,
-- Documentation Consistency Check.
+- Documentation Consistency Check,
+- Domain/Foundation Separation Check,
+- Review Status Check.
 
 Actions may produce:
 
@@ -128,7 +160,8 @@ Actions may produce:
 - PR comment,
 - issue label,
 - registry-update suggestion,
-- or blocked merge status.
+- blocked merge status,
+- or review-required status.
 
 Actions must not produce canonical scientific decisions without review authorization.
 
@@ -144,18 +177,20 @@ Outputs may include:
 - dependency maps,
 - candidate records,
 - open-question updates,
-- and audit logs.
+- audit logs,
+- and change logs.
 
 Direct canonical updates require explicit approval.
 
 ## Phase 9 — Emergence Cycle
 
-Approved updates may create:
+Approved or deferred updates may create:
 
 - new candidates,
 - new dependencies,
 - new questions,
 - new domain-pack requirements,
+- new foundation-review requirements,
 - or new review routes.
 
 The cycle then restarts.
@@ -169,6 +204,7 @@ The cycle then restarts.
 5. Preserve traceability.
 6. Keep universal foundation and domain application separate.
 7. Require review before canonical promotion.
+8. Treat registry status as workflow state, not truth.
 
 ## Minimal MVP
 
@@ -182,3 +218,18 @@ The MVP requires:
 - review queue,
 - GitHub Actions governance,
 - repository output layer.
+
+## Locked Mode Constraint
+
+```text
+Candidate ≠ final.
+Partial ≠ complete.
+Effective ≠ fundamental.
+Source-like ≠ physical stress-energy.
+Metric-like ≠ spacetime metric.
+Compatibility ≠ derivation.
+Automation ≠ authority.
+Registry status ≠ truth claim.
+```
+
+The operations protocol accelerates auditable workflow. It does not bypass scientific review.
