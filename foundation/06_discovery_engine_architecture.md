@@ -1,10 +1,16 @@
 # Discovery Engine Architecture
 
+## Locked Mode Scope
+
+This document defines the architecture of TIG-E as a universal discovery engine.
+
+It does not define a domain theory, prove any result, select any ontology, or promote any candidate into canonical status.
+
 ## Purpose
 
-This document defines TIG-E as a universal discovery engine.
+TIG-E is a domain-neutral architecture for structured discovery in complex search spaces.
 
-TIG-E is not limited to physics. Physics is the first reference domain. The engine itself is a domain-neutral architecture for structured discovery in complex search spaces.
+Physics is the first reference domain. It is not identical with the engine itself.
 
 ## Core Mission
 
@@ -12,7 +18,7 @@ TIG-E is not limited to physics. Physics is the first reference domain. The engi
 TIG-E automates the governance of the discovery process, not the final scientific decision.
 ```
 
-The engine structures inputs, classifies candidates, detects level errors, manages registries, prepares review queues, and preserves traceability.
+The engine structures inputs, classifies candidates, detects level errors, manages registries, prepares review queues, supports search-space compression, and preserves traceability.
 
 ## High-Level Architecture
 
@@ -65,7 +71,15 @@ The Structuring Agent extracts:
 - open questions,
 - evidence requirements,
 - generator/projection relations,
-- and possible domain assignments.
+- domain assignments,
+- and review risks.
+
+Structuring is not validation.
+
+```text
+Structured ≠ accepted.
+Extracted ≠ true.
+```
 
 ## Governance Layer
 
@@ -79,6 +93,8 @@ The Governance Layer applies:
 - domain-boundary checks,
 - and review routing.
 
+Governance does not create final results. It controls whether a structure may proceed to review, registry update, or further compression.
+
 ## Registry Layer
 
 The Registry Layer preserves state.
@@ -91,7 +107,31 @@ It stores:
 - decisions,
 - rejected structures,
 - emergent projections,
-- and review status.
+- review status,
+- and traceability links.
+
+Registry status is a workflow state, not a truth claim.
+
+## Search Space Compression Layer
+
+The compression layer reduces or clarifies the active search space by removing, marking, or routing invalid, premature, circular, redundant, or misplaced paths.
+
+Each iteration must either:
+
+- reduce the search space,
+- clarify its structure,
+- expose a dependency,
+- or route a decision to review.
+
+## Emergence Layer
+
+The Emergence Protocol may propose new candidate structures only after sufficient structuring, filtering, registry classification, and search-space compression.
+
+Emergent outputs remain candidates.
+
+```text
+Emergence produces reviewable proposals, not canonical results.
+```
 
 ## Review Layer
 
@@ -107,6 +147,8 @@ The reviewer decides whether to:
 - split,
 - merge,
 - reclassify,
+- request evidence,
+- request formalization,
 - or escalate.
 
 ## Repository Layer
@@ -118,22 +160,35 @@ Repository integration may create:
 - registry updates,
 - dependency maps,
 - review reports,
-- and change logs.
+- change logs,
+- and CI status outputs.
 
 Direct canonical modification requires explicit review authorization.
 
 ## Domain Packs
 
-Domain packs provide domain-specific ontologies, candidate types, evidence standards, and terminology.
+Domain packs provide domain-specific ontologies, candidate types, evidence standards, terminology, registries, and review rules.
 
 Examples:
 
 - physics,
-- medicine,
 - pharma,
+- medicine,
 - AI alignment,
 - psychology,
 - materials science,
 - software architecture.
 
 Domain packs are applications of the discovery engine. They do not define the engine itself.
+
+## Locked Mode Constraint
+
+```text
+Engine ≠ domain theory.
+Workflow state ≠ truth claim.
+Candidate ≠ final.
+Emergence ≠ proof.
+Automation ≠ scientific authority.
+```
+
+The architecture accelerates structured review. It does not bypass review.
