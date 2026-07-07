@@ -137,9 +137,29 @@ Its role is to:
 
 ---
 
+# Foundation Layer
+
+The repository now contains a universal TIG-E Foundation Layer at:
+
+```text
+foundation/
+```
+
+The Foundation Layer defines the domain-neutral discovery architecture below all domain packs. It separates the universal discovery engine from its first reference domain, physics.
+
+Core rule:
+
+```text
+Foundation describes the universal principles of discovery.
+Domain packs describe their application to concrete problem spaces.
+```
+
+---
+
 # Operating Structure
 
 ```text
+foundation/     universal TIG-E discovery kernel and foundation documents
 architecture/   research program maps and structural diagrams
 governance/     constitution, maturity model, claim boundaries, standards
 registry/       repository status, shared concepts, dependency maps, open questions
