@@ -1,0 +1,75 @@
+name: Document Schema Guard
+
+on:
+  pull_request:
+    paths:
+      - 'foundation/**/*.md'
+      - 'registry/**/*.md'
+      - 'governance/**/*.md'
+      - 'operations/**/*.md'
+      - 'domains/**/*.md'
+      - 'research/**/*.md'
+      - 'docs/**/*.md'
+      - 'papers/**/*.md'
+  push:
+    branches:
+      - main
+    paths:
+      - 'foundation/**/*.md'
+      - 'registry/**/*.md'
+      - 'governance/**/*.md'
+      - 'operations/**/*.md'
+      - 'domains/**/*.md'
+      - 'research/**/*.md'
+      - 'docs/**/*.md'
+      - 'papers/**/*.md'
+
+jobs:
+  document-schema-guard:
+    name: Document Schema Guard
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Determine changed markdown files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            BASE_SHA="${{ github.event.pull_request.base.sha }}"
+            HEAD_SHA="${{ github.event.pull_request.head.sha }}"
+          else
+            BASE_SHA="${{ github.event.before }}"
+            HEAD_SHA="${{ github.sha }}"
+          fi
+
+          git diff --name-only "$BASE_SHA" "$HEAD_SHA" > all_changed_files.txt
+          grep -E '^(foundation|registry|governance|operations|domains|research|docs|papers)/.*\.md$' all_changed_files.txt > changed_markdown_files.txt || true
+
+      - name: Check schema awareness
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ ! -s changed_markdown_files.txt ]]; then
+            echo "No relevant markdown files changed."
+            exit 0
+          fi
+
+          while IFS= read -r file; do
+            [[ -f "$file" ]] || continue
+            echo "Checking $file"
+
+            grep -Eiq 'Status' "$file" || echo "::warning file=$file::Recommended marker missing: Status"
+            grep -Eiq 'Claim Type' "$file" || echo "::warning file=$file::Recommended marker missing: Claim Type"
+            grep -Eiq 'Dependencies' "$file" || echo "::warning file=$file::Recommended marker missing: Dependencies"
+            grep -Eiq 'Non-Claims|Allowed Claims|Claim Boundaries' "$file" || echo "::warning file=$file::Recommended claim-boundary marker missing."
+          done < changed_markdown_files.txt
+
+          echo "Phase 1 warning-only governance check complete."
+          exit 0
