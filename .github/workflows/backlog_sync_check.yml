@@ -1,0 +1,87 @@
+name: Backlog Sync Check
+
+on:
+  pull_request:
+    paths:
+      - 'foundation/**'
+      - 'registry/**'
+      - 'governance/**'
+      - 'operations/**'
+      - 'domains/**'
+      - 'research/**'
+      - 'docs/**'
+      - 'papers/**'
+      - '.github/workflows/**'
+  push:
+    branches:
+      - main
+    paths:
+      - 'foundation/**'
+      - 'registry/**'
+      - 'governance/**'
+      - 'operations/**'
+      - 'domains/**'
+      - 'research/**'
+      - 'docs/**'
+      - 'papers/**'
+      - '.github/workflows/**'
+
+jobs:
+  backlog-sync-check:
+    name: Backlog Sync Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Determine changed files
+        id: changed
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            BASE_SHA="${{ github.event.pull_request.base.sha }}"
+            HEAD_SHA="${{ github.event.pull_request.head.sha }}"
+          else
+            BASE_SHA="${{ github.event.before }}"
+            HEAD_SHA="${{ github.sha }}"
+          fi
+
+          git diff --name-only "$BASE_SHA" "$HEAD_SHA" | tee changed_files.txt
+
+      - name: Check backlog awareness
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          BACKLOG_FILE="registry/master_open_question_backlog.md"
+          MARKER="NO_BACKLOG_UPDATE_REQUIRED"
+
+          if [[ ! -f changed_files.txt ]]; then
+            echo "No changed file list found."
+            exit 1
+          fi
+
+          if grep -qx "$BACKLOG_FILE" changed_files.txt; then
+            echo "Backlog file updated. Check passed."
+            exit 0
+          fi
+
+          if git log -1 --pretty=%B | grep -q "$MARKER"; then
+            echo "Explicit marker found in commit message: $MARKER"
+            echo "Backlog update intentionally skipped. Check passed."
+            exit 0
+          fi
+
+          echo "::warning::Research-relevant files changed without updating $BACKLOG_FILE and without marker $MARKER."
+          echo "::warning::Locked Mode warning only. Future phases may promote this check to blocking."
+          echo "Changed files:"
+          cat changed_files.txt
+
+          # Phase 1: warning-only governance.
+          # Do not fail the build yet.
+          exit 0
