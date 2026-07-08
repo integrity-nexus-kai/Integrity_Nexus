@@ -1,0 +1,141 @@
+name: Research Integrity Pipeline
+
+on:
+  pull_request:
+    paths:
+      - 'foundation/**/*.md'
+      - 'registry/**/*.md'
+      - 'governance/**/*.md'
+      - 'operations/**/*.md'
+      - 'domains/**/*.md'
+      - 'research/**/*.md'
+      - 'docs/**/*.md'
+      - 'papers/**/*.md'
+      - 'shared/**/*.md'
+      - 'interfaces/**/*.md'
+  push:
+    branches:
+      - main
+    paths:
+      - 'foundation/**/*.md'
+      - 'registry/**/*.md'
+      - 'governance/**/*.md'
+      - 'operations/**/*.md'
+      - 'domains/**/*.md'
+      - 'research/**/*.md'
+      - 'docs/**/*.md'
+      - 'papers/**/*.md'
+      - 'shared/**/*.md'
+      - 'interfaces/**/*.md'
+
+jobs:
+  research-integrity-pipeline:
+    name: Research Integrity Pipeline
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Determine changed markdown files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            BASE_SHA="${{ github.event.pull_request.base.sha }}"
+            HEAD_SHA="${{ github.event.pull_request.head.sha }}"
+          else
+            BASE_SHA="${{ github.event.before }}"
+            HEAD_SHA="${{ github.sha }}"
+          fi
+
+          git diff --name-only "$BASE_SHA" "$HEAD_SHA" > all_changed_files.txt
+          grep -E '^(foundation|registry|governance|operations|domains|research|docs|papers|shared|interfaces)/.*\.md$' all_changed_files.txt > changed_markdown_files.txt || true
+
+      - name: Run governance checks
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          REPORT="research_integrity_report.md"
+          echo "# Research Integrity Pipeline Report" > "$REPORT"
+          echo "" >> "$REPORT"
+          echo "Mode: LOCKED MODE / warning-only" >> "$REPORT"
+          echo "" >> "$REPORT"
+
+          if [[ ! -s changed_markdown_files.txt ]]; then
+            echo "No relevant markdown files changed." >> "$REPORT"
+            cat "$REPORT" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          echo "## Changed Files" >> "$REPORT"
+          while IFS= read -r file; do
+            echo "- $file" >> "$REPORT"
+          done < changed_markdown_files.txt
+          echo "" >> "$REPORT"
+
+          echo "## Detected Warnings" >> "$REPORT"
+          warning_count=0
+
+          while IFS= read -r file; do
+            [[ -f "$file" ]] || continue
+
+            # Schema awareness
+            if ! grep -Eiq 'Status' "$file"; then
+              echo "::warning file=$file::Missing Status marker."
+              echo "- $file: Missing Status marker." >> "$REPORT"
+              warning_count=$((warning_count+1))
+            fi
+
+            if ! grep -Eiq 'Claim Type' "$file"; then
+              echo "::warning file=$file::Missing Claim Type marker."
+              echo "- $file: Missing Claim Type marker." >> "$REPORT"
+              warning_count=$((warning_count+1))
+            fi
+
+            if ! grep -Eiq 'Dependencies' "$file"; then
+              echo "::warning file=$file::Missing Dependencies marker."
+              echo "- $file: Missing Dependencies marker." >> "$REPORT"
+              warning_count=$((warning_count+1))
+            fi
+
+            if ! grep -Eiq 'Non-Claims|Allowed Claims|Claim Boundaries|Boundary' "$file"; then
+              echo "::warning file=$file::Missing claim-boundary marker."
+              echo "- $file: Missing claim-boundary marker." >> "$REPORT"
+              warning_count=$((warning_count+1))
+            fi
+
+            # Status escalation language
+            if grep -Ein '\b(final|complete|completed|solved|derived|established|fundamental|physical|canonical|validated|proven|truth)\b' "$file" > risk_hits.txt; then
+              echo "::warning file=$file::Potential status-escalation language detected. Review against claim_status_taxonomy.md."
+              echo "- $file: Potential status-escalation language detected." >> "$REPORT"
+              sed 's/^/  - /' risk_hits.txt >> "$REPORT"
+              warning_count=$((warning_count+1))
+            fi
+
+            # Boundary phrase hints
+            if grep -Eiq '\b(Born-compatible|compatible|effective|mathematical|operational|registered|canonical|candidate)\b' "$file"; then
+              if ! grep -Eiq 'not final|not derived|scientifically open|not fundamental|not physical|not canonized|not completed theory|boundary|scope' "$file"; then
+                echo "::warning file=$file::Boundary-sensitive term used without obvious boundary phrase."
+                echo "- $file: Boundary-sensitive term used without obvious boundary phrase." >> "$REPORT"
+                warning_count=$((warning_count+1))
+              fi
+            fi
+          done < changed_markdown_files.txt
+
+          if [[ "$warning_count" -eq 0 ]]; then
+            echo "No governance warnings detected." >> "$REPORT"
+          fi
+
+          echo "" >> "$REPORT"
+          echo "## Status" >> "$REPORT"
+          echo "This pipeline is warning-only. It reports governance risks but does not block commits or pull requests yet." >> "$REPORT"
+          echo "" >> "$REPORT"
+          echo "Future phase may promote selected checks to blocking after review." >> "$REPORT"
+
+          cat "$REPORT" >> "$GITHUB_STEP_SUMMARY"
+          exit 0
