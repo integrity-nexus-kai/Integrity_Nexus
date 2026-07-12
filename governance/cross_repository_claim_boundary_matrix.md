@@ -3,10 +3,10 @@
 **Repository:** Integrity_Nexus  
 **Scope:** Scientific-core TIG Research Ecosystem with controlled Cube-domain coverage  
 **Status:** CANONICAL / LOCKED MODE / AUDIT-CORRECTED  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `74364a3c4f3575363ce3305ea0d68203f1d0e75f`; `shared/terminology_drift_matrix.md` content SHA `77f7e0c37336a262f51c765ae0f3ab314ed3f203`; `governance/claim_status_taxonomy.md` content SHA `ebc22076da4221a80dcdfbd1f5388f49a1044a2a`  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `06b2371b4cc65739aa93fa569fcd808553e054fb`; `shared/terminology_drift_matrix.md` content SHA `3270635e015931f12fd5c8de6fbc2107a541ab5a`; `governance/claim_status_taxonomy.md` content SHA `7913b6b2a99c8bd08ec7ae3bbf13ff203d64bb77`  
 **Position in Control Chain:** terminology inventory → drift matrix → claim-status taxonomy → this boundary matrix → registries → repository-status index  
-**Global Synchronization Authority:** `registry/repository_status.md`  
-**OQ Status Contribution:** PARTIALLY RESOLVED — CORRECTION REQUIRED  
+**Global Synchronization and Completion-Readiness Authority:** `registry/repository_status.md`  
+**OQ Status Contribution:** READY FOR COMPLETION AUDIT  
 **Related Open Questions:** OQ-030 / OQ-NEXUS-001; OQ-031 / OQ-NEXUS-002  
 **Last Updated:** 2026-07-12
 
@@ -14,7 +14,7 @@
 
 ## 1. Purpose
 
-This file defines how claims, terms, objects, questions, statuses, and candidate relations may move between repository containers and scientific domains without changing their evidential strength, lifecycle state, scientific status, maturity, definition state, bridge state, scope, Relation Class, or Relation Target.
+This file defines how claims, terms, objects, questions, statuses, applicability markers, and candidate relations may move between repository containers and scientific domains without changing their evidential strength, lifecycle state, Scientific Status applicability, Scientific Status, maturity, Definition State, Bridge State, scope, Relation Class, or Relation Target.
 
 It is a governance artifact.
 
@@ -30,11 +30,12 @@ It does not:
 - establish QIC as identical to TIG,
 - assign global Completion Readiness,
 - report a global synchronization count,
+- use `NOT APPLICABLE` as a Scientific Status value,
 - or upgrade any scientific result.
 
 The protected rule is:
 
-> A claim or question may move between repositories or scientific domains only when its source, target, scope, canonical status axes, Definition State, Bridge State, Relation Class, Relation Target, Allowed Transfer, and Forbidden Transfer remain explicit.
+> A claim or question may move between repositories or scientific domains only when its source, target, scope, applicability, canonical status axes, Definition State, Bridge State, Relation Class, Relation Target, Allowed Transfer, and Forbidden Transfer remain explicit.
 
 The sole authority for global current-HEAD synchronization and global Completion Readiness is:
 
@@ -84,14 +85,15 @@ repository maturity != scientific completion
 
 ---
 
-## 3. Canonical Status-Axis Preservation Rule
+## 3. Canonical Applicability and Status Preservation Rule
 
-Every transfer must preserve each applicable axis independently using `governance/claim_status_taxonomy.md`.
+Every transfer must preserve each applicable axis and control field independently using `governance/claim_status_taxonomy.md`.
 
-| Axis | Canonical Transfer Requirement |
+| Axis or Control Field | Canonical Transfer Requirement |
 |---|---|
 | Claim Status | Must remain unchanged unless exact upgrade evidence is supplied |
-| Scientific Status | Scientifically Open or Resolved must not be inferred from Question State |
+| Scientific Status Applicability | APPLICABLE or NOT APPLICABLE must be recorded before Scientific Status assignment |
+| Scientific Status | Only Scientifically Open or Resolved; no value when applicability is NOT APPLICABLE |
 | Question State | OPEN or CLOSED applies only to a registered-question lifecycle |
 | Registry Status | Registerable or Registered must not become truth, Resolved, or CLOSED |
 | Operational Status | Pending, Addressed, Blocked, or Operationally Closed must not become scientific or registry closure |
@@ -113,6 +115,9 @@ Candidate != Candidate Bridge
 Operationally Closed != Closed Operationally
 Established Within Scope != Established
 Preliminary != Validated
+Scientific Status Applicability NOT APPLICABLE != Scientific Status value
+Scientific Status Applicability APPLICABLE != Scientifically Open
+Scientific Status Applicability APPLICABLE != Resolved
 Question State OPEN != Scientific Status Scientifically Open
 Question State CLOSED != Scientific Status Resolved
 Registry Status Registered != Question State CLOSED
@@ -120,11 +125,33 @@ Completion Readiness AUDIT PASSED != Question State CLOSED
 Progress Classification != Question State
 ```
 
-### 3.2 Preservation Example
+### 3.2 Applicability Preservation
+
+```text
+Scientific Status Applicability: APPLICABLE
+→ Scientific Status may be Scientifically Open or Resolved
+
+Scientific Status Applicability: NOT APPLICABLE
+→ no Scientific Status value is assigned
+```
+
+`NOT APPLICABLE` is an applicability marker outside the Scientific Status value set.
+
+A transfer must not convert:
+
+- `NOT APPLICABLE` into `Scientifically Open`,
+- `APPLICABLE` into a Scientific Status value,
+- missing status evidence into inapplicability,
+- or governance lifecycle into scientific status.
+
+### 3.3 Preservation Examples
+
+A registered scientific question may be transferred only with the full signature preserved:
 
 ```text
 Question State: OPEN
 Registry Status: Registered
+Scientific Status Applicability: APPLICABLE
 Scientific Status: Scientifically Open
 Operational Status: Blocked
 Artifact Status: Canonical Artifact
@@ -133,7 +160,18 @@ Definition State: Partially Defined
 Bridge State: Missing
 ```
 
-must not become `Validated`, `Resolved`, or `CLOSED` through repository placement, summary wording, or transfer.
+A registered governance question may instead use:
+
+```text
+Question State: OPEN
+Registry Status: Registered
+Scientific Status Applicability: NOT APPLICABLE
+Scientific Status: no value assigned
+Progress Classification: READY FOR COMPLETION AUDIT
+Completion Readiness: controlled globally by registry/repository_status.md
+```
+
+Neither signature may become `Validated`, `Resolved`, or `CLOSED` through repository placement, summary wording, or transfer.
 
 ---
 
@@ -181,6 +219,8 @@ Relation Class: EXPLICITLY NON-EQUIVALENT to I_QIC
 | Partial | Complete | Unresolved remainder explicit |
 | Partially Defined | Defined | Missing elements remain open |
 | Preliminary | Validated | Preliminary maturity only |
+| Scientific Status Applicability APPLICABLE | Scientifically Open or Resolved | Applicability does not assign status |
+| Scientific Status Applicability NOT APPLICABLE | Scientific Status value | No Scientific Status value is assigned |
 | Addressed | Resolved or CLOSED | Operational processing is separate |
 | Blocked | Question State OPEN | Operational blockage does not define lifecycle state |
 | Operationally Closed | Resolved or CLOSED | Scientific and registry closure are separate |
@@ -221,6 +261,7 @@ Object Type:
 Input Type:
 Output / Codomain:
 Claim Status:
+Scientific Status Applicability:
 Scientific Status:
 Question State:
 Registry Status:
@@ -240,7 +281,14 @@ Evidence Required For Upgrade:
 Closure Rule:
 ```
 
-Fields not applicable must be marked `NOT APPLICABLE` where omission could create ambiguity.
+Applicability rules:
+
+- `Scientific Status Applicability: APPLICABLE` permits only `Scientifically Open` or `Resolved` as Scientific Status values.
+- `Scientific Status Applicability: NOT APPLICABLE` requires Scientific Status to remain unassigned.
+- Never write `Scientific Status: NOT APPLICABLE`.
+- Missing or unknown applicable status must not be disguised as inapplicability.
+
+Fields other than Scientific Status may use a field-specific `NOT APPLICABLE` marker only where the governing schema explicitly permits it and no canonical value is being replaced.
 
 `Required Work` may be recorded as metadata, but it is not a status axis.
 
@@ -252,25 +300,25 @@ No value may be inferred from name, notation, repository path, analogy, or share
 
 ### 7.1 Integrity_Nexus Governance → TIG-E Research Architecture
 
-**Allowed transfer:** FRQ/OQ entries, governance rules, dependency maps, maturity requirements, status-axis requirements, terminology controls, and audit obligations.
+**Allowed transfer:** FRQ/OQ entries, governance rules, dependency maps, maturity requirements, applicability requirements, status-axis requirements, terminology controls, and audit obligations.
 
-**Forbidden escalation:** Nexus question becoming a scientific substrate; governance rule becoming scientific axiom; registry entry becoming equation; maturity becoming theory evidence; Progress Classification becoming Scientific Status or Question State.
+**Forbidden escalation:** Nexus question becoming a scientific substrate; governance rule becoming scientific axiom; registry entry becoming equation; maturity becoming theory evidence; applicability becoming scientific status; Progress Classification becoming Scientific Status or Question State.
 
 **Default Relation Class:** GOVERNANCE MAPPING ONLY.
 
 ### 7.2 TIG-E Research Architecture → Integrity_Nexus Governance
 
-**Allowed transfer:** gate status, candidate-lifecycle status, blocker status, registry admission, Operational Status, preservation-condition status, and audit findings.
+**Allowed transfer:** gate status, candidate-lifecycle status, blocker status, registry admission, Operational Status, preservation-condition status, applicability evidence, and audit findings.
 
-**Forbidden escalation:** Operationally Closed becoming Resolved or CLOSED; gate passage becoming truth; registration becoming physical selection; audit passage becoming proof.
+**Forbidden escalation:** Operationally Closed becoming Resolved or CLOSED; gate passage becoming truth; registration becoming physical selection; audit passage becoming proof; scientific applicability becoming scientific resolution.
 
 ### 7.3 Integrity_Nexus Governance → Scientific Domains
 
 Applies to TIG gravitational architecture, QIC quantum-bridge research, SIR mathematical recursion, and Cube research.
 
-**Allowed transfer:** role statements, status vocabulary, terminology controls, boundary requirements, dependency requirements, and review obligations.
+**Allowed transfer:** role statements, applicability controls, status vocabulary, terminology controls, boundary requirements, dependency requirements, and review obligations.
 
-**Forbidden escalation:** governance defining tensor, state space, physical interpretation, mathematical proof, bridge, or scientific resolution.
+**Forbidden escalation:** governance defining tensor, state space, physical interpretation, mathematical proof, bridge, Scientific Status, or scientific resolution.
 
 ---
 
@@ -316,7 +364,7 @@ field-equation architecture != complete field theory
 
 ### 8.6 TIG-E ↔ Cube Research
 
-**Allowed transfer to Cube:** status vocabulary, roadmap registration, Candidate and Working Assumption controls, blockers, audits, and bridge requirements.
+**Allowed transfer to Cube:** status vocabulary, applicability controls, roadmap registration, Candidate and Working Assumption controls, blockers, audits, and bridge requirements.
 
 **Allowed transfer from Cube:** blocker status, Working Assumption status, hypothesis status, research-question status, scale/bridge dependencies, and maturity-audit findings.
 
@@ -336,7 +384,7 @@ The repository container currently provides evidence primarily for TIG gravitati
 
 ### 9.2 Integrity_Nexus → Quantum_Integrity_Core Repository
 
-**Allowed transfer:** governance status, maturity classification, role boundaries, terminology controls, and audit requirements.
+**Allowed transfer:** governance status, maturity classification, role boundaries, applicability controls, terminology controls, and audit requirements.
 
 **Forbidden escalation:** Nexus assigning QIC identity to TIG objects, promoting architecture to complete theory, or defining missing tensors/bridges.
 
@@ -449,7 +497,7 @@ SSC remains outside active scientific-core derivation scope.
 DEFERRED APPLICATION-PROJECTION SCOPE
 ```
 
-A later projection audit may transfer explicitly typed orientation terms, governance vocabulary, boundary rules, and documented abstractions after core terminology stabilizes.
+A later projection audit may transfer explicitly typed orientation terms, governance vocabulary, applicability controls, boundary rules, and documented abstractions after core terminology stabilizes.
 
 SSC may not currently define TIG, QIC, SIR, Cube, the common substrate, `Rel_TIG`, `DefectSpace`, `B_TIG`, `I_QIC`, gravitational objects, quantum objects, or core identity claims.
 
@@ -493,6 +541,8 @@ Deferred SSC projection is not an OQ-031 blocker when deferral and transfer proh
 | CRR-023 | Scientific openness becomes governance failure | OQ-031 completion criterion |
 | CRR-024 | AUDIT PASSED becomes automatic CLOSED | Registry application requirement |
 | CRR-025 | Local sync statement becomes global authority | Repository-status single-authority rule |
+| CRR-026 | `NOT APPLICABLE` becomes a Scientific Status value | Separate applicability marker and unassigned status rule |
+| CRR-027 | Applicability silently changes during transfer | Preserve applicability independently from status values |
 
 ---
 
@@ -504,16 +554,24 @@ For terminology-governance completion, every unresolved object or interface must
 
 - explicitly named,
 - assigned to the correct repository container and scientific domain,
-- given exact applicable status-axis values,
+- given exact Scientific Status applicability and exact applicable status-axis values,
 - given exact Definition State and Bridge State,
 - assigned a canonical Relation Class and separate Relation Target where applicable,
 - scoped correctly,
 - protected by Allowed Transfer and Forbidden Transfer,
-- and prevented from silent status or domain upgrade.
+- and prevented from silent status, applicability, or domain upgrade.
 
 ```text
 scientifically open object != incomplete terminology governance
 missing bridge != incomplete terminology governance when absence is correctly controlled
+Scientific Status Applicability NOT APPLICABLE != scientific resolution
+```
+
+For OQ-030 and OQ-031:
+
+```text
+Scientific Status Applicability: NOT APPLICABLE
+Scientific Status: no value assigned
 ```
 
 Question closure remains separate:
@@ -537,6 +595,8 @@ Interface-specific boundary documents are conditional when an actual new transfe
 - Partial claim only; remainder open.
 - Partially Defined; missing elements open.
 - Preliminary maturity only; not Validated.
+- Scientific Status Applicability APPLICABLE; status value separate.
+- Scientific Status Applicability NOT APPLICABLE; no Scientific Status value assigned.
 - Addressed operationally; not Resolved or CLOSED.
 - Blocked operationally; Question State separate.
 - Operationally Closed; scientific and registry closure separate.
@@ -568,6 +628,10 @@ Before a transfer is accepted, check:
 - Is the object type explicit?
 - Are input/output types explicit where applicable?
 - Is every applicable axis explicit?
+- Is Scientific Status Applicability explicit where ambiguity is possible?
+- Is `NOT APPLICABLE` incorrectly used as a Scientific Status value?
+- Is a Scientific Status value assigned despite applicability being `NOT APPLICABLE`?
+- Is applicability silently changed during transfer?
 - Is Question State used only for registered-question lifecycle?
 - Is `OPEN` confused with Scientifically Open?
 - Is `CLOSED` confused with Resolved?
@@ -590,21 +654,27 @@ Before a transfer is accepted, check:
 
 This revision reconciles the boundary matrix with:
 
-- inventory SHA `74364a3c4f3575363ce3305ea0d68203f1d0e75f`,
-- drift-matrix SHA `77f7e0c37336a262f51c765ae0f3ab314ed3f203`,
-- taxonomy SHA `ebc22076da4221a80dcdfbd1f5388f49a1044a2a`.
+- inventory SHA `06b2371b4cc65739aa93fa569fcd808553e054fb`,
+- drift-matrix SHA `3270635e015931f12fd5c8de6fbc2107a541ab5a`,
+- taxonomy SHA `7913b6b2a99c8bd08ec7ae3bbf13ff203d64bb77`.
 
 It propagates:
 
-1. Question State `OPEN` / `CLOSED` as a separate lifecycle axis;
-2. Registry admission separate from question closure;
-3. Operational blockage/closure separate from question closure;
-4. AUDIT PASSED separate from automatic closure;
-5. generic `Status` fields prohibited for mixed semantics;
-6. `Required Work` classified as metadata;
-7. `registry/repository_status.md` as sole global synchronization and Completion Readiness authority;
-8. removal of global synchronization counts and pending-file lists from this matrix;
-9. preservation of all prior domain, relation, bridge, Cube, QIC/TIG, SIR, and SSC boundaries.
+1. local OQ status contribution `READY FOR COMPLETION AUDIT` because no boundary-matrix-local correction remains;
+2. Scientific Status Applicability as a separate control field;
+3. only `APPLICABLE` and `NOT APPLICABLE` as applicability markers;
+4. only `Scientifically Open` and `Resolved` as Scientific Status values;
+5. prohibition of `Scientific Status: NOT APPLICABLE`;
+6. no Scientific Status value when applicability is `NOT APPLICABLE`;
+7. Question State `OPEN` / `CLOSED` as a separate lifecycle axis;
+8. Registry admission separate from question closure;
+9. Operational blockage/closure separate from question closure;
+10. AUDIT PASSED separate from automatic closure;
+11. generic `Status` fields prohibited for mixed semantics;
+12. `Required Work` classified as metadata;
+13. `registry/repository_status.md` as sole global synchronization and Completion Readiness authority;
+14. no global synchronization count or authoritative globally pending-file list in this matrix;
+15. preservation of all prior domain, relation, bridge, Cube, QIC/TIG, SIR, and SSC boundaries.
 
 ---
 
@@ -615,23 +685,28 @@ Current local contribution:
 ```text
 Question State: OPEN
 Registry Status: Registered
-Progress Classification: PARTIALLY RESOLVED — CORRECTION REQUIRED
+Scientific Status Applicability: NOT APPLICABLE
+Progress Classification: READY FOR COMPLETION AUDIT
 ```
 
-This matrix is reconciled with its three upstream SHAs.
+No Scientific Status value is assigned to OQ-030 or OQ-031 because the axis is not applicable to these governance questions.
+
+This matrix is reconciled with its three current upstream SHAs.
 
 It does not authoritatively assign global Completion Readiness and does not report a global synchronization count.
 
-The local and master registries must adopt Question State and normalized axes before the question entries may move to `READY FOR COMPLETION AUDIT`.
+The local registry, master backlog, and repository-status index must now adopt the progress and applicability corrections before a subsequent Completion & Consistency Audit can pass.
+
+This propagation statement is not a global synchronization report.
 
 ---
 
 ## 19. Maintenance Rule
 
-Any future relation, bridge, dependency, role update, Cube interface, QIC/TIG interface, or application projection must be checked against this matrix.
+Any future relation, bridge, dependency, role update, Cube interface, QIC/TIG interface, application projection, applicability change, or status transfer must be checked against this matrix.
 
 Any change to inventory, drift matrix, or taxonomy invalidates this matrix's local reconciliation until updated against the new SHAs.
 
-This matrix must never report the global current-HEAD synchronization count or supersede `registry/repository_status.md`.
+This matrix must never report the global current-HEAD synchronization count, assign global Completion Readiness, or supersede `registry/repository_status.md`.
 
 No update may create scientific evidence, identity, definition, bridge, proof, validation, ontology, theory, audit passage, or question closure absent from source repositories and governing registries.
