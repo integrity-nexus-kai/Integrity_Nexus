@@ -4,7 +4,7 @@
 **Scope:** Complete TIG Research Ecosystem  
 **Status:** CANONICAL / LOCKED MODE  
 **Source:** Master Research Consistency Auditor output, consolidated into canonical backlog form.  
-**Date:** 2026-07-08
+**Last Updated:** 2026-07-12
 
 ---
 
@@ -738,41 +738,83 @@ The old gate queue is empty, but the next-generation blocker queue is valid and 
 
 ## OQ-030 — Cross-Repository Claim Boundaries
 
-**Status:** OPEN
+**Local Registry ID:** OQ-NEXUS-001
 
-**Description:** Show relationships between repositories without inflating cross-domain claims.
+**Registry Status:** OPEN
+
+**Current Progress Classification:** PARTIALLY RESOLVED — CORRECTION REQUIRED
+
+**Description:** Show relationships between repositories and scientific domains without inflating cross-domain claims or changing status during transfer.
 
 **Repository Sources:** Integrity_Nexus.
 
-**Evidence:** This is explicitly OQ-NEXUS-001.
+**Evidence:** OQ-NEXUS-001 is the local registry representation of this master problem. The following canonical governance artifacts now exist and are synchronized at the controlled-document level:
 
-**Dependencies:** None.
+1. `shared/terminology_inventory.md`
+2. `shared/terminology_drift_matrix.md`
+3. `governance/claim_status_taxonomy.md`
+4. `governance/cross_repository_claim_boundary_matrix.md`
+5. `registry/open_questions.md`
 
-**Blocked By:** Continuous governance maintenance.
+These artifacts establish repository-container versus scientific-domain separation, status-axis preservation, relation classes, TIG/QIC anti-collapse controls, SIR mathematical-to-physical boundaries, Cube interfaces, and deferred SSC application scope.
 
-**Unlocks:** Safe multi-repo audit, publication coordination, external review.
+**Dependencies:** None upstream.
 
-**Recommended Next Action:** Maintain as permanent governance control.
+**Blocked By:** Registry and repository-status synchronization, possible interface-specific boundary documents, and final completion audit.
+
+**Unlocks:** Safe multi-repository audit, publication coordination, external review, and controlled terminology transfer.
+
+**Current Boundary:** A canonical boundary matrix does not prove that every current or future interface is correctly governed. Governance progress does not create missing definitions, bridges, derivations, proofs, or validations.
+
+**Recommended Next Action:** Synchronize the remaining registry and repository-status artifacts before completion audit.
 
 ---
 
 ## OQ-031 — Shared Terminology Without Domain Collapse
 
-**Status:** OPEN
+**Local Registry ID:** OQ-NEXUS-002
 
-**Description:** Preserve useful shared concepts without forcing identical technical definitions across TIG, SIR, SSC, QIC, and Cube research.
+**Registry Status:** OPEN
 
-**Repository Sources:** Integrity_Nexus.
+**Current Progress Classification:** PARTIALLY RESOLVED — CORRECTION REQUIRED
 
-**Evidence:** This is explicitly OQ-NEXUS-002; shared concepts are not identical definitions across domains.
+**Description:** Preserve useful shared concepts such as integrity, boundary, admissibility, invariant, and bounded evolution without forcing identical technical definitions across the scientific-core TIG Research Ecosystem.
+
+**Active Scientific-Core Scope:**
+
+1. Integrity_Nexus governance
+2. TIG-E research architecture
+3. TIG gravitational architecture
+4. QIC quantum-bridge research
+5. SIR mathematical recursion
+6. Cube research
+
+**Repository Sources:** Integrity_Nexus, with evidence paths into TIG-E, Quantum_Integrity_Core, and Structural_Integrity_Recursion.
+
+**Evidence:** OQ-NEXUS-002 is the local registry representation of this master problem. The corrected terminology inventory, drift matrix, claim-status taxonomy, cross-repository claim-boundary matrix, and local open-question registry now provide controlled terminology, status, relation, type, and transfer boundaries.
+
+Mandatory non-identities include:
+
+```text
+Quantum_Integrity_Core repository != QIC scientific object
+QIC != TIG
+I_QIC != Iμν
+Σ_QIC != TIG spacetime state
+Cube state != Σ_QIC without explicit bridge
+shared term != identical technical definition
+```
+
+**SSC Scope Qualification:** SSC remains relevant to the broader ecosystem question but is currently classified as `DEFERRED APPLICATION-PROJECTION SCOPE`. SSC may not define TIG, QIC, SIR, Cube, the common substrate, `Rel_TIG`, `DefectSpace`, `B_TIG`, or `I_QIC`.
 
 **Dependencies:** OQ-030.
 
-**Blocked By:** Cross-domain drift risk.
+**Blocked By:** Remaining registry and repository-status synchronization, evidence-backed interface additions where needed, deferred SSC projection validation, unresolved scientific definitions and bridges, and final completion audit.
 
-**Unlocks:** Clean glossary, reviewer navigation.
+**Unlocks:** Controlled glossary, reviewer navigation, machine-readable terminology graph, and safe later SSC application projection.
 
-**Recommended Next Action:** Maintain shared glossary with per-domain type signatures.
+**Current Boundary:** Terminology governance records and constrains scientific language; it does not define the scientific objects it lists.
+
+**Recommended Next Action:** Synchronize `registry/repository_status.md` with the scientific-domain split and deferred SSC scope before the final OQ-031 completion audit.
 
 ---
 
@@ -839,4 +881,8 @@ The dependency-correct execution order is:
 
 This backlog is canonical until superseded by a later `MASTER OPEN QUESTION BACKLOG` version.
 
-Any future research-session result that changes open-question status, dependencies, claim boundaries, repository bridges, or execution order must update this file or explicitly state why no update is required.
+Any future research-session result that changes open-question status, dependencies, claim boundaries, repository bridges, scientific-domain scope, Cross-ID mapping, or execution order must update this file or explicitly state why no update is required.
+
+An entry may remain `OPEN` while carrying a more precise progress classification.
+
+No progress classification may be promoted to `RESOLVED` without explicit closure criteria, synchronized canonical artifacts, dependency closure, and completion-audit acceptance.
