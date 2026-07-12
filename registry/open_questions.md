@@ -3,43 +3,51 @@
 **Repository:** Integrity_Nexus  
 **Scope:** Meta-governance registry for the TIG Research Ecosystem  
 **Status:** CANONICAL REGISTRY / LOCKED MODE / AUDIT-CORRECTED  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `d835d2224113f8f09799db9ca97c8cc269d92cf8`; `shared/terminology_drift_matrix.md` content SHA `fc0b4c975960c30d6e8c68964ac6338510ae578d`; `governance/claim_status_taxonomy.md` content SHA `ae1319c27d755d8cf301e21510eea489102ece30`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `be38195af6ebd0832b71469fa7b9f548f0acf7c7`  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `74364a3c4f3575363ce3305ea0d68203f1d0e75f`; `shared/terminology_drift_matrix.md` content SHA `77f7e0c37336a262f51c765ae0f3ab314ed3f203`; `governance/claim_status_taxonomy.md` content SHA `ebc22076da4221a80dcdfbd1f5388f49a1044a2a`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `af1123666144136dac05c97ddd9b42f897ad26ae`  
 **Position in Control Chain:** terminology inventory → drift matrix → claim-status taxonomy → claim-boundary matrix → this local registry → master backlog → repository-status index  
+**Global Synchronization and Completion-Readiness Authority:** `registry/repository_status.md`  
 **Last Updated:** 2026-07-12
 
-This document records open questions for Integrity Nexus as a meta-repository.
+This document records registered questions for Integrity Nexus as a meta-repository.
 
 These questions concern navigation, governance, dependency mapping, terminology control, and cross-repository coherence.
 
 The following axes are distinct:
 
 ```text
+Question State
 Registry Status
 Scientific Status
+Operational Status
 Progress Classification
 Completion Readiness
 ```
 
-Registry Status `OPEN` means that the registered question has not been formally closed.
+Canonical lifecycle values are:
 
-It does not mean:
+```text
+Question State: OPEN | CLOSED
+Registry Status: Registerable | Registered
+```
 
-- that no repository-supported progress exists,
-- that every underlying scientific object must be solved before governance closure,
-- or that scientifically open objects constitute failed terminology governance.
+`OPEN` and `CLOSED` are Question State values, not Registry Status values.
+
+A question may remain `OPEN` while substantial repository-supported progress exists.
+
+This file does not report the global synchronization count and does not authoritatively assign global Completion Readiness. Those values belong only to `registry/repository_status.md`.
 
 ---
 
 ## Cross-ID Mapping
 
-| Local Registry ID | Master Backlog ID | Title | Relation | Synchronization State |
+| Local Registry ID | Master Backlog ID | Title | Relation | Cross-ID Presence |
 |---|---|---|---|---|
-| OQ-NEXUS-001 | OQ-030 | Cross-Repository Claim Boundaries | Same registered problem core under local and master identifiers | Local Cross-ID present; master entry requires current audit resynchronization |
-| OQ-NEXUS-002 | OQ-031 | Shared Terminology Without Domain Collapse | Same registered problem core under local and master identifiers | Local Cross-ID present; master entry requires current audit resynchronization |
+| OQ-NEXUS-001 | OQ-030 | Cross-Repository Claim Boundaries | Same registered problem core under local and master identifiers | PRESENT |
+| OQ-NEXUS-002 | OQ-031 | Shared Terminology Without Domain Collapse | Same registered problem core under local and master identifiers | PRESENT |
 
 The Cross-ID mapping is governance metadata.
 
-It does not change Registry Status, Scientific Status, Progress Classification, or Completion Readiness.
+It does not change Question State, Registry Status, Scientific Status, Progress Classification, or Completion Readiness.
 
 ---
 
@@ -53,7 +61,8 @@ German formulation:
 Was ist es, aus dem Raumzeit und Quantenmechanik gemeinsam emergieren?
 ```
 
-**Registry Status:** OPEN.  
+**Question State:** OPEN.  
+**Registry Status:** Registered.  
 **Scientific Status:** Scientifically Open.  
 **Canonical Registry:** `registry/foundational_questions.md`.
 
@@ -67,33 +76,28 @@ Was ist es, aus dem Raumzeit und Quantenmechanik gemeinsam emergieren?
 
 How can Integrity Nexus show relationships between repository containers and scientific domains without inflating claims or changing their status during transfer?
 
-**Registry Status:** OPEN.  
+**Question State:** OPEN.  
+**Registry Status:** Registered.  
 **Scientific Status:** NOT APPLICABLE as a direct scientific-object status; this is a governance question.  
-**Progress Classification:** PARTIALLY RESOLVED — CORRECTION REQUIRED.  
-**Completion Readiness:** NOT ESTABLISHED.
+**Progress Classification:** READY FOR COMPLETION AUDIT.  
+**Completion Readiness:** Authoritative value controlled only by `registry/repository_status.md`.
 
 ## Repository-Supported Progress
 
-The following canonical governance artifacts are synchronized at current HEAD:
-
-1. `shared/terminology_inventory.md`
-2. `shared/terminology_drift_matrix.md`
-3. `governance/claim_status_taxonomy.md`
-4. `governance/cross_repository_claim_boundary_matrix.md`
-5. `registry/open_questions.md`
-
-They establish controls for:
+The current canonical governance layer establishes:
 
 - repository-container versus scientific-domain separation,
 - exact preservation of canonical status axes,
+- Question State separate from Registry Status and Scientific Status,
 - separate Relation Class and Relation Target fields,
 - TIG/QIC anti-collapse boundaries,
 - SIR mathematical-to-physical transfer boundaries,
 - Cube-domain interfaces,
 - deferred SSC application projection,
-- and the distinction between open science and failed governance.
+- the distinction between open science and failed governance,
+- and `registry/repository_status.md` as the sole global synchronization authority.
 
-## Current Completion Criterion
+## Completion Criterion
 
 OQ-NEXUS-001 does not require every possible future interface to have a dedicated boundary file before closure.
 
@@ -102,19 +106,22 @@ It requires:
 - a canonical general boundary architecture,
 - explicit status-axis preservation,
 - explicit relation and transfer controls,
-- correct classification of missing or deferred bridges,
+- correct classification of Missing or deferred bridges,
 - and a rule requiring interface-specific boundary documentation when an actual new transfer or bridge is attempted.
 
-## Why the Question Remains Open
+## Remaining Closure Step
 
-The current blockers are limited to:
+The governance corrections represented in this local registry are complete for the current scope.
 
-- current-HEAD resynchronization of `registry/master_open_question_backlog.md`;
-- current-HEAD resynchronization of `registry/repository_status.md`;
-- correction of stale Cube entries in the master backlog where they affect dependency claims;
-- and a passing final Completion & Consistency Re-Audit.
+The question remains `OPEN` until:
 
-Scientifically open objects, missing bridges, and deferred SSC projection are not themselves OQ-NEXUS-001 blockers when their absence and transfer prohibitions are correctly represented.
+1. `registry/repository_status.md` records global Completion Readiness `READY FOR AUDIT`;
+2. an independent Completion & Consistency Audit passes;
+3. `registry/repository_status.md` records `AUDIT PASSED`;
+4. the accepted result is explicitly applied in both local and master registries;
+5. Question State is changed to `CLOSED`.
+
+Scientifically open objects, Missing bridges, and deferred SSC projection are not themselves blockers when their absence and transfer prohibitions are correctly represented.
 
 **Boundary:** A canonical boundary matrix does not create scientific evidence, proof, bridge implementation, or physical identity.
 
@@ -126,14 +133,13 @@ Scientifically open objects, missing bridges, and deferred SSC projection are no
 
 How can shared concepts such as integrity, boundary, admissibility, invariant, and bounded evolution remain useful without forcing identical technical definitions across the scientific-core TIG Research Ecosystem?
 
-**Registry Status:** OPEN.  
+**Question State:** OPEN.  
+**Registry Status:** Registered.  
 **Scientific Status:** NOT APPLICABLE as a direct scientific-object status; this is a terminology-governance question.  
-**Progress Classification:** PARTIALLY RESOLVED — CORRECTION REQUIRED.  
-**Completion Readiness:** NOT ESTABLISHED.
+**Progress Classification:** READY FOR COMPLETION AUDIT.  
+**Completion Readiness:** Authoritative value controlled only by `registry/repository_status.md`.
 
 ## Active Scientific-Core Scope
-
-The active terminology-completion scope is:
 
 1. Integrity_Nexus governance
 2. TIG-E research architecture
@@ -142,7 +148,7 @@ The active terminology-completion scope is:
 5. SIR mathematical recursion
 6. Cube research
 
-Repository container and scientific domain must remain separate.
+Repository container and scientific domain remain separate.
 
 Mandatory non-identities include:
 
@@ -157,55 +163,34 @@ shared term != identical technical definition
 
 ## SSC Scope Qualification
 
-The original wording of OQ-NEXUS-002 referred to SSC.
-
-For the current scientific-core completion sequence, SSC is classified as:
+SSC remains:
 
 ```text
 DEFERRED APPLICATION-PROJECTION SCOPE
 ```
 
-SSC remains relevant to the broader ecosystem question, but it is not authorized at this stage to define:
-
-- TIG terminology,
-- QIC terminology,
-- SIR terminology,
-- Cube terminology,
-- the common substrate,
-- `Rel_TIG`,
-- `DefectSpace`,
-- `B_TIG`,
-- or `I_QIC`.
+SSC is not authorized at this stage to define TIG, QIC, SIR, Cube, the common substrate, `Rel_TIG`, `DefectSpace`, `B_TIG`, or `I_QIC`.
 
 A later application-projection audit may test whether stabilized core terminology transfers safely into SSC.
 
-The deferred SSC state does not itself block OQ-031 terminology-governance completion when the deferral and transfer prohibition remain explicit.
+Deferred SSC status does not itself block terminology-governance completion when deferral and transfer prohibition are explicit.
 
 ## Repository-Supported Progress
 
-The current terminology-governance layer contains:
+The terminology-governance layer controls:
 
-- a corrected evidence inventory,
-- a synchronized terminology drift matrix,
-- a normalized claim-status taxonomy,
-- a synchronized cross-repository claim-boundary matrix,
-- and this synchronized local registry entry.
-
-The layer explicitly controls:
-
+- evidence inventory and terminology drift,
 - `bounded evolution`,
 - QIC/TIG domain separation,
 - named but undefined scientific objects,
 - state, transition, process, generator, Hamiltonian, readout, measurement, and observable terminology,
 - SIR mathematical terminology,
 - Cube state, scale, ontology, Planck manifestation, fractal organization, and transience/persistence,
-- canonical status axes,
-- Definition State,
-- Bridge State,
-- Relation Class,
-- Relation Target,
-- Allowed Transfer,
-- and Forbidden Transfer.
+- Claim Status, Scientific Status, Question State, Registry Status, Operational Status, Artifact Status, Maturity Status, Progress Classification, and Completion Readiness,
+- Definition State and Bridge State,
+- Relation Class and Relation Target,
+- Allowed Transfer and Forbidden Transfer,
+- and the single-authority global synchronization rule.
 
 ## OQ-031 Governance Completion Criterion
 
@@ -215,14 +200,12 @@ It requires every unresolved term, object, or interface to be:
 
 - explicitly identified,
 - assigned to the correct repository container and scientific domain,
-- given exact canonical status-axis values,
-- given its exact Definition State and Bridge State,
+- given exact applicable status-axis values,
+- given exact Definition State and Bridge State,
 - assigned a canonical Relation Class and separate Relation Target where applicable,
 - scoped correctly,
-- protected by Allowed Transfer and Forbidden Transfer controls,
+- protected by Allowed Transfer and Forbidden Transfer,
 - and prevented from silent status or domain upgrade.
-
-Therefore:
 
 ```text
 scientifically open object != incomplete terminology governance
@@ -230,25 +213,25 @@ missing bridge != incomplete terminology governance when absence is correctly co
 deferred scientific definition != terminology-governance failure when deferral is explicit
 ```
 
-## Why the Question Remains Open
+## Remaining Closure Step
 
-The current blockers are limited to:
+The governance corrections represented in this local registry are complete for the current scope.
 
-- current-HEAD resynchronization of `registry/master_open_question_backlog.md`;
-- correction of stale Cube backlog entries and dependencies;
-- current-HEAD resynchronization of `registry/repository_status.md`;
-- agreement of all seven artifacts on the OQ-031 completion criterion;
-- and a passing final Completion & Consistency Re-Audit.
+The question remains `OPEN` until:
 
-The following are not automatic completion blockers:
+1. global Completion Readiness is `READY FOR AUDIT`;
+2. an independent Completion & Consistency Audit passes;
+3. global Completion Readiness becomes `AUDIT PASSED`;
+4. the governing local and master registries explicitly apply the accepted result;
+5. Question State becomes `CLOSED`.
+
+The following are not automatic blockers:
 
 - scientifically undefined named objects,
 - explicitly Missing bridges,
 - `integrity field` as a deferred scientific definition,
 - deferred SSC projection,
-- or possible future interface-specific terminology additions.
-
-They become blockers only if their terminology, domain, status, definition, bridge, relation, scope, or transfer boundary is absent, contradictory, misleading, or silently upgraded.
+- or future interface-specific additions not triggered by an actual transfer.
 
 **Boundary:** Terminology governance records, types, separates, and constrains scientific language; it does not define or solve the scientific objects it records.
 
@@ -258,7 +241,10 @@ They become blockers only if their terminology, domain, status, definition, brid
 
 What is the shortest path for a reviewer to understand the research ecosystem without reading all repositories?
 
-**Registry Status:** OPEN.
+**Question State:** OPEN.  
+**Registry Status:** Registered.  
+**Scientific Status:** NOT APPLICABLE.  
+**Required Work:** Review and navigation design.
 
 ---
 
@@ -266,7 +252,10 @@ What is the shortest path for a reviewer to understand the research ecosystem wi
 
 How should repository maps, shared concepts, dependency graphs, terminology records, and claim-state structures be organized for LLM-based review and automated research-audit systems?
 
-**Registry Status:** OPEN.
+**Question State:** OPEN.  
+**Registry Status:** Registered.  
+**Scientific Status:** NOT APPLICABLE.  
+**Required Work:** Schema definition and validation.
 
 ---
 
@@ -274,43 +263,55 @@ How should repository maps, shared concepts, dependency graphs, terminology reco
 
 Should Integrity Nexus itself become citable as a research-governance artifact, or should it remain only a navigation layer?
 
-**Registry Status:** OPEN.
+**Question State:** OPEN.  
+**Registry Status:** Registered.  
+**Scientific Status:** NOT APPLICABLE.  
+**Required Work:** Governance and publication review.
 
 ---
 
-## Current Synchronization State
+## Global-State Authority Rule
 
-The following five controlled artifacts are synchronized at current HEAD:
+This file records question lifecycle and local registry content.
 
-1. `shared/terminology_inventory.md`
-2. `shared/terminology_drift_matrix.md`
-3. `governance/claim_status_taxonomy.md`
-4. `governance/cross_repository_claim_boundary_matrix.md`
-5. `registry/open_questions.md`
+It does not state:
 
-The remaining downstream artifacts are:
+- how many of the seven controlled artifacts are globally synchronized,
+- whether global Completion Readiness is `NOT ESTABLISHED`, `READY FOR AUDIT`, or `AUDIT PASSED`,
+- or whether the independent completion audit has passed.
 
-1. `registry/master_open_question_backlog.md`
-2. `registry/repository_status.md`
+Those statements are authoritative only in:
 
-Completion Readiness remains `NOT ESTABLISHED` until both are synchronized and the final Completion & Consistency Re-Audit passes.
+```text
+registry/repository_status.md
+```
 
 ---
 
-## Registry Maintenance Rule
+## Registry Maintenance and Closure Rule
 
-An open question may remain Registry Status `OPEN` while carrying a more precise Progress Classification.
+A registered question must use:
 
-Progress Classification must not be confused with Scientific Status or Completion Readiness.
+```text
+Question State: OPEN | CLOSED
+Registry Status: Registerable | Registered
+```
 
-A governance question may be closed only when:
+A generic `Status` field must not combine lifecycle, operational, scientific, maturity, or required-work semantics.
+
+`Required Work` is metadata, not a status axis.
+
+A governance question may be changed to Question State `CLOSED` only when:
 
 - its exact governance closure criteria are satisfied,
-- the relevant canonical artifacts are synchronized at current HEAD,
+- `registry/repository_status.md` records `AUDIT PASSED`,
+- the accepted audit result covers the exact question,
+- the local and master registries explicitly apply that result,
 - unresolved scientific objects remain correctly bounded rather than necessarily solved,
-- no known blocking inconsistency remains,
-- and a completion audit accepts closure.
+- and no known blocking governance inconsistency remains.
 
 Registry wording must never convert governance progress into scientific proof, bridge implementation, ontology, or theory completion.
 
-Any change to one of the four upstream governance artifacts invalidates this registry's synchronization claim until this file is explicitly reconciled against the new content SHA.
+Any change to one of the four upstream governance artifacts invalidates this registry's local reconciliation until explicitly updated against the new content SHAs.
+
+This registry must never supersede `registry/repository_status.md` as the global synchronization or Completion Readiness authority.
