@@ -1,11 +1,12 @@
-# MASTER OPEN QUESTION BACKLOG v1.0
+# MASTER OPEN QUESTION BACKLOG v1.1
 
 **Repository:** Integrity_Nexus  
 **Scope:** Complete TIG Research Ecosystem  
 **Status:** CANONICAL / LOCKED MODE / AUDIT-CORRECTED  
-**Source:** Master Research Consistency Auditor output, consolidated into canonical backlog form.  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `d835d2224113f8f09799db9ca97c8cc269d92cf8`; `shared/terminology_drift_matrix.md` content SHA `fc0b4c975960c30d6e8c68964ac6338510ae578d`; `governance/claim_status_taxonomy.md` content SHA `ae1319c27d755d8cf301e21510eea489102ece30`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `be38195af6ebd0832b71469fa7b9f548f0acf7c7`; `registry/open_questions.md` content SHA `11a4c1e2220c0833ef0b44297b8a320628b5bbc1`  
+**Source:** Master Research Consistency Auditor output, consolidated into canonical backlog form  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `74364a3c4f3575363ce3305ea0d68203f1d0e75f`; `shared/terminology_drift_matrix.md` content SHA `77f7e0c37336a262f51c765ae0f3ab314ed3f203`; `governance/claim_status_taxonomy.md` content SHA `ebc22076da4221a80dcdfbd1f5388f49a1044a2a`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `af1123666144136dac05c97ddd9b42f897ad26ae`; `registry/open_questions.md` content SHA `29765a4b5098b5699b5c51e4acfe8b45864b9245`  
 **Position in Control Chain:** terminology inventory → drift matrix → claim-status taxonomy → claim-boundary matrix → local registry → this master backlog → repository-status index  
+**Global Synchronization and Completion-Readiness Authority:** `registry/repository_status.md`  
 **Last Updated:** 2026-07-12
 
 ---
@@ -18,73 +19,59 @@ It does **not** solve open scientific questions.
 It does **not** create new theory.
 It does **not** promote candidates to final structures.
 It does **not** promote compatibility to derivation.
-It does **not** promote operational closure to scientific closure.
-It does **not** treat registry status as truth.
+It does **not** promote operational closure to scientific or question closure.
+It does **not** treat registry admission as truth.
 It does **not** treat scientifically open objects as failed governance when their boundaries are explicit.
+It does **not** report the global synchronization count or authoritatively assign global Completion Readiness.
 
-Every listed item is a research-control object unless and until its exact closure criteria are satisfied by explicit repository-supported definition, derivation, proof, validation, governance completion, or accepted audit evidence.
+Every entry must use independent canonical axes rather than a generic mixed-semantics `Status` field.
 
-For OQ-030 and OQ-031, the following axes remain separate:
+Canonical question controls are:
 
 ```text
-Registry Status
-Scientific Status
-Progress Classification
-Completion Readiness
+Question State: OPEN | CLOSED
+Registry Status: Registerable | Registered
+Scientific Status: Scientifically Open | Resolved | NOT APPLICABLE
+Operational Status: Pending | Addressed | Blocked | Operationally Closed
 ```
+
+`Required Work` is descriptive metadata, not a status axis.
 
 ---
 
-## Final Audit Conclusion
+## Current Scientific Audit Conclusion
 
-The TIG ecosystem is governance-mature enough to prevent claim inflation, but scientifically blocked at the independent substrate / bridge-definition layer.
+The TIG ecosystem is governance-mature enough to prevent claim inflation, but scientifically blocked at the independent substrate and bridge-definition layer.
 
 The next canonical scientific move is **not** a new field equation.
 
-The next canonical scientific move is substrate and bridge closure:
+The next canonical scientific work remains:
 
-- `Rel_TIG / DefectSpace`
-- `B_TIG` non-circular derivation
-- `I_QIC` definition
-- QIC readout semantics
-- `Pres_QM`-compatible evolution
+- `Rel_TIG / DefectSpace` definition,
+- `B_TIG` non-circular derivation,
+- `I_QIC` definition,
+- QIC readout semantics,
+- and `Pres_QM`-compatible evolution.
 
-This scientific conclusion is distinct from OQ-031 terminology-governance completion.
+This scientific conclusion is distinct from OQ-030 and OQ-031 governance completion.
 
 ---
 
 ## Missing Interfaces and Bridge Structures
 
-The audit identifies the following missing bridge structures:
+The registered missing interfaces are:
 
-1. **Common substrate bridge**
-   - Between spacetime emergence and QM emergence.
+1. common substrate bridge between spacetime emergence and QM emergence;
+2. `Rel_TIG / DefectSpace` to `B_TIG` bridge;
+3. TIG integrity to QIC integrity bridge;
+4. `Σ_QIC` to physical measurement bridge;
+5. `Σ_QIC` to Hilbert-space bridge;
+6. QIC transition relation to generator bridge;
+7. Cube state space to `Σ_QIC` bridge;
+8. toy sequence to SIR/full-manifold bridge;
+9. TIG spherical realization to covariant-theory bridge.
 
-2. **Rel_TIG / DefectSpace to B_TIG bridge**
-   - Needed for non-circular TIG core functional derivation.
-
-3. **B_TIG / TIG integrity to QIC integrity bridge**
-   - Needed before QIC integrity mapping claims.
-
-4. **Σ_QIC to physical measurement bridge**
-   - Needed before `Read_QIC` can be physical measurement.
-
-5. **Σ_QIC to Hilbert space bridge**
-   - Hilbert space remains open and not selected as derived.
-
-6. **QIC transition relation to generator bridge**
-   - `Trans_QIC` is selected only as minimal transition structure; Hamiltonian/generator remains open.
-
-7. **Cube state space to Σ_QIC bridge**
-   - Explicitly unresolved in the next-generation blocker queue and terminology controls.
-
-8. **Toy sequence to SIR/full manifold bridge**
-   - Toy models are not yet bridged to general SIR and full manifold models.
-
-9. **TIG spherical realization to covariant theory bridge**
-   - Quantum_Integrity_Core states that no fully covariant extension is part of TIG Field Equation 1.0.
-
-A missing bridge is not an OQ-031 terminology-governance failure when the absence, domain, type, scope, and transfer prohibition are explicitly controlled.
+A Missing bridge is not an OQ-031 terminology-governance failure when absence, domain, type, scope, and transfer prohibition are explicit.
 
 ---
 
@@ -92,91 +79,40 @@ A missing bridge is not an OQ-031 terminology-governance failure when the absenc
 
 ### Path A — Common-emergence theory
 
-Blocked by:
-
-- no independent common substrate
-- no `Rel_TIG / DefectSpace`
-- no non-circular bridge to both spacetime and QM
+Blocked by no independent common substrate, no `Rel_TIG / DefectSpace`, and no non-circular bridge to both spacetime and QM.
 
 ### Path B — TIG core functional derivation
 
-Blocked by:
-
-- `Rel_TIG / DefectSpace` missing
-- `B_TIG` derivation missing
-- `IntegrityDefect_TIG` dependency not fully substrate-grounded
+Blocked by missing `Rel_TIG / DefectSpace`, missing `B_TIG` derivation, and incomplete substrate grounding.
 
 ### Path C — QIC-to-QM derivation
 
-Blocked by:
-
-- `I_QIC` missing
-- readout semantics missing
-- Born rule not derived
-- Hilbert space not derived
-- operator algebra not reconstructed
-- generator/Hamiltonian not defined
+Blocked by missing `I_QIC`, readout semantics, Born derivation, Hilbert reconstruction, operator algebra, and generator/Hamiltonian.
 
 ### Path D — Dynamics and field equation
 
-Blocked by:
-
-- no non-trivial `Pres_QM` evolution candidate
-- no candidate passing `Gate_E`
-- no `Registerable_E` candidate
-- no generator compatibility
-- no field-equation candidate intake
+Blocked by no non-trivial `Pres_QM` evolution candidate, no `Gate_E` passage, no `Registerable_E` candidate, no generator compatibility, and no controlled field-equation intake.
 
 ### Path E — Complete TIG gravitational theory
 
-Blocked by:
-
-- independent `Iμν`
-- dynamical closure
-- variational formulation
-- covariant extension
-- energy conditions
-- general perturbation sectors
-- observational predictions
+Blocked by independent `Iμν`, dynamical closure, variational formulation, covariance, energy-condition classification, general perturbations, and observational predictions.
 
 ### Path F — Cube ontology and physical integration
 
-The Cube inventory, maturity audit, and scale/Planck-manifestation consistency audit now exist as canonical control artifacts.
+The Cube inventory, maturity audit, and scale/Planck-manifestation consistency audit exist as canonical governance artifacts.
 
-The scientific path remains blocked by:
-
-- no completed Cube ontology,
-- no fully derived Cube scale law,
-- no completed Cube state and transition law,
-- no formal Cube-to-QIC bridge,
-- no derived fractal law,
-- and no established Cube transience, persistence, or metastability criterion.
-
-Existing governance and audit artifacts do not resolve these scientific structures.
+Cube science remains open because there is no completed ontology, fully derived scale law, completed state/transition law, formal Cube-to-QIC bridge, derived fractal law, or established transience/persistence criterion.
 
 ---
 
 ## Governance Findings
 
-### Governance Finding 1 — Maturity model is correctly conservative
-
-`Integrity_Nexus` defines maturity levels from raw notes to publication-ready artifacts and explicitly states that maturity claims must remain conservative.
-
-### Governance Finding 2 — Cross-repository terminology requires active protection
-
-`Integrity_Nexus` allows shared concepts but prevents domain collapse. This is essential because “integrity,” “admissibility,” “boundary,” “invariant,” and “bounded evolution” cannot automatically mean the same technical object in TIG, SIR, QIC, SSC, or Cube research.
-
-### Governance Finding 3 — Registry status is not truth
-
-The evolution registry explicitly states that registration is not canonization and audit passage is not physical selection.
-
-### Governance Finding 4 — Next-generation queue is necessary
-
-The old gate queue is empty, but the next-generation blocker queue remains necessary because unresolved scientific blocker families remain.
-
-### Governance Finding 5 — Open science and terminology governance are separable
-
-Scientifically open objects and missing bridges may coexist with completed terminology governance when they are explicitly typed, scoped, assigned to the correct scientific domain, and protected from silent transfer or status upgrade.
+1. Maturity classifications remain conservative and do not upgrade science.
+2. Shared terms require active cross-domain drift protection.
+3. Registry Status `Registered` is admission metadata, not truth or closure.
+4. Question State is separate from Registry Status, Scientific Status, and Operational Status.
+5. Scientifically open objects and Missing bridges may coexist with completed terminology governance.
+6. Global synchronization and Completion Readiness are controlled only by `registry/repository_status.md`.
 
 ---
 
@@ -184,7 +120,11 @@ Scientifically open objects and missing bridges may coexist with completed termi
 
 ## OQ-001 — Common Emergence Substrate
 
-**Status:** OPEN
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Pending  
+**Required Work:** Definition and candidate audit
 
 **Description:** Identify the independent underlying structure from which both spacetime and quantum mechanics may emerge.
 
@@ -194,389 +134,372 @@ Scientifically open objects and missing bridges may coexist with completed termi
 
 **Dependencies:** None upstream inside the current ecosystem.
 
-**Blocked By:** None.
+**Unlocks:** `Rel_TIG`, `DefectSpace`, `B_TIG`, QIC integrity structure, and field-equation closure.
 
-**Unlocks:** Rel_TIG, DefectSpace, B_TIG, QIC integrity structure, field-equation closure.
-
-**Recommended Next Action:** Define a substrate audit gate that formalizes candidate requirements without naming an answer.
+**Recommended Next Action:** Define a substrate audit gate without naming an answer.
 
 ---
 
 ## OQ-002 — Rel_TIG / DefectSpace Independent Definition
 
-**Status:** BLOCKED
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Definition State:** Named but Undefined  
+**Required Work:** Definition
 
-**Description:** Define an independent relation or defect-space substrate before deriving B_TIG, geometry, Hilbert-like structures, or gravity.
+**Description:** Define an independent relation or defect-space substrate before deriving `B_TIG`, geometry, Hilbert-like structures, or gravity.
 
-**Repository Sources:** TIG-E.
-
-**Evidence:** The next-generation queue states that Rel_TIG and DefectSpace are not yet defined as independent substrates.
+**Evidence:** The next-generation queue states that `Rel_TIG` and `DefectSpace` are not yet independently defined.
 
 **Dependencies:** OQ-001.
 
-**Blocked By:** Common emergence substrate not yet defined.
+**Blocked By:** Common emergence substrate not defined.
 
-**Unlocks:** B_TIG derivation, IntegrityDefect_TIG grounding, geometry generation, Cube/QIC/TIG bridges.
-
-**Recommended Next Action:** Create and execute GATE-REL-TIG-001.
+**Recommended Next Action:** Create and execute `GATE-REL-TIG-001`.
 
 ---
 
 ## OQ-003 — B_TIG Non-Circular Derivation
 
-**Status:** NEEDS DERIVATION
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Definition State:** Declared but Not Fully Defined  
+**Required Work:** Derivation
 
-**Description:** Derive B_TIG from independent integrity relations without using B_TIG itself as hidden premise.
+**Description:** Derive `B_TIG` from independent integrity relations without using `B_TIG` as a hidden premise.
 
-**Repository Sources:** TIG-E.
-
-**Evidence:** B_TIG remains a declared scalar state-bound functional until derived from independent relations.
+**Evidence:** `B_TIG` remains a declared scalar state-bound functional until independently derived.
 
 **Dependencies:** OQ-002.
 
-**Blocked By:** Rel_TIG / DefectSpace.
+**Blocked By:** `Rel_TIG / DefectSpace`.
 
-**Unlocks:** TIG core functional closure, QIC bridge, Cube bridge, field-equation route.
-
-**Recommended Next Action:** Register GATE-BTIG-DERIVE-001.
+**Recommended Next Action:** Register `GATE-BTIG-DERIVE-001`.
 
 ---
 
 ## OQ-004 — I_QIC Integrity Functional / Typed Codomain
 
-**Status:** NEEDS DEFINITION
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Definition State:** Named but Undefined  
+**Required Work:** Definition
 
-**Description:** Define `I_QIC : Σ_QIC -> R` or equivalent typed integrity codomain.
+**Description:** Define `I_QIC : Σ_QIC -> R` or an equivalent typed integrity codomain.
 
-**Repository Sources:** TIG-E.
-
-**Evidence:** QIC audits identify the need for an integrity quantity or typed integrity-bound codomain; none is defined.
+**Evidence:** QIC audits identify the need for a typed integrity quantity; none is established.
 
 **Dependencies:** OQ-001, OQ-003.
 
-**Blocked By:** Absence of independent integrity substrate and QIC integrity codomain.
+**Blocked By:** Missing independent integrity substrate and QIC codomain.
 
-**Unlocks:** QIC expectation/integrity mapping, QIC-to-TIG bridge, Cube-to-QIC bridge.
-
-**Recommended Next Action:** Register GATE-I-QIC-001.
+**Recommended Next Action:** Register `GATE-I-QIC-001`.
 
 ---
 
 ## OQ-005 — QIC State-Space Strengthening
 
-**Status:** PARTIAL
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Claim Status:** Partial  
+**Operational Status:** Blocked  
+**Definition State:** Partially Defined  
+**Required Work:** Definition and comparative audit
 
-**Description:** Determine whether QIC remains at abstract `Σ_QIC`, or advances to register, convex, Hilbert, category/process, or integrity-bound state space.
+**Description:** Determine whether QIC remains at abstract `Σ_QIC` or advances to register, convex, Hilbert, category/process, or integrity-bound state space.
 
-**Repository Sources:** TIG-E.
-
-**Evidence:** Current selected minimum is only abstract auditable state set `Σ_QIC`; stronger structures are candidates, not selected as final.
+**Evidence:** Current selected minimum is an abstract auditable set; stronger structures remain candidates.
 
 **Dependencies:** OQ-004.
 
-**Blocked By:** Missing I_QIC, measurement semantics, probability interpretation, transition/generator structure.
+**Blocked By:** Missing `I_QIC`, measurement semantics, probability interpretation, and generator structure.
 
-**Unlocks:** QIC dynamics, readout semantics, Hilbert reconstruction.
-
-**Recommended Next Action:** Keep `Σ_QIC` as minimum; create separate gates for each stronger candidate.
+**Recommended Next Action:** Keep `Σ_QIC` as minimum and gate stronger candidates separately.
 
 ---
 
 ## OQ-006 — QIC Readout Semantics / Measurement Boundary
 
-**Status:** NEEDS DEFINITION
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Definition State:** Partially Defined  
+**Required Work:** Definition
 
-**Description:** Define whether `Read_QIC` is only formal audit output, classical register extraction, physical measurement, or measurement-transition structure.
+**Description:** Determine whether `Read_QIC` is formal audit output, classical register extraction, physical measurement, or measurement-transition structure.
 
-**Repository Sources:** TIG-E.
-
-**Evidence:** `Read_QIC` is currently formal audit output, not physical measurement theory.
+**Evidence:** `Read_QIC` is currently formal output, not physical measurement theory.
 
 **Dependencies:** OQ-005.
 
-**Blocked By:** Missing QIC measurement-transition criteria and physical/classical interpretation.
+**Blocked By:** Missing measurement-transition criteria and physical/classical interpretation.
 
-**Unlocks:** E_Out, observable semantics, measurement interface, physical QIC claims.
-
-**Recommended Next Action:** Register GATE-QIC-READOUT-SEM-001.
+**Recommended Next Action:** Register `GATE-QIC-READOUT-SEM-001`.
 
 ---
 
 ## OQ-007 — Hamiltonian Foundation / Evolution Generator
 
-**Status:** NEEDS DERIVATION
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Definition State:** Undefined  
+**Required Work:** Definition and derivation
 
-**Description:** Define whether the ecosystem admits a Hamiltonian, generalized generator, transition law, composition law, or physical time-evolution law.
-
-**Repository Sources:** TIG-E.
-
-**Evidence:** No final Hamiltonian, generalized generator, evolution parameter, composition law, or physical time-evolution law is derived.
+**Description:** Determine whether the ecosystem admits a Hamiltonian, generalized generator, transition law, composition law, or physical time-evolution law.
 
 **Dependencies:** OQ-005, OQ-006.
 
-**Blocked By:** Missing state semantics, readout semantics, I_QIC, and process composition.
+**Blocked By:** Missing state semantics, readout semantics, `I_QIC`, and process composition.
 
-**Unlocks:** E_QIC, Pres_QM, generator compatibility, Hamiltonian-compatible candidates.
-
-**Recommended Next Action:** Normalize Hamiltonian/generator blocker into one gate.
+**Recommended Next Action:** Normalize the Hamiltonian/generator blocker into one gate.
 
 ---
 
 ## OQ-008 — E_QIC Composition / Process Dynamics
 
-**Status:** NEEDS DEFINITION
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Definition State:** Partially Defined  
+**Required Work:** Definition
 
-**Description:** Define composition, identity, associativity, closure, evolution parameter, and admissibility for E_QIC.
+**Description:** Define composition, identity, associativity, closure, evolution parameter, and admissibility for `E_QIC`.
 
-**Repository Sources:** TIG-E.
-
-**Evidence:** `E_QIC : Σ_QIC -> P(Σ_QIC)` is only a candidate transition operator; its process laws are not defined.
+**Evidence:** `E_QIC : Σ_QIC -> P(Σ_QIC)` is only a candidate transition structure.
 
 **Dependencies:** OQ-004, OQ-007.
 
 **Blocked By:** Missing generator and integrity codomain.
 
-**Unlocks:** E_Out, dynamics audit, preservation gates.
-
-**Recommended Next Action:** Register GATE-EQIC-COMP-001.
+**Recommended Next Action:** Register `GATE-EQIC-COMP-001`.
 
 ---
 
 ## OQ-009 — E_Out Readout-Equivalence Preservation
 
-**Status:** BLOCKED
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Required Work:** Proof or counterexample
 
 **Description:** Determine whether outcome dynamics can be induced from state dynamics while preserving readout equivalence.
-
-**Repository Sources:** TIG-E.
-
-**Evidence:** E_Out can be induced from E only if `Read(q1)=Read(q2)` implies `Read(E(q1))=Read(E(q2))`; this is not established.
 
 **Dependencies:** OQ-006, OQ-008.
 
 **Blocked By:** Readout semantics and process dynamics.
 
-**Unlocks:** Observable outcome dynamics, physical readout transition claims.
-
-**Recommended Next Action:** Register GATE-EOUT-PRES-001.
+**Recommended Next Action:** Register `GATE-EOUT-PRES-001`.
 
 ---
 
 ## OQ-010 — Explicit Born-Compatible Representation Candidate
 
-**Status:** OPEN
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Pending  
+**Claim Status:** Candidate  
+**Required Work:** Candidate construction and audit
 
-**Description:** Construct an explicit representation R such that `Gate_PRC(R)` holds and `BornCompatible(R)` can be audited without taking Born as an axiom.
+**Description:** Construct an explicit representation `R` such that `Gate_PRC(R)` holds and `BornCompatible(R)` can be audited without taking Born as an axiom.
 
-**Repository Sources:** TIG-E.
+**Dependencies:** QIC state, readout, and probabilistic-interface layers.
 
-**Evidence:** This is explicitly listed as OQ-EVO-001; no Born-rule derivation is claimed.
-
-**Dependencies:** QIC state/readout/probabilistic interface layers.
-
-**Blocked By:** Missing explicit probabilistic representation.
-
-**Unlocks:** Born audit, probability semantics, Hilbert reconstruction.
-
-**Recommended Next Action:** Create a concrete R candidate and run `Gate_PRC(R)`.
+**Recommended Next Action:** Create a concrete `R` candidate and run `Gate_PRC(R)`.
 
 ---
 
 ## OQ-011 — Born Rule Derivation
 
-**Status:** NEEDS DERIVATION
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Required Work:** Derivation or non-derivability result
 
 **Description:** Derive or reject derivability of Born-rule structure without importing it as an axiom.
 
-**Repository Sources:** TIG-E.
-
-**Evidence:** The PRC gate and Born audit both state that they do not derive the Born rule.
-
 **Dependencies:** OQ-010.
 
-**Blocked By:** No explicit R, no probability substrate, no Hilbert/effect structure.
+**Blocked By:** No explicit `R`, probability substrate, or Hilbert/effect structure.
 
-**Unlocks:** Born-compatible QM bridge, physical probability claims.
-
-**Recommended Next Action:** Keep Born as downstream property until a candidate passes PRC and audit.
+**Recommended Next Action:** Keep Born downstream until a candidate passes PRC and audit.
 
 ---
 
 ## OQ-012 — Hilbert-Space Reconstruction Boundary
 
-**Status:** OPEN
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Required Work:** Assumption-boundary definition
 
-**Description:** Determine under which additional assumptions the crystallized QM-compatible structure can be represented in Hilbert-space-like form.
-
-**Repository Sources:** TIG-E.
-
-**Evidence:** This is explicitly OQ-EVO-002; no Hilbert-space necessity is established.
+**Description:** Determine under which additional assumptions the QM-compatible structure admits a Hilbert-space representation.
 
 **Dependencies:** OQ-010, OQ-011.
 
-**Blocked By:** Probability/effect structure, Born status, operator algebra.
+**Blocked By:** Probability/effect structure, Born status, and operator algebra.
 
-**Unlocks:** Hamiltonian, operator algebra, standard QM embedding.
-
-**Recommended Next Action:** Create assumption boundary file for Hilbert reconstruction.
+**Recommended Next Action:** Create a Hilbert-reconstruction assumption boundary.
 
 ---
 
 ## OQ-013 — Operator Algebra Reconstruction
 
-**Status:** OPEN
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Required Work:** Reconstruction
 
 **Description:** Reconstruct an observable/operator algebra without forcing incompatible contexts into a global classical distribution.
-
-**Repository Sources:** TIG-E.
-
-**Evidence:** This is explicitly OQ-EVO-003; no operator algebra is established.
 
 **Dependencies:** OQ-010, OQ-012.
 
 **Blocked By:** Context-compatible probabilistic representation and measurement interface.
 
-**Unlocks:** Hamiltonian/generator formalism, QM representation layer.
-
-**Recommended Next Action:** Define operator reconstruction assumptions and failure modes.
+**Recommended Next Action:** Define reconstruction assumptions and failure modes.
 
 ---
 
 ## OQ-014 — Existence of Pres_QM-Preserving Evolution
 
-**Status:** OPEN
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Claim Status:** Candidate  
+**Required Work:** Candidate construction
 
-**Description:** Determine whether a non-trivial evolution candidate E exists such that `Pres_QM(E;O_i,O_j)` holds.
-
-**Repository Sources:** TIG-E.
-
-**Evidence:** This is explicitly OQ-EVO-004; no dynamics or Hamiltonian is established.
+**Description:** Determine whether a non-trivial evolution candidate `E` exists such that `Pres_QM(E;O_i,O_j)` holds.
 
 **Dependencies:** OQ-007, OQ-008, OQ-010.
 
 **Blocked By:** No non-trivial evolution candidate.
 
-**Unlocks:** Gate_E, evolution registry, generator compatibility.
-
-**Recommended Next Action:** Construct first minimal E0 or E1 candidate.
+**Recommended Next Action:** Construct a minimal `E0` or `E1` candidate.
 
 ---
 
 ## OQ-015 — Generator Compatibility
 
-**Status:** OPEN
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Required Work:** Compatibility audit
 
-**Description:** Determine whether a Pres_QM-preserving evolution candidate can admit a declared generator without violating the QM-compatible admissibility chain.
-
-**Repository Sources:** TIG-E.
-
-**Evidence:** This is explicitly OQ-EVO-005; no generator, Hamiltonian, or exponential flow is assumed.
+**Description:** Determine whether a `Pres_QM`-preserving evolution can admit a declared generator without violating admissibility.
 
 **Dependencies:** OQ-014.
 
 **Blocked By:** No registered evolution candidate.
 
-**Unlocks:** Hamiltonian-compatible candidates, field-equation candidate evaluation.
-
-**Recommended Next Action:** Wait for E candidate, then assign E3 audit class if generator is declared.
+**Recommended Next Action:** Audit generator compatibility only after an `E` candidate exists.
 
 ---
 
 ## OQ-016 — Field-Equation Draft Intake After Gate_E
 
-**Status:** OPEN
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Required Work:** Protocol definition
 
-**Description:** Define how field-equation-like drafts remain non-canonical input until tested against Registerable_E, Gate_E, Pres_QM, and FRQ-001.
-
-**Repository Sources:** TIG-E.
-
-**Evidence:** This is explicitly OQ-EVO-006; no field-equation candidate is registered or canonized.
+**Description:** Define how field-equation-like drafts remain Non-Canonical Input until tested against `Registerable_E`, `Gate_E`, `Pres_QM`, and FRQ-001.
 
 **Dependencies:** OQ-014, OQ-015.
 
-**Blocked By:** No Gate_E-passing candidate.
+**Blocked By:** No `Gate_E`-passing candidate.
 
-**Unlocks:** Formal field-equation candidate route.
-
-**Recommended Next Action:** Create field-equation draft intake protocol.
+**Recommended Next Action:** Create a field-equation draft intake protocol.
 
 ---
 
 ## OQ-017 — Independent Integrity Tensor Definition
 
-**Status:** NEEDS DEFINITION
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Definition State:** Partially Defined  
+**Required Work:** Independent definition
 
 **Description:** Define `Iμν` independently of the current effective mass realization.
 
 **Repository Sources:** Quantum_Integrity_Core.
 
-**Evidence:** Quantum_Integrity_Core asks whether `Iμν` can be defined independently of the effective mass realization; currently it is realized through a difference involving `Gμν[g,m(r)]` and `Gμν[g,M]`.
-
 **Dependencies:** OQ-002, OQ-003, OQ-016.
 
-**Blocked By:** Substrate, B_TIG, and field-equation intake.
+**Blocked By:** Substrate, `B_TIG`, and field-equation intake.
 
-**Unlocks:** TIG tensor theory, covariant extension, dynamical closure.
-
-**Recommended Next Action:** Define tensor independence criteria before attempting new tensor formula.
+**Recommended Next Action:** Define tensor-independence criteria before proposing a new formula.
 
 ---
 
 ## OQ-018 — TIG Dynamical Closure
 
-**Status:** NEEDS DERIVATION
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Required Work:** Derivation
 
 **Description:** Determine whether TIG defines a closed dynamical system with internally specified degrees of freedom.
-
-**Repository Sources:** Quantum_Integrity_Core.
-
-**Evidence:** Dynamical closure is an open active program.
 
 **Dependencies:** OQ-017.
 
 **Blocked By:** Independent tensor definition and evolution/generator structure.
 
-**Unlocks:** Complete gravitational field equation status.
-
-**Recommended Next Action:** Register degrees-of-freedom and closure condition audit.
+**Recommended Next Action:** Register degrees-of-freedom and closure-condition audit.
 
 ---
 
 ## OQ-019 — Variational Formulation
 
-**Status:** NEEDS DERIVATION
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Required Work:** Derivation
 
 **Description:** Determine whether an action principle exists whose variation generates `Gμν = Iμν[g,r_c]`.
-
-**Repository Sources:** Quantum_Integrity_Core.
-
-**Evidence:** Variational formulation is open.
 
 **Dependencies:** OQ-017, OQ-018.
 
 **Blocked By:** Tensor independence and dynamical closure.
 
-**Unlocks:** Conservation structure, covariant dynamics, publication-level field theory.
-
-**Recommended Next Action:** Do not attempt action derivation until independent tensor status is defined.
+**Recommended Next Action:** Do not attempt action derivation before independent tensor status is defined.
 
 ---
 
 ## OQ-020 — Covariant Extension
 
-**Status:** NEEDS DERIVATION
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Required Work:** Derivation
 
 **Description:** Extend the current static spherical realization to a fully covariant framework.
 
-**Repository Sources:** Quantum_Integrity_Core.
-
-**Evidence:** Quantum_Integrity_Core states that no fully covariant extension is currently part of TIG Field Equation 1.0.
-
 **Dependencies:** OQ-017, OQ-018.
 
-**Blocked By:** Static spherical limitation.
-
-**Unlocks:** General gravitational theory route.
+**Blocked By:** Static spherical limitation and incomplete dynamical closure.
 
 **Recommended Next Action:** Define covariance requirements and forbidden shortcuts.
 
@@ -584,39 +507,33 @@ Scientifically open objects and missing bridges may coexist with completed termi
 
 ## OQ-021 — Energy Condition Classification
 
-**Status:** OPEN
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Pending  
+**Maturity Status:** Preliminary  
+**Required Work:** Validation and classification
 
 **Description:** Classify null, weak, strong, and dominant energy conditions for the current effective stress structure.
 
-**Repository Sources:** Quantum_Integrity_Core.
-
-**Evidence:** Energy condition classification is an open program.
-
 **Dependencies:** Current spherical realization.
 
-**Blocked By:** Effective stress tensor classification remains Preliminary.
-
-**Unlocks:** Physical interpretation of effective source structure.
-
-**Recommended Next Action:** Perform scoped energy-condition audit for the canonical metric sector.
+**Recommended Next Action:** Perform a scoped energy-condition audit.
 
 ---
 
 ## OQ-022 — General Perturbation Stability
 
-**Status:** PARTIAL
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Addressed  
+**Claim Status:** Partial  
+**Required Work:** Extended validation
 
 **Description:** Extend stability analysis beyond currently analyzed perturbation sectors.
 
-**Repository Sources:** Quantum_Integrity_Core.
-
-**Evidence:** Structural stability is validated only for the analyzed perturbation sector; broader perturbation program remains open.
-
-**Dependencies:** Current spherical realization.
-
-**Blocked By:** Missing general perturbation sector definitions.
-
-**Unlocks:** Robustness claims, observational modeling.
+**Evidence:** Structural stability is supported only for analyzed sectors.
 
 **Recommended Next Action:** Define perturbation classes and sector boundaries.
 
@@ -624,147 +541,127 @@ Scientifically open objects and missing bridges may coexist with completed termi
 
 ## OQ-023 — Observational Prediction Program
 
-**Status:** OPEN
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Required Work:** Empirical-program construction
 
 **Description:** Construct falsifiable signatures distinguishing TIG from GR.
 
-**Repository Sources:** Quantum_Integrity_Core.
-
-**Evidence:** Observational predictions are open and include black-hole shadows, photon-sphere shifts, lensing, near-critical horizon transitions, and gravitational-wave signatures.
-
 **Dependencies:** OQ-021, OQ-022.
 
-**Blocked By:** Energy conditions, perturbations, covariant extension.
+**Blocked By:** Energy conditions, perturbations, and covariant extension.
 
-**Unlocks:** External physics review and empirical program.
-
-**Recommended Next Action:** Keep model-dependent; do not escalate to empirical validation.
+**Recommended Next Action:** Keep predictions explicitly model-dependent.
 
 ---
 
 ## OQ-024 — Toy Sequence to SIR / Full Manifold Bridge
 
-**Status:** OPEN
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Bridge State:** Missing  
+**Required Work:** Bridge construction
 
-**Description:** Bridge toy models to general SIR and full manifold models.
-
-**Repository Sources:** TIG-E, SIR.
-
-**Evidence:** The blocker queue states that Toy Models A/B/C, E1 minimal tests, E1 source construction, and nonuniform pushforward tests are not bridged to general SIR and full manifold models.
+**Description:** Bridge toy models to general SIR and full-manifold models.
 
 **Dependencies:** SIR formalization and TIG geometry route.
 
-**Blocked By:** Missing bridge definitions.
-
-**Unlocks:** Generalization beyond toy models.
-
-**Recommended Next Action:** Create GATE-TOY-GEN-001.
+**Recommended Next Action:** Create `GATE-TOY-GEN-001`.
 
 ---
 
 ## OQ-025 — Cube Research Block Inventory
 
-**Question Status:** RESOLVED
+**Question State:** CLOSED  
+**Registry Status:** Registered  
+**Scientific Status:** NOT APPLICABLE; this was a governance inventory task  
+**Operational Status:** Operationally Closed  
+**Artifact Status:** Canonical Artifact
 
 **Description:** Create a canonical inventory mapping Cube files, statuses, maturity, claims, blockers, and dependencies.
 
-**Repository Sources:** TIG-E.
+**Accepted Evidence:** `TIG-E/registry/cube_research_block_inventory.md`.
 
-**Accepted Evidence:** `TIG-E/registry/cube_research_block_inventory.md` exists as the canonical Cube research-block inventory and is referenced by the corrected terminology-governance layer.
-
-**Dependencies:** None, governance-level.
-
-**Resolution Boundary:** Resolution applies only to the inventory task. It does not resolve Cube ontology, Cube scale, Cube dynamics, fractal organization, transience, or Cube-to-QIC integration.
-
-**Unlocks Achieved:** Cube maturity audit, Cube scale consistency audit, controlled terminology coverage, and bridge-blocker registration.
-
-**Recommended Next Action:** Maintain the inventory when Cube files, statuses, dependencies, or blockers change.
+**Closure Boundary:** Closure applies only to the inventory task. It does not resolve Cube ontology, scale, dynamics, fractal organization, transience, or Cube-to-QIC integration.
 
 ---
 
 ## OQ-026 — Cube Claim Boundary and Maturity Audit
 
-**Question Status:** RESOLVED
+**Question State:** CLOSED  
+**Registry Status:** Registered  
+**Scientific Status:** NOT APPLICABLE; this was a governance audit task  
+**Operational Status:** Operationally Closed  
+**Artifact Status:** Canonical Artifact
 
-**Description:** Audit Cube files so hypotheses, Working Assumptions, audit results, and derived ontology are not conflated.
+**Description:** Audit Cube files so hypotheses, Working Assumptions, audit results, and ontology are not conflated.
 
-**Repository Sources:** TIG-E.
-
-**Accepted Evidence:** `TIG-E/docs/foundations/cube_claim_boundary_maturity_audit.md` provides the unified claim-boundary and maturity audit and is used by the terminology inventory, drift matrix, boundary matrix, and repository-status architecture.
+**Accepted Evidence:** `TIG-E/docs/foundations/cube_claim_boundary_maturity_audit.md`.
 
 **Dependencies:** OQ-025 — satisfied.
 
-**Resolution Boundary:** Resolution applies to the governance audit. It does not establish Cube ontology, validate Cube physics, or upgrade local Cube claims.
-
-**Unlocks Achieved:** Controlled Cube terminology, maturity-aware transfer boundaries, and safe continuation of Cube research.
-
-**Recommended Next Action:** Re-audit only when Cube claim classes or source artifacts materially change.
+**Closure Boundary:** Does not establish Cube ontology, validate Cube physics, or upgrade local Cube claims.
 
 ---
 
 ## OQ-027 — Cube Scale / Planck Manifestation Consistency
 
-**Question Status:** RESOLVED
+**Question State:** CLOSED  
+**Registry Status:** Registered  
+**Scientific Status:** NOT APPLICABLE; this was a governance consistency task  
+**Operational Status:** Operationally Closed  
+**Artifact Status:** Canonical Artifact
 
-**Description:** Audit consistency between Cube not being identical to Planck length, Planck-scale observable manifestation, and recursive scale constraints.
+**Description:** Audit consistency between Cube not being identical to Planck length, Planck manifestation, and recursive scale constraints.
 
-**Repository Sources:** TIG-E.
-
-**Accepted Evidence:** `TIG-E/docs/foundations/cube_scale_planck_manifestation_consistency_audit.md` and the exact recursive-scale evidence paths recorded in `Integrity_Nexus/shared/terminology_inventory.md` establish the governance-level consistency boundary.
+**Accepted Evidence:** `TIG-E/docs/foundations/cube_scale_planck_manifestation_consistency_audit.md` and exact recursive-scale evidence paths in the terminology inventory.
 
 **Dependencies:** OQ-025 — satisfied.
 
-**Resolution Boundary:** Resolution establishes claim consistency only. It does not derive a unique Cube scale, prove `Cube = Planck length`, or establish a physical scale law.
-
-**Unlocks Achieved:** Cube-scale claim safety and explicit separation of Planck manifestation from Cube identity.
-
-**Recommended Next Action:** Maintain consistency controls when a new Cube-scale derivation or physical interpretation is introduced.
+**Closure Boundary:** Does not derive a unique Cube scale, prove `Cube = Planck length`, or establish a physical scale law.
 
 ---
 
 ## OQ-028 — Cube State-to-QIC Bridge
 
-**Status:** BLOCKED
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Bridge State:** Missing  
+**Relation Class:** UNDEFINED RELATION  
+**Relation Target:** `Σ_QIC`  
+**Required Work:** Definition and bridge construction
 
-**Description:** Define relation between Cube state space `S_cube = (A,L,T,O,C,I)` and QIC state space `Σ_QIC`.
+**Description:** Define the relation between proposed Cube state structure `S_cube = (A,L,T,O,C,I)` and QIC state space `Σ_QIC`.
 
-**Repository Sources:** TIG-E.
+**Dependencies:** OQ-004; OQ-025 governance prerequisite satisfied.
 
-**Evidence:** The blocker queue and terminology-governance layer state that no formal typed bridge exists between Cube state variables and QIC state space.
+**Blocked By:** `I_QIC` Named but Undefined, incomplete Cube state typing, and absent interface candidate.
 
-**Dependencies:** OQ-004; OQ-025 is satisfied as a governance prerequisite.
-
-**Blocked By:** `I_QIC` remains Named but Undefined; Cube state typing and transition structure remain incomplete; the typed Cube-to-QIC interface is Missing.
-
-**Bridge State:** Missing.
-
-**Relation Class:** UNDEFINED RELATION.
-
-**Relation Target:** `Σ_QIC` for Cube-state bridge proposals.
-
-**Unlocks:** Cube/QIC integration.
-
-**Recommended Next Action:** Do not bridge until both sides have sufficiently typed state definitions and an explicit interface candidate.
+**Recommended Next Action:** Do not bridge until both sides are sufficiently typed.
 
 ---
 
 ## OQ-029 — SIR Formal Maturity / TIG Bridge Boundary
 
-**Status:** NEEDS REVIEW
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** Scientifically Open  
+**Operational Status:** Blocked  
+**Required Work:** Review
 
-**Description:** Audit SIR’s formal mathematical structures and ensure its TIG relation remains mathematical, not physical proof.
-
-**Repository Sources:** Structural_Integrity_Recursion.
-
-**Evidence:** SIR is exploratory, mathematically structural, and makes no physical mass-gap claim.
+**Description:** Audit SIR mathematical structures and ensure its TIG relation remains mathematical rather than physical proof.
 
 **Dependencies:** OQ-024.
 
 **Blocked By:** Lack of Nexus-aligned maturity audit.
 
-**Unlocks:** SIR publication path, TIG/SIR bridge clarity.
-
-**Recommended Next Action:** Perform Nexus maturity audit for SIR.
+**Recommended Next Action:** Perform a separate SIR maturity and TIG-bridge review.
 
 ---
 
@@ -772,42 +669,22 @@ Scientifically open objects and missing bridges may coexist with completed termi
 
 **Local Registry ID:** OQ-NEXUS-001
 
-**Registry Status:** OPEN
-
-**Scientific Status:** NOT APPLICABLE as a direct scientific-object status; this is a governance question.
-
-**Progress Classification:** PARTIALLY RESOLVED — CORRECTION REQUIRED
-
-**Completion Readiness:** NOT ESTABLISHED
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** NOT APPLICABLE; this is a governance question  
+**Operational Status:** Addressed  
+**Progress Classification:** READY FOR COMPLETION AUDIT  
+**Completion Readiness:** Authoritative value controlled only by `registry/repository_status.md`
 
 **Description:** Show relationships between repository containers and scientific domains without inflating claims or changing status during transfer.
 
-**Repository Sources:** Integrity_Nexus.
+**Evidence:** The current terminology inventory, drift matrix, taxonomy, boundary matrix, local registry, and this master backlog establish container/domain separation, exact status axes, Question State, relation/transfer controls, TIG/QIC boundaries, Cube interfaces, SIR boundaries, and deferred SSC scope.
 
-**Evidence:** OQ-NEXUS-001 is the local registry representation of this master problem. The following six controlled artifacts are synchronized at current HEAD:
+**Completion Criterion:** A canonical general boundary architecture exists; Missing and deferred bridges are correctly classified; interface-specific documentation is required only when an actual new transfer or bridge is attempted.
 
-1. `shared/terminology_inventory.md`
-2. `shared/terminology_drift_matrix.md`
-3. `governance/claim_status_taxonomy.md`
-4. `governance/cross_repository_claim_boundary_matrix.md`
-5. `registry/open_questions.md`
-6. `registry/master_open_question_backlog.md`
+**Remaining Closure Step:** Independent Completion & Consistency Audit, authoritative `AUDIT PASSED` record, and explicit closure application in local and master registries.
 
-They establish repository-container versus scientific-domain separation, exact status-axis preservation, separate Relation Class and Relation Target fields, TIG/QIC anti-collapse controls, SIR mathematical-to-physical boundaries, Cube interfaces, deferred SSC scope, and the distinction between open science and failed governance.
-
-**Dependencies:** None upstream.
-
-**Current Completion Criterion:** A canonical general boundary architecture must exist, missing and deferred bridges must be correctly classified, and interface-specific boundary documents must be required when an actual new transfer or bridge is attempted. Every possible future interface does not need a pre-created document.
-
-**Blocked By:** Current-HEAD resynchronization of `registry/repository_status.md` and a passing final Completion & Consistency Re-Audit.
-
-**Not Blocked By:** Scientifically open objects, explicitly Missing bridges, or deferred SSC projection when their status and transfer boundaries are correct.
-
-**Unlocks:** Safe multi-repository audit, publication coordination, external review, and controlled terminology transfer.
-
-**Current Boundary:** Governance progress does not create missing definitions, bridges, derivations, proofs, validations, or physical identity.
-
-**Recommended Next Action:** Synchronize `registry/repository_status.md`, then perform the final re-audit.
+**Not Blocked By:** Scientifically open objects, correctly represented Missing bridges, or deferred SSC projection.
 
 ---
 
@@ -815,45 +692,18 @@ They establish repository-container versus scientific-domain separation, exact s
 
 **Local Registry ID:** OQ-NEXUS-002
 
-**Registry Status:** OPEN
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** NOT APPLICABLE; this is a terminology-governance question  
+**Operational Status:** Addressed  
+**Progress Classification:** READY FOR COMPLETION AUDIT  
+**Completion Readiness:** Authoritative value controlled only by `registry/repository_status.md`
 
-**Scientific Status:** NOT APPLICABLE as a direct scientific-object status; this is a terminology-governance question.
+**Description:** Preserve useful shared concepts without forcing identical technical definitions across the scientific-core TIG Research Ecosystem.
 
-**Progress Classification:** PARTIALLY RESOLVED — CORRECTION REQUIRED
+**Active Scope:** Integrity_Nexus governance, TIG-E research architecture, TIG gravitational architecture, QIC quantum-bridge research, SIR mathematical recursion, and Cube research.
 
-**Completion Readiness:** NOT ESTABLISHED
-
-**Description:** Preserve useful shared concepts such as integrity, boundary, admissibility, invariant, and bounded evolution without forcing identical technical definitions across the scientific-core TIG Research Ecosystem.
-
-**Active Scientific-Core Scope:**
-
-1. Integrity_Nexus governance
-2. TIG-E research architecture
-3. TIG gravitational architecture
-4. QIC quantum-bridge research
-5. SIR mathematical recursion
-6. Cube research
-
-**Repository Sources:** Integrity_Nexus, with exact evidence paths into TIG-E, Quantum_Integrity_Core, and Structural_Integrity_Recursion.
-
-**Evidence:** OQ-NEXUS-002 is the local registry representation of this master problem. The corrected terminology inventory, drift matrix, normalized claim-status taxonomy, synchronized claim-boundary matrix, local open-question registry, and this master backlog provide controlled terminology, status, relation, type, evidence, and transfer boundaries.
-
-Mandatory non-identities include:
-
-```text
-Quantum_Integrity_Core repository != QIC scientific object
-QIC != TIG
-I_QIC != Iμν
-Σ_QIC != TIG spacetime state
-Cube state != Σ_QIC without explicit bridge
-shared term != identical technical definition
-```
-
-**SSC Scope Qualification:** SSC remains relevant to the broader ecosystem question but is classified as `DEFERRED APPLICATION-PROJECTION SCOPE`. Its deferral does not block OQ-031 governance completion when the scope and transfer prohibition are explicit.
-
-**Dependencies:** OQ-030.
-
-**Governance Completion Criterion:** OQ-031 does not require the common substrate, `Rel_TIG`, `DefectSpace`, `B_TIG`, `I_QIC`, Cube ontology, Cube-to-QIC bridge, `integrity field`, or SSC projection to be scientifically solved. Every unresolved term, object, or interface must instead be explicitly identified, assigned to the correct repository container and scientific domain, given exact canonical status-axis values, Definition State, Bridge State, Relation Class and separate Relation Target where applicable, scoped correctly, and protected by Allowed Transfer and Forbidden Transfer controls.
+**Governance Completion Criterion:** Every unresolved term, object, or interface is explicitly identified, assigned to the correct domain, given exact applicable status axes, Definition State, Bridge State, Relation Class and Relation Target, scoped correctly, and protected by transfer controls.
 
 ```text
 scientifically open object != incomplete terminology governance
@@ -861,43 +711,31 @@ missing bridge != incomplete terminology governance when absence is correctly co
 deferred scientific definition != terminology-governance failure when deferral is explicit
 ```
 
-**Blocked By:** Current-HEAD resynchronization of `registry/repository_status.md`, agreement of all seven artifacts at current HEAD, and a passing final Completion & Consistency Re-Audit.
+**Remaining Closure Step:** Independent Completion & Consistency Audit, authoritative `AUDIT PASSED` record, and explicit Question State change to `CLOSED` in both registries.
 
-**Not Blocked By:** Scientifically undefined named objects, explicitly Missing bridges, deferred `integrity field`, deferred SSC projection, or possible future interface-specific additions unless their representation is absent, contradictory, misleading, or silently upgraded.
-
-**Unlocks:** Controlled glossary, reviewer navigation, machine-readable terminology graph, and safe later SSC application projection.
-
-**Current Boundary:** Terminology governance records and constrains scientific language; it does not define or solve the scientific objects it lists.
-
-**Recommended Next Action:** Synchronize `registry/repository_status.md`, then perform the final OQ-031 Completion & Consistency Re-Audit.
+**Not Blocked By:** Scientifically undefined named objects, correctly represented Missing bridges, deferred `integrity field`, deferred SSC projection, or untriggered future interface documentation.
 
 ---
 
 ## OQ-032 — Machine-Readable Research Architecture
 
-**Status:** OPEN
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status:** NOT APPLICABLE; this is a governance and architecture question  
+**Operational Status:** Pending  
+**Required Work:** Schema definition and validation
 
 **Description:** Structure repository maps, shared concepts, and dependency graphs for LLM-based review and automated research-audit systems.
 
-**Repository Sources:** Integrity_Nexus.
-
-**Evidence:** This is explicitly OQ-NEXUS-004.
-
 **Dependencies:** OQ-030, OQ-031.
 
-**Blocked By:** Missing canonical machine-readable graph schema.
-
-**Unlocks:** Future TIG-E runtime, automated audits, agent orchestration.
-
-**Recommended Next Action:** Create canonical dependency graph schema.
+**Recommended Next Action:** Create a canonical dependency-graph schema after OQ-030/OQ-031 closure.
 
 ---
 
-# Recommended Scientific Execution Order
+# Dependency-Correct Execution Order
 
-## Completed Governance Prerequisites
-
-The following Cube governance questions are resolved and are removed from the active execution queue:
+## Closed Governance Prerequisites
 
 1. OQ-025 — Cube Research Block Inventory
 2. OQ-026 — Cube Claim Boundary and Maturity Audit
@@ -905,71 +743,75 @@ The following Cube governance questions are resolved and are removed from the ac
 
 Their scientific non-claims remain protected.
 
-## Active Dependency-Correct Execution Order
+## Active Order
 
 1. OQ-030 — Cross-Repository Claim Boundaries
 2. OQ-031 — Shared Terminology Without Domain Collapse
 3. OQ-001 — Common Emergence Substrate
-4. OQ-002 — Rel_TIG / DefectSpace Independent Definition
-5. OQ-003 — B_TIG Non-Circular Derivation
-6. OQ-004 — I_QIC Integrity Functional
+4. OQ-002 — `Rel_TIG / DefectSpace`
+5. OQ-003 — `B_TIG` Non-Circular Derivation
+6. OQ-004 — `I_QIC` Integrity Functional
 7. OQ-005 — QIC State-Space Strengthening
 8. OQ-006 — QIC Readout Semantics
 9. OQ-007 — Hamiltonian / Generator Foundation
-10. OQ-008 — E_QIC Composition / Process Dynamics
-11. OQ-009 — E_Out Readout-Equivalence Preservation
-12. OQ-010 — Explicit Born-Compatible Representation Candidate
+10. OQ-008 — `E_QIC` Composition
+11. OQ-009 — `E_Out` Preservation
+12. OQ-010 — Born-Compatible Representation
 13. OQ-011 — Born Rule Derivation
-14. OQ-012 — Hilbert-Space Reconstruction
-15. OQ-013 — Operator Algebra Reconstruction
-16. OQ-014 — Pres_QM-Preserving Evolution
+14. OQ-012 — Hilbert Reconstruction
+15. OQ-013 — Operator Algebra
+16. OQ-014 — `Pres_QM` Evolution
 17. OQ-015 — Generator Compatibility
-18. OQ-016 — Field-Equation Draft Intake After Gate_E
-19. OQ-017 — Independent Integrity Tensor Definition
-20. OQ-018 — TIG Dynamical Closure
+18. OQ-016 — Field-Equation Draft Intake
+19. OQ-017 — Independent Integrity Tensor
+20. OQ-018 — Dynamical Closure
 21. OQ-019 — Variational Formulation
 22. OQ-020 — Covariant Extension
-23. OQ-021 — Energy Condition Classification
-24. OQ-022 — General Perturbation Stability
-25. OQ-023 — Observational Prediction Program
+23. OQ-021 — Energy Conditions
+24. OQ-022 — General Perturbations
+25. OQ-023 — Observational Program
 26. OQ-028 — Cube State-to-QIC Bridge
-27. OQ-024 — Toy Sequence to SIR / Full Manifold Bridge
-28. OQ-029 — SIR Formal Maturity / TIG Bridge Boundary
-29. OQ-032 — Machine-Readable Research Architecture
+27. OQ-024 — Toy-to-SIR Bridge
+28. OQ-029 — SIR Maturity / TIG Boundary
+29. OQ-032 — Machine-Readable Architecture
 
 ---
 
-## Current Synchronization State
+## Global-State Authority Rule
 
-The following six controlled OQ-030/OQ-031 artifacts are synchronized at current HEAD:
+This master backlog records question lifecycle, dependencies, and execution order.
 
-1. `shared/terminology_inventory.md`
-2. `shared/terminology_drift_matrix.md`
-3. `governance/claim_status_taxonomy.md`
-4. `governance/cross_repository_claim_boundary_matrix.md`
-5. `registry/open_questions.md`
-6. `registry/master_open_question_backlog.md`
+It does not authoritatively state:
 
-The remaining downstream artifact is:
+- the global synchronization count,
+- global Completion Readiness,
+- or completion-audit passage.
+
+Those values are controlled only by:
 
 ```text
 registry/repository_status.md
 ```
 
-Completion Readiness remains `NOT ESTABLISHED` until that artifact is synchronized and the final Completion & Consistency Re-Audit passes.
-
 ---
 
-## Maintenance Rule
+## Maintenance and Closure Rule
 
-This backlog is canonical until superseded by a later `MASTER OPEN QUESTION BACKLOG` version.
+Any future result that changes Question State, Registry Status, Scientific Status, Operational Status, dependencies, claim boundaries, bridges, scientific-domain scope, Cross-ID mapping, execution order, Progress Classification, or closure evidence must update this file.
 
-Any future research-session result that changes open-question status, dependencies, claim boundaries, repository bridges, scientific-domain scope, Cross-ID mapping, execution order, Progress Classification, or Completion Readiness must update this file or explicitly state why no update is required.
+A generic `Status` field is prohibited because it can collapse lifecycle, scientific, operational, maturity, definition, and required-work semantics.
 
-An entry may remain Registry Status `OPEN` while carrying a more precise Progress Classification.
+`Required Work` is metadata, not a status axis.
 
-Scientifically open objects do not need to be solved before a governance question can close when their terminology and transfer boundaries are complete and consistent.
+A governance question may become Question State `CLOSED` only after:
 
-No Progress Classification may be promoted, and no governance question may be closed, without explicit closure criteria, synchronized canonical artifacts, no known blocking inconsistency, and completion-audit acceptance.
+1. `registry/repository_status.md` records `AUDIT PASSED`;
+2. the accepted audit result covers the exact question;
+3. local and master registries explicitly apply that result;
+4. no known blocking governance inconsistency remains.
 
-Any change to one of the five upstream artifacts invalidates this backlog's synchronization claim until this file is explicitly reconciled against the new content SHA.
+Scientifically open objects do not need to be solved before governance-question closure when their terminology and transfer boundaries are complete and consistent.
+
+Any change to one of the five upstream artifacts invalidates this backlog's local reconciliation until updated against the new SHAs.
+
+This backlog must never supersede `registry/repository_status.md` as the global synchronization or Completion Readiness authority.
