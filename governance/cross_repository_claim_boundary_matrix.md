@@ -2,9 +2,11 @@
 
 **Repository:** Integrity_Nexus  
 **Scope:** Scientific-core TIG Research Ecosystem with controlled Cube-domain coverage  
-**Status:** CANONICAL / LOCKED MODE  
-**Synchronization Base:** `shared/terminology_inventory.md`, `shared/terminology_drift_matrix.md`, and `governance/claim_status_taxonomy.md`  
+**Status:** CANONICAL / LOCKED MODE / AUDIT-CORRECTED  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `d835d2224113f8f09799db9ca97c8cc269d92cf8`; `shared/terminology_drift_matrix.md` content SHA `fc0b4c975960c30d6e8c68964ac6338510ae578d`; `governance/claim_status_taxonomy.md` content SHA `ae1319c27d755d8cf301e21510eea489102ece30`  
+**Position in Control Chain:** terminology inventory → drift matrix → claim-status taxonomy → this boundary matrix → registries → repository-status index  
 **OQ Status Contribution:** PARTIALLY RESOLVED — CORRECTION REQUIRED  
+**Completion Readiness:** NOT ESTABLISHED  
 **Related Open Questions:** OQ-030 / OQ-NEXUS-001; OQ-031 / OQ-NEXUS-002  
 **Last Updated:** 2026-07-12
 
@@ -12,14 +14,14 @@
 
 ## 1. Purpose
 
-This file defines how claims may move between canonical repositories and scientific domains without changing their evidential strength, scientific status, maturity, definition state, bridge state, or scope.
+This file defines how claims, terms, objects, statuses, and candidate relations may move between repository containers and scientific domains without changing their evidential strength, scientific status, maturity, definition state, bridge state, scope, relation class, or relation target.
 
 It is a governance artifact.
 
 It does not:
 
 - create theory,
-- solve open questions,
+- solve scientific open questions,
 - define new physics,
 - define new mathematics,
 - create bridges,
@@ -30,7 +32,9 @@ It does not:
 
 The protected rule is:
 
-> A claim may move between repositories or scientific domains only if its repository source, scientific domain, scope, status axes, definition state, bridge state, relation class, and transfer limits remain explicit.
+> A claim may move between repositories or scientific domains only when its source, target, scope, canonical status axes, definition state, bridge state, relation class, relation target, allowed transfer, and forbidden transfer remain explicit.
+
+OQ-031 governance completion does not require scientifically open objects or missing bridges to be solved. It requires their openness, absence, type, scope, non-identity, and transfer restrictions to be represented without contradiction or silent upgrade.
 
 ---
 
@@ -38,18 +42,19 @@ The protected rule is:
 
 Repository container and scientific domain are separate governance fields.
 
-A repository may contain material relevant to more than one scientific domain.
+A repository may contain material from more than one scientific domain.
 
 A repository name does not determine the identity of the scientific object inside it.
 
 ### 2.1 Repository Roles
 
-| Repository | Repository Role | Repository Boundary |
+| Repository Container | Repository Role | Repository Boundary |
 |---|---|---|
-| Integrity_Nexus | Meta-governance, registry, dependency mapping, maturity control, audit coordination | May organize and constrain claims; may not become hidden theory authority |
-| TIG-E | Research orchestration, gates, candidate lifecycle, blocker queues, preservation conditions, Cube research corpus | May control research process; may not convert gate passage or registration into scientific completion |
+| Integrity_Nexus | Meta-governance, registry, dependency mapping, maturity control, terminology control, and audit coordination | May organize and constrain claims; may not become hidden theory authority |
+| TIG-E | Research orchestration, gates, candidate lifecycle, blocker queues, preservation conditions, QIC audits, and Cube research corpus | May control research process; may not convert gate passage, registration, or audit into scientific completion |
 | Quantum_Integrity_Core | Repository container currently holding TIG gravitational field-equation architecture and related validation material | Container name does not establish QIC scientific-object identity; scoped TIG architecture is not complete theory |
-| Structural_Integrity_Recursion | Exploratory mathematical abstraction and recursive structure research | May provide mathematical candidates and abstractions; may not imply physical interpretation without a bridge |
+| Structural_Integrity_Recursion | Exploratory mathematical abstraction and recursive-structure research | May provide mathematical candidates and abstractions; may not imply physical interpretation without a bridge |
+| Structural_State_Controller | Downstream control and state-admissibility application repository | Remains a deferred application projection and may not define the active scientific core |
 
 ### 2.2 Scientific-Domain Roles
 
@@ -60,7 +65,7 @@ A repository name does not determine the identity of the scientific object insid
 | TIG gravitational architecture | Gravitational, geometric, tensor, and field-equation candidate structures | Scoped architecture is not complete covariant or fundamental theory |
 | QIC quantum-bridge research | QIC state, integrity, readout, measurement, and QM-bridge research | QIC remains distinct from TIG and is not completed quantum theory |
 | SIR mathematical recursion | Recursive, topological, manifold, spectral, and mathematical-admissibility research | Mathematical structure is not physical structure without bridge |
-| Cube research | Cube foundations, state, scale, recursive constraints, manifestation, and bridge questions | Cube corpus is not completed Cube ontology or physics |
+| Cube research | Cube foundations, state, scale, recursive constraints, manifestation, pattern, and bridge questions | Cube corpus is not completed Cube ontology or physics |
 | SSC deferred application projection | Later application-domain projection into control architecture | May not define the active scientific core at this stage |
 
 ### 2.3 Mandatory Container/Domain Non-Identities
@@ -70,33 +75,52 @@ Quantum_Integrity_Core repository != QIC scientific object
 TIG-E repository != one single scientific domain
 repository placement != scientific object identity
 canonical repository != scientific truth
+repository maturity != scientific completion
 ```
 
 ---
 
-## 3. Status-Axis Preservation Rule
+## 3. Canonical Status-Axis Preservation Rule
 
-Every transfer must preserve each applicable axis independently.
+Every transfer must preserve each applicable axis independently using the exact canonical vocabulary in `governance/claim_status_taxonomy.md`.
 
-| Axis | Transfer Requirement |
+| Axis | Canonical Transfer Requirement |
 |---|---|
-| Claim Status | Working Assumption, Candidate, Compatible, Derived, Proven, Validated, and other claim statuses must remain unchanged unless explicit upgrade evidence is supplied |
+| Claim Status | Working Assumption, Candidate, Declared, Partial, Compatible, Admissible, Selected, Derived, Proven, Validated, Physical Candidate, Empirically Supported, or Fundamental Candidate must remain unchanged unless exact upgrade evidence is supplied |
 | Scientific Status | Scientifically Open or Resolved must remain explicit |
-| Registry Status | Registerable or Registered must not become scientific acceptance |
-| Operational Status | Addressed, Blocked, or Operationally Closed must not become scientific closure |
-| Artifact Status | Canonical Artifact must not become completed theory |
-| Maturity Status | Repository or document maturity must not expand scientific scope |
-| Definition State | Defined, Partial, Declared, Named but Undefined, or Undefined must remain explicit |
-| Bridge State | Required, Missing, Candidate, Partial, or Established Within Scope must remain explicit |
-| Scientific Domain | Governance, process, mathematical, physical, QIC, Cube, or application status must not be collapsed |
-| Scope | Local, model-specific, static, spherical, effective, preliminary, or other scope must remain attached |
+| Registry Status | Registerable, Registered, or registry-level `OPEN` must not become scientific acceptance or absence of progress |
+| Operational Status | Pending, Addressed, Blocked, or Operationally Closed must not become scientific closure |
+| Artifact Status | Raw Note, Non-Canonical Input, or Canonical Artifact must remain distinct from scientific truth |
+| Maturity Status | Preliminary, M0–M5, or an explicitly mapped local L-level must not expand scientific scope |
+| Definition State | Defined, Partially Defined, Declared but Not Fully Defined, Named but Undefined, or Undefined must remain explicit |
+| Bridge State | Not Required, Required, Missing, Candidate Bridge, Partial Bridge, or Established Within Scope must remain explicit |
+| Progress Classification | Must remain distinct from Registry Status and Scientific Status |
+| Completion Readiness | NOT ESTABLISHED, READY FOR AUDIT, or AUDIT PASSED must remain distinct from scientific resolution |
+| Scientific Domain | Governance, process, mathematical, gravitational, QIC, Cube, or application status must not be collapsed |
+| Repository Container | Storage location must not become scientific-domain identity |
+| Scope | Local, model-specific, static, spherical, effective, preliminary, or other limitations must remain attached |
 
-A transfer cannot erase a weaker axis by emphasizing a stronger one.
-
-Example:
+### 3.1 Exact-Spelling Controls
 
 ```text
-Canonical Artifact + Preliminary + Scientifically Open
+Partial != Partially Defined
+Candidate != Candidate Bridge
+Operationally Closed != Closed Operationally
+Established Within Scope != Established
+Preliminary != Validated
+Registry Status OPEN != Scientifically Open
+Progress Classification != Scientific Status
+Completion Readiness != Resolution
+```
+
+### 3.2 Preservation Example
+
+```text
+Artifact Status: Canonical Artifact
+Maturity Status: Preliminary
+Scientific Status: Scientifically Open
+Definition State: Partially Defined
+Bridge State: Missing
 ```
 
 must not become:
@@ -105,7 +129,7 @@ must not become:
 Validated Scientific Result
 ```
 
-through repository placement or summary language.
+through repository placement, summary wording, registry entry, or transfer.
 
 ---
 
@@ -129,6 +153,21 @@ Semantic resemblance, notation similarity, shared vocabulary, historical origin,
 
 A named bridge is not an existing bridge.
 
+A specific related object must be recorded separately as `Relation Target`; it must not be appended to the canonical Relation Class value.
+
+Example:
+
+```text
+Relation Class: EXPLICITLY NON-EQUIVALENT
+Relation Target: I_QIC
+```
+
+not:
+
+```text
+Relation Class: EXPLICITLY NON-EQUIVALENT to I_QIC
+```
+
 ---
 
 ## 5. Universal Boundary Rules
@@ -139,12 +178,14 @@ A named bridge is not an existing bridge.
 | Selected | Derived necessity or truth | Selected within scope; not derived by selection alone |
 | Compatible | Derived | Compatible only; derivation open |
 | Declared | Established | Declared only; support still required |
-| Partial | Complete | Partial only; unresolved remainder explicit |
-| Preliminary | Validated | Preliminary only; validation incomplete |
-| Operationally Addressed | Scientifically Solved | Operational status separate from scientific status |
+| Partial | Complete | Partial claim only; unresolved remainder explicit |
+| Partially Defined | Defined | Missing defining elements remain open |
+| Preliminary | Validated | Preliminary maturity only; validation incomplete |
+| Addressed | Scientifically Solved | Operational processing is separate from scientific status |
 | Operationally Closed | Resolved | Scientific dependencies must be closed separately |
 | Registerable | Accepted scientific law | Registry eligibility only |
 | Registered | Truth claim | Registration is governance metadata |
+| Registry Status OPEN | No progress | Open registry state may coexist with partial progress |
 | Canonical Artifact | Completed theory | Canonical documentation status does not imply scientific completion |
 | Effective Description | Fundamental structure | Effective/scoped realization only |
 | Mathematical Object | Physical object | Mathematical unless separately bridged and validated |
@@ -152,15 +193,19 @@ A named bridge is not an existing bridge.
 | Audit Result | Proof | Audit and proof are separate evidence classes |
 | Shared Term | Identical definition | Shared orientation only unless typed identity is established |
 | Repository Container | Scientific-domain identity | Container and domain must be recorded separately |
+| Candidate Bridge | Established Within Scope | Candidate interface remains unestablished |
+| Missing Bridge | Failed terminology governance | Missing bridge may be governed correctly when absence is explicit |
+| Scientifically Open Object | Failed terminology governance | Open science is compatible with correct terminology control |
 | Cube Corpus | Completed Cube theory | Corpus and ontology remain distinct |
 | QIC Compatibility | QM derivation | Compatibility does not reconstruct QM |
 | SSC Application Projection | Core scientific definition | Application terminology remains downstream |
+| AUDIT PASSED | Scientific truth | Governance audit does not create scientific evidence |
 
 ---
 
 ## 6. Transfer Record Template
 
-Every material cross-repository or cross-domain transfer should record:
+Every material cross-repository or cross-domain transfer must record:
 
 ```text
 Claim / Object:
@@ -178,18 +223,23 @@ Registry Status:
 Operational Status:
 Artifact Status:
 Maturity Status:
+Progress Classification:
+Completion Readiness:
 Definition State:
 Bridge State:
 Relation Class:
+Relation Target:
 Scope:
 Allowed Transfer:
 Forbidden Transfer:
 Evidence Required For Upgrade:
 ```
 
+Fields that are not applicable must be marked `NOT APPLICABLE` where omission could create ambiguity.
+
 Missing fields must be marked missing.
 
-They must not be inferred from names or notation.
+No value may be inferred from name, notation, repository path, analogy, or shared vocabulary.
 
 ---
 
@@ -203,7 +253,7 @@ They must not be inferred from names or notation.
 - governance rules,
 - dependency maps,
 - maturity requirements,
-- claim-status requirements,
+- status-axis requirements,
 - terminology controls,
 - and audit obligations.
 
@@ -212,29 +262,29 @@ They must not be inferred from names or notation.
 - Nexus question becoming a TIG-E substrate,
 - governance rule becoming a scientific axiom,
 - registry entry becoming an accepted equation,
-- or maturity classification becoming theory evidence.
+- maturity classification becoming theory evidence,
+- or Progress Classification becoming Scientific Status.
 
-**Required relation class:** GOVERNANCE MAPPING ONLY unless a stronger relation is explicitly established.
+**Default Relation Class:** GOVERNANCE MAPPING ONLY.
 
 ### 7.2 TIG-E Research Architecture → Integrity_Nexus Governance
 
 **Allowed transfer:**
 
 - gate status,
-- candidate lifecycle status,
+- candidate-lifecycle status,
 - blocker status,
 - registry status,
 - operational status,
 - preservation-condition status,
-- and audit results.
+- and audit findings.
 
 **Forbidden escalation:**
 
-- operational closure becoming scientific closure,
+- Operationally Closed becoming Resolved,
 - gate passage becoming truth,
-- or candidate registration becoming physical selection.
-
-**Required boundary:** Nexus must preserve every TIG-E status axis separately.
+- candidate registration becoming physical selection,
+- or audit passage becoming proof.
 
 ### 7.3 Integrity_Nexus Governance → Scientific Domains
 
@@ -255,11 +305,12 @@ Applies to TIG gravitational architecture, QIC quantum-bridge research, SIR math
 - governance defining a state space,
 - governance creating a physical interpretation,
 - governance establishing mathematical proof,
+- governance establishing a bridge,
 - or governance resolving scientific objects.
 
 ---
 
-## 8. TIG-E Research Architecture Interfaces
+## 8. TIG-E Research-Architecture Interfaces
 
 ### 8.1 TIG-E Research Architecture → TIG Gravitational Architecture
 
@@ -274,12 +325,10 @@ Applies to TIG gravitational architecture, QIC quantum-bridge research, SIR math
 
 **Forbidden escalation:**
 
-- Gate_E passage becoming a field equation,
-- Registerable_E becoming an accepted physical law,
+- `Gate_E` passage becoming a field equation,
+- `Registerable_E` becoming an accepted physical law,
 - compatibility becoming derivation,
 - or workflow crystallization becoming physical selection.
-
-**Required boundary:**
 
 ```text
 field-equation draft != field-equation candidate
@@ -301,7 +350,8 @@ field-equation architecture != complete field theory
 
 - static spherical architecture becoming general covariance,
 - effective realization becoming fundamental structure,
-- or preliminary stress analysis becoming physical stress-energy.
+- Preliminary stress analysis becoming physical stress-energy,
+- or local validation becoming global validation.
 
 ### 8.3 TIG-E Research Architecture → QIC Quantum-Bridge Research
 
@@ -312,12 +362,12 @@ field-equation architecture != complete field theory
 - preservation predicates,
 - generator and Hamiltonian blocker status,
 - readout and measurement boundary requirements,
-- and candidate lifecycle controls.
+- and candidate-lifecycle controls.
 
 **Forbidden escalation:**
 
-- Pres_QM becoming QM derivation,
-- Gate_E becoming QIC dynamics,
+- `Pres_QM` becoming QM derivation,
+- `Gate_E` becoming QIC dynamics,
 - registry admission becoming QIC theory,
 - or formal readout becoming physical measurement.
 
@@ -332,8 +382,9 @@ field-equation architecture != complete field theory
 
 **Forbidden escalation:**
 
-- named object becoming defined object,
-- selected placeholder becoming ontology,
+- Named but Undefined becoming Defined,
+- Selected placeholder becoming ontology,
+- Candidate Bridge becoming Established Within Scope,
 - or audit result becoming derivation.
 
 ### 8.5 TIG-E Research Architecture → SIR Mathematical Recursion
@@ -351,7 +402,7 @@ field-equation architecture != complete field theory
 - process admissibility becoming mathematical admissibility,
 - or operational transition becoming formal transformation.
 
-**Required boundary:** SIR claims require independent SIR definitions and support.
+SIR claims require independent SIR definitions and support.
 
 ### 8.6 SIR Mathematical Recursion → TIG-E Research Architecture
 
@@ -375,7 +426,7 @@ field-equation architecture != complete field theory
 
 - status vocabulary,
 - research-roadmap registration,
-- candidate and working-assumption controls,
+- Candidate and Working Assumption controls,
 - blocker registration,
 - audit requirements,
 - and bridge requirements.
@@ -383,7 +434,7 @@ field-equation architecture != complete field theory
 **Forbidden escalation:**
 
 - registry or roadmap entry becoming Cube ontology,
-- working derivation becoming derived result,
+- working derivation becoming Claim Status Derived,
 - research question becoming physical law,
 - or audit passage becoming Cube proof.
 
@@ -392,7 +443,7 @@ field-equation architecture != complete field theory
 **Allowed transfer:**
 
 - Cube blocker status,
-- working-assumption status,
+- Working Assumption status,
 - hypothesis status,
 - research-question status,
 - scale and bridge dependencies,
@@ -418,9 +469,9 @@ The repository container currently provides evidence primarily for TIG gravitati
 - the scoped TIG field-equation architecture,
 - model scope,
 - validation status,
-- effective realization status,
+- effective-realization status,
 - open tensor and covariance programs,
-- and preliminary analyses.
+- and Preliminary analyses.
 
 **Forbidden escalation:**
 
@@ -447,7 +498,7 @@ The repository container currently provides evidence primarily for TIG gravitati
 
 ### 9.3 TIG Gravitational Architecture ↔ QIC Quantum-Bridge Research
 
-**Current relation class:** UNDEFINED RELATION except where explicit compatibility or research dependencies are documented.
+**Current Relation Class:** UNDEFINED RELATION except where explicit compatibility or research dependencies are documented.
 
 Mandatory non-identities:
 
@@ -457,6 +508,14 @@ I_QIC != Iμν
 Σ_QIC != TIG spacetime state
 QIC bridge candidate != completed quantum theory
 TIG field-equation architecture != QIC theory
+```
+
+For the `Iμν` / `I_QIC` distinction:
+
+```text
+Relation Class: EXPLICITLY NON-EQUIVALENT
+Relation Target from Iμν: I_QIC
+Relation Target from I_QIC: Iμν
 ```
 
 **Allowed transfer from TIG to QIC:**
@@ -504,7 +563,7 @@ TIG field-equation architecture != QIC theory
 - mathematical invariant becoming physical conserved quantity,
 - or recursive integrity becoming `Iμν`.
 
-**Required relation class:** ANALOGICAL ONLY or EXPLICITLY RELATED until a typed physical bridge is established.
+**Default Relation Class:** ANALOGICAL ONLY or EXPLICITLY RELATED until a typed physical bridge is established.
 
 ### 10.2 TIG Gravitational Architecture → SIR Mathematical Recursion
 
@@ -550,7 +609,7 @@ TIG field-equation architecture != QIC theory
 **Forbidden escalation:**
 
 - QIC placeholder becoming a completed mathematical structure,
-- open object becoming theorem premise,
+- open object becoming theorem premise without assumptions,
 - or physical interpretation becoming mathematical necessity.
 
 ---
@@ -564,7 +623,7 @@ TIG field-equation architecture != QIC theory
 - Cube hypotheses as candidate microstructural inputs,
 - scale constraints as open dependencies,
 - pattern or state structures as future candidate inputs,
-- and explicitly labeled working assumptions.
+- and explicitly labeled Working Assumptions.
 
 **Forbidden escalation:**
 
@@ -574,7 +633,7 @@ TIG field-equation architecture != QIC theory
 - Cube pattern becoming curvature law,
 - or Cube corpus proving gravity.
 
-**Current relation class:** UNDEFINED RELATION unless an explicit candidate relation is separately documented.
+**Current Relation Class:** UNDEFINED RELATION unless a specific candidate relation is separately documented.
 
 ### 11.2 TIG Gravitational Architecture → Cube Research
 
@@ -607,9 +666,9 @@ Cube information state = quantum state
 Cube pattern = measurement outcome
 ```
 
-**Current bridge state:** REQUIRED / MISSING.
-
-**Current relation class:** UNDEFINED RELATION.
+**Current Bridge State:** Missing — a required typed bridge is absent.  
+**Current Relation Class:** UNDEFINED RELATION.  
+**Relation Target:** `Σ_QIC` for Cube-state bridge proposals.
 
 ### 11.4 QIC Quantum-Bridge Research → Cube Research
 
@@ -641,7 +700,7 @@ Cube pattern = measurement outcome
 
 - Cube hypothesis becoming mathematical theorem,
 - fractal question becoming fractal law,
-- recursive scale language becoming self-similarity proof,
+- recursive-scale language becoming self-similarity proof,
 - or Cube graph becoming a unique manifold.
 
 ### 11.6 SIR Mathematical Recursion → Cube Research
@@ -724,7 +783,9 @@ control admissibility != TIG/QIC/SIR/Cube admissibility
 application projection != scientific identity
 ```
 
-A future SSC projection audit must not be treated as a current scientific-core bridge.
+A future SSC projection audit is not a current scientific-core bridge.
+
+Its deferred state does not by itself block OQ-031 governance completion when the deferral and transfer prohibition remain explicit.
 
 ---
 
@@ -733,29 +794,59 @@ A future SSC projection audit must not be treated as a current scientific-core b
 | Risk ID | Risk | Primary Interface | Required Control |
 |---|---|---|---|
 | CRR-001 | Meta-governance becomes hidden theory authority | Nexus ↔ all | Governance/scientific-domain split |
-| CRR-002 | Operational closure becomes scientific closure | TIG-E → Nexus/TIG/QIC/Cube | Status-axis preservation |
+| CRR-002 | Operational closure becomes scientific closure | TIG-E → Nexus/TIG/QIC/Cube | Exact status-axis preservation |
 | CRR-003 | Candidate becomes final | TIG-E/TIG/QIC/Cube → Nexus | Candidate lifecycle labels |
 | CRR-004 | Selected becomes derived | TIG-E/QIC/Cube | Selection/derivation distinction |
 | CRR-005 | Compatibility becomes derivation | TIG-E/TIG/QIC | Compatibility boundary |
-| CRR-006 | Preliminary becomes validated | TIG/QIC/Cube | Preliminary/validation distinction |
-| CRR-007 | Mathematical becomes physical | SIR ↔ TIG/QIC/Cube | Typed bridge requirement |
-| CRR-008 | Effective becomes fundamental | TIG → Nexus/TIG-E | Effective/fundamental distinction |
-| CRR-009 | Shared term becomes identical definition | Nexus ↔ all | Terminology inventory and drift matrix |
-| CRR-010 | Registry status becomes truth | TIG-E/Nexus | Registry-status disclaimer |
-| CRR-011 | Repository name becomes scientific identity | Quantum_Integrity_Core ↔ QIC/TIG | Container/domain split |
-| CRR-012 | TIG and QIC silently collapse | TIG ↔ QIC | Explicit non-identities and bridge state |
-| CRR-013 | Cube corpus becomes ontology | Cube ↔ Nexus/TIG-E | Cube maturity and claim-boundary controls |
-| CRR-014 | Cube state becomes QIC state | Cube ↔ QIC | Missing typed bridge must remain explicit |
-| CRR-015 | Cube density becomes stress-energy | Cube ↔ TIG | Physical source derivation requirement |
-| CRR-016 | Planck manifestation becomes Cube identity | Cube scale corpus | Working-assumption boundary |
-| CRR-017 | Fractal question becomes fractal law | Cube ↔ SIR | Theorem and invariant requirements |
-| CRR-018 | State transience becomes object transience | Cube research | State/object/pattern distinction |
-| CRR-019 | Formal readout becomes physical measurement | QIC ↔ TIG-E/TIG | Measurement bridge requirement |
-| CRR-020 | SSC application language defines the core | SSC ↔ all | Deferred application-projection scope |
+| CRR-006 | Preliminary becomes Validated | TIG/QIC/Cube | Maturity/Claim Status distinction |
+| CRR-007 | Partial becomes Partially Defined | All | Claim/Definition axis distinction |
+| CRR-008 | Candidate becomes Candidate Bridge | All bridges | Claim/Bridge axis distinction |
+| CRR-009 | Mathematical becomes physical | SIR ↔ TIG/QIC/Cube | Typed bridge requirement |
+| CRR-010 | Effective becomes fundamental | TIG → Nexus/TIG-E | Effective/fundamental distinction |
+| CRR-011 | Shared term becomes identical definition | Nexus ↔ all | Inventory and drift controls |
+| CRR-012 | Registry status becomes truth | TIG-E/Nexus | Registry-status disclaimer |
+| CRR-013 | Repository name becomes scientific identity | Quantum_Integrity_Core ↔ QIC/TIG | Container/domain split |
+| CRR-014 | TIG and QIC silently collapse | TIG ↔ QIC | Explicit non-identities and bridge state |
+| CRR-015 | Cube corpus becomes ontology | Cube ↔ Nexus/TIG-E | Cube maturity and claim-boundary controls |
+| CRR-016 | Cube state becomes QIC state | Cube ↔ QIC | Missing typed bridge remains explicit |
+| CRR-017 | Cube density becomes stress-energy | Cube ↔ TIG | Physical source derivation requirement |
+| CRR-018 | Planck manifestation becomes Cube identity | Cube scale corpus | Working-Assumption boundary |
+| CRR-019 | Fractal question becomes fractal law | Cube ↔ SIR | Theorem and invariant requirements |
+| CRR-020 | State transience becomes object transience | Cube research | State/object/pattern distinction |
+| CRR-021 | Formal readout becomes physical measurement | QIC ↔ TIG-E/TIG | Measurement bridge requirement |
+| CRR-022 | SSC application language defines the core | SSC ↔ all | Deferred application-projection scope |
+| CRR-023 | Scientific openness becomes governance failure | Registries ↔ scientific domains | OQ-031 completion criterion |
+| CRR-024 | Audit passage becomes scientific truth | Nexus ↔ all | Completion Readiness/Scientific Status split |
 
 ---
 
-## 14. Mandatory Boundary Phrases
+## 14. OQ-031 Governance Completion Criterion
+
+OQ-031 does not require the common substrate, `Rel_TIG`, `DefectSpace`, `B_TIG`, `I_QIC`, Cube ontology, Cube-to-QIC bridge, or SSC projection to be scientifically solved.
+
+For terminology-governance completion, every unresolved object or interface must be:
+
+- explicitly named,
+- assigned to the correct repository container and scientific domain,
+- given exact canonical status-axis values,
+- given an exact Definition State and Bridge State,
+- assigned a canonical Relation Class and separate Relation Target where applicable,
+- scoped correctly,
+- protected by Allowed Transfer and Forbidden Transfer rules,
+- and prevented from silent status or domain upgrade.
+
+Therefore:
+
+```text
+scientifically open object != incomplete terminology governance
+missing bridge != incomplete terminology governance when absence is correctly controlled
+```
+
+Terminology governance remains incomplete when an open object or bridge is absent from control, ambiguously typed, inconsistently classified, falsely bridged, silently upgraded, or transferred outside its declared boundary.
+
+---
+
+## 15. Mandatory Boundary Phrases
 
 Use where applicable:
 
@@ -763,27 +854,32 @@ Use where applicable:
 - Selected within scope; not derived by selection alone.
 - Compatible only; not derived.
 - Declared only; not established.
-- Partial only; unresolved remainder remains open.
-- Preliminary only; not validated.
-- Operationally addressed; scientifically open.
-- Operationally closed; scientific dependencies separate.
-- Registerable or registered; not accepted as truth.
-- Canonical artifact; not completed theory.
+- Partial claim only; unresolved remainder remains open.
+- Partially Defined; missing defining elements remain open.
+- Preliminary maturity only; not Validated.
+- Addressed operationally; not scientifically Resolved.
+- Operationally Closed; scientific dependencies separate.
+- Registerable or Registered; not accepted as truth.
+- Registry Status OPEN; partial progress may exist.
+- Canonical Artifact; not completed theory.
 - Effective/scoped realization; not fundamental structure.
 - Mathematical object; not physical object without bridge.
 - Formal readout; not physical measurement without bridge.
 - Audit result; not proof.
 - Shared term; not identical definition across domains.
 - Repository container; not scientific-domain identity.
-- Named object; not defined object.
-- Bridge required; bridge not established.
+- Named but Undefined object; not Defined object.
+- Bridge State Missing; required bridge not established.
+- Candidate Bridge; not Established Within Scope.
 - Cube research corpus; not completed Cube theory.
 - QIC quantum-bridge research; not TIG gravitational architecture.
 - SSC deferred application projection; not core scientific definition.
+- Scientifically Open; not automatically a governance failure.
+- AUDIT PASSED; not scientific truth.
 
 ---
 
-## 15. Review Checklist
+## 16. Review Checklist
 
 Before any cross-repository or cross-domain claim is accepted, check:
 
@@ -793,24 +889,28 @@ Before any cross-repository or cross-domain claim is accepted, check:
 - Is the target scientific domain explicit?
 - Is the object type explicit?
 - Are input and output types explicit where applicable?
-- Is every status axis preserved?
+- Is every canonical status axis preserved?
+- Are exact spellings used?
+- Is `Partial` being confused with `Partially Defined`?
+- Is `Candidate` being confused with `Candidate Bridge`?
+- Is `Preliminary` being used as Maturity Status?
+- Is Registry Status `OPEN` being confused with no progress?
+- Is Completion Readiness being confused with Scientific Status?
 - Is the scope preserved?
-- Is the definition state preserved?
-- Is the bridge state preserved?
-- Is the relation class explicit?
-- Is the claim being upgraded by wording?
-- Is the claim being upgraded by repository placement?
-- Is the claim being upgraded by canonical status?
-- Is the claim being upgraded by registry status?
+- Is the Definition State preserved?
+- Is the Bridge State preserved?
+- Is the Relation Class canonical?
+- Is the Relation Target separate?
+- Is the claim being upgraded by wording, repository placement, canonical status, registry status, or audit passage?
 - Is selection being written as derivation?
 - Is compatibility being written as derivation?
-- Is preliminary work being written as validated?
+- Is Preliminary work being written as Validated?
 - Is an audit being written as proof?
 - Is a mathematical object being treated as physical?
 - Is operational status being treated as scientific resolution?
 - Is an effective realization being treated as fundamental?
 - Is a formal readout being treated as physical measurement?
-- Is Quantum_Integrity_Core being treated as QIC identity by name alone?
+- Is `Quantum_Integrity_Core` being treated as QIC identity by name alone?
 - Are TIG and QIC being collapsed?
 - Is Cube research being promoted to ontology?
 - Is Cube state being identified with `Σ_QIC`?
@@ -818,62 +918,82 @@ Before any cross-repository or cross-domain claim is accepted, check:
 - Is a fractal research question being promoted to a fractal law?
 - Is state transience being promoted to object transience?
 - Is SSC application terminology entering the core prematurely?
-- Does the transfer require an interface-specific boundary document?
+- Is a scientifically open or missing object being incorrectly treated as failed terminology governance?
+- Does an actual new transfer require an interface-specific boundary document?
 
 ---
 
-## 16. Synchronization Result
+## 17. Synchronization Result
 
-This revision synchronizes the boundary matrix with the corrected OQ-031 terminology layer by:
+This revision synchronizes the boundary matrix with:
 
-1. separating repository containers from scientific domains;
-2. preserving all status axes independently;
-3. adding the canonical relation classes;
-4. separating TIG gravitational architecture from QIC quantum-bridge research;
-5. correcting the role of the `Quantum_Integrity_Core` repository container;
-6. adding explicit TIG/QIC anti-collapse boundaries;
-7. adding Cube interfaces with TIG, QIC, SIR, TIG-E, and Nexus;
-8. adding Cube scale, Planck manifestation, fractal, and transience boundaries;
-9. adding SSC as a deferred application-projection scope;
-10. expanding the interface risk register;
-11. removing stale remaining-work statements that listed already existing governance artifacts as absent.
+- `shared/terminology_inventory.md` content SHA `d835d2224113f8f09799db9ca97c8cc269d92cf8`,
+- `shared/terminology_drift_matrix.md` content SHA `fc0b4c975960c30d6e8c68964ac6338510ae578d`, and
+- `governance/claim_status_taxonomy.md` content SHA `ae1319c27d755d8cf301e21510eea489102ece30`.
+
+It corrects the Completion & Consistency Audit findings by:
+
+1. normalizing every status-axis name and value to the canonical taxonomy;
+2. separating `Partial` from `Partially Defined`;
+3. separating `Candidate` from `Candidate Bridge`;
+4. standardizing `Operationally Closed` and `Established Within Scope`;
+5. assigning `Preliminary` only to Maturity Status;
+6. adding Progress Classification and Completion Readiness to transfer control;
+7. adding `Relation Target` separately from `Relation Class`;
+8. normalizing `Iμν` / `I_QIC` non-equivalence;
+9. preserving QIC/TIG, SIR/physical, Cube/QIC, and SSC/core anti-collapse boundaries;
+10. adding the OQ-031 governance-completion criterion;
+11. making interface-specific boundary files conditional on actual new transfers rather than universal current blockers;
+12. removing stale wording that treated scientifically open objects or deferred interfaces as automatic OQ-031 completion blockers.
 
 ---
 
-## 17. OQ-030 / OQ-031 Status
+## 18. OQ-030 / OQ-031 Status
 
 This file partially advances:
 
 - OQ-030 / OQ-NEXUS-001 — Cross-Repository Claim Boundaries
 - OQ-031 / OQ-NEXUS-002 — Shared Terminology Without Domain Collapse
 
-Current supported status contribution:
+Current supported values:
 
 ```text
-PARTIALLY RESOLVED — CORRECTION REQUIRED
+Registry Status: OPEN
+Progress Classification: PARTIALLY RESOLVED — CORRECTION REQUIRED
+Completion Readiness: NOT ESTABLISHED
 ```
 
-The following governance artifacts are now synchronized at the controlled-document level:
+The following four controlled governance artifacts are synchronized at current HEAD:
 
 1. `shared/terminology_inventory.md`
 2. `shared/terminology_drift_matrix.md`
 3. `governance/claim_status_taxonomy.md`
 4. `governance/cross_repository_claim_boundary_matrix.md`
 
-OQ-030 and OQ-031 remain unresolved because:
+The remaining downstream artifacts requiring targeted resynchronization are:
 
-1. registry and repository-status files still require Cross-ID and scope references;
-2. interface-specific boundary documents may still be required where a real bridge or transfer is attempted;
-3. the final completion audit has not been performed;
-4. scientific objects, definitions, derivations, proofs, validations, and bridges remain open at their repository-supported status;
-5. SSC application projection remains deferred.
+1. `registry/open_questions.md`
+2. `registry/master_open_question_backlog.md`
+3. `registry/repository_status.md`
+
+Completion Readiness remains `NOT ESTABLISHED` until:
+
+- the local registry wording is current,
+- stale Cube entries in the master backlog are corrected,
+- the repository-status index reflects the corrected synchronization state,
+- all seven artifacts agree on the OQ-031 completion criterion,
+- and the final Completion & Consistency Re-Audit passes.
+
+Scientifically open objects, missing bridges, and deferred SSC projection remain at their exact supported status. Their existence is not itself an OQ-031 governance blocker when their boundaries are correctly represented.
 
 ---
 
-## 18. Maintenance Rule
+## 19. Maintenance Rule
 
 Any future cross-repository relation, cross-domain relation, bridge, dependency, role update, Cube interface, QIC/TIG interface, or application projection must be checked against this matrix.
 
-If a proposed transfer violates this matrix, it remains non-canonical until the required definition, bridge, derivation, proof, validation, review result, or explicitly governed exception is documented.
+Any change to the terminology inventory, drift matrix, or claim-status taxonomy invalidates this matrix's synchronization claim until it is explicitly reconciled against the new content SHAs.
 
-No update to this matrix may create scientific evidence or scientific identity absent from source repositories.
+A proposed transfer that violates this matrix remains non-canonical until the required definition, bridge, derivation, proof, validation, review result, or explicitly governed exception is documented.
+
+No update to this matrix may create scientific evidence, scientific identity, definition, bridge, proof, validation, ontology, or theory absent from source repositories.
