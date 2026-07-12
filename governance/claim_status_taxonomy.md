@@ -3,10 +3,10 @@
 **Repository:** Integrity_Nexus  
 **Scope:** Scientific-core TIG Research Ecosystem with controlled Cube-domain coverage  
 **Status:** CANONICAL / LOCKED MODE / AUDIT-CORRECTED  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `74364a3c4f3575363ce3305ea0d68203f1d0e75f`; `shared/terminology_drift_matrix.md` content SHA `77f7e0c37336a262f51c765ae0f3ab314ed3f203`  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `06b2371b4cc65739aa93fa569fcd808553e054fb`; `shared/terminology_drift_matrix.md` content SHA `3270635e015931f12fd5c8de6fbc2107a541ab5a`  
 **Position in Control Chain:** terminology inventory → terminology drift matrix → this taxonomy → claim-boundary matrix → registries → repository-status index  
-**Global Synchronization Authority:** `registry/repository_status.md`  
-**OQ Status Contribution:** PARTIALLY RESOLVED — CORRECTION REQUIRED  
+**Global Synchronization and Completion-Readiness Authority:** `registry/repository_status.md`  
+**OQ Status Contribution:** READY FOR COMPLETION AUDIT  
 **Related Open Questions:** OQ-030 / OQ-NEXUS-001; OQ-031 / OQ-NEXUS-002  
 **Last Updated:** 2026-07-12
 
@@ -14,7 +14,7 @@
 
 ## 1. Purpose
 
-This file defines the permitted status vocabulary for claims, scientific objects, registered questions, workflow states, and control artifacts inside the scientific-core TIG Research Ecosystem.
+This file defines the permitted vocabulary for claims, scientific questions and blockers, registered-question lifecycles, workflow states, control artifacts, definitions, bridges, progress, and completion readiness inside the scientific-core TIG Research Ecosystem.
 
 It exists to prevent silent upgrades such as:
 
@@ -27,6 +27,8 @@ It exists to prevent silent upgrades such as:
 - Operationally Closed becoming Question State `CLOSED`,
 - Registered becoming Question State `CLOSED`,
 - `AUDIT PASSED` becoming automatic registry closure,
+- `NOT APPLICABLE` becoming a Scientific Status value,
+- applicability becoming status assignment,
 - effective becoming fundamental,
 - mathematical becoming physical,
 - canonical artifact becoming completed theory,
@@ -49,6 +51,7 @@ It does not:
 - establish Cube theory,
 - assign the global synchronization count,
 - assign global Completion Readiness,
+- use `NOT APPLICABLE` as a Scientific Status value,
 - or resolve OQ-030 or OQ-031 by file existence alone.
 
 The sole authority for global current-HEAD synchronization and global Completion Readiness is:
@@ -61,11 +64,11 @@ registry/repository_status.md
 
 ## 2. Universal Rule
 
-A claim-bearing or question-bearing statement must carry the exact values applicable to each independent axis.
+A claim-bearing or question-bearing statement must carry the exact values applicable to each independent axis and must record applicability before assigning a Scientific Status.
 
 The protected rule is:
 
-> No status may be upgraded by wording, repository location, scientific-domain placement, registry admission, canonical placement, maturity label, audit passage, relation name, or cross-repository transfer.
+> No status may be upgraded by wording, repository location, scientific-domain placement, registry admission, canonical placement, maturity label, audit passage, relation name, applicability marker, or cross-repository transfer.
 
 A stronger status requires evidence appropriate to that exact upgrade.
 
@@ -84,13 +87,14 @@ Depending on the target status, this may require:
 
 ---
 
-## 3. Canonical Status Axes
+## 3. Canonical Axes and Control Fields
 
-The following axes are distinct and must not be compressed into one generic `Status` field.
+The following axes and control fields are distinct and must not be compressed into one generic `Status` field.
 
-| Axis | Question Answered | Canonical Values |
+| Axis or Control Field | Question Answered | Canonical Values or Markers |
 |---|---|---|
 | Claim Status | What evidential strength or claim role does the statement have? | Working Assumption, Candidate, Declared, Partial, Compatible, Admissible, Selected, Derived, Proven, Validated, Physical Candidate, Empirically Supported, Fundamental Candidate |
+| Scientific Status Applicability | Does the Scientific Status axis apply to this object or registered question? | APPLICABLE, NOT APPLICABLE |
 | Scientific Status | Is the exact scientific question or scientific blocker open or resolved? | Scientifically Open, Resolved |
 | Question State | Is the exact registered question formally open or closed under its governing registry rule? | OPEN, CLOSED |
 | Registry Status | Has the object or question been admitted to a registry? | Registerable, Registered |
@@ -104,6 +108,8 @@ The following axes are distinct and must not be compressed into one generic `Sta
 | Scientific Domain | In which scientific or governance domain does the claim operate? | Integrity_Nexus governance, TIG-E research architecture, TIG gravitational architecture, QIC quantum-bridge research, SIR mathematical recursion, Cube research, SSC deferred application projection |
 | Repository Container | In which repository is the artifact stored? | Integrity_Nexus, TIG-E, Quantum_Integrity_Core, Structural_Integrity_Recursion, Structural_State_Controller |
 
+`Scientific Status Applicability` is an applicability control field. It is not a Scientific Status value and does not itself assign any status.
+
 ### 3.1 Exact-Spelling and Axis Rule
 
 ```text
@@ -112,6 +118,9 @@ Candidate != Candidate Bridge
 Operationally Closed != Closed Operationally
 Established Within Scope != Established
 Preliminary != Validated
+Scientific Status Applicability NOT APPLICABLE != Scientific Status value
+Scientific Status Applicability APPLICABLE != Scientifically Open
+Scientific Status Applicability APPLICABLE != Resolved
 Question State OPEN != Scientific Status Scientifically Open
 Question State CLOSED != Scientific Status Resolved
 Registry Status Registered != Question State CLOSED
@@ -120,13 +129,31 @@ Progress Classification != Question State
 Completion Readiness != Scientific Status
 ```
 
-### 3.2 Multi-Axis Example
+### 3.2 Applicability Rule
+
+```text
+Scientific Status Applicability: APPLICABLE
+→ Scientific Status may be assigned as Scientifically Open or Resolved
+
+Scientific Status Applicability: NOT APPLICABLE
+→ no Scientific Status value is assigned
+```
+
+Rules:
+
+- `NOT APPLICABLE` is not a Scientific Status value.
+- Applicability does not determine whether an applicable scientific question is open or resolved.
+- Missing or unknown scientific status is not the same as inapplicability.
+- Governance-question lifecycle is controlled by Question State, not Scientific Status.
+
+### 3.3 Multi-Axis Examples
 
 A registered scientific question may simultaneously be:
 
 ```text
 Question State: OPEN
 Registry Status: Registered
+Scientific Status Applicability: APPLICABLE
 Scientific Status: Scientifically Open
 Claim Status: Candidate
 Operational Status: Blocked
@@ -143,7 +170,8 @@ A registered governance question may instead be:
 ```text
 Question State: OPEN
 Registry Status: Registered
-Scientific Status: NOT APPLICABLE
+Scientific Status Applicability: NOT APPLICABLE
+Scientific Status: no value assigned
 Progress Classification: READY FOR COMPLETION AUDIT
 Completion Readiness: controlled globally by registry/repository_status.md
 ```
@@ -197,14 +225,21 @@ SSC application projection != core scientific definition
 | Empirically Supported | Supported by observational or experimental evidence under a declared model | Unrestricted truth or final theory |
 | Fundamental Candidate | Candidate for underlying structure or ontology | Fundamental structure or truth |
 
-### 5.2 Scientific Status
+### 5.2 Scientific Status Applicability
+
+| Marker | Meaning | Boundary |
+|---|---|---|
+| APPLICABLE | The Scientific Status axis applies to the exact object, scientific question, or scientific blocker | Does not assign Scientifically Open or Resolved |
+| NOT APPLICABLE | The Scientific Status axis does not apply to the exact object or governance question | No Scientific Status value may be assigned |
+
+### 5.3 Scientific Status
 
 | Value | Meaning | Boundary |
 |---|---|---|
 | Scientifically Open | Further definition, derivation, proof, validation, empirical work, or scientific review is required | Does not imply failed terminology governance or Question State `OPEN` by itself |
 | Resolved | The exact scientific question or blocker is closed by explicit accepted scientific evidence | Does not close a governance question, dependency, or neighboring question automatically |
 
-### 5.3 Question State
+### 5.4 Question State
 
 | Value | Meaning | Boundary |
 |---|---|---|
@@ -222,9 +257,9 @@ corrections completed
 → Question State becomes CLOSED
 ```
 
-`AUDIT PASSED` is therefore necessary but not sufficient for Question State `CLOSED`.
+`AUDIT PASSED` is necessary but not sufficient for Question State `CLOSED`.
 
-### 5.4 Registry Status
+### 5.5 Registry Status
 
 | Value | Meaning | Boundary |
 |---|---|---|
@@ -233,7 +268,7 @@ corrections completed
 
 `OPEN` and `CLOSED` are not Registry Status values. They belong only to Question State.
 
-### 5.5 Operational Status
+### 5.6 Operational Status
 
 | Value | Meaning | Boundary |
 |---|---|---|
@@ -244,7 +279,7 @@ corrections completed
 
 `Operational` is the axis name, not a status value.
 
-### 5.6 Artifact Status
+### 5.7 Artifact Status
 
 | Value | Meaning | Boundary |
 |---|---|---|
@@ -252,7 +287,7 @@ corrections completed
 | Non-Canonical Input | Preserved material not accepted as current canonical claim-bearing output | Must not be cited as current canonical result |
 | Canonical Artifact | Repository-recognized file or governance object | Not automatically true, Proven, Validated, Resolved, or completed theory |
 
-### 5.7 Maturity Status
+### 5.8 Maturity Status
 
 | Value | Meaning | Boundary |
 |---|---|---|
@@ -260,7 +295,7 @@ corrections completed
 | M0–M5 | Repository or artifact maturity under `governance/maturity_model.md` | Maturity is not scientific truth |
 | Explicit Local L-Level | Repository-local maturity label when explicitly defined and mapped | Local level must not be generalized without mapping |
 
-### 5.8 Definition State
+### 5.9 Definition State
 
 | Value | Meaning |
 |---|---|
@@ -272,7 +307,7 @@ corrections completed
 
 Claim Status `Declared` and Definition State `Declared but Not Fully Defined` remain distinct.
 
-### 5.9 Bridge State
+### 5.10 Bridge State
 
 | Value | Meaning |
 |---|---|
@@ -289,16 +324,18 @@ Candidate != Candidate Bridge
 Candidate Bridge != Established Within Scope
 ```
 
-### 5.10 Progress Classification
+### 5.11 Progress Classification
 
 | Value | Meaning | Boundary |
 |---|---|---|
-| PARTIALLY RESOLVED — CORRECTION REQUIRED | Material progress is repository-supported, but known consistency or synchronization corrections remain | Question State remains OPEN; global Completion Readiness is NOT ESTABLISHED |
-| READY FOR COMPLETION AUDIT | Required corrections are complete and only independent completion audit remains before possible closure | Question State remains OPEN; global authority must report READY FOR AUDIT |
+| PARTIALLY RESOLVED — CORRECTION REQUIRED | Material progress is repository-supported, but known consistency or synchronization corrections remain in the evaluated scope | Question State remains OPEN; global Completion Readiness cannot exceed NOT ESTABLISHED |
+| READY FOR COMPLETION AUDIT | Required corrections are complete in the evaluated scope and the controlled chain may support completion audit once globally reconciled | Question State remains OPEN; does not itself assign global Completion Readiness |
+
+A local artifact may contribute `READY FOR COMPLETION AUDIT` when no correction remains in that artifact. Only `registry/repository_status.md` may authoritatively assign the global Progress Classification and Completion Readiness after evaluating the complete chain.
 
 Progress Classification is not Scientific Status, Question State, or Completion Readiness.
 
-### 5.11 Completion Readiness
+### 5.12 Completion Readiness
 
 | Value | Meaning | Boundary |
 |---|---|---|
@@ -312,7 +349,7 @@ Only `registry/repository_status.md` may authoritatively assign these global val
 
 ## 6. Composite Status Phrases
 
-Composite phrases are permitted only when every component can be decomposed into canonical axes.
+Composite phrases are permitted only when every component can be decomposed into canonical axes and applicability controls.
 
 ### Scoped Canonical Field-Equation Architecture
 
@@ -320,6 +357,7 @@ Composite phrases are permitted only when every component can be decomposed into
 Artifact Status: Canonical Artifact
 Claim Status: Physical Candidate or Declared, as locally evidenced
 Scope: Explicitly scoped
+Scientific Status Applicability: APPLICABLE
 Scientific Status: Scientifically Open where dependencies remain
 ```
 
@@ -340,6 +378,7 @@ It does not mean uniquely Derived or final ontology.
 ```text
 Maturity Status: Preliminary
 Object Context: Effective realization
+Scientific Status Applicability: APPLICABLE
 Scientific Status: Scientifically Open where interpretation remains unresolved
 ```
 
@@ -350,7 +389,8 @@ It does not mean independently Validated physical stress-energy.
 ```text
 Axis: Progress Classification
 Question State: unchanged
-Scientific Status: unchanged
+Scientific Status Applicability: unchanged
+Scientific Status: unchanged where applicable
 Global Completion Readiness: NOT ESTABLISHED
 ```
 
@@ -359,8 +399,9 @@ Global Completion Readiness: NOT ESTABLISHED
 ```text
 Axis: Progress Classification
 Question State: OPEN
-Global Completion Readiness: READY FOR AUDIT
-Next Required Action: independent completion audit
+Scientific Status Applicability: unchanged
+Scientific Status: unchanged where applicable
+Global Completion Readiness: assigned only by registry/repository_status.md
 ```
 
 ---
@@ -379,8 +420,8 @@ Next Required Action: independent completion audit
 | Compatible | Derived | Derivation showing that the target follows, not merely fits |
 | Selected | Derived | Derivation showing necessity or origin |
 | Preliminary | Validated | Completed validation against declared criteria; explicit cross-axis update |
-| Addressed | Resolved | Scientific closure evidence; operational processing alone is insufficient |
-| Operationally Closed | Resolved | Exact scientific closure criteria and dependencies satisfied |
+| Addressed | Resolved | Scientific closure evidence and Scientific Status Applicability `APPLICABLE`; operational processing alone is insufficient |
+| Operationally Closed | Resolved | Exact scientific closure criteria and dependencies satisfied; Scientific Status Applicability must be `APPLICABLE` |
 | Registerable | Registered | Registry admission under registry rules |
 | Registered | Canonical Artifact | Separate artifact-acceptance action |
 | Registered | Question State CLOSED | Forbidden direct transition; closure rule and accepted result required |
@@ -391,9 +432,10 @@ Next Required Action: independent completion audit
 | Physical Candidate | Empirically Supported | Observational or experimental evidence under a declared model |
 | Required or Missing | Established Within Scope | Typed interface, assumptions, and validation of transfer |
 | Named but Undefined | Defined | Explicit definition, type, scope, and non-circular dependencies |
-| PARTIALLY RESOLVED — CORRECTION REQUIRED | READY FOR COMPLETION AUDIT | Required artifacts corrected; global authority reports READY FOR AUDIT |
-| READY FOR AUDIT | AUDIT PASSED | Independent completion audit passes |
-| AUDIT PASSED | Question State CLOSED | Governing registry explicitly applies the accepted audit result to the exact question |
+| Scientific Status Applicability NOT APPLICABLE | APPLICABLE | Explicit reclassification showing that the object is now an exact scientific question or blocker; no Scientific Status follows automatically |
+| PARTIALLY RESOLVED — CORRECTION REQUIRED | READY FOR COMPLETION AUDIT | Required corrections complete in the evaluated scope |
+| Completion Readiness READY FOR AUDIT | AUDIT PASSED | Independent completion audit passes |
+| Completion Readiness AUDIT PASSED | Question State CLOSED | Governing registry explicitly applies the accepted audit result to the exact question |
 
 ---
 
@@ -432,6 +474,10 @@ QIC Compatibility = QM Derivation
 TIG Field-Equation Architecture = QIC Theory
 SSC Application Projection = Core Scientific Definition
 Scientifically Open = Failed Governance
+Scientific Status NOT APPLICABLE
+Scientific Status Applicability NOT APPLICABLE = Scientific Status value
+Scientific Status Applicability APPLICABLE = Scientifically Open
+Scientific Status Applicability APPLICABLE = Resolved
 Question State OPEN = Scientific Status Scientifically Open
 Question State CLOSED = Scientific Status Resolved
 Question State CLOSED = scientific truth
@@ -449,6 +495,7 @@ New or materially revised claim-bearing or question-bearing documents should inc
 
 ```text
 Claim Status:
+Scientific Status Applicability:
 Scientific Status:
 Question State:
 Registry Status:
@@ -469,7 +516,14 @@ Evidence Required For Upgrade:
 Closure Rule:
 ```
 
-Fields that are not applicable must be marked `NOT APPLICABLE`, not omitted where omission could create ambiguity.
+Applicability rules:
+
+- When `Scientific Status Applicability: APPLICABLE`, assign `Scientifically Open` or `Resolved` where known.
+- When `Scientific Status Applicability: NOT APPLICABLE`, leave Scientific Status unassigned and state explicitly that no value is assigned.
+- Never write `Scientific Status: NOT APPLICABLE`.
+- A missing or unknown applicable Scientific Status must not be disguised as inapplicability.
+
+For fields other than Scientific Status, a field-specific `NOT APPLICABLE` marker may be used only where the governing schema explicitly permits it and no canonical value is being replaced.
 
 For cross-repository or cross-domain material, also include:
 
@@ -505,9 +559,16 @@ They must never be placed in a generic `Status` field.
 
 ### 10.1 Integrity_Nexus Governance
 
-Governance may define process, registry, dependencies, roles, status vocabulary, maturity vocabulary, review obligations, transfer rules, Question State, and closure rules.
+Governance may define process, registry, dependencies, roles, status vocabulary, maturity vocabulary, review obligations, transfer rules, applicability, Question State, and closure rules.
 
 It may not define physics, mathematical proof, scientific ontology, or empirical truth.
+
+Governance questions normally use:
+
+```text
+Scientific Status Applicability: NOT APPLICABLE
+Scientific Status: no value assigned
+```
 
 ### 10.2 TIG-E Research Architecture
 
@@ -577,7 +638,7 @@ Terminology-governance completion requires every unresolved object or bridge to 
 
 - explicitly identified,
 - assigned to the correct repository container and scientific domain,
-- given exact applicable status-axis values,
+- given exact applicability and applicable status-axis values,
 - given exact Definition State and Bridge State,
 - protected by Relation Class, Relation Target, Allowed Transfer, and Forbidden Transfer,
 - and prevented from silent status upgrade.
@@ -587,6 +648,13 @@ scientifically open object != incomplete terminology governance
 missing bridge != incomplete terminology governance when absence is correctly controlled
 ```
 
+For OQ-030 and OQ-031:
+
+```text
+Scientific Status Applicability: NOT APPLICABLE
+Scientific Status: no value assigned
+```
+
 OQ-031 closure additionally requires:
 
 1. global Completion Readiness `AUDIT PASSED` in `registry/repository_status.md`;
@@ -594,16 +662,17 @@ OQ-031 closure additionally requires:
 3. explicit registry application of that result;
 4. Question State changed from `OPEN` to `CLOSED` in both local and master registries.
 
-Scientific Status remains `NOT APPLICABLE` for OQ-031 as a direct governance-question status.
-
 ---
 
 ## 13. Review Checklist
 
 Before accepting, transferring, or upgrading a claim or question, check:
 
-- Is the exact axis named?
+- Is the exact axis or applicability control named?
 - Is a generic `Status` field being used for mixed semantics?
+- Is Scientific Status Applicability explicit where ambiguity is possible?
+- Is `NOT APPLICABLE` being used incorrectly as a Scientific Status value?
+- Is a Scientific Status value assigned despite applicability being `NOT APPLICABLE`?
 - Is Question State explicit for a registered question?
 - Is `OPEN` being confused with Scientifically Open?
 - Is `CLOSED` being confused with Resolved?
@@ -634,22 +703,25 @@ Before accepting, transferring, or upgrading a claim or question, check:
 
 This revision reconciles the taxonomy with:
 
-- `shared/terminology_inventory.md` content SHA `74364a3c4f3575363ce3305ea0d68203f1d0e75f`, and
-- `shared/terminology_drift_matrix.md` content SHA `77f7e0c37336a262f51c765ae0f3ab314ed3f203`.
+- `shared/terminology_inventory.md` content SHA `06b2371b4cc65739aa93fa569fcd808553e054fb`, and
+- `shared/terminology_drift_matrix.md` content SHA `3270635e015931f12fd5c8de6fbc2107a541ab5a`.
 
-It propagates the audit corrections by:
+It propagates the current audit corrections by:
 
-1. adding Question State as a separate canonical axis;
-2. defining only `OPEN` and `CLOSED` on that axis;
-3. removing `OPEN` from Registry Status semantics;
-4. distinguishing Registry admission from question lifecycle;
-5. defining the explicit governance-question closure sequence;
-6. separating AUDIT PASSED from automatic closure;
-7. prohibiting generic mixed-semantics `Status` fields;
-8. classifying `Required Work` as metadata rather than status;
-9. establishing `registry/repository_status.md` as sole global synchronization and Completion Readiness authority;
-10. removing global synchronization counts and pending-file lists from this taxonomy;
-11. preserving all existing QIC/TIG, Cube, SIR, SSC, evidence, and status anti-collapse controls.
+1. changing the local OQ status contribution to `READY FOR COMPLETION AUDIT` because no taxonomy-local correction remains;
+2. adding Scientific Status Applicability as a separate control field;
+3. defining only `APPLICABLE` and `NOT APPLICABLE` as applicability markers;
+4. retaining only `Scientifically Open` and `Resolved` as Scientific Status values;
+5. prohibiting `Scientific Status: NOT APPLICABLE`;
+6. requiring no Scientific Status value when applicability is `NOT APPLICABLE`;
+7. preserving Question State as a separate canonical axis;
+8. preserving Registry admission, Operational Status, Progress Classification, and Completion Readiness as separate controls;
+9. preserving the explicit governance-question closure sequence;
+10. preserving generic mixed-semantics `Status` prohibition;
+11. preserving `Required Work` as metadata rather than status;
+12. preserving `registry/repository_status.md` as sole global synchronization and Completion Readiness authority;
+13. reporting no global synchronization count or authoritative globally pending-file list;
+14. preserving all QIC/TIG, Cube, SIR, SSC, evidence, bridge, and status anti-collapse controls.
 
 ---
 
@@ -660,8 +732,11 @@ Current local contribution:
 ```text
 Question State: OPEN
 Registry Status: Registered
-Progress Classification: PARTIALLY RESOLVED — CORRECTION REQUIRED
+Scientific Status Applicability: NOT APPLICABLE
+Progress Classification: READY FOR COMPLETION AUDIT
 ```
+
+No Scientific Status value is assigned to OQ-030 or OQ-031 because the axis is not applicable to these governance questions.
 
 This taxonomy is reconciled with the current inventory and drift-matrix SHAs.
 
@@ -673,7 +748,9 @@ Those values are controlled only by:
 registry/repository_status.md
 ```
 
-The boundary matrix and registries must adopt this taxonomy before the question entries may move to Progress Classification `READY FOR COMPLETION AUDIT`.
+The boundary matrix and registries must now adopt the progress and applicability corrections before a subsequent Completion & Consistency Audit can pass.
+
+This propagation statement is not a global synchronization report.
 
 ---
 
@@ -683,10 +760,10 @@ Any document introducing or changing a claim-bearing or question-bearing artifac
 
 Any stronger status requires the evidence or registry action required for that exact transition.
 
-Any new status phrase must be decomposable into the independent axes defined here.
+Any new status phrase must be decomposable into the independent axes and applicability controls defined here.
 
 Any change to the terminology inventory or drift matrix invalidates this taxonomy's local reconciliation until explicitly updated against the new content SHAs.
 
-This taxonomy must never report the global current-HEAD synchronization count or supersede `registry/repository_status.md`.
+This taxonomy must never report the global current-HEAD synchronization count, assign global Completion Readiness, or supersede `registry/repository_status.md`.
 
 No taxonomy update may create scientific evidence, definition, proof, validation, bridge, ontology, theory, audit passage, or question closure absent from the governing sources.
