@@ -2,9 +2,11 @@
 
 **Repository:** Integrity_Nexus  
 **Scope:** Scientific-core TIG Research Ecosystem with controlled Cube-domain coverage  
-**Status:** CANONICAL / LOCKED MODE  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `d835d2224113f8f09799db9ca97c8cc269d92cf8`  
+**Status:** CANONICAL / LOCKED MODE / AUDIT-CORRECTED  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `74364a3c4f3575363ce3305ea0d68203f1d0e75f`  
 **Position in Control Chain:** primary inventory → this drift matrix → claim-status taxonomy → claim-boundary matrix → registries → repository-status index  
+**Global Synchronization Authority:** `registry/repository_status.md`  
+**Question-State Model:** `OPEN` / `CLOSED` as a governance-question lifecycle axis, separate from Scientific Status, Registry admission, Progress Classification, and Completion Readiness  
 **OQ Status Contribution:** PARTIALLY RESOLVED — CORRECTION REQUIRED  
 **Related Open Questions:** OQ-030 / OQ-NEXUS-001; OQ-031 / OQ-NEXUS-002  
 **Last Updated:** 2026-07-12
@@ -15,7 +17,7 @@
 
 This file prevents shared words from collapsing into identical technical definitions across repositories and scientific domains.
 
-A shared term may provide orientation across the ecosystem, but it does not automatically denote the same object, predicate, structure, claim type, maturity, scope, or physical meaning.
+A shared term may provide orientation across the ecosystem, but it does not automatically denote the same object, predicate, structure, claim type, maturity, scope, lifecycle state, or physical meaning.
 
 This matrix is a governance artifact.
 
@@ -26,9 +28,18 @@ It does not:
 - create bridges,
 - establish physical identity,
 - establish Cube ontology,
+- close governance questions,
+- assign global Completion Readiness,
+- report the global current-HEAD synchronization count,
 - or resolve OQ-030 or OQ-031 by file existence alone.
 
-OQ-031 governance completion does not require the underlying scientific objects to be solved. It requires their terminology, scientific domain, status, definition state, bridge state, relation class, relation target, scope, and transfer boundaries to remain explicit and internally consistent.
+OQ-031 governance completion does not require the underlying scientific objects to be solved. It requires their terminology, scientific domain, status axes, definition state, bridge state, relation class, relation target, scope, and transfer boundaries to remain explicit and internally consistent.
+
+The sole authority for the global current-HEAD synchronization state is:
+
+```text
+registry/repository_status.md
+```
 
 ---
 
@@ -36,7 +47,7 @@ OQ-031 governance completion does not require the underlying scientific objects 
 
 The protected rule is:
 
-> Same word does not imply same technical object.
+> Same word does not imply same technical object or same status-axis value.
 
 Every cross-repository use of a shared term must preserve:
 
@@ -44,19 +55,28 @@ Every cross-repository use of a shared term must preserve:
 - scientific domain,
 - local object type,
 - input and output type where applicable,
-- claim status,
-- maturity status,
+- Claim Status,
+- Scientific Status,
+- Question State where applicable,
+- Registry Status,
+- Operational Status,
+- Artifact Status,
+- Maturity Status,
+- Progress Classification,
+- Completion Readiness,
 - scope,
-- definition state,
-- bridge state,
-- relation class,
-- relation target where applicable,
-- allowed transfer,
-- and forbidden transfer.
+- Definition State,
+- Bridge State,
+- Relation Class,
+- Relation Target where applicable,
+- Allowed Transfer,
+- and Forbidden Transfer.
 
 Repository identity and scientific-domain identity must not be conflated.
 
-A relation target must never be appended to or substituted for a canonical relation-class value.
+A Relation Target must never be appended to or substituted for a canonical Relation Class value.
+
+Question State must not be inferred from Scientific Status, Registry admission, Progress Classification, or Completion Readiness.
 
 ---
 
@@ -139,7 +159,7 @@ Where a relation class refers to a specific object, the object must be recorded 
 | invariant | Governance preservation condition | Formal preservation across gates or candidate evolution | No general invariant established by current validation-status file | No physical conserved quantity follows from QIC compatibility | Recursive or spectral consistency may be mathematical only | No Cube invariant follows from working assumptions | Governance or mathematical invariant becomes conserved physical quantity | Label governance, formal, mathematical, or physical status |
 | emergence | Foundational question only | Workflow emergence and common-emergence research architecture | Physical emergence only if separately derived | QIC emergence from deeper structure remains open | Historical abstraction does not define an emergence mechanism | Geometry-from-state is a foundational hypothesis, not derivation | Workflow, historical abstraction, and ontology collapse | Separate workflow emergence, scientific question, and derived mechanism |
 | crystallization | Not a scientific truth category | TIG-E process stage producing a controlled artifact | No automatic physical selection | No QIC completion follows | No SIR theorem follows | No Cube result follows | Process completion becomes scientific completion | Restrict to TIG-E process status |
-| ontology | Governance-protected strong interpretation category | Not created by audit or registry | Effective architecture is not ontology | `Σ_QIC` is not automatic physical ontology | Mathematical framework is not physical ontology | Cube corpus is not completed Cube ontology | File or framework existence becomes ontology | Require explicit scientific bridge and status upgrade evidence |
+| ontology | Governance-protected strong interpretation category | Not created by audit or registry | Effective architecture is not ontology | `Σ_QIC` is not automatic physical ontology | Mathematical framework is not physical ontology | Cube corpus is not completed Cube ontology | File or framework existence becomes ontology | Require explicit scientific bridge and status-upgrade evidence |
 
 ---
 
@@ -165,21 +185,23 @@ Where a relation class refers to a specific object, the object must be recorded 
 
 ## 7. Foundational Open-Object Drift Matrix
 
-| Term | Current Scientific Domain | Current Status | Definition State | Principal Drift Risk | Mandatory Boundary |
-|---|---|---|---|---|---|
-| substrate | Foundational ecosystem / TIG-E research | Scientifically open | NAMED BUT UNDEFINED | Organizing question becomes substrate answer | Naming a substrate candidate does not identify the substrate |
-| defect | Context-dependent | Undefined as universal object | Generic term only | Generic defect becomes `DefectSpace` | `defect != DefectSpace` without explicit definition |
-| DefectSpace | Foundational TIG-E/TIG research | Blocked / needs definition | Independently undefined | Registry occurrence becomes ontology | Name or backlog entry is not definition |
-| Rel_TIG | Foundational TIG-E/TIG research | Blocked / needs definition | Independently undefined | Relation name becomes a relation | Name or notation is not a typed relation |
-| B_TIG | TIG foundational functional research | Needs non-circular derivation | Working use / declared object only | Working use becomes derivation | `B_TIG working use != B_TIG derivation` |
-| I_QIC | QIC quantum-bridge research | Needs definition | Undefined typed object | QIC integrity becomes `Iμν` or Nexus integrity | `I_QIC != Iμν`; target typing is not established definition |
-| Σ_QIC | QIC quantum-bridge research | Selected minimum placeholder | Abstract auditable set only | Placeholder becomes Hilbert space or ontology | `Σ_QIC != Hilbert space != TIG spacetime state != Cube state` |
-| Read_QIC | QIC quantum-bridge research | Scientifically open | Formal readout semantics incomplete | Formal output becomes physical measurement | `Read_QIC != physical measurement` without bridge |
-| Pres_QM | TIG-E / QIC compatibility layer | Scoped compatibility condition | Locally defined formal predicate | Compatibility becomes QM derivation | `Pres_QM != Schrödinger dynamics != unitarity != QM derivation` |
-| Gate_E | TIG-E research architecture | Formal gate | Locally defined | Gate passage becomes physical selection | Gate result preserves candidate status |
-| Registerable_E | TIG-E research architecture | Governance / lifecycle status | Locally defined | Registrability becomes truth | `registerable/registered != canonical truth or physical law` |
+The `Local Status Description` column preserves source-language summaries. It does not redefine canonical status-axis values.
 
-Scientifically open or undefined objects in this table are not automatic OQ-031 completion blockers. They become completion blockers only when their term, domain, status, definition state, bridge state, relation, or transfer boundary is absent, contradictory, or misleading.
+| Term | Current Scientific Domain | Local Status Description | Definition State | Principal Drift Risk | Mandatory Boundary |
+|---|---|---|---|---|---|
+| substrate | Foundational ecosystem / TIG-E research | Scientifically open | Named but Undefined | Organizing question becomes substrate answer | Naming a substrate candidate does not identify the substrate |
+| defect | Context-dependent | Undefined as universal object | Generic term only | Generic defect becomes `DefectSpace` | `defect != DefectSpace` without explicit definition |
+| DefectSpace | Foundational TIG-E/TIG research | Blocked; definition required | Undefined | Registry occurrence becomes ontology | Name or backlog entry is not definition |
+| Rel_TIG | Foundational TIG-E/TIG research | Blocked; definition required | Undefined | Relation name becomes a relation | Name or notation is not a typed relation |
+| B_TIG | TIG foundational functional research | Non-circular derivation required | Declared but Not Fully Defined | Working use becomes derivation | `B_TIG working use != B_TIG derivation` |
+| I_QIC | QIC quantum-bridge research | Definition required | Named but Undefined | QIC integrity becomes `Iμν` or Nexus integrity | `I_QIC != Iμν`; target typing is not established definition |
+| Σ_QIC | QIC quantum-bridge research | Selected minimum placeholder | Partially Defined | Placeholder becomes Hilbert space or ontology | `Σ_QIC != Hilbert space != TIG spacetime state != Cube state` |
+| Read_QIC | QIC quantum-bridge research | Scientifically open | Partially Defined | Formal output becomes physical measurement | `Read_QIC != physical measurement` without bridge |
+| Pres_QM | TIG-E / QIC compatibility layer | Scoped compatibility condition | Defined | Compatibility becomes QM derivation | `Pres_QM != Schrödinger dynamics != unitarity != QM derivation` |
+| Gate_E | TIG-E research architecture | Formal gate | Defined | Gate passage becomes physical selection | Gate result preserves candidate status |
+| Registerable_E | TIG-E research architecture | Registry-admission predicate | Defined | Registrability becomes truth | `Registerable_E != accepted physical law`; registry admission is not Question State closure |
+
+Scientifically open or undefined objects in this table are not automatic OQ-031 completion blockers. They become completion blockers only when their term, domain, status, Definition State, Bridge State, relation, or transfer boundary is absent, contradictory, or misleading.
 
 ---
 
@@ -187,55 +209,63 @@ Scientifically open or undefined objects in this table are not automatic OQ-031 
 
 | Term | Governance / TIG-E Process | TIG Gravitational Architecture | QIC Quantum-Bridge Research | SIR Mathematical Recursion | Cube Research | Drift Risk | Required Control |
 |---|---|---|---|---|---|---|---|
-| state | Registry or candidate status | Physical/geometric state only where scoped | QIC state `q ∈ Σ_QIC` | Recursive or formal state | Proposed Cube state `S_cube` | All states collapse | State subtype required |
+| state | Registry, question, or candidate state | Physical/geometric state only where scoped | QIC state `q ∈ Σ_QIC` | Recursive or formal state | Proposed Cube state `S_cube` | All states collapse | State subtype and axis required |
 | state space | Registry schema is not scientific state space | No identity with `Σ_QIC` | Abstract set `Σ_QIC`; no Hilbert space | Mathematical state space only if defined | Proposed open Cube state space | One state-space type imported everywhere | Record set/type, scope, and bridge status |
 | transition | Workflow or candidate transition | Physical transition requires separate law | Minimal relation is weaker than generator | Mathematical transition only | Cube-state transition program open | Relation becomes physical time evolution | Distinguish relation, map, process, generator, and law |
 | process | Research workflow or registry process | Physical process requires separate interpretation | Composition and dynamics remain open | Formal process only if defined | Cube process remains open | Workflow becomes physical process | Qualify process domain |
 | evolution | Candidate or workflow evolution | Physical dynamics not established by terminology | QIC generator/Hamiltonian open | Recursive evolution is mathematical | Cube state evolution open | All evolution language becomes one time law | Require evolution subtype and parameter |
 | preservation | Gate or admissibility preservation | Physical conservation requires separate evidence | `Pres_QM` is structural compatibility preservation | Mathematical invariance only | Cube persistence remains open | Preservation becomes conserved quantity | Label formal, mathematical, or physical status |
 | generator | Candidate classification or blocker status | Physical generator open | Stronger than transition relation; not established | Mathematical generator only if defined | No Cube generator established | Transition relation becomes generator | Require composition law and typed action |
-| Hamiltonian | Not supplied by workflow | Not automatically TIG generator | No final QIC Hamiltonian or unitary dynamics | Mathematical operator only if defined | No Cube Hamiltonian established | Standard-QM term imported as result | Preserve scientifically open status |
+| Hamiltonian | Not supplied by workflow | Not automatically TIG generator | No final QIC Hamiltonian or unitary dynamics | Mathematical operator only if defined | No Cube Hamiltonian established | Standard-QM term imported as result | Preserve Scientifically Open status |
 | readout | Workflow output may be formal | Physical observable requires bridge | `Read_QIC` formal semantics only | No physical readout inherited | Cube state report is not measurement | Output becomes measurement | Separate formal readout from physical measurement |
 | measurement | Audit or data collection is not quantum measurement | Physical measurement requires model semantics | Measurement bridge remains open | Mathematical evaluation is not physical measurement | Cube observation language remains hypothetical | Ordinary use and QM measurement collapse | Require state-outcome-transition interpretation |
 | observable | Reported quantity may be formal | Geometric or empirical observable only where scoped | Contextual or formal output may not be physical observable | Mathematical observable only if defined | Cube observable manifestation remains working/candidate language | Formal quantity becomes empirical observable | State evidence class and scientific domain |
 
 ---
 
-## 9. Claim and Status Drift Matrix
+## 9. Claim, Question, and Status Drift Matrix
 
-| Term | Correct Meaning | Primary Drift Risk | Mandatory Boundary |
-|---|---|---|---|
-| working assumption | Temporary scoped assumption for exploration | Treated as result | No proof, no finality, no global transfer |
-| candidate | Proposed testable or auditable object | Treated as final or selected | Candidate only; not final |
-| declared | Named structure without full derivation | Treated as established | Declared only; not derived or proven |
-| partial | Some components supported; remainder open | Treated as complete | Partial only; unresolved remainder explicit |
-| compatible | Does not violate target constraints under scope | Treated as derived or unique | Compatible only; not derived |
-| registered | Entered into registry, queue, backlog, or index | Treated as true | Registration is governance metadata |
-| canonical | Repository-recognized artifact, question, or scoped result | Treated as scientific truth | Canonical artifact != completed theory |
-| selected | Chosen minimum or working option within explicit scope | Treated as necessary or true | Selected != derived necessity |
-| derived | Obtained from stated premises through documented reasoning | Scope silently expanded | No broader claim than derivation supports |
-| proven | Mathematically or logically proven under assumptions | Treated as physical or empirical truth | Proof requires type and assumptions; physical bridge separate |
-| validated | Checked against declared criteria or evidence class | Local validation becomes global | Validation scope mandatory |
-| preliminary | Existing but incomplete or provisional analysis | Promoted to validated | PRELIMINARY != VALIDATED |
-| resolved | Exact item closed by accepted evidence | Neighboring items treated as closed | Resolution does not propagate automatically |
-| scientifically open | Further definition, derivation, proof, validation, or review required | Hidden closure rhetoric | No closure claim |
-| physical candidate | Candidate with explicit physical interpretation path | Treated as empirically confirmed | Physical candidate != empirical support or ontology |
-| operational | Status domain for workflow or execution | Treated as scientific status | Operational and scientific statuses remain separate |
-| addressed | Concrete operational value for processed item | Treated as solved | Addressed != scientifically resolved |
-| foundational | Organizing research level or question | Treated as fundamental object | Foundational != fundamental |
-| fundamental | Strong scientific or ontological status | Granted to effective or exploratory objects | Requires extraordinary explicit support |
-| fundamental candidate | Candidate for underlying structure | Treated as fundamental truth | Candidate status must remain visible |
-| proof | Formal support under explicit assumptions | Audit passage becomes proof | Proof type and assumptions required |
-| derivation | Documented reasoning from premises | Compatibility or declaration becomes derivation | Premises and dependency chain required |
-| audit | Review against declared criteria | Audit becomes proof, selection, or empirical validation | Audit status remains separate |
+| Term | Canonical Axis | Correct Meaning | Primary Drift Risk | Mandatory Boundary |
+|---|---|---|---|---|
+| working assumption | Claim Status | Temporary scoped assumption for exploration | Treated as result | No proof, no finality, no global transfer |
+| candidate | Claim Status | Proposed testable or auditable object | Treated as final or selected | Candidate only; not final |
+| declared | Claim Status | Named structure without full derivation | Treated as established | Declared only; not derived or proven |
+| partial | Claim Status | Some claim components supported; remainder open | Confused with Partially Defined | Partial != Partially Defined |
+| compatible | Claim Status | Does not violate target constraints under scope | Treated as derived or unique | Compatible only; not derived |
+| registerable | Registry Status | Eligible for registry admission | Treated as registered or true | Registerable != Registered != Question State CLOSED |
+| registered | Registry Status | Entered into registry, queue, backlog, or index | Treated as true or closed | Registered != scientific truth != Question State CLOSED |
+| canonical | Artifact Status | Repository-recognized artifact, question, or scoped result | Treated as scientific truth | Canonical Artifact != completed theory |
+| selected | Claim Status | Chosen minimum or working option within explicit scope | Treated as necessary or true | Selected != derived necessity |
+| derived | Claim Status | Obtained from stated premises through documented reasoning | Scope silently expanded | No broader claim than derivation supports |
+| proven | Claim Status | Mathematically or logically proven under assumptions | Treated as physical or empirical truth | Proof requires type and assumptions; physical bridge separate |
+| validated | Claim Status | Checked against declared criteria or evidence class | Local validation becomes global | Validation scope mandatory |
+| preliminary | Maturity Status | Existing but incomplete or provisional analysis | Promoted to Validated | Preliminary != Validated |
+| resolved | Scientific Status | Exact scientific question or blocker closed by accepted scientific evidence | Used to close governance question | Scientific Status Resolved != Question State CLOSED |
+| scientifically open | Scientific Status | Further scientific work is required | Used as governance lifecycle state | Scientifically Open != Question State OPEN |
+| question state | Question State | Lifecycle state of a registered question | Collapsed into scientific or registry status | Only `OPEN` or `CLOSED` |
+| OPEN | Question State | Registered question has not been formally closed | Treated as no progress or scientific openness | OPEN may coexist with partial progress; OPEN != Scientifically Open |
+| CLOSED | Question State | Governing registry applied an accepted closure result | Treated as scientific truth or dependency closure | CLOSED != Resolved; CLOSED does not propagate |
+| physical candidate | Claim Status | Candidate with explicit physical interpretation path | Treated as empirically confirmed | Physical Candidate != empirical support or ontology |
+| operational | Axis name | Status domain for workflow or execution | Treated as status value | Use Pending, Addressed, Blocked, or Operationally Closed |
+| addressed | Operational Status | Concrete operational value for processed item | Treated as solved | Addressed != Resolved != CLOSED |
+| blocked | Operational Status | Work cannot proceed until named dependencies are satisfied | Treated as impossibility or question lifecycle | Blocked != Question State OPEN and does not imply impossibility |
+| operationally closed | Operational Status | Workflow sequence closed within declared scope | Treated as scientific or question closure | Operationally Closed != Resolved != Question State CLOSED |
+| foundational | Descriptive research level | Organizing research level or question | Treated as fundamental object | Foundational != Fundamental |
+| fundamental | Strong scientific/ontological claim | Underlying established status only with extraordinary support | Granted to effective or exploratory objects | Effective != Fundamental |
+| fundamental candidate | Claim Status | Candidate for underlying structure | Treated as fundamental truth | Fundamental Candidate != Fundamental Structure |
+| proof | Evidence class | Formal support under explicit assumptions | Audit passage becomes proof | Proof type and assumptions required |
+| derivation | Evidence class | Documented reasoning from premises | Compatibility or declaration becomes derivation | Premises and dependency chain required |
+| audit | Evidence class | Review against declared criteria | Audit becomes proof, selection, or empirical validation | Audit result remains separate |
+| partially resolved — correction required | Progress Classification | Material progress exists but corrections remain | Treated as Question State or Scientific Status | Does not close the question |
+| audit passed | Completion Readiness | Completion audit accepted the controlled artifact state | Treated as automatic Question State closure | AUDIT PASSED requires registry application before CLOSED |
 
-The exact axis ownership and canonical spelling of these terms is controlled downstream by `governance/claim_status_taxonomy.md`. This matrix records drift risks but does not independently redefine the status taxonomy.
+The exact axis ownership and canonical spelling are controlled downstream by `governance/claim_status_taxonomy.md`. This matrix records drift risks and the normative Question State requirement but does not independently assign closure.
 
 ---
 
 ## 10. SIR Local-Term Drift Controls
 
-| SIR Term | Current Status | Primary Cross-Domain Risk | Required Control |
+| SIR Term | Local Status Description | Primary Cross-Domain Risk | Required Control |
 |---|---|---|---|
 | recursive integrity | Exploratory local framework term | Becomes TIG physical integrity | Mathematical/local label required |
 | recursion | Mathematical or governance recursion | Becomes physical recursion law | Bridge required for physical interpretation |
@@ -254,23 +284,23 @@ SIR canonicality concerns author-approved repository material; it is not scienti
 
 ## 11. Cube Drift Matrix
 
-| Cube Term | Current Status | Definition / Bridge State | Principal Drift Risk | Mandatory Boundary |
+| Cube Term | Local Status Description | Definition / Bridge State | Principal Drift Risk | Mandatory Boundary |
 |---|---|---|---|---|
 | Cube | Foundational research object / registered corpus term | No completed physical definition | File existence becomes completed theory | Cube corpus != completed Cube theory |
-| Cube state | Foundational research direction; OPEN | Proposed `S_cube`; variables and transitions open | Becomes `Σ_QIC` or physical state | Cube state != `Σ_QIC` without bridge |
-| Cube ontology | Scientifically open | Not established | Hypothesis becomes ontology | Working assumption/hypothesis != physical ontology |
-| Cube scale | Recognized / not fully derived | Fixed, dynamic, relative, and emergent options open | Working convention becomes derived scale | Working scale != physical derivation |
+| Cube state | Foundational research direction; scientific work open | Proposed `S_cube`; variables and transitions open | Becomes `Σ_QIC` or physical state | Cube state != `Σ_QIC` without bridge |
+| Cube ontology | Scientifically Open | Not established | Hypothesis becomes ontology | Working Assumption/hypothesis != physical ontology |
+| Cube scale | Recognized; not fully derived | Fixed, dynamic, relative, and emergent options open | Working convention becomes derived scale | Working scale != physical derivation |
 | recursive scale | Working or candidate language | No universal scale law | Recursive relation becomes fractal or physical law | Candidate constraint != derived law |
 | Planck-scale manifestation | Controlled working interpretation where used | Cube identity remains open | `L_min = l_P` becomes `Cube = l_P` | Planck manifestation != Cube identity |
-| Cube-to-QIC bridge | Blocked / scientifically open | Relation to `Σ_QIC` absent | Bridge requirement becomes existing bridge | Requirement != implementation |
-| fractal Cube organization | Recognized / not yet formalized | No theorem, dimension, or law | Fractal language becomes ontology | Research question != fractal law |
-| Cube transience / persistence | Recognized / not yet formalized | No transient Cube, persistent substrate, metastability criterion, or pattern theorem | Transient state becomes transient object | State transience, object persistence, and pattern persistence must remain separate |
+| Cube-to-QIC bridge | Operationally Blocked; Scientifically Open | Bridge State: Missing; relation to `Σ_QIC` absent | Bridge requirement becomes existing bridge | Requirement != implementation |
+| fractal Cube organization | Recognized; not yet formalized | No theorem, dimension, or law | Fractal language becomes ontology | Research question != fractal law |
+| Cube transience / persistence | Recognized; not yet formalized | No transient Cube, persistent substrate, metastability criterion, or pattern theorem | Transient state becomes transient object | State transience, object persistence, and pattern persistence must remain separate |
 
 Mandatory Cube non-equivalences:
 
 ```text
 Cube research corpus != completed Cube theory
-Cube hypothesis / working assumption != derived physical ontology
+Cube hypothesis / Working Assumption != derived physical ontology
 Planck-scale manifestation != Cube = Planck length
 Cube state != Σ_QIC without explicit bridge
 bridge requirement != existing bridge
@@ -293,7 +323,7 @@ persistent higher-order pattern != persistent substrate unit
 
 ---
 
-## 13. Required Type Signature Template
+## 13. Required Type and Status Signature Template
 
 Whenever a term is shared or transferred, record at minimum:
 
@@ -307,7 +337,14 @@ Object Type:
 Input Type:
 Output / Codomain:
 Claim Status:
+Scientific Status:
+Question State:
+Registry Status:
+Operational Status:
+Artifact Status:
 Maturity Status:
+Progress Classification:
+Completion Readiness:
 Scope:
 Definition State:
 Bridge State:
@@ -317,7 +354,7 @@ Allowed Transfer:
 Forbidden Transfer:
 ```
 
-A missing type or relation target must be marked missing or not applicable.
+A missing or inapplicable value must be marked `MISSING` or `NOT APPLICABLE` where omission could create ambiguity.
 
 It must not be inferred from name, notation, repository path, analogy, or shared vocabulary.
 
@@ -341,7 +378,8 @@ workflow emergence = physical emergence
 historical abstraction = emergence mechanism
 canonical artifact = scientific truth
 operational closure = scientific closure
-addressed = resolved
+Addressed = Resolved
+Operationally Closed = Question State CLOSED
 Born-compatible = Born-derived
 field-equation draft = field-equation candidate
 field-equation candidate = field-equation architecture
@@ -351,12 +389,13 @@ mathematical object = physical object
 metric-like = spacetime metric
 source-like = physical stress-energy
 effective stress structure = physical stress-energy
-registered = true
-selected = derived
-preliminary = validated
-foundational = fundamental
-audit = proof
-compatibility = derivation
+Registered = true
+Registered = Question State CLOSED
+Selected = Derived
+Preliminary = Validated
+Foundational = Fundamental
+Audit = Proof
+Compatibility = Derivation
 Quantum_Integrity_Core repository = QIC scientific object
 QIC = TIG
 Σ_QIC = TIG spacetime state
@@ -375,9 +414,16 @@ transient Cube state = transient Cube object
 persistent pattern = persistent substrate unit
 shared term = identical technical definition
 scientifically open object = failed terminology governance
+Question State OPEN = Scientific Status Scientifically Open
+Question State CLOSED = Scientific Status Resolved
+Question State CLOSED = scientific truth
+Question State CLOSED = closure of dependencies
+Completion Readiness AUDIT PASSED = Question State CLOSED
+Progress Classification = Question State
+local file synchronization statement = global synchronization authority
 ```
 
-The final line protects the distinction between open science and completed terminology governance. An open scientific object is compatible with OQ-031 closure only when its status and boundaries are fully controlled.
+The final controls protect both the distinction between open science and completed terminology governance and the separation between local artifact state and the global synchronization index.
 
 ---
 
@@ -391,11 +437,17 @@ Before accepting a cross-repository or cross-domain use of a term, check:
 - Is it defined in the target context?
 - Are both uses the same object type?
 - Are input and codomain known where applicable?
-- Is the relation class canonical?
-- Is the relation target separate from the relation class?
+- Is every applicable status axis explicit?
+- Is Question State used only for a registered-question lifecycle?
+- Is `OPEN` being confused with `Scientifically Open`?
+- Is `CLOSED` being confused with `Resolved`?
+- Is Registry Status `Registered` being confused with Question State `CLOSED`?
+- Is Completion Readiness `AUDIT PASSED` being treated as automatic closure?
+- Is the Relation Class canonical?
+- Is the Relation Target separate from the Relation Class?
 - Is one use governance/process and the other mathematical/physical?
-- Is the claim status preserved?
-- Is the maturity status preserved?
+- Is the Claim Status preserved?
+- Is the Maturity Status preserved?
 - Is a bridge required?
 - Does the bridge actually exist?
 - Is a named object still undefined?
@@ -404,61 +456,62 @@ Before accepting a cross-repository or cross-domain use of a term, check:
 - Is Cube research being promoted to ontology?
 - Is SSC application language entering the core prematurely?
 - Is scientific openness being incorrectly treated as terminology-governance failure?
+- Is this file being used to claim a global synchronization count that belongs only in `registry/repository_status.md`?
 
 ---
 
 ## 16. Synchronization Result
 
-This revision synchronizes the drift controls with the corrected primary inventory content SHA `d835d2224113f8f09799db9ca97c8cc269d92cf8` by:
+This revision reconciles the drift controls with primary inventory content SHA:
 
-1. preserving `bounded evolution` and the scientific-domain split;
-2. recording the one-way primary-inventory/downstream-control chain;
-3. adding `Relation Target` as a field separate from `Relation Class`;
-4. normalizing the `Iμν` / `I_QIC` non-equivalence representation;
-5. preserving QIC/TIG anti-collapse controls;
-6. preserving the minimum Cube-core drift controls;
-7. preserving SSC as a deferred application projection;
-8. separating open scientific objects from failed terminology governance;
-9. distinguishing governance completion criteria from scientific closure criteria;
-10. removing stale wording that claimed the first registry synchronization had never occurred;
-11. marking downstream files as requiring targeted resynchronization to the corrected inventory HEAD rather than as historically absent.
+```text
+74364a3c4f3575363ce3305ea0d68203f1d0e75f
+```
+
+It propagates the following normative corrections:
+
+1. `Question State` is a separate governance-question lifecycle axis.
+2. Its canonical values are `OPEN` and `CLOSED`.
+3. Question State is separate from Scientific Status, Registry admission, Operational Status, Progress Classification, and Completion Readiness.
+4. `AUDIT PASSED` does not automatically set Question State to `CLOSED`.
+5. `Registered` does not mean Question State `CLOSED`.
+6. Scientific Status `Resolved` is not the closure mechanism for OQ-030 or OQ-031.
+7. `registry/repository_status.md` is the sole authority for global current-HEAD synchronization.
+8. This matrix no longer reports a global synchronization count or a list of globally pending artifacts.
+9. Local synchronization to the primary inventory is distinct from global seven-artifact synchronization.
+10. Existing QIC/TIG, Cube, SIR, SSC, relation, evidence, and transfer controls remain preserved.
 
 ---
 
-## 17. OQ-030 / OQ-031 Status
+## 17. OQ-030 / OQ-031 Status Contribution
 
 This file partially advances:
 
 - OQ-030 / OQ-NEXUS-001 — Cross-Repository Claim Boundaries
 - OQ-031 / OQ-NEXUS-002 — Shared Terminology Without Domain Collapse
 
-Current supported status contribution:
+Current local contribution:
 
 ```text
-PARTIALLY RESOLVED — CORRECTION REQUIRED
+Question State: OPEN
+Progress Classification: PARTIALLY RESOLVED — CORRECTION REQUIRED
 ```
 
-The corrected primary inventory and this drift matrix are synchronized at current HEAD.
+This drift matrix is reconciled with the current primary inventory SHA.
 
-The original seven-artifact synchronization sequence occurred before the Completion & Consistency Audit. The following downstream artifacts now require targeted resynchronization to the corrected primary inventory rather than first-time creation:
+It does not assign the global Completion Readiness and does not state how many artifacts are synchronized.
 
-1. `governance/claim_status_taxonomy.md`
-2. `governance/cross_repository_claim_boundary_matrix.md`
-3. `registry/open_questions.md`
-4. `registry/master_open_question_backlog.md`
-5. `registry/repository_status.md`
+Those global values are controlled only by:
 
-The remaining OQ-031 blockers are governance inconsistencies, not the mere existence of scientifically open objects.
+```text
+registry/repository_status.md
+```
 
-Completion readiness remains unestablished until:
+The downstream taxonomy, boundary matrix, and registries must adopt the Question State axis and the single-authority synchronization rule before a subsequent Completion & Consistency Audit can pass.
 
-- status-axis vocabulary is normalized,
-- stale Cube backlog entries are corrected,
-- downstream synchronization wording is current,
-- all seven artifacts agree on the governance completion criterion,
-- and a final Completion & Consistency Re-Audit passes.
+This propagation statement is not a global synchronization report.
 
-Interface-specific boundary documents remain future conditional requirements when an actual new transfer or bridge is attempted; their absence does not by itself block terminology-governance closure for interfaces already correctly classified as missing, deferred, or undefined.
+Interface-specific boundary documents remain conditional requirements when an actual new transfer or bridge is attempted; their absence does not by itself block terminology-governance closure for interfaces already correctly classified as Missing, Deferred, Undefined, Explicitly Non-Equivalent, or Insufficient Evidence.
 
 ---
 
@@ -466,8 +519,10 @@ Interface-specific boundary documents remain future conditional requirements whe
 
 Whenever a new shared term appears in more than one repository or scientific domain, it must be added to this matrix or explicitly classified as not requiring cross-domain control.
 
-Whenever a term moves from governance or process use into mathematical, physical, empirical, Cube, QIC, or application use, its type, status, relation class, relation target, and bridge requirements must be documented before the stronger interpretation is accepted.
+Whenever a term moves from governance or process use into mathematical, physical, empirical, Cube, QIC, or application use, its type, status axes, Relation Class, Relation Target, and bridge requirements must be documented before the stronger interpretation is accepted.
 
 No update to this matrix may create a scientific definition absent from the source repositories.
 
-Any change to the primary terminology inventory invalidates this matrix's synchronization claim until the matrix has been explicitly reconciled against the new inventory content SHA.
+Any change to the primary terminology inventory invalidates this matrix's local reconciliation claim until the matrix is explicitly reconciled against the new inventory content SHA.
+
+This matrix must never state the global current-HEAD synchronization count or supersede `registry/repository_status.md`.
