@@ -1,11 +1,14 @@
 # Repository Status Index
 
 **Repository:** Integrity_Nexus  
-**Scope:** Repository-container, scientific-domain, maturity, and governance-status index for the TIG Research Ecosystem  
-**Status:** CANONICAL REGISTRY / LOCKED MODE  
-**Synchronization Base:** `shared/terminology_inventory.md`, `shared/terminology_drift_matrix.md`, `governance/claim_status_taxonomy.md`, `governance/cross_repository_claim_boundary_matrix.md`, `registry/open_questions.md`, and `registry/master_open_question_backlog.md`  
+**Scope:** Repository-container, scientific-domain, maturity, governance-status, and synchronization index for the TIG Research Ecosystem  
+**Status:** CANONICAL REGISTRY / LOCKED MODE / AUDIT-CORRECTED  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `d835d2224113f8f09799db9ca97c8cc269d92cf8`; `shared/terminology_drift_matrix.md` content SHA `fc0b4c975960c30d6e8c68964ac6338510ae578d`; `governance/claim_status_taxonomy.md` content SHA `ae1319c27d755d8cf301e21510eea489102ece30`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `be38195af6ebd0832b71469fa7b9f548f0acf7c7`; `registry/open_questions.md` content SHA `11a4c1e2220c0833ef0b44297b8a320628b5bbc1`; `registry/master_open_question_backlog.md` content SHA `88f3a9137bb98ae68f88f43f440bc59a392436fc`  
+**Position in Control Chain:** terminology inventory → drift matrix → claim-status taxonomy → claim-boundary matrix → local registry → master backlog → this repository-status index  
 **Related Open Questions:** OQ-030 / OQ-NEXUS-001; OQ-031 / OQ-NEXUS-002  
-**OQ Status Contribution:** PARTIALLY RESOLVED — CORRECTION REQUIRED  
+**Registry Status:** OPEN  
+**Progress Classification:** PARTIALLY RESOLVED — CORRECTION REQUIRED  
+**Completion Readiness:** NOT ESTABLISHED  
 **Last Updated:** 2026-07-12
 
 This document is the central status index for repositories governed or navigated through Integrity Nexus.
@@ -17,20 +20,35 @@ It is the meta-repository system of record for:
 - governance status,
 - maturity reference,
 - claim boundary,
-- bridge status,
-- and current synchronization obligations.
+- definition and bridge state,
+- and current OQ-030/OQ-031 synchronization state.
 
-It does not create scientific definitions, derivations, proofs, bridges, physical interpretations, or ontology.
+It does not create scientific definitions, derivations, proofs, validations, bridges, physical interpretations, ontology, or theory.
 
 ---
 
-## 1. Status Separation Rule
+## 1. Canonical Status Separation Rule
 
-Repository status, scientific-domain status, artifact status, maturity status, scientific status, definition state, and bridge state are separate axes.
+The following axes are distinct:
+
+```text
+Repository Container
+Scientific Domain
+Claim Status
+Scientific Status
+Registry Status
+Operational Status
+Artifact Status
+Maturity Status
+Definition State
+Bridge State
+Progress Classification
+Completion Readiness
+```
 
 The protected rule is:
 
-> Repository location or repository maturity must not be interpreted as scientific completion or scientific-object identity.
+> Repository location, repository name, repository maturity, canonical placement, registry entry, or governance-audit result must not be interpreted as scientific completion or scientific-object identity.
 
 Mandatory non-identities include:
 
@@ -42,38 +60,50 @@ mature governance != completed theory
 registered research block != derived ontology
 Quantum_Integrity_Core repository != QIC scientific object
 TIG-E repository != one single scientific domain
+Progress Classification != Scientific Status
+Completion Readiness != Resolution
+AUDIT PASSED != scientific truth
 ```
+
+Scientifically open objects and Missing bridges are compatible with completed terminology governance when their status, type, domain, scope, non-identity, and transfer boundaries are explicit and consistent.
 
 ---
 
-## 2. Status Classes
+## 2. Canonical Control Sources
 
-Repository maturity is defined in:
+Repository maturity is governed by:
 
 ```text
 governance/maturity_model.md
 ```
 
-Claim and status vocabulary is defined in:
+Canonical status vocabulary is governed by:
 
 ```text
 governance/claim_status_taxonomy.md
 ```
 
-Cross-repository and cross-domain transfer boundaries are defined in:
+Cross-repository and cross-domain transfers are governed by:
 
 ```text
 governance/cross_repository_claim_boundary_matrix.md
 ```
 
-Terminology evidence and drift controls are defined in:
+Terminology evidence and drift controls are governed by:
 
 ```text
 shared/terminology_inventory.md
 shared/terminology_drift_matrix.md
 ```
 
-A maturity classification may describe repository organization or artifact readiness. It does not upgrade a scientific claim.
+Open-question state and dependency order are governed by:
+
+```text
+registry/open_questions.md
+registry/master_open_question_backlog.md
+```
+
+A maturity or repository-status classification may describe organization, control coverage, or artifact readiness. It does not upgrade a scientific claim.
 
 ---
 
@@ -82,12 +112,12 @@ A maturity classification may describe repository organization or artifact readi
 | Repository Container | Primary Repository Role | Scientific Domains Represented | Default Boundary |
 |---|---|---|---|
 | Integrity_Nexus | Meta-governance, registry, dependency, maturity, terminology, and audit coordination | Integrity_Nexus governance | May govern claims; may not define scientific objects |
-| TIG-E-Topological_integrity-_gravity_engine- | Research orchestration, gates, candidate lifecycle, blocker queues, preservation structures, and Cube corpus | TIG-E research architecture; QIC quantum-bridge audit layer; Cube research; selected TIG/SIR interface work | Process and audit status are not scientific completion |
+| TIG-E-Topological_integrity-_gravity_engine- | Research orchestration, gates, candidate lifecycle, blocker queues, preservation structures, QIC audits, and Cube corpus | TIG-E research architecture; QIC quantum-bridge research; Cube research; selected TIG/SIR interface work | Process, audit, gate, and registry status are not scientific completion |
 | Quantum_Integrity_Core | Repository container for the current public TIG field-equation architecture and related validation material | TIG gravitational architecture | Container name does not establish QIC scientific identity; scoped realization is not complete theory |
 | Structural_Integrity_Recursion | Exploratory recursive and mathematical-structure repository | SIR mathematical recursion | Mathematical structure is not physical structure without bridge |
 | Structural_State_Controller | Downstream control and state-admissibility application repository | SSC deferred application projection | Application terminology may not define the active scientific core |
 
-Cube research is a scientific domain inside the active core scope, but it is not currently represented as an independent repository container in this index.
+Cube research is an active scientific domain represented primarily inside TIG-E. It is not an independent repository container in this index.
 
 ---
 
@@ -117,15 +147,17 @@ Governance-mature canonical meta-repository; numeric maturity not reassigned by 
 Canonical ecosystem governance and registry layer
 ```
 
-## Current OQ-030 / OQ-031 Contribution
+## Current OQ-030 / OQ-031 Status
 
 ```text
-PARTIALLY RESOLVED — CORRECTION REQUIRED
+Registry Status: OPEN
+Progress Classification: PARTIALLY RESOLVED — CORRECTION REQUIRED
+Completion Readiness: NOT ESTABLISHED
 ```
 
-## Controlled Artifacts
+## Controlled OQ-030 / OQ-031 Artifacts
 
-The synchronized governance layer currently includes:
+The following seven artifacts are now synchronized at current HEAD:
 
 1. `shared/terminology_inventory.md`
 2. `shared/terminology_drift_matrix.md`
@@ -139,10 +171,11 @@ The synchronized governance layer currently includes:
 
 Integrity_Nexus may:
 
-- organize repositories and scientific domains,
+- organize repository containers and scientific domains,
 - register questions and dependencies,
 - define status vocabulary,
-- define transfer controls,
+- define relation and transfer controls,
+- distinguish open science from failed governance,
 - and require audits.
 
 It may not:
@@ -152,12 +185,13 @@ It may not:
 - derive TIG or QIC,
 - establish SIR mathematics,
 - establish Cube ontology,
+- create Missing bridges,
 - or promote SSC application terminology into scientific-core truth.
 
-## Open Governance Action
+## Remaining Governance Action
 
 ```text
-Run the final OQ-031 completion audit against the synchronized governance and registry layer before any status upgrade.
+Perform the final OQ-031 Completion & Consistency Re-Audit over the seven synchronized artifacts before any status upgrade.
 ```
 
 ---
@@ -167,7 +201,7 @@ Run the final OQ-031 completion audit against the synchronized governance and re
 ## Repository Role
 
 ```text
-Research orchestration / gates / candidate lifecycle / blocker queues / preservation architecture / Cube research corpus
+Research orchestration / gates / candidate lifecycle / blocker queues / preservation architecture / QIC audit layer / Cube research corpus
 ```
 
 ## Scientific Domains Represented
@@ -188,7 +222,7 @@ Structured research-architecture repository; local artifact and track maturities
 ## Governance Status
 
 ```text
-Active canonical research-orchestration repository with explicit gate, registry, audit, preservation, and blocker controls
+Active canonical research-orchestration repository with explicit gate, registry, audit, preservation, blocker, QIC, and Cube controls
 ```
 
 ## Primary Nexus Relation
@@ -206,33 +240,42 @@ Registerable_E != accepted scientific law
 Pres_QM compatibility != quantum-mechanics derivation
 QIC audit object != completed QIC theory
 Cube corpus != completed Cube theory
+Operationally Closed != Resolved
+Audit result != proof
 ```
 
-## Cube Coverage
+## Cube Governance State
 
-TIG-E contains the registered Cube research block, including:
-
-- Cube inventory and maturity controls,
-- Cube state-space research,
-- Cube scale and recursive-scale work,
-- Planck-scale manifestation controls,
-- Cube-to-QIC bridge blockers,
-- fractal-organization research questions,
-- and Cube transience/persistence research questions.
-
-This coverage does not establish:
-
-- Cube ontology,
-- a unique Cube scale,
-- `Cube = Planck length`,
-- a fractal law,
-- Cube transience,
-- or a Cube-to-QIC bridge.
-
-## Open Governance Action
+The following Cube governance prerequisites are resolved in the master backlog:
 
 ```text
-Preserve local status axes and await the final OQ-031 completion audit; do not open a new terminology architecture during synchronization.
+OQ-025 — Cube Research Block Inventory
+OQ-026 — Cube Claim Boundary and Maturity Audit
+OQ-027 — Cube Scale / Planck Manifestation Consistency
+```
+
+Their accepted control artifacts include:
+
+- `registry/cube_research_block_inventory.md`
+- `docs/foundations/cube_claim_boundary_maturity_audit.md`
+- `docs/foundations/cube_scale_planck_manifestation_consistency_audit.md`
+
+This governance resolution does not establish:
+
+- Cube ontology,
+- a unique or fundamental Cube scale,
+- `Cube = Planck length`,
+- a complete Cube state or transition law,
+- a fractal law,
+- Cube transience or persistence,
+- or a Cube-to-QIC bridge.
+
+OQ-028 remains blocked by incomplete state typing, `I_QIC` remaining Named but Undefined, and a Missing typed Cube-to-QIC bridge.
+
+## Open Scientific Actions
+
+```text
+Continue Cube, QIC, TIG, and evolution research under their exact local statuses; do not treat OQ-031 governance completion as scientific closure.
 ```
 
 ---
@@ -253,10 +296,6 @@ TIG gravitational architecture
 
 ## Explicit Domain Qualification
 
-The repository name must not be used to infer that every object inside it belongs to the QIC scientific domain.
-
-Current protected distinctions include:
-
 ```text
 Quantum_Integrity_Core repository != QIC scientific object
 TIG gravitational architecture != QIC quantum-bridge research
@@ -264,10 +303,12 @@ Iμν != I_QIC
 TIG spacetime state != Σ_QIC
 ```
 
+The repository name must not be used to infer that every object inside it belongs to QIC quantum-bridge research.
+
 ## Current Maturity Reference
 
 ```text
-M3 candidate — formal research structure established, field-equation, tensor, dynamics, covariance, and validation dependencies remain active
+M3 candidate — formal research structure established; field-equation, tensor, dynamics, covariance, validation, and interpretation dependencies remain active
 ```
 
 This preserves the existing repository-status classification without upgrading the underlying science.
@@ -278,20 +319,16 @@ This preserves the existing repository-status classification without upgrading t
 Structured physical-candidate repository containing a scoped TIG field-equation architecture
 ```
 
-## Primary Nexus Relation
-
-```text
-Scoped physical/geometric candidate projection of integrity-preserving bounded structural evolution
-```
-
 ## Claim Boundary
 
 The current architecture may be described as:
 
 ```text
-scoped canonical field-equation architecture
-scoped effective realization
-physical candidate under declared model conditions
+Artifact Status: Canonical Artifact
+Scientific Domain: TIG gravitational architecture
+Claim Status: Physical Candidate within declared scope
+Scope: static spherical effective realization
+Scientific Status: Scientifically Open where completion dependencies remain
 ```
 
 It may not be promoted to:
@@ -304,10 +341,10 @@ It may not be promoted to:
 - independent physical stress-energy source,
 - or empirically confirmed theory.
 
-## Open Governance Action
+## Open Scientific Actions
 
 ```text
-Continue to label repository container, TIG scientific domain, effective scope, preliminary analyses, and open tensor/covariance programs separately.
+Preserve the repository-container/TIG-domain split and continue the independent tensor, dynamics, variational, covariance, energy-condition, perturbation, and observational programs at their registered status.
 ```
 
 ---
@@ -335,7 +372,7 @@ M2 candidate — repository and recursive research structure present; Nexus-alig
 ## Governance Status
 
 ```text
-Canonical exploratory mathematical repository; formal maturity and interface review still required
+Canonical exploratory mathematical repository; formal maturity and interface review remain registered work
 ```
 
 ## Primary Nexus Relation
@@ -365,12 +402,12 @@ These do not automatically become:
 - Cube laws,
 - or physical proof.
 
-SIR canonicality is an artifact/repository status, not scientific truth.
+SIR canonicality is Artifact Status, not scientific truth.
 
 ## Open Governance Action
 
 ```text
-Perform the separately registered Nexus-aligned SIR maturity and TIG-bridge review without importing physical claims.
+Perform OQ-029 as a separate Nexus-aligned SIR maturity and TIG-bridge review without importing physical claims.
 ```
 
 ---
@@ -392,26 +429,29 @@ Cube research
 ## Current Maturity Reference
 
 ```text
-Repository-registered research block with hypothesis, research-direction, active-audit, active-research, working-assumption, and open-question layers
+Repository-registered research block with resolved inventory, maturity-boundary, and scale-consistency governance prerequisites; scientific ontology and integration remain open
 ```
 
 ## Governance Status
 
 ```text
-Active but scientifically incomplete foundational research domain
+Governance-controlled but scientifically incomplete foundational research domain
 ```
 
-## Primary Nexus Relation
+## Governance Questions
 
 ```text
-Controlled foundational candidate domain under explicit ontology, scale, state, bridge, fractal, and transience boundaries
+OQ-025: RESOLVED — inventory task only
+OQ-026: RESOLVED — claim-boundary and maturity-audit task only
+OQ-027: RESOLVED — scale/Planck-manifestation consistency task only
+OQ-028: BLOCKED — typed Cube-to-QIC bridge absent
 ```
 
 ## Mandatory Boundaries
 
 ```text
 Cube research corpus != completed Cube theory
-Cube hypothesis / working assumption != derived physical ontology
+Cube hypothesis / Working Assumption != derived physical ontology
 Cube state != Σ_QIC without explicit bridge
 Planck-scale manifestation != Cube = Planck length
 working Cube scale != derived Cube scale
@@ -420,12 +460,13 @@ Cube transience question != established Cube transience
 transient Cube state != transient Cube object
 persistent higher-order pattern != persistent substrate unit
 bridge requirement != existing bridge
+resolved Cube governance audit != resolved Cube science
 ```
 
-## Open Governance Action
+## Open Scientific Actions
 
 ```text
-Keep Cube terminology represented in the scientific core while preserving every local maturity, definition, and bridge limitation.
+Continue ontology, state, transition, scale derivation, fractal, transience/persistence, and Cube-to-QIC research while preserving exact Definition State, Bridge State, and status boundaries.
 ```
 
 ---
@@ -456,12 +497,6 @@ This existing application-repository maturity classification does not alter its 
 
 ```text
 Nexus-aligned downstream application repository; excluded from the active OQ-031 scientific-core definition phase
-```
-
-## Primary Nexus Relation
-
-```text
-Deferred control-state application projection of integrity-preserving bounded structural evolution
 ```
 
 ## Scope Qualification
@@ -498,15 +533,17 @@ control admissibility != TIG/QIC/SIR/Cube admissibility
 application projection != scientific identity
 ```
 
-## Open Governance Action
+The deferred SSC projection does not block OQ-031 terminology-governance completion when its deferral and transfer prohibition are explicit.
+
+## Open Application Action
 
 ```text
-Defer terminology projection audit until the core terminology layer has passed completion audit; continue SSC-local development under SSC-local claims.
+Defer the SSC terminology-projection audit until the scientific-core terminology layer passes completion audit; continue SSC-local development under SSC-local claims.
 ```
 
 ---
 
-## 10. OQ-030 / OQ-031 Synchronization Status
+## 10. OQ-030 / OQ-031 Current Synchronization State
 
 ### Cross-ID Mapping
 
@@ -515,56 +552,91 @@ OQ-030 ↔ OQ-NEXUS-001
 OQ-031 ↔ OQ-NEXUS-002
 ```
 
-### Registry Status
+### Current Values
 
 ```text
-OPEN
+Registry Status: OPEN
+Scientific Status: NOT APPLICABLE as a direct scientific-object status
+Progress Classification: PARTIALLY RESOLVED — CORRECTION REQUIRED
+Completion Readiness: NOT ESTABLISHED
 ```
 
-### Current Progress Classification
+### Seven-Artifact Current-HEAD Synchronization
 
-```text
-PARTIALLY RESOLVED — CORRECTION REQUIRED
-```
+The following artifacts are synchronized at current HEAD:
 
-The `OPEN` registry status remains correct because neither question has passed final completion audit.
+1. `shared/terminology_inventory.md`
+2. `shared/terminology_drift_matrix.md`
+3. `governance/claim_status_taxonomy.md`
+4. `governance/cross_repository_claim_boundary_matrix.md`
+5. `registry/open_questions.md`
+6. `registry/master_open_question_backlog.md`
+7. `registry/repository_status.md`
 
-The more precise progress classification records that substantial governance and registry infrastructure now exists.
+The document-synchronization sequence is therefore complete.
 
-This repository-status synchronization completes the currently identified downstream document sequence for:
-
-1. terminology inventory,
-2. terminology drift matrix,
-3. claim-status taxonomy,
-4. cross-repository claim-boundary matrix,
-5. local open-question registry,
-6. master open-question backlog,
-7. repository status index.
-
-It does not itself establish completion readiness.
+This does not itself establish Completion Readiness or close either question.
 
 ---
 
-## 11. Current Completion Blockers
+## 11. OQ-031 Governance Completion Criterion
 
-OQ-030 and OQ-031 remain open because:
+OQ-031 does not require the common substrate, `Rel_TIG`, `DefectSpace`, `B_TIG`, `I_QIC`, Cube ontology, Cube-to-QIC bridge, `integrity field`, or SSC projection to be scientifically solved.
 
-- final consistency across the synchronized artifacts has not yet been audited;
-- interface-specific boundary documents may still be required when actual transfers are attempted;
-- evidence-insufficient terminology must remain evidence-insufficient;
-- named scientific objects and bridges remain undefined or missing;
-- QIC and TIG must remain explicitly separated;
-- Cube research must remain below ontology and theory-completion status;
-- and SSC projection validation remains deferred.
+It requires every unresolved term, object, or interface to be:
+
+- explicitly identified,
+- assigned to the correct repository container and scientific domain,
+- given exact canonical status-axis values,
+- given its exact Definition State and Bridge State,
+- assigned a canonical Relation Class and separate Relation Target where applicable,
+- scoped correctly,
+- protected by Allowed Transfer and Forbidden Transfer controls,
+- and prevented from silent status or domain upgrade.
+
+Therefore:
+
+```text
+scientifically open object != incomplete terminology governance
+missing bridge != incomplete terminology governance when absence is correctly controlled
+deferred scientific definition != terminology-governance failure when deferral is explicit
+```
+
+Interface-specific boundary documents are conditional requirements when an actual new transfer or bridge is attempted. Their absence does not block current terminology-governance closure for relations already classified as Missing, Required, Deferred, Undefined, Explicitly Non-Equivalent, or Insufficient Evidence.
 
 ---
 
-## 12. Maintenance Rule
+## 12. Remaining Completion Blocker
 
-Every significant repository-role, scientific-domain, maturity, governance-status, definition-state, or bridge-state change must update this file.
+The seven-artifact synchronization is complete.
+
+The sole remaining OQ-030/OQ-031 governance blocker is:
+
+```text
+Final OQ-031 Completion & Consistency Re-Audit over all seven synchronized artifacts
+```
+
+The following are not automatic blockers:
+
+- scientifically open named objects,
+- Missing bridges,
+- deferred `integrity field`,
+- deferred SSC projection,
+- Cube science remaining open after its governance prerequisites were resolved,
+- or future interface-specific documentation not yet triggered by an actual transfer.
+
+Completion Readiness remains `NOT ESTABLISHED` until the final re-audit checks current-HEAD consistency and accepts or rejects readiness.
+
+---
+
+## 13. Maintenance Rule
+
+Every significant repository-role, scientific-domain, maturity, governance-status, Definition State, Bridge State, Cross-ID, Progress Classification, Completion Readiness, or dependency change must update this file.
 
 Every new repository connected to Integrity Nexus must receive a repository-status entry and an explicit scientific-domain classification.
 
 A repository name must never substitute for scientific-domain identification.
 
-No maturity or status update may create scientific truth, physical interpretation, ontology, derivation, proof, validation, or bridge absent from the source repositories.
+Any change to one of the six upstream artifacts invalidates this index's synchronization claim until this file is explicitly reconciled against the new content SHA.
+
+No maturity or status update may create scientific truth, physical interpretation, ontology, derivation, proof, validation, bridge, or theory absent from the source repositories.
