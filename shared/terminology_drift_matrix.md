@@ -3,7 +3,8 @@
 **Repository:** Integrity_Nexus  
 **Scope:** Scientific-core TIG Research Ecosystem with controlled Cube-domain coverage  
 **Status:** CANONICAL / LOCKED MODE  
-**Synchronization Base:** `shared/terminology_inventory.md` at corrected OQ-031 inventory state  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `d835d2224113f8f09799db9ca97c8cc269d92cf8`  
+**Position in Control Chain:** primary inventory → this drift matrix → claim-status taxonomy → claim-boundary matrix → registries → repository-status index  
 **OQ Status Contribution:** PARTIALLY RESOLVED — CORRECTION REQUIRED  
 **Related Open Questions:** OQ-030 / OQ-NEXUS-001; OQ-031 / OQ-NEXUS-002  
 **Last Updated:** 2026-07-12
@@ -27,6 +28,8 @@ It does not:
 - establish Cube ontology,
 - or resolve OQ-030 or OQ-031 by file existence alone.
 
+OQ-031 governance completion does not require the underlying scientific objects to be solved. It requires their terminology, scientific domain, status, definition state, bridge state, relation class, relation target, scope, and transfer boundaries to remain explicit and internally consistent.
+
 ---
 
 ## 2. Universal Rule
@@ -47,10 +50,13 @@ Every cross-repository use of a shared term must preserve:
 - definition state,
 - bridge state,
 - relation class,
+- relation target where applicable,
 - allowed transfer,
 - and forbidden transfer.
 
 Repository identity and scientific-domain identity must not be conflated.
+
+A relation target must never be appended to or substituted for a canonical relation-class value.
 
 ---
 
@@ -118,6 +124,8 @@ Semantic resemblance is not a relation class.
 
 A named bridge is not an existing bridge.
 
+Where a relation class refers to a specific object, the object must be recorded separately as `Relation Target`.
+
 ---
 
 ## 5. Foundational and Meta Drift Matrix
@@ -142,7 +150,7 @@ A named bridge is not an existing bridge.
 | field | Field-equation intake, draft, candidate, or governance context | Physical-candidate field context only where explicitly scoped | No QIC field established by terminology | May denote mathematical field only if locally defined | Field behavior appears as hypothesis or future output | Generic field language becomes physical field | Qualify mathematical field, physical field, research field, or field-equation context |
 | field equation | Selection constraint and candidate lifecycle | Current scoped architecture `Gμν = Iμν[g,r_c]`; completion open | QIC theory does not follow from TIG field architecture | No physical field equation inherited | Cube state or scale work does not derive a field equation | Draft, candidate, architecture, and complete theory collapse | Preserve `draft`, `candidate`, `architecture`, `scoped realization`, `complete theory` |
 | tensor | No tensor follows from gate architecture | `Gμν` and effective `Iμν` are tensor-valued within scope | `I_QIC` is not thereby tensor-valued | Mathematical tensor only if independently defined | No Cube tensor established | Tensor word transfers type without evidence | Record input, codomain, scope, and scientific domain |
-| integrity tensor | Not defined by process governance | Effective `Iμν[g,r_c]`; independent foundation open | `I_QIC` remains distinct and undefined | No identity | No identity | `Iμν` becomes universal integrity object | Forbid `Iμν = I_QIC = universal integrity` |
+| integrity tensor | Not defined by process governance | Effective `Iμν[g,r_c]`; independent foundation open | `I_QIC` remains distinct and undefined | No identity | No identity | `Iμν` becomes universal integrity object | Relation Class: EXPLICITLY NON-EQUIVALENT; Relation Target: `I_QIC`; forbid universalization |
 | metric | No physical metric from gate passage | Metric in static spherical realization; covariance open | `Σ_QIC` is not a spacetime metric | Mathematical metric or geometry only where locally defined | Cube geometry remains hypothesis-level | Mathematical or metric-like structure becomes spacetime metric | Explicit physical bridge required |
 | metric-like | Governance warning label pending stronger primary technical anchor | No technical identity inferred | No technical identity inferred | Possible analogy only | Possible structural analogy only | Warning term becomes technical object | Keep `INSUFFICIENT REPOSITORY EVIDENCE`; forbid metric-like = spacetime metric |
 | source | No physical source from registry or gate status | Effective source-side realization under scope | No QIC measurement/source identity | No physical source inherited | Formal Cube occupancy or density remains conditional | Formal source language becomes physical matter source | Require source type and physical interpretation bridge |
@@ -170,6 +178,8 @@ A named bridge is not an existing bridge.
 | Pres_QM | TIG-E / QIC compatibility layer | Scoped compatibility condition | Locally defined formal predicate | Compatibility becomes QM derivation | `Pres_QM != Schrödinger dynamics != unitarity != QM derivation` |
 | Gate_E | TIG-E research architecture | Formal gate | Locally defined | Gate passage becomes physical selection | Gate result preserves candidate status |
 | Registerable_E | TIG-E research architecture | Governance / lifecycle status | Locally defined | Registrability becomes truth | `registerable/registered != canonical truth or physical law` |
+
+Scientifically open or undefined objects in this table are not automatic OQ-031 completion blockers. They become completion blockers only when their term, domain, status, definition state, bridge state, relation, or transfer boundary is absent, contradictory, or misleading.
 
 ---
 
@@ -218,6 +228,8 @@ A named bridge is not an existing bridge.
 | proof | Formal support under explicit assumptions | Audit passage becomes proof | Proof type and assumptions required |
 | derivation | Documented reasoning from premises | Compatibility or declaration becomes derivation | Premises and dependency chain required |
 | audit | Review against declared criteria | Audit becomes proof, selection, or empirical validation | Audit status remains separate |
+
+The exact axis ownership and canonical spelling of these terms is controlled downstream by `governance/claim_status_taxonomy.md`. This matrix records drift risks but does not independently redefine the status taxonomy.
 
 ---
 
@@ -300,11 +312,12 @@ Scope:
 Definition State:
 Bridge State:
 Relation Class:
+Relation Target:
 Allowed Transfer:
 Forbidden Transfer:
 ```
 
-A missing type must be marked missing.
+A missing type or relation target must be marked missing or not applicable.
 
 It must not be inferred from name, notation, repository path, analogy, or shared vocabulary.
 
@@ -361,7 +374,10 @@ fractal research question = fractal law
 transient Cube state = transient Cube object
 persistent pattern = persistent substrate unit
 shared term = identical technical definition
+scientifically open object = failed terminology governance
 ```
+
+The final line protects the distinction between open science and completed terminology governance. An open scientific object is compatible with OQ-031 closure only when its status and boundaries are fully controlled.
 
 ---
 
@@ -375,6 +391,8 @@ Before accepting a cross-repository or cross-domain use of a term, check:
 - Is it defined in the target context?
 - Are both uses the same object type?
 - Are input and codomain known where applicable?
+- Is the relation class canonical?
+- Is the relation target separate from the relation class?
 - Is one use governance/process and the other mathematical/physical?
 - Is the claim status preserved?
 - Is the maturity status preserved?
@@ -385,26 +403,25 @@ Before accepting a cross-repository or cross-domain use of a term, check:
 - Is QIC being silently collapsed into TIG?
 - Is Cube research being promoted to ontology?
 - Is SSC application language entering the core prematurely?
+- Is scientific openness being incorrectly treated as terminology-governance failure?
 
 ---
 
 ## 16. Synchronization Result
 
-This revision synchronizes the drift controls with the corrected primary inventory by:
+This revision synchronizes the drift controls with the corrected primary inventory content SHA `d835d2224113f8f09799db9ca97c8cc269d92cf8` by:
 
-1. adding `bounded evolution`;
-2. separating repository container from scientific domain;
-3. separating TIG gravitational architecture from QIC quantum-bridge research;
-4. adding minimum Cube-core drift controls;
-5. deferring SSC as application projection;
-6. separating field, equation, tensor, metric, source, and stress terminology;
-7. separating foundational open objects from defined terms;
-8. separating state, transition, process, generator, Hamiltonian, readout, measurement, and observable;
-9. separating operational and addressed;
-10. separating foundational, fundamental, and fundamental candidate;
-11. separating proof, derivation, and audit;
-12. preserving evidence-insufficient terms as warnings rather than defined technical objects;
-13. removing stale wording that listed already existing artifacts as missing.
+1. preserving `bounded evolution` and the scientific-domain split;
+2. recording the one-way primary-inventory/downstream-control chain;
+3. adding `Relation Target` as a field separate from `Relation Class`;
+4. normalizing the `Iμν` / `I_QIC` non-equivalence representation;
+5. preserving QIC/TIG anti-collapse controls;
+6. preserving the minimum Cube-core drift controls;
+7. preserving SSC as a deferred application projection;
+8. separating open scientific objects from failed terminology governance;
+9. distinguishing governance completion criteria from scientific closure criteria;
+10. removing stale wording that claimed the first registry synchronization had never occurred;
+11. marking downstream files as requiring targeted resynchronization to the corrected inventory HEAD rather than as historically absent.
 
 ---
 
@@ -421,16 +438,27 @@ Current supported status contribution:
 PARTIALLY RESOLVED — CORRECTION REQUIRED
 ```
 
-The corrected inventory and this drift matrix are now synchronized at the governance-document level.
+The corrected primary inventory and this drift matrix are synchronized at current HEAD.
 
-They do not resolve either OQ because the following remain unsynchronized or open:
+The original seven-artifact synchronization sequence occurred before the Completion & Consistency Audit. The following downstream artifacts now require targeted resynchronization to the corrected primary inventory rather than first-time creation:
 
-1. `governance/claim_status_taxonomy.md` must be reconciled against the expanded status vocabulary and scientific-domain split;
-2. `governance/cross_repository_claim_boundary_matrix.md` must be reconciled against the QIC/TIG split and Cube-domain interfaces;
-3. registry and repository-status files require Cross-ID and scope references;
-4. interface-specific boundary documents may still be required;
-5. the final OQ-031 completion audit has not been performed;
-6. scientific objects and bridges remain open exactly as registered.
+1. `governance/claim_status_taxonomy.md`
+2. `governance/cross_repository_claim_boundary_matrix.md`
+3. `registry/open_questions.md`
+4. `registry/master_open_question_backlog.md`
+5. `registry/repository_status.md`
+
+The remaining OQ-031 blockers are governance inconsistencies, not the mere existence of scientifically open objects.
+
+Completion readiness remains unestablished until:
+
+- status-axis vocabulary is normalized,
+- stale Cube backlog entries are corrected,
+- downstream synchronization wording is current,
+- all seven artifacts agree on the governance completion criterion,
+- and a final Completion & Consistency Re-Audit passes.
+
+Interface-specific boundary documents remain future conditional requirements when an actual new transfer or bridge is attempted; their absence does not by itself block terminology-governance closure for interfaces already correctly classified as missing, deferred, or undefined.
 
 ---
 
@@ -438,6 +466,8 @@ They do not resolve either OQ because the following remain unsynchronized or ope
 
 Whenever a new shared term appears in more than one repository or scientific domain, it must be added to this matrix or explicitly classified as not requiring cross-domain control.
 
-Whenever a term moves from governance or process use into mathematical, physical, empirical, Cube, QIC, or application use, its type, status, relation class, and bridge requirements must be documented before the stronger interpretation is accepted.
+Whenever a term moves from governance or process use into mathematical, physical, empirical, Cube, QIC, or application use, its type, status, relation class, relation target, and bridge requirements must be documented before the stronger interpretation is accepted.
 
 No update to this matrix may create a scientific definition absent from the source repositories.
+
+Any change to the primary terminology inventory invalidates this matrix's synchronization claim until the matrix has been explicitly reconciled against the new inventory content SHA.
