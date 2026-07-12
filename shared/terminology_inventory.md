@@ -6,7 +6,8 @@
 **OQ Status Contribution:** PARTIALLY RESOLVED — CORRECTION REQUIRED  
 **Claim Type:** Terminology control / evidence inventory  
 **Related Open Questions:** OQ-030 / OQ-NEXUS-001; OQ-031 / OQ-NEXUS-002  
-**Dependencies:** `registry/shared_concepts.md`, `shared/terminology_drift_matrix.md`, `governance/claim_status_taxonomy.md`, `governance/cross_repository_claim_boundary_matrix.md`  
+**Primary Evidence Base:** `registry/shared_concepts.md` plus the exact repository-local evidence paths recorded for each term  
+**Downstream Control Chain:** `shared/terminology_drift_matrix.md` → `governance/claim_status_taxonomy.md` → `governance/cross_repository_claim_boundary_matrix.md` → `registry/open_questions.md` → `registry/master_open_question_backlog.md` → `registry/repository_status.md`  
 **Last Updated:** 2026-07-12
 
 ## Allowed Claims
@@ -16,6 +17,7 @@
 - A shared spelling does not establish identical technical meaning.
 - A repository container does not by itself define a scientific domain.
 - Undefined, partial, candidate, preliminary, or blocked objects remain at that exact status.
+- OQ-031 governance completion may coexist with scientifically open objects when those objects are correctly typed, bounded, scoped, and protected from silent transfer.
 
 ## Non-Claims
 
@@ -27,12 +29,13 @@
 - It does not establish Cube ontology, Cube scale, fractal organization, or Cube transience.
 - It does not convert orientation terms into technical identities.
 - It does not resolve OQ-030 or OQ-031 by file existence alone.
+- It does not require underlying scientific questions to be solved before terminology governance can be completed; it requires their open status and transfer boundaries to remain exact.
 
 ---
 
 ## 1. Purpose
 
-This file records the evidence base required for controlled completion of OQ-031 — Shared Terminology Without Domain Collapse.
+This file records the primary evidence base required for controlled completion of OQ-031 — Shared Terminology Without Domain Collapse.
 
 It is an inventory before unification.
 
@@ -41,6 +44,20 @@ The protected rule is:
 > Same term does not imply same object, type, scientific domain, claim level, maturity, scope, or physical meaning.
 
 Every entry records local usage without inferring an undocumented cross-repository identity.
+
+The dependency direction is intentionally one-way:
+
+```text
+repository evidence
+→ terminology inventory
+→ drift controls
+→ status taxonomy
+→ boundary matrix
+→ registries
+→ repository-status index
+```
+
+The downstream files are synchronization targets, not evidence dependencies of this primary inventory.
 
 ---
 
@@ -104,12 +121,12 @@ A later application-projection audit may test whether stabilized core terminolog
 
 | Master Backlog ID | Local Registry ID | Title | Relation | Registry Synchronization |
 |---|---|---|---|---|
-| OQ-030 | OQ-NEXUS-001 | Cross-Repository Claim Boundaries | Same registered problem core under master and local identifiers | Additional registry cross-reference still required |
-| OQ-031 | OQ-NEXUS-002 | Shared Terminology Without Domain Collapse | Same registered problem core under master and local identifiers | Additional registry cross-reference still required |
+| OQ-030 | OQ-NEXUS-001 | Cross-Repository Claim Boundaries | Same registered problem core under master and local identifiers | SYNCHRONIZED — local and master references are present |
+| OQ-031 | OQ-NEXUS-002 | Shared Terminology Without Domain Collapse | Same registered problem core under master and local identifiers | SYNCHRONIZED — local and master references are present |
 
 These mappings are governance metadata. They do not change scientific status.
 
-The current `OPEN` labels in the registry files are not false, but they are coarser than the evidence-supported partial-resolution state.
+The current `OPEN` labels in the registry files remain conservative and compatible with an evidence-supported partial-resolution state.
 
 ---
 
@@ -133,11 +150,12 @@ Scope
 Definition State
 Bridge State
 Relation Class
+Relation Target
 Allowed Transfer
 Forbidden Transfer
 ```
 
-Allowed relation classes are:
+Allowed relation classes are exactly:
 
 - EXPLICITLY IDENTICAL
 - EXPLICIT LOCAL PROJECTION
@@ -148,6 +166,8 @@ Allowed relation classes are:
 - UNDEFINED RELATION
 - EXPLICITLY NON-EQUIVALENT
 - INSUFFICIENT REPOSITORY EVIDENCE
+
+A relation target must be recorded separately from the relation class.
 
 Missing type information must remain missing. It must not be inferred from terminology.
 
@@ -163,7 +183,7 @@ Missing type information must remain missing. It must not be inferred from termi
 | Integrity_Nexus | Integrity_Nexus governance | `README.md` | Ecosystem orientation through integrity-preserving bounded structural evolution | Meta-level orientation | Defined only as common orientation | GOVERNANCE MAPPING ONLY |
 | TIG-E | TIG-E research architecture | `README.md` | Integrity within admissibility, bottleneck, emergence, and crystallization workflow | Methodological / architecture scope | Context-defined; not physical by default | EXPLICITLY RELATED |
 | TIG-E | QIC quantum-bridge research | `research/quantum/qic_state_space_audit.md` | Requirement for a future typed QIC integrity quantity such as `I_QIC` | Scientifically open | `I_QIC` remains undefined; TIG bridge absent | UNDEFINED RELATION |
-| Quantum_Integrity_Core | TIG gravitational architecture | `field_equations/field_equation_1_0.md` | Effective tensor realization `Iμν[g,r_c]` inside a scoped field-equation architecture | Scoped canonical architecture; physical candidate | Effective realization only; independent tensor foundation open | EXPLICITLY NON-EQUIVALENT to `I_QIC` |
+| Quantum_Integrity_Core | TIG gravitational architecture | `field_equations/field_equation_1_0.md` | Effective tensor realization `Iμν[g,r_c]` inside a scoped field-equation architecture | Scoped canonical architecture; physical candidate | Effective realization only; independent tensor foundation open; relation target: `I_QIC` | EXPLICITLY NON-EQUIVALENT |
 | Structural_Integrity_Recursion | SIR mathematical recursion | `README.md` | Recursive structural integrity in mathematical abstraction | Exploratory framework | Local mathematical use; no physical bridge | EXPLICIT LOCAL PROJECTION |
 | TIG-E | Cube research | `docs/foundations/cube_claim_boundary_maturity_audit.md` | Integrity language occurring inside a hypothesis- and audit-controlled Cube corpus | L2 repository-registered audit scope | No completed Cube-integrity object established | UNDEFINED RELATION |
 
@@ -299,6 +319,8 @@ complete field theory
 - **Claim status:** scoped canonical architecture.
 - **Definition state:** effective realization; independent definition open.
 - **Bridge state:** no established identity with `I_QIC`.
+- **Relation class:** EXPLICITLY NON-EQUIVALENT.
+- **Relation target:** `I_QIC`.
 - **Forbidden transfer:** `Iμν = I_QIC` or `Iμν = universal integrity`.
 
 ### TERM-013 — metric
@@ -319,7 +341,7 @@ complete field theory
 ### TERM-015 — source
 
 | Repository | Scientific Domain | Evidence Path | Local Meaning / Object Type | Claim / Maturity / Scope | Definition / Bridge |
-|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|
 | Quantum_Integrity_Core | TIG gravitational architecture | `field_equations/field_equation_1_0.md` | Effective source-side realization inside the scoped architecture | Scoped effective physical candidate | Independent physical source interpretation open |
 
 ### TERM-016 — source-like
@@ -333,7 +355,7 @@ complete field theory
 ### TERM-017 — effective stress structure
 
 | Repository | Scientific Domain | Evidence Path | Local Meaning / Object Type | Claim / Maturity / Scope | Definition / Bridge |
-|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|
 | Quantum_Integrity_Core | TIG gravitational architecture | `field_equations/validation_status.md` | Effective stress-tensor analysis associated with the scoped metric realization | PRELIMINARY | Partial analysis; not independent physical matter source |
 
 ### TERM-018 — physical stress-energy
@@ -358,7 +380,7 @@ Geometry must be qualified as:
 ### TERM-020 — covariance
 
 | Repository | Scientific Domain | Evidence Path | Local Meaning / Object Type | Claim / Maturity / Scope | Definition / Bridge |
-|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|
 | Quantum_Integrity_Core | TIG gravitational architecture | `field_equations/open_questions.md` | Required extension beyond the current static spherical architecture | Scientifically open | Full covariant extension absent |
 
 ### TERM-021 — effective realization
@@ -375,7 +397,7 @@ Geometry must be qualified as:
 
 ### TERM-022 — substrate
 
-- **Evidence:** `registry/foundational_questions.md`; TIG-E `research/foundational_questions/FRQ-001_common_emergence_question.md`; TIG-E `registry/next_generation_scientific_blocker_queue.md`.
+- **Evidence:** `Integrity_Nexus/registry/foundational_questions.md`; `TIG-E/research/foundational_questions/FRQ-001_common_emergence_question.md`; `TIG-E/registry/next_generation_scientific_blocker_queue.md`.
 - **Object type:** NAMED BUT UNDEFINED SCIENTIFIC OBJECT.
 - **Claim status:** scientifically open.
 - **Definition state:** undefined.
@@ -392,7 +414,7 @@ The generic word `defect` is not automatically a technical object.
 
 ### TERM-024 — DefectSpace
 
-- **Evidence:** TIG-E `registry/next_generation_scientific_blocker_queue.md`; Integrity_Nexus `registry/master_open_question_backlog.md`.
+- **Evidence:** `TIG-E/registry/next_generation_scientific_blocker_queue.md`; `Integrity_Nexus/registry/master_open_question_backlog.md`.
 - **Scientific domain:** foundational TIG-E/TIG research.
 - **Object type:** NAMED BUT UNDEFINED SCIENTIFIC OBJECT.
 - **Claim status:** blocked / needs definition.
@@ -401,7 +423,7 @@ The generic word `defect` is not automatically a technical object.
 
 ### TERM-025 — Rel_TIG
 
-- **Evidence:** TIG-E `registry/next_generation_scientific_blocker_queue.md`; Integrity_Nexus `registry/master_open_question_backlog.md`.
+- **Evidence:** `TIG-E/registry/next_generation_scientific_blocker_queue.md`; `Integrity_Nexus/registry/master_open_question_backlog.md`.
 - **Object type:** NAMED BUT UNDEFINED SCIENTIFIC OBJECT.
 - **Claim status:** blocked / needs definition.
 - **Definition state:** independently undefined.
@@ -409,7 +431,7 @@ The generic word `defect` is not automatically a technical object.
 
 ### TERM-026 — B_TIG
 
-- **Evidence:** TIG-E `registry/next_generation_scientific_blocker_queue.md`; Integrity_Nexus `registry/master_open_question_backlog.md`.
+- **Evidence:** `TIG-E/registry/next_generation_scientific_blocker_queue.md`; `Integrity_Nexus/registry/master_open_question_backlog.md`.
 - **Object type:** declared scalar state-bound functional / research object.
 - **Claim status:** needs non-circular derivation.
 - **Definition state:** working use does not equal derivation.
@@ -417,7 +439,7 @@ The generic word `defect` is not automatically a technical object.
 
 ### TERM-027 — I_QIC
 
-- **Evidence:** TIG-E `research/quantum/qic_state_space_audit.md`; TIG-E `registry/next_generation_scientific_blocker_queue.md`.
+- **Evidence:** `TIG-E/research/quantum/qic_state_space_audit.md`; `TIG-E/registry/next_generation_scientific_blocker_queue.md`.
 - **Scientific domain:** QIC quantum-bridge research.
 - **Object type:** NAMED BUT UNDEFINED SCIENTIFIC OBJECT.
 - **Input / output target:** a typing such as `I_QIC : Σ_QIC -> R` or equivalent is a research requirement, not an established definition.
@@ -426,7 +448,7 @@ The generic word `defect` is not automatically a technical object.
 
 ### TERM-028 — Σ_QIC
 
-- **Evidence:** TIG-E `research/quantum/qic_state_space_audit.md`.
+- **Evidence:** `TIG-E/research/quantum/qic_state_space_audit.md`.
 - **Scientific domain:** QIC quantum-bridge research.
 - **Object type:** abstract auditable state set.
 - **Claim status:** selected minimum placeholder.
@@ -435,7 +457,7 @@ The generic word `defect` is not automatically a technical object.
 
 ### TERM-029 — Read_QIC
 
-- **Evidence:** TIG-E `registry/next_generation_scientific_blocker_queue.md` and QIC boundary audits referenced there.
+- **Evidence:** `TIG-E/research/quantum/qic_readout_measurement_boundary_audit.md`; `TIG-E/registry/next_generation_scientific_blocker_queue.md`.
 - **Scientific domain:** QIC quantum-bridge research.
 - **Object type:** named readout structure / audit-output concept.
 - **Claim status:** scientifically open.
@@ -444,7 +466,7 @@ The generic word `defect` is not automatically a technical object.
 
 ### TERM-030 — Pres_QM
 
-- **Evidence:** TIG-E `research/evolution/qm_compatible_preservation_conditions.md`.
+- **Evidence:** `TIG-E/research/evolution/qm_compatible_preservation_conditions.md`.
 - **Scientific domain:** TIG-E research architecture / QIC compatibility layer.
 - **Object type:** preservation predicate `Pres_QM(E; O_i, O_j)`.
 - **Claim status:** scoped compatibility condition.
@@ -453,7 +475,7 @@ The generic word `defect` is not automatically a technical object.
 
 ### TERM-031 — Gate_E
 
-- **Evidence:** TIG-E `research/evolution/evolution_candidate_classification_preservation_gate.md`.
+- **Evidence:** `TIG-E/research/evolution/evolution_candidate_classification_preservation_gate.md`.
 - **Scientific domain:** TIG-E research architecture.
 - **Object type:** candidate-preservation gate `Gate_E(E)`.
 - **Claim status:** formal gate.
@@ -462,7 +484,7 @@ The generic word `defect` is not automatically a technical object.
 
 ### TERM-032 — Registerable_E
 
-- **Evidence:** TIG-E `research/evolution/evolution_candidate_classification_preservation_gate.md`; `research/evolution/evolution_candidate_registry.md`.
+- **Evidence:** `TIG-E/research/evolution/evolution_candidate_classification_preservation_gate.md`; `TIG-E/research/evolution/evolution_candidate_registry.md`.
 - **Scientific domain:** TIG-E research architecture.
 - **Object type:** registry-admission predicate/status.
 - **Claim status:** governance / candidate lifecycle.
@@ -496,7 +518,7 @@ State must be split into at least:
 
 - **TIG-E research architecture:** candidate or allowed process transition under gates.
 - **QIC quantum-bridge research:** minimal transition relation remains distinct from generator or Hamiltonian.
-- **Cube research:** `docs/foundations/cube_state_transitions.md` records an open foundational transition program.
+- **Cube research:** `TIG-E/docs/foundations/cube_state_transitions.md` records an open foundational transition program.
 - **Forbidden transfer:** transition relation = physical time evolution.
 
 ### TERM-036 — process
@@ -519,7 +541,7 @@ Preservation may denote governance integrity, gate preservation, mathematical in
 
 ### TERM-039 — generator
 
-- **Evidence:** TIG-E `research/quantum/qic_hamiltonian_generator_audit.md`.
+- **Evidence:** `TIG-E/research/quantum/qic_hamiltonian_generator_audit.md`.
 - **Scientific domain:** QIC quantum-bridge research.
 - **Object type:** stronger dynamics object than a transition relation.
 - **Claim status:** scientifically open.
@@ -528,7 +550,7 @@ Preservation may denote governance integrity, gate preservation, mathematical in
 
 ### TERM-040 — Hamiltonian
 
-- **Evidence:** TIG-E `research/quantum/qic_hamiltonian_generator_audit.md`.
+- **Evidence:** `TIG-E/research/quantum/qic_hamiltonian_generator_audit.md`.
 - **Scientific domain:** QIC quantum-bridge research.
 - **Claim status:** scientifically open.
 - **Definition state:** no final QIC Hamiltonian; no unitary dynamics derived.
@@ -617,13 +639,13 @@ These terms are repository-local mathematical vocabulary unless an explicit brid
 | TERM ID | Term | Evidence Path | Scientific Domain | Claim / Definition State | Transfer Boundary |
 |---|---|---|---|---|---|
 | TERM-067 | recursive integrity | `Structural_Integrity_Recursion/README.md` | SIR mathematical recursion | Exploratory local framework term | Not TIG physical integrity |
-| TERM-068 | recursion | `Structural_Integrity_Recursion/README.md`; `mathematics/README.md` | SIR mathematical recursion | Exploratory mathematical structure | Not physical recursion law by default |
+| TERM-068 | recursion | `Structural_Integrity_Recursion/README.md`; `Structural_Integrity_Recursion/mathematics/README.md` | SIR mathematical recursion | Exploratory mathematical structure | Not physical recursion law by default |
 | TERM-069 | admissibility geometry | `Structural_Integrity_Recursion/mathematics/README.md` | SIR mathematical recursion | Exploratory program term | Not TIG physical admissibility |
 | TERM-070 | topology | `Structural_Integrity_Recursion/mathematics/README.md` | SIR mathematical recursion | Mathematical structure | Not spacetime topology without bridge |
 | TERM-071 | manifold | `Structural_Integrity_Recursion/mathematics/README.md` | SIR mathematical recursion | Mathematical structure | Not physical manifold without bridge |
 | TERM-072 | spectral consistency | `Structural_Integrity_Recursion/mathematics/README.md` | SIR mathematical recursion | Exploratory mathematical condition | Not physical spectrum without bridge |
 | TERM-073 | integrity-preserving transformation | `Structural_Integrity_Recursion/mathematics/README.md` | SIR mathematical recursion | Exploratory transformation class | Not TIG/QIC evolution law |
-| TERM-074 | mathematical admissibility | `Structural_Integrity_Recursion/README.md`; `mathematics/README.md` | SIR mathematical recursion | Repository-local mathematical usage | Not physical admissibility |
+| TERM-074 | mathematical admissibility | `Structural_Integrity_Recursion/README.md`; `Structural_Integrity_Recursion/mathematics/README.md` | SIR mathematical recursion | Repository-local mathematical usage | Not physical admissibility |
 
 SIR canonicality is evidenced by `Structural_Integrity_Recursion/CANONICAL_STATUS.md`, not inferred from the README alone.
 
@@ -635,25 +657,30 @@ No explicit SIR Candidate class, general emergence mechanism, or technical recur
 
 The Cube corpus is a registered research block, not a completed theory.
 
-Primary controls include:
+Primary controls include the following exact TIG-E paths:
 
-- TIG-E `registry/cube_research_block_inventory.md`
-- TIG-E `docs/foundations/cube_claim_boundary_maturity_audit.md`
-- TIG-E `docs/foundations/cube_state_space.md`
-- TIG-E `research/evolution/ROADMAP.md`
-- TIG-E recursive-constraint files listed by the Cube maturity audit
+- `registry/cube_research_block_inventory.md`
+- `docs/foundations/cube_claim_boundary_maturity_audit.md`
+- `docs/foundations/cube_state_space.md`
+- `docs/foundations/cube_state_transitions.md`
+- `docs/foundations/cube_scale_planck_manifestation_consistency_audit.md`
+- `docs/recursive_constraints/cube_scale_derivation.md`
+- `docs/recursive_constraints/cube_scale_working_hypothesis.md`
+- `docs/recursive_constraints/cube_scale_constraints.md`
+- `research/evolution/ROADMAP.md`
+- `registry/next_generation_scientific_blocker_queue.md`
 
 | TERM ID | Term | Evidence Path | Object Type | Claim / Maturity / Scope | Definition / Bridge | Forbidden Transfer |
 |---|---|---|---|---|---|---|
-| TERM-075 | Cube | `registry/cube_research_block_inventory.md`; `docs/foundations/cube_claim_boundary_maturity_audit.md` | Foundational research object / corpus term | L2 repository-registered research block | No completed ontology or final physical definition | Cube file existence = Cube theory completion |
-| TERM-076 | Cube state | `docs/foundations/cube_state_space.md` | Proposed state-bearing Cube structure `S_cube` | Foundational research direction; OPEN | Variables and transitions remain open; no QIC bridge | Cube state = `Σ_QIC` |
-| TERM-077 | Cube ontology | `docs/foundations/cube_claim_boundary_maturity_audit.md` | Strong scientific interpretation category | Scientifically open | Not established | Cube hypothesis or working assumption = physical ontology |
-| TERM-078 | Cube scale | `research/evolution/ROADMAP.md`; `docs/recursive_constraints/cube_scale_derivation.md`; `docs/recursive_constraints/cube_scale_working_hypothesis.md` | Scale research family | Recognized / not fully derived | Fixed, dynamic, relative, and emergent options remain open | Working scale = derived physical scale |
-| TERM-079 | recursive scale | `docs/recursive_constraints/cube_scale_constraints.md`; `docs/recursive_constraints/cube_scale_working_hypothesis.md` | Recursive constraint / scale candidate language | Working or candidate status | No universal scale law established | Recursive relation = derived fractal or physical law |
-| TERM-080 | Planck-scale manifestation | `docs/foundations/cube_claim_boundary_maturity_audit.md`; Cube scale consistency corpus | Controlled observable-lower-bound interpretation | Working assumption where `L_min = l_P` is used | Cube identity remains open | Planck manifestation = Cube identity or Cube = Planck length |
-| TERM-081 | Cube-to-QIC bridge | `registry/next_generation_scientific_blocker_queue.md`; `registry/master_open_question_backlog.md` | Required scientific interface | Blocked / scientifically open | Relation between Cube state and `Σ_QIC` absent | Bridge requirement = existing bridge |
-| TERM-082 | fractal Cube organization | `research/evolution/ROADMAP.md` | Open structural research question | Recognized / not yet formalized | No self-similarity theorem or fractal dimension | Fractal language = derived fractal law or ontology |
-| TERM-083 | Cube transience / persistence | `research/evolution/ROADMAP.md` | Open structural research question | Recognized / not yet formalized | No transient Cube, persistent substrate, metastability criterion, or pattern-persistence theorem established | Transient state = transient Cube; persistent pattern = persistent object |
+| TERM-075 | Cube | `TIG-E/registry/cube_research_block_inventory.md`; `TIG-E/docs/foundations/cube_claim_boundary_maturity_audit.md` | Foundational research object / corpus term | L2 repository-registered research block | No completed ontology or final physical definition | Cube file existence = Cube theory completion |
+| TERM-076 | Cube state | `TIG-E/docs/foundations/cube_state_space.md` | Proposed state-bearing Cube structure `S_cube` | Foundational research direction; OPEN | Variables and transitions remain open; no QIC bridge | Cube state = `Σ_QIC` |
+| TERM-077 | Cube ontology | `TIG-E/docs/foundations/cube_claim_boundary_maturity_audit.md` | Strong scientific interpretation category | Scientifically open | Not established | Cube hypothesis or working assumption = physical ontology |
+| TERM-078 | Cube scale | `TIG-E/research/evolution/ROADMAP.md`; `TIG-E/docs/recursive_constraints/cube_scale_derivation.md`; `TIG-E/docs/recursive_constraints/cube_scale_working_hypothesis.md` | Scale research family | Recognized / not fully derived | Fixed, dynamic, relative, and emergent options remain open | Working scale = derived physical scale |
+| TERM-079 | recursive scale | `TIG-E/docs/recursive_constraints/cube_scale_constraints.md`; `TIG-E/docs/recursive_constraints/cube_scale_working_hypothesis.md` | Recursive constraint / scale candidate language | Working or candidate status | No universal scale law established | Recursive relation = derived fractal or physical law |
+| TERM-080 | Planck-scale manifestation | `TIG-E/docs/foundations/cube_scale_planck_manifestation_consistency_audit.md`; `TIG-E/docs/foundations/cube_claim_boundary_maturity_audit.md` | Controlled observable-lower-bound interpretation | Working assumption where `L_min = l_P` is used | Cube identity remains open | Planck manifestation = Cube identity or Cube = Planck length |
+| TERM-081 | Cube-to-QIC bridge | `TIG-E/registry/next_generation_scientific_blocker_queue.md`; `Integrity_Nexus/registry/master_open_question_backlog.md` | Required scientific interface | Blocked / scientifically open | Relation between Cube state and `Σ_QIC` absent | Bridge requirement = existing bridge |
+| TERM-082 | fractal Cube organization | `TIG-E/research/evolution/ROADMAP.md` | Open structural research question | Recognized / not yet formalized | No self-similarity theorem or fractal dimension | Fractal language = derived fractal law or ontology |
+| TERM-083 | Cube transience / persistence | `TIG-E/research/evolution/ROADMAP.md` | Open structural research question | Recognized / not yet formalized | No transient Cube, persistent substrate, metastability criterion, or pattern-persistence theorem established | Transient state = transient Cube; persistent pattern = persistent object |
 
 Mandatory Cube boundaries:
 
@@ -712,26 +739,32 @@ These remain useful governance warning labels, but a precise repository-local te
 
 ## 13. Evidence Corrections Applied
 
-This revision applies the following audit corrections:
+This revision preserves the earlier audit corrections and applies the Completion & Consistency Audit corrections:
 
-1. QIC/TIG admissibility is now described as scoped model-admissibility language, not a defined universal predicate.
+1. QIC/TIG admissibility is described as scoped model-admissibility language, not a defined universal predicate.
 2. QIC/TIG boundary language is restricted to validity and scope boundary in `field_equation_1_0.md`.
-3. The unsupported QIC invariant claim from `validation_status.md` has been removed and marked insufficient.
-4. The unsupported SIR technical-boundary claim has been withheld pending explicit evidence.
+3. The unsupported QIC invariant claim from `validation_status.md` remains withheld and marked insufficient.
+4. The unsupported SIR technical-boundary claim remains withheld pending explicit evidence.
 5. SIR emergence language is limited to historical abstraction, not a defined emergence mechanism.
-6. The unsupported SIR Candidate-class entry has been removed.
-7. SIR canonicality now cites `CANONICAL_STATUS.md`.
-8. `field` and `field equation` are separated.
-9. `defect` and `DefectSpace` are separated.
-10. `operational` and `addressed` are separated.
-11. `foundational`, `fundamental`, and `fundamental candidate` are separated.
-12. `proof`, `derivation`, and `audit` are separated.
-13. `metric` and `metric-like` are separated.
-14. `source`, `source-like`, `effective stress structure`, and `physical stress-energy` are separated.
-15. QIC and TIG are explicitly separated as scientific domains, independent of repository container.
-16. Cube-core terminology and its claim boundaries are now explicitly inventoried.
-17. SSC is explicitly deferred as an application-projection scope.
-18. `bounded evolution` is now a dedicated shared-term entry.
+6. The unsupported SIR Candidate-class entry remains removed.
+7. SIR canonicality cites `CANONICAL_STATUS.md`.
+8. `field` and `field equation` remain separated.
+9. `defect` and `DefectSpace` remain separated.
+10. `operational` and `addressed` remain separated.
+11. `foundational`, `fundamental`, and `fundamental candidate` remain separated.
+12. `proof`, `derivation`, and `audit` remain separated.
+13. `metric` and `metric-like` remain separated.
+14. `source`, `source-like`, `effective stress structure`, and `physical stress-energy` remain separated.
+15. QIC and TIG remain explicitly separated as scientific domains, independent of repository container.
+16. Cube-core terminology and its claim boundaries remain explicitly inventoried.
+17. SSC remains deferred as an application-projection scope.
+18. `bounded evolution` remains a dedicated shared-term entry.
+19. Cross-ID synchronization is now recorded as completed in both registry layers.
+20. The primary-inventory/downstream-control dependency direction is now explicit and non-circular.
+21. Relation class and relation target are now separate fields; no target is appended to a canonical class label.
+22. Indirect Read_QIC and Cube evidence descriptions have been replaced by exact repository paths.
+23. OQ-031 governance completion is explicitly separated from closure of the underlying scientific objects.
+24. Stale statements claiming that the first downstream synchronization sequence had not occurred have been removed.
 
 ---
 
@@ -741,11 +774,13 @@ This revision applies the following audit corrections:
 2. Shared terminology operates across governance, process, mathematical, physical-candidate, and foundational domains.
 3. Repository names alone are insufficient to identify scientific domains.
 4. QIC and TIG require explicit scientific-domain separation.
-5. Cube terminology is now represented at minimum core level, but Cube science remains open.
+5. Cube terminology is represented at minimum core level, but Cube science remains open.
 6. Several required terms are local technical objects rather than shared terms.
 7. Several named scientific objects remain undefined and must not be normalized into completed definitions.
 8. SSC must remain deferred until the scientific-core terminology is stable.
-9. The inventory is corrected, but downstream governance artifacts have not yet been synchronized against this revision.
+9. The original seven-artifact synchronization sequence was completed before this correction patch.
+10. Because this patch changes the primary inventory at current HEAD, the six downstream artifacts now require targeted resynchronization before a new completion audit.
+11. Scientifically open objects do not by themselves prevent OQ-031 governance completion when their definition state, bridge state, status, scope, and non-identities are correctly controlled.
 
 ---
 
@@ -759,23 +794,40 @@ PARTIALLY RESOLVED — CORRECTION REQUIRED
 
 This means:
 
-- a controlled inventory exists;
-- central terms, status words, open objects, QIC/TIG domain separation, and minimum Cube terminology are now represented;
-- major evidence overstatements have been corrected;
-- but terminology governance is not yet completion-ready because dependent artifacts remain unsynchronized.
+- a controlled primary inventory exists;
+- central terms, status words, open objects, QIC/TIG domain separation, and minimum Cube terminology are represented;
+- major evidence overstatements and completion-audit inconsistencies have been corrected in the primary layer;
+- the previous downstream synchronization sequence is historically complete;
+- but the downstream files are not yet synchronized to this corrected inventory HEAD;
+- and completion readiness has therefore not yet been re-established.
 
-The current `OPEN` status in `registry/open_questions.md` and `registry/master_open_question_backlog.md` remains conservative and is not yet changed by this primary patch.
+The current `OPEN` status in `registry/open_questions.md` and `registry/master_open_question_backlog.md` remains correct.
 
-Remaining dependency-correct work:
+### Governance Completion Criterion
 
-1. audit this corrected inventory against current HEAD;
-2. reconcile `shared/terminology_drift_matrix.md` with this inventory;
-3. reconcile `governance/claim_status_taxonomy.md` where inventory status language exposes gaps;
-4. reconcile `governance/cross_repository_claim_boundary_matrix.md` with the explicit QIC/TIG and Cube-domain distinctions;
-5. add Cross-ID and scope references to the registry artifacts;
-6. perform the final OQ-031 completion audit.
+OQ-031 does not require the common substrate, `Rel_TIG`, `DefectSpace`, `B_TIG`, `I_QIC`, Cube ontology, Cube-to-QIC bridge, or SSC projection to be scientifically solved.
 
-No downstream file should be treated as synchronized merely because this inventory has been corrected.
+It requires that every unresolved object or bridge remain:
+
+- explicitly identified,
+- assigned to the correct scientific domain,
+- given its exact definition and bridge state,
+- protected by non-equivalence and transfer boundaries,
+- and prevented from silent status upgrade.
+
+Scientific openness is therefore compatible with terminology-governance closure. Unbounded or inconsistently represented scientific openness is not.
+
+### Remaining Dependency-Correct Work
+
+1. resynchronize `shared/terminology_drift_matrix.md` against this corrected inventory HEAD;
+2. normalize status-axis vocabulary in `governance/claim_status_taxonomy.md`;
+3. resynchronize `governance/cross_repository_claim_boundary_matrix.md`;
+4. update stale synchronization wording in `registry/open_questions.md`;
+5. correct stale Cube backlog entries and OQ-031 wording in `registry/master_open_question_backlog.md`;
+6. update `registry/repository_status.md` to the new synchronization state;
+7. perform the final OQ-031 Completion & Consistency Re-Audit.
+
+No downstream file may be treated as synchronized to this corrected inventory until it has been checked and updated against the new content SHA.
 
 ---
 
@@ -791,6 +843,8 @@ A term must be added or updated here when:
 - a new Cube or QIC/TIG collision risk is registered;
 - or an audit identifies new terminology drift.
 
-Updates must preserve exact repository paths, scientific-domain separation, status, scope, relation class, allowed transfer, and forbidden transfer.
+Updates must preserve exact repository paths, scientific-domain separation, status, scope, relation class, relation target, allowed transfer, and forbidden transfer.
 
 They must not create definitions absent from the source repositories.
+
+Any primary-inventory correction invalidates downstream synchronization at current HEAD until the downstream chain is explicitly reconciled and re-audited.
