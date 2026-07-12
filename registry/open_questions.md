@@ -3,36 +3,44 @@
 **Repository:** Integrity_Nexus  
 **Scope:** Meta-governance registry for the TIG Research Ecosystem  
 **Status:** CANONICAL REGISTRY / LOCKED MODE / AUDIT-CORRECTED  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `74364a3c4f3575363ce3305ea0d68203f1d0e75f`; `shared/terminology_drift_matrix.md` content SHA `77f7e0c37336a262f51c765ae0f3ab314ed3f203`; `governance/claim_status_taxonomy.md` content SHA `ebc22076da4221a80dcdfbd1f5388f49a1044a2a`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `af1123666144136dac05c97ddd9b42f897ad26ae`  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `06b2371b4cc65739aa93fa569fcd808553e054fb`; `shared/terminology_drift_matrix.md` content SHA `3270635e015931f12fd5c8de6fbc2107a541ab5a`; `governance/claim_status_taxonomy.md` content SHA `7913b6b2a99c8bd08ec7ae3bbf13ff203d64bb77`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `973aef177638920b7dbdd7fe50e73033de892774`  
 **Position in Control Chain:** terminology inventory → drift matrix → claim-status taxonomy → claim-boundary matrix → this local registry → master backlog → repository-status index  
 **Global Synchronization and Completion-Readiness Authority:** `registry/repository_status.md`  
+**Local OQ Status Contribution:** READY FOR COMPLETION AUDIT  
 **Last Updated:** 2026-07-12
 
 This document records registered questions for Integrity Nexus as a meta-repository.
 
 These questions concern navigation, governance, dependency mapping, terminology control, and cross-repository coherence.
 
-The following axes are distinct:
+The following axes and control fields are distinct:
 
 ```text
+Scientific Status Applicability
+Scientific Status
 Question State
 Registry Status
-Scientific Status
 Operational Status
 Progress Classification
 Completion Readiness
 ```
 
-Canonical lifecycle values are:
+Canonical lifecycle and applicability controls are:
 
 ```text
 Question State: OPEN | CLOSED
 Registry Status: Registerable | Registered
+Scientific Status Applicability: APPLICABLE | NOT APPLICABLE
+Scientific Status: Scientifically Open | Resolved
 ```
 
-`OPEN` and `CLOSED` are Question State values, not Registry Status values.
+Rules:
 
-A question may remain `OPEN` while substantial repository-supported progress exists.
+- `OPEN` and `CLOSED` are Question State values, not Registry Status values.
+- `NOT APPLICABLE` is a Scientific Status Applicability marker, not a Scientific Status value.
+- When Scientific Status Applicability is `NOT APPLICABLE`, no Scientific Status value is assigned.
+- Governance-question lifecycle is controlled by Question State, not Scientific Status.
+- A question may remain `OPEN` while substantial repository-supported progress exists.
 
 This file does not report the global synchronization count and does not authoritatively assign global Completion Readiness. Those values belong only to `registry/repository_status.md`.
 
@@ -47,7 +55,7 @@ This file does not report the global synchronization count and does not authorit
 
 The Cross-ID mapping is governance metadata.
 
-It does not change Question State, Registry Status, Scientific Status, Progress Classification, or Completion Readiness.
+It does not change Scientific Status Applicability, Scientific Status, Question State, Registry Status, Progress Classification, or Completion Readiness.
 
 ---
 
@@ -63,6 +71,7 @@ Was ist es, aus dem Raumzeit und Quantenmechanik gemeinsam emergieren?
 
 **Question State:** OPEN.  
 **Registry Status:** Registered.  
+**Scientific Status Applicability:** APPLICABLE.  
 **Scientific Status:** Scientifically Open.  
 **Canonical Registry:** `registry/foundational_questions.md`.
 
@@ -78,7 +87,9 @@ How can Integrity Nexus show relationships between repository containers and sci
 
 **Question State:** OPEN.  
 **Registry Status:** Registered.  
-**Scientific Status:** NOT APPLICABLE as a direct scientific-object status; this is a governance question.  
+**Scientific Status Applicability:** NOT APPLICABLE.  
+**Scientific Status:** No value assigned.  
+**Operational Status:** Addressed.  
 **Progress Classification:** READY FOR COMPLETION AUDIT.  
 **Completion Readiness:** Authoritative value controlled only by `registry/repository_status.md`.
 
@@ -87,7 +98,8 @@ How can Integrity Nexus show relationships between repository containers and sci
 The current canonical governance layer establishes:
 
 - repository-container versus scientific-domain separation,
-- exact preservation of canonical status axes,
+- exact preservation of canonical status axes and applicability controls,
+- Scientific Status Applicability separate from Scientific Status,
 - Question State separate from Registry Status and Scientific Status,
 - separate Relation Class and Relation Target fields,
 - TIG/QIC anti-collapse boundaries,
@@ -104,7 +116,7 @@ OQ-NEXUS-001 does not require every possible future interface to have a dedicate
 It requires:
 
 - a canonical general boundary architecture,
-- explicit status-axis preservation,
+- explicit applicability and status-axis preservation,
 - explicit relation and transfer controls,
 - correct classification of Missing or deferred bridges,
 - and a rule requiring interface-specific boundary documentation when an actual new transfer or bridge is attempted.
@@ -135,7 +147,9 @@ How can shared concepts such as integrity, boundary, admissibility, invariant, a
 
 **Question State:** OPEN.  
 **Registry Status:** Registered.  
-**Scientific Status:** NOT APPLICABLE as a direct scientific-object status; this is a terminology-governance question.  
+**Scientific Status Applicability:** NOT APPLICABLE.  
+**Scientific Status:** No value assigned.  
+**Operational Status:** Addressed.  
 **Progress Classification:** READY FOR COMPLETION AUDIT.  
 **Completion Readiness:** Authoritative value controlled only by `registry/repository_status.md`.
 
@@ -186,7 +200,7 @@ The terminology-governance layer controls:
 - state, transition, process, generator, Hamiltonian, readout, measurement, and observable terminology,
 - SIR mathematical terminology,
 - Cube state, scale, ontology, Planck manifestation, fractal organization, and transience/persistence,
-- Claim Status, Scientific Status, Question State, Registry Status, Operational Status, Artifact Status, Maturity Status, Progress Classification, and Completion Readiness,
+- Claim Status, Scientific Status Applicability, Scientific Status, Question State, Registry Status, Operational Status, Artifact Status, Maturity Status, Progress Classification, and Completion Readiness,
 - Definition State and Bridge State,
 - Relation Class and Relation Target,
 - Allowed Transfer and Forbidden Transfer,
@@ -200,17 +214,18 @@ It requires every unresolved term, object, or interface to be:
 
 - explicitly identified,
 - assigned to the correct repository container and scientific domain,
-- given exact applicable status-axis values,
+- given exact Scientific Status applicability and exact applicable status-axis values,
 - given exact Definition State and Bridge State,
 - assigned a canonical Relation Class and separate Relation Target where applicable,
 - scoped correctly,
 - protected by Allowed Transfer and Forbidden Transfer,
-- and prevented from silent status or domain upgrade.
+- and prevented from silent status, applicability, or domain upgrade.
 
 ```text
 scientifically open object != incomplete terminology governance
 missing bridge != incomplete terminology governance when absence is correctly controlled
 deferred scientific definition != terminology-governance failure when deferral is explicit
+Scientific Status Applicability NOT APPLICABLE != Scientific Status value
 ```
 
 ## Remaining Closure Step
@@ -243,7 +258,8 @@ What is the shortest path for a reviewer to understand the research ecosystem wi
 
 **Question State:** OPEN.  
 **Registry Status:** Registered.  
-**Scientific Status:** NOT APPLICABLE.  
+**Scientific Status Applicability:** NOT APPLICABLE.  
+**Scientific Status:** No value assigned.  
 **Required Work:** Review and navigation design.
 
 ---
@@ -254,7 +270,8 @@ How should repository maps, shared concepts, dependency graphs, terminology reco
 
 **Question State:** OPEN.  
 **Registry Status:** Registered.  
-**Scientific Status:** NOT APPLICABLE.  
+**Scientific Status Applicability:** NOT APPLICABLE.  
+**Scientific Status:** No value assigned.  
 **Required Work:** Schema definition and validation.
 
 ---
@@ -265,8 +282,35 @@ Should Integrity Nexus itself become citable as a research-governance artifact, 
 
 **Question State:** OPEN.  
 **Registry Status:** Registered.  
-**Scientific Status:** NOT APPLICABLE.  
+**Scientific Status Applicability:** NOT APPLICABLE.  
+**Scientific Status:** No value assigned.  
 **Required Work:** Governance and publication review.
+
+---
+
+## Local Reconciliation Result
+
+This local registry is reconciled with:
+
+- inventory SHA `06b2371b4cc65739aa93fa569fcd808553e054fb`,
+- drift-matrix SHA `3270635e015931f12fd5c8de6fbc2107a541ab5a`,
+- taxonomy SHA `7913b6b2a99c8bd08ec7ae3bbf13ff203d64bb77`,
+- boundary-matrix SHA `973aef177638920b7dbdd7fe50e73033de892774`.
+
+It propagates:
+
+1. local OQ status contribution `READY FOR COMPLETION AUDIT`;
+2. Scientific Status Applicability as a separate control field;
+3. only `APPLICABLE` and `NOT APPLICABLE` as applicability markers;
+4. only `Scientifically Open` and `Resolved` as Scientific Status values;
+5. prohibition of `Scientific Status: NOT APPLICABLE`;
+6. no Scientific Status value when applicability is `NOT APPLICABLE`;
+7. applicability `APPLICABLE` for FRQ-001 and `NOT APPLICABLE` for the governance questions in this registry;
+8. Question State, Registry Status, Operational Status, Progress Classification, and Completion Readiness as separate controls;
+9. OQ-NEXUS-001 and OQ-NEXUS-002 remaining Question State `OPEN` and Progress Classification `READY FOR COMPLETION AUDIT`;
+10. `registry/repository_status.md` as sole global synchronization and Completion Readiness authority.
+
+This local reconciliation is not a global synchronization report.
 
 ---
 
@@ -295,9 +339,19 @@ A registered question must use:
 ```text
 Question State: OPEN | CLOSED
 Registry Status: Registerable | Registered
+Scientific Status Applicability: APPLICABLE | NOT APPLICABLE
 ```
 
-A generic `Status` field must not combine lifecycle, operational, scientific, maturity, or required-work semantics.
+Scientific Status may use only:
+
+```text
+Scientifically Open
+Resolved
+```
+
+When applicability is `NOT APPLICABLE`, no Scientific Status value is assigned.
+
+A generic `Status` field must not combine lifecycle, operational, scientific, maturity, applicability, or required-work semantics.
 
 `Required Work` is metadata, not a status axis.
 
