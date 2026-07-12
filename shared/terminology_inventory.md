@@ -2,12 +2,14 @@
 
 **Repository:** Integrity_Nexus  
 **Scope:** Scientific-core TIG Research Ecosystem with controlled Cube-domain coverage  
-**Status:** CANONICAL INVENTORY / LOCKED MODE  
+**Status:** CANONICAL INVENTORY / LOCKED MODE / AUDIT-CORRECTED  
 **OQ Status Contribution:** PARTIALLY RESOLVED — CORRECTION REQUIRED  
 **Claim Type:** Terminology control / evidence inventory  
 **Related Open Questions:** OQ-030 / OQ-NEXUS-001; OQ-031 / OQ-NEXUS-002  
 **Primary Evidence Base:** `registry/shared_concepts.md` plus the exact repository-local evidence paths recorded for each term  
 **Downstream Control Chain:** `shared/terminology_drift_matrix.md` → `governance/claim_status_taxonomy.md` → `governance/cross_repository_claim_boundary_matrix.md` → `registry/open_questions.md` → `registry/master_open_question_backlog.md` → `registry/repository_status.md`  
+**Global Synchronization Authority:** `registry/repository_status.md`  
+**Question-State Model Introduced Here:** `OPEN` / `CLOSED` as a governance-question lifecycle axis, separate from Scientific Status, Registry admission, Progress Classification, and Completion Readiness  
 **Last Updated:** 2026-07-12
 
 ## Allowed Claims
@@ -18,6 +20,7 @@
 - A repository container does not by itself define a scientific domain.
 - Undefined, partial, candidate, preliminary, or blocked objects remain at that exact status.
 - OQ-031 governance completion may coexist with scientifically open objects when those objects are correctly typed, bounded, scoped, and protected from silent transfer.
+- Governance-question lifecycle state is distinct from scientific, registry-admission, operational, progress, and completion-readiness axes.
 
 ## Non-Claims
 
@@ -30,6 +33,7 @@
 - It does not convert orientation terms into technical identities.
 - It does not resolve OQ-030 or OQ-031 by file existence alone.
 - It does not require underlying scientific questions to be solved before terminology governance can be completed; it requires their open status and transfer boundaries to remain exact.
+- It is not the authority for the global current-HEAD synchronization state of the seven-artifact control chain.
 
 ---
 
@@ -57,7 +61,21 @@ repository evidence
 → repository-status index
 ```
 
-The downstream files are synchronization targets, not evidence dependencies of this primary inventory.
+The downstream files are control and synchronization targets, not evidence dependencies of this primary inventory.
+
+This inventory records only:
+
+- its own evidence basis,
+- its own terminology content,
+- and its position in the control chain.
+
+The sole authority for the global current-HEAD synchronization state is:
+
+```text
+registry/repository_status.md
+```
+
+No historical or current count such as `1/7`, `5/7`, or `7/7` is canonical when stated in this primary inventory.
 
 ---
 
@@ -119,14 +137,14 @@ A later application-projection audit may test whether stabilized core terminolog
 
 ## 3. Cross-ID Mapping
 
-| Master Backlog ID | Local Registry ID | Title | Relation | Registry Synchronization |
+| Master Backlog ID | Local Registry ID | Title | Relation | Cross-ID Presence |
 |---|---|---|---|---|
-| OQ-030 | OQ-NEXUS-001 | Cross-Repository Claim Boundaries | Same registered problem core under master and local identifiers | SYNCHRONIZED — local and master references are present |
-| OQ-031 | OQ-NEXUS-002 | Shared Terminology Without Domain Collapse | Same registered problem core under master and local identifiers | SYNCHRONIZED — local and master references are present |
+| OQ-030 | OQ-NEXUS-001 | Cross-Repository Claim Boundaries | Same registered problem core under master and local identifiers | PRESENT in the canonical registry architecture |
+| OQ-031 | OQ-NEXUS-002 | Shared Terminology Without Domain Collapse | Same registered problem core under master and local identifiers | PRESENT in the canonical registry architecture |
 
-These mappings are governance metadata. They do not change scientific status.
+These mappings are governance metadata. They do not change Question State, Scientific Status, Registry admission, Progress Classification, or Completion Readiness.
 
-The current `OPEN` labels in the registry files remain conservative and compatible with an evidence-supported partial-resolution state.
+Global synchronization of the files carrying these mappings is reported only in `registry/repository_status.md`.
 
 ---
 
@@ -145,7 +163,14 @@ Object Type
 Input Type
 Output / Codomain
 Claim Status
+Scientific Status
+Question State
+Registry Status
+Operational Status
+Artifact Status
 Maturity Status
+Progress Classification
+Completion Readiness
 Scope
 Definition State
 Bridge State
@@ -169,7 +194,7 @@ Allowed relation classes are exactly:
 
 A relation target must be recorded separately from the relation class.
 
-Missing type information must remain missing. It must not be inferred from terminology.
+Missing type or status information must remain missing or be marked `NOT APPLICABLE`. It must not be inferred from terminology.
 
 ---
 
@@ -572,7 +597,7 @@ Observable may denote formal output, contextual quantity, geometric observable, 
 
 ## 9. Claim and Status Terminology
 
-The canonical status meanings are defined in `governance/claim_status_taxonomy.md`. They are inventory terms because silent status drift is a central OQ-031 risk.
+The canonical status meanings are defined downstream in `governance/claim_status_taxonomy.md`. They are inventory terms because silent status drift is a central OQ-031 risk.
 
 | TERM ID | Term | Object Type | Allowed Meaning | Forbidden Upgrade |
 |---|---|---|---|---|
@@ -581,15 +606,15 @@ The canonical status meanings are defined in `governance/claim_status_taxonomy.m
 | TERM-046 | declared | Claim-status value | Named structure without full derivation | Established, proven, validated |
 | TERM-047 | partial | Claim-status value | Some components supported, remainder open | Complete result |
 | TERM-048 | compatible | Claim-status value | Satisfies a target constraint under stated conditions | Derived, unique, physically selected |
-| TERM-049 | registered | Registry-status value | Entered into a registry, queue, backlog, or index | True, scientifically accepted |
+| TERM-049 | registered | Registry-admission value | Entered into a registry, queue, backlog, or index | True, scientifically accepted, or question closure |
 | TERM-050 | canonical | Artifact-status family | Canonical repository, artifact, question, or scoped result | Scientific truth or completed theory |
 | TERM-051 | selected | Local lifecycle/status value | Chosen minimum or working option under explicit scope | Derived necessity, truth, final ontology |
 | TERM-052 | derived | Claim-status value | Obtained from stated premises through documented reasoning | Broader status than the derivation supports |
 | TERM-053 | proven | Claim-status value | Mathematically or logically proven under explicit assumptions | Physical or empirical truth without bridge |
 | TERM-054 | validated | Claim-status value | Checked against declared criteria or evidence class | Global or complete validation |
-| TERM-055 | preliminary | Scoped technical status | Analysis exists but remains incomplete or provisional | Validated, resolved, final |
-| TERM-056 | resolved | Closure-status value | Exact OQ or blocker closed by accepted evidence | Closure of dependencies or neighboring questions |
-| TERM-057 | scientifically open | Research-status value | Further definition, derivation, proof, validation, or review required | Closure claim |
+| TERM-055 | preliminary | Maturity-status value | Analysis exists but remains incomplete or provisional | Validated, resolved, final |
+| TERM-056 | resolved | Scientific-status value | Exact scientific question or blocker closed by accepted scientific evidence | Governance-question closure or closure of dependencies by implication |
+| TERM-057 | scientifically open | Scientific-status value | Further definition, derivation, proof, validation, or review required | Governance-question lifecycle state |
 | TERM-058 | physical candidate | Claim-status value | Candidate with explicit physical interpretation path | Empirical confirmation or final ontology |
 
 ### TERM-059 — operational
@@ -614,7 +639,7 @@ The canonical status meanings are defined in `governance/claim_status_taxonomy.m
 
 ### TERM-063 — fundamental candidate
 
-Defined by `governance/claim_status_taxonomy.md` as a candidate for underlying structure or ontology.
+A candidate for underlying structure or ontology.
 
 **Forbidden transfer:** fundamental candidate = fundamental structure.
 
@@ -628,7 +653,36 @@ Derivation requires documented reasoning from stated premises. Compatibility or 
 
 ### TERM-066 — audit
 
-Audit is evidence review against declared criteria. Audit passage is not automatically proof, physical selection, or empirical validation.
+Audit is evidence review against declared criteria. Audit passage is not automatically proof, physical selection, empirical validation, or scientific truth.
+
+### TERM-084 — question state
+
+`Question State` is the governance lifecycle axis for a registered question.
+
+Canonical values introduced for downstream normalization:
+
+```text
+OPEN
+CLOSED
+```
+
+Definitions:
+
+- `OPEN` — the registered question has not been formally closed under its governing closure rule.
+- `CLOSED` — the governing registry has applied an accepted closure result to the exact question.
+
+Mandatory boundaries:
+
+```text
+Question State OPEN != Scientific Status Scientifically Open
+Question State CLOSED != Scientific Status Resolved
+Question State CLOSED != scientific truth
+Question State CLOSED != closure of dependencies or neighboring questions
+Registry admission Registered != Question State CLOSED
+Completion Readiness AUDIT PASSED != Question State CLOSED until the registry applies the audit result
+```
+
+OQ-030 and OQ-031 are governance questions. Their closure must use `Question State`, not Scientific Status `Resolved`.
 
 ---
 
@@ -739,7 +793,7 @@ These remain useful governance warning labels, but a precise repository-local te
 
 ## 13. Evidence Corrections Applied
 
-This revision preserves the earlier audit corrections and applies the Completion & Consistency Audit corrections:
+This revision preserves the earlier audit corrections and applies the current Completion & Consistency Re-Audit corrections:
 
 1. QIC/TIG admissibility is described as scoped model-admissibility language, not a defined universal predicate.
 2. QIC/TIG boundary language is restricted to validity and scope boundary in `field_equation_1_0.md`.
@@ -759,12 +813,15 @@ This revision preserves the earlier audit corrections and applies the Completion
 16. Cube-core terminology and its claim boundaries remain explicitly inventoried.
 17. SSC remains deferred as an application-projection scope.
 18. `bounded evolution` remains a dedicated shared-term entry.
-19. Cross-ID synchronization is now recorded as completed in both registry layers.
-20. The primary-inventory/downstream-control dependency direction is now explicit and non-circular.
-21. Relation class and relation target are now separate fields; no target is appended to a canonical class label.
-22. Indirect Read_QIC and Cube evidence descriptions have been replaced by exact repository paths.
-23. OQ-031 governance completion is explicitly separated from closure of the underlying scientific objects.
-24. Stale statements claiming that the first downstream synchronization sequence had not occurred have been removed.
+19. Cross-ID presence is recorded without claiming global file synchronization.
+20. The primary-inventory/downstream-control dependency direction remains explicit and non-circular.
+21. Relation class and relation target remain separate fields.
+22. Exact Read_QIC and Cube evidence paths remain recorded.
+23. OQ-031 governance completion remains explicitly separated from closure of underlying scientific objects.
+24. Dynamic global synchronization statements have been removed from this primary inventory.
+25. `registry/repository_status.md` is established as the sole global synchronization authority.
+26. `Question State` is introduced as a separate governance-question lifecycle axis with canonical values `OPEN` and `CLOSED`.
+27. Scientific Status `Resolved`, Registry admission `Registered`, Completion Readiness `AUDIT PASSED`, and Question State `CLOSED` are explicitly non-identical.
 
 ---
 
@@ -778,30 +835,36 @@ This revision preserves the earlier audit corrections and applies the Completion
 6. Several required terms are local technical objects rather than shared terms.
 7. Several named scientific objects remain undefined and must not be normalized into completed definitions.
 8. SSC must remain deferred until the scientific-core terminology is stable.
-9. The original seven-artifact synchronization sequence was completed before this correction patch.
-10. Because this patch changes the primary inventory at current HEAD, the six downstream artifacts now require targeted resynchronization before a new completion audit.
-11. Scientifically open objects do not by themselves prevent OQ-031 governance completion when their definition state, bridge state, status, scope, and non-identities are correctly controlled.
+9. Scientifically open objects do not by themselves prevent OQ-031 governance completion when their definition state, bridge state, status, scope, and non-identities are correctly controlled.
+10. Global current-HEAD synchronization is not a finding of this inventory; it is reported only by `registry/repository_status.md`.
+11. Governance questions require a dedicated Question State axis because Scientific Status is not applicable as their closure mechanism.
 
 ---
 
 ## 15. OQ-031 Status Contribution
 
-Current evidence supports:
+Current evidence in this inventory supports:
 
 ```text
+Progress Classification:
 PARTIALLY RESOLVED — CORRECTION REQUIRED
 ```
 
-This means:
+This inventory does not assign the global Completion Readiness of the seven-artifact chain.
 
-- a controlled primary inventory exists;
-- central terms, status words, open objects, QIC/TIG domain separation, and minimum Cube terminology are represented;
-- major evidence overstatements and completion-audit inconsistencies have been corrected in the primary layer;
-- the previous downstream synchronization sequence is historically complete;
-- but the downstream files are not yet synchronized to this corrected inventory HEAD;
-- and completion readiness has therefore not yet been re-established.
+That value is controlled by:
 
-The current `OPEN` status in `registry/open_questions.md` and `registry/master_open_question_backlog.md` remains correct.
+```text
+registry/repository_status.md
+```
+
+OQ-031 remains:
+
+```text
+Question State: OPEN
+```
+
+until the governing registry applies an accepted completion-audit result.
 
 ### Governance Completion Criterion
 
@@ -817,17 +880,16 @@ It requires that every unresolved object or bridge remain:
 
 Scientific openness is therefore compatible with terminology-governance closure. Unbounded or inconsistently represented scientific openness is not.
 
-### Remaining Dependency-Correct Work
+### Downstream Propagation Requirement
 
-1. resynchronize `shared/terminology_drift_matrix.md` against this corrected inventory HEAD;
-2. normalize status-axis vocabulary in `governance/claim_status_taxonomy.md`;
-3. resynchronize `governance/cross_repository_claim_boundary_matrix.md`;
-4. update stale synchronization wording in `registry/open_questions.md`;
-5. correct stale Cube backlog entries and OQ-031 wording in `registry/master_open_question_backlog.md`;
-6. update `registry/repository_status.md` to the new synchronization state;
-7. perform the final OQ-031 Completion & Consistency Re-Audit.
+This revision introduces two normative controls that must be propagated downstream:
 
-No downstream file may be treated as synchronized to this corrected inventory until it has been checked and updated against the new content SHA.
+1. `registry/repository_status.md` is the only authority for global synchronization state.
+2. `Question State: OPEN / CLOSED` is the lifecycle axis for governance questions.
+
+The downstream taxonomy and registries must map these controls before OQ-031 can pass a subsequent Completion & Consistency Audit.
+
+This statement identifies the normative impact of the present revision. It does not declare how many downstream artifacts are currently synchronized.
 
 ---
 
@@ -847,4 +909,6 @@ Updates must preserve exact repository paths, scientific-domain separation, stat
 
 They must not create definitions absent from the source repositories.
 
-Any primary-inventory correction invalidates downstream synchronization at current HEAD until the downstream chain is explicitly reconciled and re-audited.
+Any primary-inventory correction invalidates downstream synchronization until reconciliation is recorded by `registry/repository_status.md`.
+
+This inventory must never state the global current-HEAD synchronization count or supersede the repository-status index.
