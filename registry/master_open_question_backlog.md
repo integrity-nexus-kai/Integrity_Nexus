@@ -2,8 +2,10 @@
 
 **Repository:** Integrity_Nexus  
 **Scope:** Complete TIG Research Ecosystem  
-**Status:** CANONICAL / LOCKED MODE  
+**Status:** CANONICAL / LOCKED MODE / AUDIT-CORRECTED  
 **Source:** Master Research Consistency Auditor output, consolidated into canonical backlog form.  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `d835d2224113f8f09799db9ca97c8cc269d92cf8`; `shared/terminology_drift_matrix.md` content SHA `fc0b4c975960c30d6e8c68964ac6338510ae578d`; `governance/claim_status_taxonomy.md` content SHA `ae1319c27d755d8cf301e21510eea489102ece30`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `be38195af6ebd0832b71469fa7b9f548f0acf7c7`; `registry/open_questions.md` content SHA `11a4c1e2220c0833ef0b44297b8a320628b5bbc1`  
+**Position in Control Chain:** terminology inventory → drift matrix → claim-status taxonomy → claim-boundary matrix → local registry → this master backlog → repository-status index  
 **Last Updated:** 2026-07-12
 
 ---
@@ -12,14 +14,24 @@
 
 This document is an audit and backlog artifact.
 
-It does **not** solve open questions.
+It does **not** solve open scientific questions.
 It does **not** create new theory.
 It does **not** promote candidates to final structures.
 It does **not** promote compatibility to derivation.
 It does **not** promote operational closure to scientific closure.
 It does **not** treat registry status as truth.
+It does **not** treat scientifically open objects as failed governance when their boundaries are explicit.
 
-Every listed item is a research-control object unless and until resolved through explicit repository-supported derivation, definition, proof, audit, or review.
+Every listed item is a research-control object unless and until its exact closure criteria are satisfied by explicit repository-supported definition, derivation, proof, validation, governance completion, or accepted audit evidence.
+
+For OQ-030 and OQ-031, the following axes remain separate:
+
+```text
+Registry Status
+Scientific Status
+Progress Classification
+Completion Readiness
+```
 
 ---
 
@@ -27,15 +39,17 @@ Every listed item is a research-control object unless and until resolved through
 
 The TIG ecosystem is governance-mature enough to prevent claim inflation, but scientifically blocked at the independent substrate / bridge-definition layer.
 
-The next canonical research move is **not** a new field equation.
+The next canonical scientific move is **not** a new field equation.
 
-The next canonical research move is substrate and bridge closure:
+The next canonical scientific move is substrate and bridge closure:
 
 - `Rel_TIG / DefectSpace`
 - `B_TIG` non-circular derivation
 - `I_QIC` definition
 - QIC readout semantics
 - `Pres_QM`-compatible evolution
+
+This scientific conclusion is distinct from OQ-031 terminology-governance completion.
 
 ---
 
@@ -62,13 +76,15 @@ The audit identifies the following missing bridge structures:
    - `Trans_QIC` is selected only as minimal transition structure; Hamiltonian/generator remains open.
 
 7. **Cube state space to Σ_QIC bridge**
-   - Explicitly unresolved in next-generation blocker queue.
+   - Explicitly unresolved in the next-generation blocker queue and terminology controls.
 
 8. **Toy sequence to SIR/full manifold bridge**
    - Toy models are not yet bridged to general SIR and full manifold models.
 
 9. **TIG spherical realization to covariant theory bridge**
-   - QIC states that no fully covariant extension is part of TIG Field Equation 1.0.
+   - Quantum_Integrity_Core states that no fully covariant extension is part of TIG Field Equation 1.0.
+
+A missing bridge is not an OQ-031 terminology-governance failure when the absence, domain, type, scope, and transfer prohibition are explicitly controlled.
 
 ---
 
@@ -123,14 +139,20 @@ Blocked by:
 - general perturbation sectors
 - observational predictions
 
-### Path F — Cube ontology
+### Path F — Cube ontology and physical integration
 
-Blocked by:
+The Cube inventory, maturity audit, and scale/Planck-manifestation consistency audit now exist as canonical control artifacts.
 
-- Cube inventory
-- Cube maturity audit
-- Cube scale / Planck manifestation consistency
-- Cube-to-QIC bridge
+The scientific path remains blocked by:
+
+- no completed Cube ontology,
+- no fully derived Cube scale law,
+- no completed Cube state and transition law,
+- no formal Cube-to-QIC bridge,
+- no derived fractal law,
+- and no established Cube transience, persistence, or metastability criterion.
+
+Existing governance and audit artifacts do not resolve these scientific structures.
 
 ---
 
@@ -142,7 +164,7 @@ Blocked by:
 
 ### Governance Finding 2 — Cross-repository terminology requires active protection
 
-`Integrity_Nexus` allows shared concepts but prevents domain collapse. This is essential because “integrity,” “admissibility,” “boundary,” and “invariant” cannot automatically mean the same technical object in TIG, SIR, QIC, SSC, or Cube research.
+`Integrity_Nexus` allows shared concepts but prevents domain collapse. This is essential because “integrity,” “admissibility,” “boundary,” “invariant,” and “bounded evolution” cannot automatically mean the same technical object in TIG, SIR, QIC, SSC, or Cube research.
 
 ### Governance Finding 3 — Registry status is not truth
 
@@ -150,7 +172,11 @@ The evolution registry explicitly states that registration is not canonization a
 
 ### Governance Finding 4 — Next-generation queue is necessary
 
-The old gate queue is empty, but the next-generation blocker queue is valid and necessary because unresolved scientific blocker families remain.
+The old gate queue is empty, but the next-generation blocker queue remains necessary because unresolved scientific blocker families remain.
+
+### Governance Finding 5 — Open science and terminology governance are separable
+
+Scientifically open objects and missing bridges may coexist with completed terminology governance when they are explicitly typed, scoped, assigned to the correct scientific domain, and protected from silent transfer or status upgrade.
 
 ---
 
@@ -484,7 +510,7 @@ The old gate queue is empty, but the next-generation blocker queue is valid and 
 
 **Repository Sources:** Quantum_Integrity_Core.
 
-**Evidence:** QIC asks whether `Iμν` can be defined independently of the effective mass realization; currently it is realized through a difference involving `Gμν[g,m(r)]` and `Gμν[g,M]`.
+**Evidence:** Quantum_Integrity_Core asks whether `Iμν` can be defined independently of the effective mass realization; currently it is realized through a difference involving `Gμν[g,m(r)]` and `Gμν[g,M]`.
 
 **Dependencies:** OQ-002, OQ-003, OQ-016.
 
@@ -544,7 +570,7 @@ The old gate queue is empty, but the next-generation blocker queue is valid and 
 
 **Repository Sources:** Quantum_Integrity_Core.
 
-**Evidence:** QIC states that no fully covariant extension is currently part of TIG Field Equation 1.0.
+**Evidence:** Quantum_Integrity_Core states that no fully covariant extension is currently part of TIG Field Equation 1.0.
 
 **Dependencies:** OQ-017, OQ-018.
 
@@ -568,7 +594,7 @@ The old gate queue is empty, but the next-generation blocker queue is valid and 
 
 **Dependencies:** Current spherical realization.
 
-**Blocked By:** Effective stress tensor classification remains preliminary.
+**Blocked By:** Effective stress tensor classification remains Preliminary.
 
 **Unlocks:** Physical interpretation of effective source structure.
 
@@ -638,61 +664,61 @@ The old gate queue is empty, but the next-generation blocker queue is valid and 
 
 ## OQ-025 — Cube Research Block Inventory
 
-**Status:** OPEN
+**Question Status:** RESOLVED
 
 **Description:** Create a canonical inventory mapping Cube files, statuses, maturity, claims, blockers, and dependencies.
 
 **Repository Sources:** TIG-E.
 
-**Evidence:** The blocker queue states that substantial Cube research exists but is not represented as a canonical registry inventory.
+**Accepted Evidence:** `TIG-E/registry/cube_research_block_inventory.md` exists as the canonical Cube research-block inventory and is referenced by the corrected terminology-governance layer.
 
 **Dependencies:** None, governance-level.
 
-**Blocked By:** Missing inventory.
+**Resolution Boundary:** Resolution applies only to the inventory task. It does not resolve Cube ontology, Cube scale, Cube dynamics, fractal organization, transience, or Cube-to-QIC integration.
 
-**Unlocks:** Cube maturity audit, Cube scale audit, Cube-QIC bridge.
+**Unlocks Achieved:** Cube maturity audit, Cube scale consistency audit, controlled terminology coverage, and bridge-blocker registration.
 
-**Recommended Next Action:** Create GATE-CUBE-INVENTORY-001.
+**Recommended Next Action:** Maintain the inventory when Cube files, statuses, dependencies, or blockers change.
 
 ---
 
 ## OQ-026 — Cube Claim Boundary and Maturity Audit
 
-**Status:** BLOCKED
+**Question Status:** RESOLVED
 
-**Description:** Audit Cube files so hypotheses, working assumptions, audit results, and derived ontology are not conflated.
+**Description:** Audit Cube files so hypotheses, Working Assumptions, audit results, and derived ontology are not conflated.
 
 **Repository Sources:** TIG-E.
 
-**Evidence:** Cube statuses include foundational hypothesis, research direction, active audit, active research, and working assumption; no unified maturity audit exists.
+**Accepted Evidence:** `TIG-E/docs/foundations/cube_claim_boundary_maturity_audit.md` provides the unified claim-boundary and maturity audit and is used by the terminology inventory, drift matrix, boundary matrix, and repository-status architecture.
 
-**Dependencies:** OQ-025.
+**Dependencies:** OQ-025 — satisfied.
 
-**Blocked By:** Cube inventory.
+**Resolution Boundary:** Resolution applies to the governance audit. It does not establish Cube ontology, validate Cube physics, or upgrade local Cube claims.
 
-**Unlocks:** Safe Cube research continuation.
+**Unlocks Achieved:** Controlled Cube terminology, maturity-aware transfer boundaries, and safe continuation of Cube research.
 
-**Recommended Next Action:** Create GATE-CUBE-STATUS-001.
+**Recommended Next Action:** Re-audit only when Cube claim classes or source artifacts materially change.
 
 ---
 
 ## OQ-027 — Cube Scale / Planck Manifestation Consistency
 
-**Status:** BLOCKED
+**Question Status:** RESOLVED
 
 **Description:** Audit consistency between Cube not being identical to Planck length, Planck-scale observable manifestation, and recursive scale constraints.
 
 **Repository Sources:** TIG-E.
 
-**Evidence:** The blocker queue states this has not yet been audited in one canonical file.
+**Accepted Evidence:** `TIG-E/docs/foundations/cube_scale_planck_manifestation_consistency_audit.md` and the exact recursive-scale evidence paths recorded in `Integrity_Nexus/shared/terminology_inventory.md` establish the governance-level consistency boundary.
 
-**Dependencies:** OQ-025.
+**Dependencies:** OQ-025 — satisfied.
 
-**Blocked By:** Cube inventory.
+**Resolution Boundary:** Resolution establishes claim consistency only. It does not derive a unique Cube scale, prove `Cube = Planck length`, or establish a physical scale law.
 
-**Unlocks:** Cube scale claim safety.
+**Unlocks Achieved:** Cube-scale claim safety and explicit separation of Planck manifestation from Cube identity.
 
-**Recommended Next Action:** Create GATE-CUBE-SCALE-001.
+**Recommended Next Action:** Maintain consistency controls when a new Cube-scale derivation or physical interpretation is introduced.
 
 ---
 
@@ -704,15 +730,21 @@ The old gate queue is empty, but the next-generation blocker queue is valid and 
 
 **Repository Sources:** TIG-E.
 
-**Evidence:** The blocker queue states no formal bridge exists between Cube state variables and QIC state space.
+**Evidence:** The blocker queue and terminology-governance layer state that no formal typed bridge exists between Cube state variables and QIC state space.
 
-**Dependencies:** OQ-004, OQ-025.
+**Dependencies:** OQ-004; OQ-025 is satisfied as a governance prerequisite.
 
-**Blocked By:** I_QIC missing and Cube inventory missing.
+**Blocked By:** `I_QIC` remains Named but Undefined; Cube state typing and transition structure remain incomplete; the typed Cube-to-QIC interface is Missing.
+
+**Bridge State:** Missing.
+
+**Relation Class:** UNDEFINED RELATION.
+
+**Relation Target:** `Σ_QIC` for Cube-state bridge proposals.
 
 **Unlocks:** Cube/QIC integration.
 
-**Recommended Next Action:** Do not bridge until both sides have typed state definitions.
+**Recommended Next Action:** Do not bridge until both sides have sufficiently typed state definitions and an explicit interface candidate.
 
 ---
 
@@ -742,31 +774,40 @@ The old gate queue is empty, but the next-generation blocker queue is valid and 
 
 **Registry Status:** OPEN
 
-**Current Progress Classification:** PARTIALLY RESOLVED — CORRECTION REQUIRED
+**Scientific Status:** NOT APPLICABLE as a direct scientific-object status; this is a governance question.
 
-**Description:** Show relationships between repositories and scientific domains without inflating cross-domain claims or changing status during transfer.
+**Progress Classification:** PARTIALLY RESOLVED — CORRECTION REQUIRED
+
+**Completion Readiness:** NOT ESTABLISHED
+
+**Description:** Show relationships between repository containers and scientific domains without inflating claims or changing status during transfer.
 
 **Repository Sources:** Integrity_Nexus.
 
-**Evidence:** OQ-NEXUS-001 is the local registry representation of this master problem. The following canonical governance artifacts now exist and are synchronized at the controlled-document level:
+**Evidence:** OQ-NEXUS-001 is the local registry representation of this master problem. The following six controlled artifacts are synchronized at current HEAD:
 
 1. `shared/terminology_inventory.md`
 2. `shared/terminology_drift_matrix.md`
 3. `governance/claim_status_taxonomy.md`
 4. `governance/cross_repository_claim_boundary_matrix.md`
 5. `registry/open_questions.md`
+6. `registry/master_open_question_backlog.md`
 
-These artifacts establish repository-container versus scientific-domain separation, status-axis preservation, relation classes, TIG/QIC anti-collapse controls, SIR mathematical-to-physical boundaries, Cube interfaces, and deferred SSC application scope.
+They establish repository-container versus scientific-domain separation, exact status-axis preservation, separate Relation Class and Relation Target fields, TIG/QIC anti-collapse controls, SIR mathematical-to-physical boundaries, Cube interfaces, deferred SSC scope, and the distinction between open science and failed governance.
 
 **Dependencies:** None upstream.
 
-**Blocked By:** Registry and repository-status synchronization, possible interface-specific boundary documents, and final completion audit.
+**Current Completion Criterion:** A canonical general boundary architecture must exist, missing and deferred bridges must be correctly classified, and interface-specific boundary documents must be required when an actual new transfer or bridge is attempted. Every possible future interface does not need a pre-created document.
+
+**Blocked By:** Current-HEAD resynchronization of `registry/repository_status.md` and a passing final Completion & Consistency Re-Audit.
+
+**Not Blocked By:** Scientifically open objects, explicitly Missing bridges, or deferred SSC projection when their status and transfer boundaries are correct.
 
 **Unlocks:** Safe multi-repository audit, publication coordination, external review, and controlled terminology transfer.
 
-**Current Boundary:** A canonical boundary matrix does not prove that every current or future interface is correctly governed. Governance progress does not create missing definitions, bridges, derivations, proofs, or validations.
+**Current Boundary:** Governance progress does not create missing definitions, bridges, derivations, proofs, validations, or physical identity.
 
-**Recommended Next Action:** Synchronize the remaining registry and repository-status artifacts before completion audit.
+**Recommended Next Action:** Synchronize `registry/repository_status.md`, then perform the final re-audit.
 
 ---
 
@@ -776,7 +817,11 @@ These artifacts establish repository-container versus scientific-domain separati
 
 **Registry Status:** OPEN
 
-**Current Progress Classification:** PARTIALLY RESOLVED — CORRECTION REQUIRED
+**Scientific Status:** NOT APPLICABLE as a direct scientific-object status; this is a terminology-governance question.
+
+**Progress Classification:** PARTIALLY RESOLVED — CORRECTION REQUIRED
+
+**Completion Readiness:** NOT ESTABLISHED
 
 **Description:** Preserve useful shared concepts such as integrity, boundary, admissibility, invariant, and bounded evolution without forcing identical technical definitions across the scientific-core TIG Research Ecosystem.
 
@@ -789,9 +834,9 @@ These artifacts establish repository-container versus scientific-domain separati
 5. SIR mathematical recursion
 6. Cube research
 
-**Repository Sources:** Integrity_Nexus, with evidence paths into TIG-E, Quantum_Integrity_Core, and Structural_Integrity_Recursion.
+**Repository Sources:** Integrity_Nexus, with exact evidence paths into TIG-E, Quantum_Integrity_Core, and Structural_Integrity_Recursion.
 
-**Evidence:** OQ-NEXUS-002 is the local registry representation of this master problem. The corrected terminology inventory, drift matrix, claim-status taxonomy, cross-repository claim-boundary matrix, and local open-question registry now provide controlled terminology, status, relation, type, and transfer boundaries.
+**Evidence:** OQ-NEXUS-002 is the local registry representation of this master problem. The corrected terminology inventory, drift matrix, normalized claim-status taxonomy, synchronized claim-boundary matrix, local open-question registry, and this master backlog provide controlled terminology, status, relation, type, evidence, and transfer boundaries.
 
 Mandatory non-identities include:
 
@@ -804,17 +849,27 @@ Cube state != Σ_QIC without explicit bridge
 shared term != identical technical definition
 ```
 
-**SSC Scope Qualification:** SSC remains relevant to the broader ecosystem question but is currently classified as `DEFERRED APPLICATION-PROJECTION SCOPE`. SSC may not define TIG, QIC, SIR, Cube, the common substrate, `Rel_TIG`, `DefectSpace`, `B_TIG`, or `I_QIC`.
+**SSC Scope Qualification:** SSC remains relevant to the broader ecosystem question but is classified as `DEFERRED APPLICATION-PROJECTION SCOPE`. Its deferral does not block OQ-031 governance completion when the scope and transfer prohibition are explicit.
 
 **Dependencies:** OQ-030.
 
-**Blocked By:** Remaining registry and repository-status synchronization, evidence-backed interface additions where needed, deferred SSC projection validation, unresolved scientific definitions and bridges, and final completion audit.
+**Governance Completion Criterion:** OQ-031 does not require the common substrate, `Rel_TIG`, `DefectSpace`, `B_TIG`, `I_QIC`, Cube ontology, Cube-to-QIC bridge, `integrity field`, or SSC projection to be scientifically solved. Every unresolved term, object, or interface must instead be explicitly identified, assigned to the correct repository container and scientific domain, given exact canonical status-axis values, Definition State, Bridge State, Relation Class and separate Relation Target where applicable, scoped correctly, and protected by Allowed Transfer and Forbidden Transfer controls.
+
+```text
+scientifically open object != incomplete terminology governance
+missing bridge != incomplete terminology governance when absence is correctly controlled
+deferred scientific definition != terminology-governance failure when deferral is explicit
+```
+
+**Blocked By:** Current-HEAD resynchronization of `registry/repository_status.md`, agreement of all seven artifacts at current HEAD, and a passing final Completion & Consistency Re-Audit.
+
+**Not Blocked By:** Scientifically undefined named objects, explicitly Missing bridges, deferred `integrity field`, deferred SSC projection, or possible future interface-specific additions unless their representation is absent, contradictory, misleading, or silently upgraded.
 
 **Unlocks:** Controlled glossary, reviewer navigation, machine-readable terminology graph, and safe later SSC application projection.
 
-**Current Boundary:** Terminology governance records and constrains scientific language; it does not define the scientific objects it lists.
+**Current Boundary:** Terminology governance records and constrains scientific language; it does not define or solve the scientific objects it lists.
 
-**Recommended Next Action:** Synchronize `registry/repository_status.md` with the scientific-domain split and deferred SSC scope before the final OQ-031 completion audit.
+**Recommended Next Action:** Synchronize `registry/repository_status.md`, then perform the final OQ-031 Completion & Consistency Re-Audit.
 
 ---
 
@@ -840,7 +895,17 @@ shared term != identical technical definition
 
 # Recommended Scientific Execution Order
 
-The dependency-correct execution order is:
+## Completed Governance Prerequisites
+
+The following Cube governance questions are resolved and are removed from the active execution queue:
+
+1. OQ-025 — Cube Research Block Inventory
+2. OQ-026 — Cube Claim Boundary and Maturity Audit
+3. OQ-027 — Cube Scale / Planck Manifestation Consistency
+
+Their scientific non-claims remain protected.
+
+## Active Dependency-Correct Execution Order
 
 1. OQ-030 — Cross-Repository Claim Boundaries
 2. OQ-031 — Shared Terminology Without Domain Collapse
@@ -867,13 +932,31 @@ The dependency-correct execution order is:
 23. OQ-021 — Energy Condition Classification
 24. OQ-022 — General Perturbation Stability
 25. OQ-023 — Observational Prediction Program
-26. OQ-025 — Cube Research Block Inventory
-27. OQ-026 — Cube Claim Boundary and Maturity Audit
-28. OQ-027 — Cube Scale / Planck Manifestation Consistency
-29. OQ-028 — Cube State-to-QIC Bridge
-30. OQ-024 — Toy Sequence to SIR / Full Manifold Bridge
-31. OQ-029 — SIR Formal Maturity / TIG Bridge Boundary
-32. OQ-032 — Machine-Readable Research Architecture
+26. OQ-028 — Cube State-to-QIC Bridge
+27. OQ-024 — Toy Sequence to SIR / Full Manifold Bridge
+28. OQ-029 — SIR Formal Maturity / TIG Bridge Boundary
+29. OQ-032 — Machine-Readable Research Architecture
+
+---
+
+## Current Synchronization State
+
+The following six controlled OQ-030/OQ-031 artifacts are synchronized at current HEAD:
+
+1. `shared/terminology_inventory.md`
+2. `shared/terminology_drift_matrix.md`
+3. `governance/claim_status_taxonomy.md`
+4. `governance/cross_repository_claim_boundary_matrix.md`
+5. `registry/open_questions.md`
+6. `registry/master_open_question_backlog.md`
+
+The remaining downstream artifact is:
+
+```text
+registry/repository_status.md
+```
+
+Completion Readiness remains `NOT ESTABLISHED` until that artifact is synchronized and the final Completion & Consistency Re-Audit passes.
 
 ---
 
@@ -881,8 +964,12 @@ The dependency-correct execution order is:
 
 This backlog is canonical until superseded by a later `MASTER OPEN QUESTION BACKLOG` version.
 
-Any future research-session result that changes open-question status, dependencies, claim boundaries, repository bridges, scientific-domain scope, Cross-ID mapping, or execution order must update this file or explicitly state why no update is required.
+Any future research-session result that changes open-question status, dependencies, claim boundaries, repository bridges, scientific-domain scope, Cross-ID mapping, execution order, Progress Classification, or Completion Readiness must update this file or explicitly state why no update is required.
 
-An entry may remain `OPEN` while carrying a more precise progress classification.
+An entry may remain Registry Status `OPEN` while carrying a more precise Progress Classification.
 
-No progress classification may be promoted to `RESOLVED` without explicit closure criteria, synchronized canonical artifacts, dependency closure, and completion-audit acceptance.
+Scientifically open objects do not need to be solved before a governance question can close when their terminology and transfer boundaries are complete and consistent.
+
+No Progress Classification may be promoted, and no governance question may be closed, without explicit closure criteria, synchronized canonical artifacts, no known blocking inconsistency, and completion-audit acceptance.
+
+Any change to one of the five upstream artifacts invalidates this backlog's synchronization claim until this file is explicitly reconciled against the new content SHA.
