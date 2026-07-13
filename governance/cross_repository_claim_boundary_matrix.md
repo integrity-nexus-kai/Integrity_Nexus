@@ -3,7 +3,7 @@
 **Repository:** Integrity_Nexus  
 **Scope:** Scientific-core TIG Research Ecosystem with controlled Cube-domain coverage  
 **Status:** CANONICAL / LOCKED MODE / AUDIT-CORRECTED  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `f606e88848441374355f71bda117e12a52b8c42a`; `shared/terminology_drift_matrix.md` content SHA `4e76c99f7af891ef1309b5f61551679006ce7481`; `governance/claim_status_taxonomy.md` content SHA `d0506e71d47ee08863dae516a61078ef7a8275ca`  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `c36eb5aa64cd947905f8b41b7cee867cd971c8a3`; `shared/terminology_drift_matrix.md` content SHA `5318c17681b70d34e6b25321331c1e53b0ec8dd5`; `governance/claim_status_taxonomy.md` content SHA `fa24184ab9427f406fa24b50de064a6ef60e0bde`  
 **Position in Control Chain:** terminology inventory → drift matrix → claim-status taxonomy → this boundary matrix → registries → repository-status index  
 **Global Synchronization and Completion-Readiness Authority:** `registry/repository_status.md`  
 **OQ Status Contribution:** READY FOR COMPLETION AUDIT  
@@ -463,7 +463,7 @@ field-equation architecture != complete field theory
 
 **Allowed transfer from Cube:** supported Working Assumption or Candidate Claim Status, Operational Status, hypothesis descriptions, research-question status, scale/bridge dependencies, and maturity-audit findings.
 
-**Forbidden escalation:** registry entry becoming ontology; `Blocked`, `Recognized`, or `not yet formalized` becoming Claim Status; Working Derivation becoming Claim Status Derived; research question becoming physical law; working scale becoming derived scale; Cube state becoming QIC state.
+**Forbidden escalation:** registry entry becoming ontology; `Blocked`, `Recognized`, or `not yet formalized` becoming Claim Status; Working Derivation becoming Claim Status Derived; research question becoming physical law; working scale becoming derived scale; Cube state becoming QIC state; absent audit output becoming existing evidence.
 
 ---
 
@@ -551,7 +551,7 @@ I_QIC:
 
 **Allowed transfer from TIG:** critical scales/geometries as candidate constraints, derivation targets, consistency conditions, and exact source Claim Status.
 
-**Forbidden escalation:** Cube state becoming spacetime state; Cube density becoming physical stress-energy; Cube scale becoming TIG regularization scale without derivation; geometry becoming Cube ontology; Working Assumption or Candidate status transferring to another object without evidence.
+**Forbidden escalation:** Cube state becoming spacetime state; Cube density becoming physical stress-energy; Cube scale becoming TIG regularization scale without derivation; geometry becoming Cube ontology; Working Assumption or Candidate status transferring to another object without evidence; a planned or absent Cube audit output becoming accepted evidence.
 
 **Current Relation Class:** UNDEFINED RELATION unless a specific relation is separately documented.
 
@@ -600,6 +600,7 @@ Blocked != Claim Status
 Scientifically Open != Claim Status
 Recognized != Claim Status
 not yet formalized != Claim Status
+planned or absent audit output != current evidence
 ```
 
 ---
@@ -664,6 +665,7 @@ Deferred SSC projection is not an OQ-031 blocker when deferral and transfer proh
 | CRR-030 | Object Type, Scope, Artifact Status, Maturity Status, or Definition State becomes Claim Status | Preserve descriptive and status-field ownership |
 | CRR-031 | Unsupported Claim Status is invented during transfer | Leave Claim Status unassigned |
 | CRR-032 | Descriptive phrase containing a canonical word is treated as exact Claim Status | Exact-value and evidence requirement |
+| CRR-033 | Planned or absent evidence output is treated as existing accepted evidence | Verify exact source path at the fixed repository snapshot |
 
 ---
 
@@ -688,6 +690,7 @@ scientifically open object != incomplete terminology governance
 missing bridge != incomplete terminology governance when absence is correctly controlled
 Scientific Status Applicability NOT APPLICABLE != scientific resolution
 unassigned Claim Status != governance failure when no canonical value is supported
+planned or absent evidence output != existing evidence
 ```
 
 For OQ-030 and OQ-031:
@@ -745,6 +748,7 @@ Interface-specific boundary documents are conditional when an actual new transfe
 - QIC research; not TIG architecture.
 - SSC projection; not core definition.
 - Scientifically Open; not failed governance.
+- Planned or absent output; not current evidence.
 
 ---
 
@@ -781,6 +785,8 @@ Before a transfer is accepted, check:
 - Is Cube promoted to ontology?
 - Is SSC entering core prematurely?
 - Is scientific openness treated as governance failure?
+- Is every claimed existing Evidence Path present at the governing fixed source snapshot?
+- Is a planned or absent output being misrepresented as current evidence?
 - Does an actual new transfer require an interface-specific boundary document?
 
 ---
@@ -789,9 +795,9 @@ Before a transfer is accepted, check:
 
 This boundary matrix is locally reconciled with:
 
-- inventory SHA `f606e88848441374355f71bda117e12a52b8c42a`,
-- drift-matrix SHA `4e76c99f7af891ef1309b5f61551679006ce7481`,
-- taxonomy SHA `d0506e71d47ee08863dae516a61078ef7a8275ca`.
+- inventory SHA `c36eb5aa64cd947905f8b41b7cee867cd971c8a3`,
+- drift-matrix SHA `5318c17681b70d34e6b25321331c1e53b0ec8dd5`,
+- taxonomy SHA `fa24184ab9427f406fa24b50de064a6ef60e0bde`.
 
 It preserves and records:
 
@@ -812,8 +818,9 @@ It preserves and records:
 15. `registry/repository_status.md` preserved as sole global synchronization and Completion Readiness authority;
 16. no global synchronization count or authoritative globally pending-file list reported in this matrix;
 17. all prior domain, relation, bridge, Cube, QIC/TIG, SIR, and SSC boundaries preserved;
-18. the substantive status-axis and Claim-Status controls recorded as historically adopted across the then-current downstream chain;
-19. this revision recorded as a local SHA reconciliation without asserting the current state of later artifacts.
+18. the corrected distinction between existing Cube evidence and the absent Cube scale/Planck-manifestation consistency-audit output preserved;
+19. the substantive status-axis and Claim-Status controls recorded as historically adopted across the then-current downstream chain;
+20. this revision recorded as a local SHA reconciliation without asserting the current state of later artifacts.
 
 ---
 
@@ -835,7 +842,7 @@ This matrix is reconciled with its three current upstream SHAs.
 
 It does not authoritatively assign global Completion Readiness and does not report a global synchronization count.
 
-The substantive progress/applicability and Claim-Status controls were historically adopted across the then-current downstream chain before the independent audit identified the later temporal and evidence-path findings.
+The substantive progress/applicability and Claim-Status controls were historically adopted across the then-current downstream chain before the independent audits identified the temporal, Read_QIC, and Cube evidence-path findings.
 
 This revision records that historical substantive state and locally reconciles the boundary matrix to the corrected inventory, drift matrix, and taxonomy.
 
