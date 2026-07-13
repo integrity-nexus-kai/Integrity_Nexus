@@ -11,7 +11,8 @@
 **Global Synchronization Authority:** `registry/repository_status.md`  
 **Question-State Model Introduced Here:** `OPEN` / `CLOSED` as a governance-question lifecycle axis, separate from Scientific Status, Registry admission, Progress Classification, and Completion Readiness  
 **Scientific-Status Applicability Rule Introduced Here:** `Scientific Status Applicability: APPLICABLE | NOT APPLICABLE`; `NOT APPLICABLE` is an applicability marker outside the Scientific Status value set  
-**Last Updated:** 2026-07-12
+**Claim-Status Assignment Rule Introduced Here:** Claim Status may use only the canonical Claim Status values; Scientific Status, Operational Status, Required Work, Object Type, Scope, and Artifact Status must remain on their own fields  
+**Last Updated:** 2026-07-13
 
 ## Allowed Claims
 
@@ -19,10 +20,11 @@
 - The listed paths provide evidence for the stated local uses, statuses, or open-definition boundaries.
 - A shared spelling does not establish identical technical meaning.
 - A repository container does not by itself define a scientific domain.
-- Undefined, partial, candidate, preliminary, or blocked objects remain at that exact status.
+- Undefined, partial, candidate, preliminary, or blocked conditions remain on their exact respective axes.
 - OQ-031 governance completion may coexist with scientifically open objects when those objects are correctly typed, bounded, scoped, and protected from silent transfer.
 - Governance-question lifecycle state is distinct from scientific, registry-admission, operational, progress, and completion-readiness axes.
 - Scientific Status applicability is distinct from Scientific Status value assignment.
+- A missing Claim Status remains unassigned rather than being replaced by another axis or descriptive phrase.
 
 ## Non-Claims
 
@@ -37,6 +39,7 @@
 - It does not require underlying scientific questions to be solved before terminology governance can be completed; it requires their open status and transfer boundaries to remain exact.
 - It is not the authority for the global current-HEAD synchronization state of the seven-artifact control chain.
 - It does not use `NOT APPLICABLE` as a Scientific Status value.
+- It does not invent a Claim Status when the source evidence supports only a definition state, operational state, required-work description, object type, scope, or artifact status.
 
 ---
 
@@ -179,6 +182,7 @@ Completion Readiness
 Scope
 Definition State
 Bridge State
+Required Work
 Relation Class
 Relation Target
 Allowed Transfer
@@ -208,6 +212,36 @@ Rules:
 - `NOT APPLICABLE` is not a Scientific Status value.
 - Governance-question lifecycle is controlled by Question State, not by Scientific Status.
 - Missing or unknown scientific status is not the same as inapplicability and must be marked `MISSING` or `UNKNOWN` only where a governing schema permits it.
+
+### 4.2 Claim-Status Assignment Rule
+
+Claim Status may use only:
+
+```text
+Working Assumption
+Candidate
+Declared
+Partial
+Compatible
+Admissible
+Selected
+Derived
+Proven
+Validated
+Physical Candidate
+Empirically Supported
+Fundamental Candidate
+```
+
+Rules:
+
+- `Scientifically Open` and `Resolved` belong only to Scientific Status.
+- `Pending`, `Addressed`, `Blocked`, and `Operationally Closed` belong only to Operational Status.
+- `Definition`, `Derivation`, `Proof`, `Validation`, `Review`, `Bridge Construction`, `Empirical Test`, and `Completion Audit` are Required Work metadata, not Claim Status values.
+- `Canonical Artifact` belongs to Artifact Status.
+- `Preliminary` belongs to Maturity Status.
+- Object-type and scope descriptions such as `formal gate`, `minimum placeholder`, `scoped condition`, `candidate lifecycle`, and `evidence anchor` must not be inserted into Claim Status.
+- When no canonical Claim Status is directly supported, Claim Status remains unassigned.
 
 Allowed relation classes are exactly:
 
@@ -370,12 +404,14 @@ complete field theory
 
 - **Input:** metric structure `g` and scale parameter `r_c` as used in the scoped architecture.
 - **Output / codomain:** tensor-valued object in the field-equation architecture.
-- **Claim status:** scoped canonical architecture.
-- **Definition state:** effective realization; independent definition open.
-- **Bridge state:** no established identity with `I_QIC`.
-- **Relation class:** EXPLICITLY NON-EQUIVALENT.
-- **Relation target:** `I_QIC`.
-- **Forbidden transfer:** `Iμν = I_QIC` or `Iμν = universal integrity`.
+- **Claim Status:** Physical Candidate.
+- **Artifact Status:** Canonical Artifact.
+- **Scope:** effective tensor realization inside the scoped static spherical field-equation architecture.
+- **Definition State:** effective realization; independent definition open.
+- **Bridge State:** no established identity with `I_QIC`.
+- **Relation Class:** EXPLICITLY NON-EQUIVALENT.
+- **Relation Target:** `I_QIC`.
+- **Forbidden Transfer:** `Iμν = I_QIC` or `Iμν = universal integrity`.
 
 ### TERM-013 — metric
 
@@ -386,11 +422,11 @@ complete field theory
 
 ### TERM-014 — metric-like
 
-- **Scientific domain:** terminology control only until a precise primary source is anchored.
-- **Claim status:** deferred evidence anchor.
-- **Definition state:** no repository-wide technical definition.
-- **Relation class:** INSUFFICIENT REPOSITORY EVIDENCE.
-- **Forbidden transfer:** metric-like = spacetime metric.
+- **Scientific Domain:** terminology control only until a precise primary source is anchored.
+- **Required Work:** Primary-evidence anchoring.
+- **Definition State:** no repository-wide technical definition.
+- **Relation Class:** INSUFFICIENT REPOSITORY EVIDENCE.
+- **Forbidden Transfer:** metric-like = spacetime metric.
 
 ### TERM-015 — source
 
@@ -400,11 +436,11 @@ complete field theory
 
 ### TERM-016 — source-like
 
-- **Scientific domain:** terminology control only until a precise primary source is anchored.
-- **Claim status:** deferred evidence anchor.
-- **Definition state:** no repository-wide technical definition.
-- **Relation class:** INSUFFICIENT REPOSITORY EVIDENCE.
-- **Forbidden transfer:** source-like = physical stress-energy.
+- **Scientific Domain:** terminology control only until a precise primary source is anchored.
+- **Required Work:** Primary-evidence anchoring.
+- **Definition State:** no repository-wide technical definition.
+- **Relation Class:** INSUFFICIENT REPOSITORY EVIDENCE.
+- **Forbidden Transfer:** source-like = physical stress-energy.
 
 ### TERM-017 — effective stress structure
 
@@ -414,11 +450,12 @@ complete field theory
 
 ### TERM-018 — physical stress-energy
 
-- **Scientific domain:** TIG gravitational architecture / physical interpretation.
-- **Claim status:** scientifically open where an independent physical source interpretation is required.
-- **Definition state:** not established by the current effective realization alone.
-- **Relation class:** UNDEFINED RELATION.
-- **Forbidden transfer:** effective source or Cube density expression = physical stress-energy.
+- **Scientific Domain:** TIG gravitational architecture / physical interpretation.
+- **Scientific Status Applicability:** APPLICABLE.
+- **Scientific Status:** Scientifically Open where an independent physical source interpretation is required.
+- **Definition State:** not established by the current effective realization alone.
+- **Relation Class:** UNDEFINED RELATION.
+- **Forbidden Transfer:** effective source or Cube density expression = physical stress-energy.
 
 ### TERM-019 — geometry
 
@@ -440,10 +477,11 @@ Geometry must be qualified as:
 ### TERM-021 — effective realization
 
 - **Evidence:** `Quantum_Integrity_Core/field_equations/field_equation_1_0.md`.
-- **Scientific domain:** TIG gravitational architecture.
-- **Claim status:** scoped effective physical candidate.
-- **Definition state:** locally defined realization.
-- **Forbidden transfer:** effective realization = fundamental structure or complete theory.
+- **Scientific Domain:** TIG gravitational architecture.
+- **Claim Status:** Physical Candidate.
+- **Scope:** scoped effective realization.
+- **Definition State:** locally defined realization.
+- **Forbidden Transfer:** effective realization = fundamental structure or complete theory.
 
 ---
 
@@ -452,97 +490,118 @@ Geometry must be qualified as:
 ### TERM-022 — substrate
 
 - **Evidence:** `Integrity_Nexus/registry/foundational_questions.md`; `TIG-E/research/foundational_questions/FRQ-001_common_emergence_question.md`; `TIG-E/registry/next_generation_scientific_blocker_queue.md`.
-- **Object type:** NAMED BUT UNDEFINED SCIENTIFIC OBJECT.
-- **Claim status:** scientifically open.
-- **Definition state:** undefined.
-- **Bridge state:** no derivation to spacetime or QM.
-- **Forbidden transfer:** naming a substrate candidate identifies the substrate.
+- **Object Type:** NAMED BUT UNDEFINED SCIENTIFIC OBJECT.
+- **Scientific Status Applicability:** APPLICABLE.
+- **Scientific Status:** Scientifically Open.
+- **Definition State:** Undefined.
+- **Bridge State:** no derivation to spacetime or QM.
+- **Forbidden Transfer:** naming a substrate candidate identifies the substrate.
 
 ### TERM-023 — defect
 
 The generic word `defect` is not automatically a technical object.
 
-- **Definition state:** repository- and context-dependent.
-- **Relation class:** UNDEFINED RELATION.
-- **Forbidden transfer:** generic defect language = `DefectSpace`.
+- **Definition State:** repository- and context-dependent.
+- **Relation Class:** UNDEFINED RELATION.
+- **Forbidden Transfer:** generic defect language = `DefectSpace`.
 
 ### TERM-024 — DefectSpace
 
 - **Evidence:** `TIG-E/registry/next_generation_scientific_blocker_queue.md`; `Integrity_Nexus/registry/master_open_question_backlog.md`.
-- **Scientific domain:** foundational TIG-E/TIG research.
-- **Object type:** NAMED BUT UNDEFINED SCIENTIFIC OBJECT.
-- **Claim status:** blocked / needs definition.
-- **Definition state:** independently undefined.
-- **Bridge state:** upstream substrate relation absent; downstream `B_TIG` derivation blocked.
+- **Scientific Domain:** foundational TIG-E/TIG research.
+- **Object Type:** NAMED BUT UNDEFINED SCIENTIFIC OBJECT.
+- **Scientific Status Applicability:** APPLICABLE.
+- **Scientific Status:** Scientifically Open.
+- **Operational Status:** Blocked.
+- **Required Work:** Definition.
+- **Definition State:** Undefined.
+- **Bridge State:** upstream substrate relation absent; downstream `B_TIG` derivation blocked.
 
 ### TERM-025 — Rel_TIG
 
 - **Evidence:** `TIG-E/registry/next_generation_scientific_blocker_queue.md`; `Integrity_Nexus/registry/master_open_question_backlog.md`.
-- **Object type:** NAMED BUT UNDEFINED SCIENTIFIC OBJECT.
-- **Claim status:** blocked / needs definition.
-- **Definition state:** independently undefined.
-- **Forbidden transfer:** name or registry occurrence = relation definition.
+- **Object Type:** NAMED BUT UNDEFINED SCIENTIFIC OBJECT.
+- **Scientific Status Applicability:** APPLICABLE.
+- **Scientific Status:** Scientifically Open.
+- **Operational Status:** Blocked.
+- **Required Work:** Definition.
+- **Definition State:** Undefined.
+- **Forbidden Transfer:** name or registry occurrence = relation definition.
 
 ### TERM-026 — B_TIG
 
 - **Evidence:** `TIG-E/registry/next_generation_scientific_blocker_queue.md`; `Integrity_Nexus/registry/master_open_question_backlog.md`.
-- **Object type:** declared scalar state-bound functional / research object.
-- **Claim status:** needs non-circular derivation.
-- **Definition state:** working use does not equal derivation.
-- **Bridge state:** depends on independently defined `Rel_TIG` / `DefectSpace`.
+- **Object Type:** declared scalar state-bound functional / research object.
+- **Claim Status:** Declared.
+- **Scientific Status Applicability:** APPLICABLE.
+- **Scientific Status:** Scientifically Open.
+- **Operational Status:** Blocked.
+- **Required Work:** Non-circular derivation.
+- **Definition State:** Declared but Not Fully Defined; working use does not equal derivation.
+- **Bridge State:** depends on independently defined `Rel_TIG` / `DefectSpace`.
 
 ### TERM-027 — I_QIC
 
 - **Evidence:** `TIG-E/research/quantum/qic_state_space_audit.md`; `TIG-E/registry/next_generation_scientific_blocker_queue.md`.
-- **Scientific domain:** QIC quantum-bridge research.
-- **Object type:** NAMED BUT UNDEFINED SCIENTIFIC OBJECT.
-- **Input / output target:** a typing such as `I_QIC : Σ_QIC -> R` or equivalent is a research requirement, not an established definition.
-- **Claim status:** needs definition.
-- **Bridge state:** relation to TIG integrity architecture not established.
+- **Scientific Domain:** QIC quantum-bridge research.
+- **Object Type:** NAMED BUT UNDEFINED SCIENTIFIC OBJECT.
+- **Input / Output Target:** a typing such as `I_QIC : Σ_QIC -> R` or equivalent is a research requirement, not an established definition.
+- **Scientific Status Applicability:** APPLICABLE.
+- **Scientific Status:** Scientifically Open.
+- **Operational Status:** Blocked.
+- **Required Work:** Definition.
+- **Definition State:** Named but Undefined.
+- **Bridge State:** relation to TIG integrity architecture not established.
 
 ### TERM-028 — Σ_QIC
 
 - **Evidence:** `TIG-E/research/quantum/qic_state_space_audit.md`.
-- **Scientific domain:** QIC quantum-bridge research.
-- **Object type:** abstract auditable state set.
-- **Claim status:** selected minimum placeholder.
-- **Definition state:** abstractly defined only.
-- **Forbidden transfer:** `Σ_QIC` = Hilbert space, physical ontology, TIG spacetime state, or Cube state.
+- **Scientific Domain:** QIC quantum-bridge research.
+- **Object Type:** abstract auditable state set.
+- **Claim Status:** Selected.
+- **Scope:** minimum abstract placeholder only.
+- **Definition State:** Partially Defined; abstract definition only.
+- **Forbidden Transfer:** `Σ_QIC` = Hilbert space, physical ontology, TIG spacetime state, or Cube state.
 
 ### TERM-029 — Read_QIC
 
 - **Evidence:** `TIG-E/research/quantum/qic_readout_measurement_boundary_audit.md`; `TIG-E/registry/next_generation_scientific_blocker_queue.md`.
-- **Scientific domain:** QIC quantum-bridge research.
-- **Object type:** named readout structure / audit-output concept.
-- **Claim status:** scientifically open.
-- **Definition state:** physical measurement semantics absent.
-- **Forbidden transfer:** formal readout = physical measurement.
+- **Scientific Domain:** QIC quantum-bridge research.
+- **Object Type:** named readout structure / audit-output concept.
+- **Scientific Status Applicability:** APPLICABLE.
+- **Scientific Status:** Scientifically Open.
+- **Operational Status:** Blocked.
+- **Required Work:** Definition of physical measurement semantics.
+- **Definition State:** Partially Defined; physical measurement semantics absent.
+- **Forbidden Transfer:** formal readout = physical measurement.
 
 ### TERM-030 — Pres_QM
 
 - **Evidence:** `TIG-E/research/evolution/qm_compatible_preservation_conditions.md`.
-- **Scientific domain:** TIG-E research architecture / QIC compatibility layer.
-- **Object type:** preservation predicate `Pres_QM(E; O_i, O_j)`.
-- **Claim status:** scoped compatibility condition.
-- **Definition state:** formal structural condition.
-- **Forbidden transfer:** `Pres_QM` = Schrödinger evolution, unitarity, Hamiltonian dynamics, or QM derivation.
+- **Scientific Domain:** TIG-E research architecture / QIC compatibility layer.
+- **Object Type:** preservation predicate `Pres_QM(E; O_i, O_j)`.
+- **Claim Status:** Compatible.
+- **Scope:** scoped structural compatibility condition.
+- **Definition State:** Defined as a formal structural condition.
+- **Forbidden Transfer:** `Pres_QM` = Schrödinger evolution, unitarity, Hamiltonian dynamics, or QM derivation.
 
 ### TERM-031 — Gate_E
 
 - **Evidence:** `TIG-E/research/evolution/evolution_candidate_classification_preservation_gate.md`.
-- **Scientific domain:** TIG-E research architecture.
-- **Object type:** candidate-preservation gate `Gate_E(E)`.
-- **Claim status:** formal gate.
-- **Definition state:** defined locally.
-- **Forbidden transfer:** gate passage = physical selection or scientific truth.
+- **Scientific Domain:** TIG-E research architecture.
+- **Object Type:** candidate-preservation gate `Gate_E(E)`.
+- **Scope:** formal local gate.
+- **Definition State:** Defined.
+- **Forbidden Transfer:** gate passage = physical selection or scientific truth.
 
 ### TERM-032 — Registerable_E
 
 - **Evidence:** `TIG-E/research/evolution/evolution_candidate_classification_preservation_gate.md`; `TIG-E/research/evolution/evolution_candidate_registry.md`.
-- **Scientific domain:** TIG-E research architecture.
-- **Object type:** registry-admission predicate/status.
-- **Claim status:** governance / candidate lifecycle.
-- **Forbidden transfer:** registerable or registered = canonical truth or accepted physical law.
+- **Scientific Domain:** TIG-E research architecture.
+- **Object Type:** registry-admission predicate/status.
+- **Governance Role:** candidate-lifecycle admission predicate.
+- **Definition State:** Defined.
+- **Forbidden Transfer:** registerable or registered = canonical truth or accepted physical law.
 
 ---
 
@@ -596,19 +655,26 @@ Preservation may denote governance integrity, gate preservation, mathematical in
 ### TERM-039 — generator
 
 - **Evidence:** `TIG-E/research/quantum/qic_hamiltonian_generator_audit.md`.
-- **Scientific domain:** QIC quantum-bridge research.
-- **Object type:** stronger dynamics object than a transition relation.
-- **Claim status:** scientifically open.
-- **Definition state:** not established.
-- **Forbidden transfer:** transition relation = generator.
+- **Scientific Domain:** QIC quantum-bridge research.
+- **Object Type:** stronger dynamics object than a transition relation.
+- **Scientific Status Applicability:** APPLICABLE.
+- **Scientific Status:** Scientifically Open.
+- **Operational Status:** Blocked.
+- **Required Work:** Definition and derivation.
+- **Definition State:** Undefined.
+- **Forbidden Transfer:** transition relation = generator.
 
 ### TERM-040 — Hamiltonian
 
 - **Evidence:** `TIG-E/research/quantum/qic_hamiltonian_generator_audit.md`.
-- **Scientific domain:** QIC quantum-bridge research.
-- **Claim status:** scientifically open.
-- **Definition state:** no final QIC Hamiltonian; no unitary dynamics derived.
-- **Forbidden transfer:** Hamiltonian language imported from standard QM = QIC derivation.
+- **Scientific Domain:** QIC quantum-bridge research.
+- **Object Type:** possible QIC dynamics generator.
+- **Scientific Status Applicability:** APPLICABLE.
+- **Scientific Status:** Scientifically Open.
+- **Operational Status:** Blocked.
+- **Required Work:** Definition and derivation.
+- **Definition State:** Undefined; no final QIC Hamiltonian and no unitary dynamics derived.
+- **Forbidden Transfer:** Hamiltonian language imported from standard QM = QIC derivation.
 
 ### TERM-041 — readout
 
@@ -637,7 +703,7 @@ The canonical status meanings are defined downstream in `governance/claim_status
 | TERM-048 | compatible | Claim-status value | Satisfies a target constraint under stated conditions | Derived, unique, physically selected |
 | TERM-049 | registered | Registry-admission value | Entered into a registry, queue, backlog, or index | True, scientifically accepted, or question closure |
 | TERM-050 | canonical | Artifact-status family | Canonical repository, artifact, question, or scoped result | Scientific truth or completed theory |
-| TERM-051 | selected | Local lifecycle/status value | Chosen minimum or working option under explicit scope | Derived necessity, truth, final ontology |
+| TERM-051 | selected | Claim-status value | Chosen minimum or working option under explicit scope | Derived necessity, truth, final ontology |
 | TERM-052 | derived | Claim-status value | Obtained from stated premises through documented reasoning | Broader status than the derivation supports |
 | TERM-053 | proven | Claim-status value | Mathematically or logically proven under explicit assumptions | Physical or empirical truth without bridge |
 | TERM-054 | validated | Claim-status value | Checked against declared criteria or evidence class | Global or complete validation |
@@ -885,9 +951,12 @@ This revision preserves the earlier audit corrections and applies the latest Com
 26. `Question State` remains a separate governance-question lifecycle axis with canonical values `OPEN` and `CLOSED`.
 27. Scientific Status `Resolved`, Registry admission `Registered`, Completion Readiness `AUDIT PASSED`, and Question State `CLOSED` remain explicitly non-identical.
 28. The local OQ status contribution is reconciled to `READY FOR COMPLETION AUDIT` because no inventory-local correction remains after this revision.
-29. `Scientific Status Applicability` is introduced as a separate marker with values `APPLICABLE` and `NOT APPLICABLE`.
-30. `NOT APPLICABLE` is explicitly excluded from the canonical Scientific Status value set.
-31. The earlier downstream propagation requirement is identified as historically completed before the latest audit; this revision creates a new, narrower propagation requirement for the progress and applicability corrections only.
+29. `Scientific Status Applicability` remains a separate marker with values `APPLICABLE` and `NOT APPLICABLE`.
+30. `NOT APPLICABLE` remains explicitly excluded from the canonical Scientific Status value set.
+31. Claim Status is restricted to the canonical Claim Status value set.
+32. Scientific Status, Operational Status, Required Work, Object Type, Scope, Artifact Status, and Definition State have been removed from Claim Status assignments.
+33. The affected entries for `Iμν`, metric-like, source-like, physical stress-energy, effective realization, substrate, `DefectSpace`, `Rel_TIG`, `B_TIG`, `I_QIC`, `Σ_QIC`, `Read_QIC`, `Pres_QM`, `Gate_E`, `Registerable_E`, generator, and Hamiltonian are normalized without inventing stronger claims.
+34. The previous progress/applicability propagation was completed before this revision; this revision creates a new downstream reconciliation requirement only for Claim-Status normalization and historical propagation wording.
 
 ---
 
@@ -905,7 +974,8 @@ This revision preserves the earlier audit corrections and applies the latest Com
 10. Global current-HEAD synchronization and global Completion Readiness are not findings of this inventory; they are reported only by `registry/repository_status.md`.
 11. Governance questions require a dedicated Question State axis because Scientific Status is not their closure mechanism.
 12. Governance questions require `Scientific Status Applicability: NOT APPLICABLE` rather than an invalid Scientific Status value.
-13. No known inventory-local governance correction remains after this revision.
+13. Claim Status assignments must use only canonical Claim Status values; absent Claim Status evidence remains unassigned.
+14. No known inventory-local governance correction remains after this revision.
 
 ---
 
@@ -940,7 +1010,7 @@ It requires that every unresolved object or bridge remain:
 
 - explicitly identified,
 - assigned to the correct scientific domain,
-- given its exact definition and bridge state,
+- given its exact applicability, status, definition, and bridge state,
 - protected by non-equivalence and transfer boundaries,
 - and prevented from silent status upgrade.
 
@@ -948,13 +1018,13 @@ Scientific openness is therefore compatible with terminology-governance closure.
 
 ### Downstream Propagation State
 
-The earlier propagation of Question State and single-authority synchronization controls was completed before the latest independent audit.
+The earlier propagation of Question State, Scientific Status Applicability, corrected Progress Classification, and single-authority synchronization controls was completed before this revision.
 
 This revision introduces only the following new downstream reconciliation requirements:
 
-1. replace upstream `PARTIALLY RESOLVED — CORRECTION REQUIRED` contributions with the supported local value `READY FOR COMPLETION AUDIT`;
-2. introduce `Scientific Status Applicability` as a separate marker;
-3. remove `NOT APPLICABLE` from all Scientific Status value assignments;
+1. preserve the canonical Claim Status value set;
+2. prevent Scientific Status, Operational Status, Required Work, Object Type, Scope, Artifact Status, and Definition State from being assigned as Claim Status;
+3. update downstream audit language to record this correction as completed only after dependency-ordered propagation;
 4. preserve `registry/repository_status.md` as the sole authority for global synchronization and Completion Readiness.
 
 The dependency-correct propagation path remains:
