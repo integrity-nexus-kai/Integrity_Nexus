@@ -4,7 +4,7 @@
 **Scope:** Complete TIG Research Ecosystem  
 **Status:** CANONICAL / LOCKED MODE / AUDIT-CORRECTED  
 **Source:** Master Research Consistency Auditor output, consolidated into canonical backlog form  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `61c983e7d40792d6d93b67f5e1b2351b1e098203`; `shared/terminology_drift_matrix.md` content SHA `349bf02c81ad471f16adf2518676673957036822`; `governance/claim_status_taxonomy.md` content SHA `63fdca80075c7c1e3a2bd49c67fad6a5ef7a7bba`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `b418482c0620ea7cf7d7dc175f6aa94e63d40ed1`; `registry/open_questions.md` content SHA `56b9eadf726df40f976b16531841800aecf51097`  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `f606e88848441374355f71bda117e12a52b8c42a`; `shared/terminology_drift_matrix.md` content SHA `4e76c99f7af891ef1309b5f61551679006ce7481`; `governance/claim_status_taxonomy.md` content SHA `d0506e71d47ee08863dae516a61078ef7a8275ca`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `ff4d3debd6864dc056df04c39e4d5483baa7daa1`; `registry/open_questions.md` content SHA `888d819a978215b17c7123cdec44831fd961d0be`  
 **Position in Control Chain:** terminology inventory → drift matrix → claim-status taxonomy → claim-boundary matrix → local registry → this master backlog → repository-status index  
 **Global Synchronization and Completion-Readiness Authority:** `registry/repository_status.md`  
 **Local OQ Status Contribution:** READY FOR COMPLETION AUDIT  
@@ -859,11 +859,11 @@ Their scientific non-claims remain protected.
 
 This master backlog is reconciled with:
 
-- inventory SHA `61c983e7d40792d6d93b67f5e1b2351b1e098203`,
-- drift-matrix SHA `349bf02c81ad471f16adf2518676673957036822`,
-- taxonomy SHA `63fdca80075c7c1e3a2bd49c67fad6a5ef7a7bba`,
-- boundary-matrix SHA `b418482c0620ea7cf7d7dc175f6aa94e63d40ed1`,
-- local-registry SHA `56b9eadf726df40f976b16531841800aecf51097`.
+- inventory SHA `f606e88848441374355f71bda117e12a52b8c42a`,
+- drift-matrix SHA `4e76c99f7af891ef1309b5f61551679006ce7481`,
+- taxonomy SHA `d0506e71d47ee08863dae516a61078ef7a8275ca`,
+- boundary-matrix SHA `ff4d3debd6864dc056df04c39e4d5483baa7daa1`,
+- local-registry SHA `888d819a978215b17c7123cdec44831fd961d0be`.
 
 It preserves and records:
 
@@ -886,12 +886,16 @@ It preserves and records:
 17. OQ-030 and OQ-031 remaining Question State `OPEN` and Progress Classification `READY FOR COMPLETION AUDIT`;
 18. OQ-025–OQ-027 remaining Question State `CLOSED` only for their exact governance tasks;
 19. `registry/repository_status.md` preserved as sole global synchronization and Completion Readiness authority;
-20. the substantive Claim-Status normalization as already adopted across the preceding downstream chain;
-21. the current revision as a SHA reconciliation only, without reopening or reversing the adopted controls.
+20. the substantive status-axis and Claim-Status controls recorded as historically adopted across the then-current downstream chain;
+21. this revision recorded as a local SHA reconciliation without asserting the current state of the repository-status index.
 
-The earlier progress/applicability propagation and the substantive Claim-Status normalization were completed across the downstream control chain before this temporal-status correction.
+The substantive progress/applicability and Claim-Status controls were historically adopted across the then-current downstream chain before the independent audit identified the later temporal and evidence-path findings.
 
-This revision records that completed substantive propagation. Because the five upstream artifacts and this master backlog now have new content SHAs, the repository-status index must be reconciled to those SHAs. That SHA reconciliation does not reopen or reverse the already adopted Claim-Status controls.
+This revision records that historical substantive state and locally reconciles the master backlog to the corrected five-artifact upstream chain.
+
+The repository-status index is reconciled to this revision only when it references the current six upstream content SHAs and records the resulting global state.
+
+Whether that final reconciliation is currently pending or complete is not asserted by this master backlog.
 
 This local reconciliation is not a global synchronization report.
 
