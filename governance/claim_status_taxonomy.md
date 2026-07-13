@@ -3,12 +3,12 @@
 **Repository:** Integrity_Nexus  
 **Scope:** Scientific-core TIG Research Ecosystem with controlled Cube-domain coverage  
 **Status:** CANONICAL / LOCKED MODE / AUDIT-CORRECTED  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `06b2371b4cc65739aa93fa569fcd808553e054fb`; `shared/terminology_drift_matrix.md` content SHA `3270635e015931f12fd5c8de6fbc2107a541ab5a`  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `b5b877cbb536b8626df4b39e54d0f8936c69b8b8`; `shared/terminology_drift_matrix.md` content SHA `4be24a9b1cef0eaa3014bee5aff3c9a158c8089d`  
 **Position in Control Chain:** terminology inventory → terminology drift matrix → this taxonomy → claim-boundary matrix → registries → repository-status index  
 **Global Synchronization and Completion-Readiness Authority:** `registry/repository_status.md`  
 **OQ Status Contribution:** READY FOR COMPLETION AUDIT  
 **Related Open Questions:** OQ-030 / OQ-NEXUS-001; OQ-031 / OQ-NEXUS-002  
-**Last Updated:** 2026-07-12
+**Last Updated:** 2026-07-13
 
 ---
 
@@ -16,7 +16,7 @@
 
 This file defines the permitted vocabulary for claims, scientific questions and blockers, registered-question lifecycles, workflow states, control artifacts, definitions, bridges, progress, and completion readiness inside the scientific-core TIG Research Ecosystem.
 
-It exists to prevent silent upgrades such as:
+It exists to prevent silent upgrades or axis collapses such as:
 
 - Candidate becoming final,
 - Selected becoming necessary or Derived,
@@ -29,6 +29,11 @@ It exists to prevent silent upgrades such as:
 - `AUDIT PASSED` becoming automatic registry closure,
 - `NOT APPLICABLE` becoming a Scientific Status value,
 - applicability becoming status assignment,
+- Scientific Status becoming Claim Status,
+- Operational Status becoming Claim Status,
+- Required Work becoming Claim Status,
+- Object Type, Scope, Artifact Status, Maturity Status, or Definition State becoming Claim Status,
+- descriptive phrases being inserted into Claim Status,
 - effective becoming fundamental,
 - mathematical becoming physical,
 - canonical artifact becoming completed theory,
@@ -52,6 +57,8 @@ It does not:
 - assign the global synchronization count,
 - assign global Completion Readiness,
 - use `NOT APPLICABLE` as a Scientific Status value,
+- assign a noncanonical value to Claim Status,
+- invent Claim Status where source evidence does not support one,
 - or resolve OQ-030 or OQ-031 by file existence alone.
 
 The sole authority for global current-HEAD synchronization and global Completion Readiness is:
@@ -68,7 +75,13 @@ A claim-bearing or question-bearing statement must carry the exact values applic
 
 The protected rule is:
 
-> No status may be upgraded by wording, repository location, scientific-domain placement, registry admission, canonical placement, maturity label, audit passage, relation name, applicability marker, or cross-repository transfer.
+> No status may be upgraded, replaced, or reassigned across axes by wording, repository location, scientific-domain placement, registry admission, canonical placement, maturity label, audit passage, relation name, applicability marker, descriptive metadata, or cross-repository transfer.
+
+Claim Status may use only the canonical Claim Status values defined in this file.
+
+Scientific Status, Operational Status, Required Work, Object Type, Scope, Artifact Status, Maturity Status, and Definition State must remain on their own axes or control fields.
+
+When source evidence does not support a canonical Claim Status, the Claim Status field remains unassigned.
 
 A stronger status requires evidence appropriate to that exact upgrade.
 
@@ -105,10 +118,15 @@ The following axes and control fields are distinct and must not be compressed in
 | Bridge State | Is the cross-domain interface established? | Not Required, Required, Missing, Candidate Bridge, Partial Bridge, Established Within Scope |
 | Progress Classification | How far has a governed question progressed without changing Question State? | PARTIALLY RESOLVED — CORRECTION REQUIRED, READY FOR COMPLETION AUDIT |
 | Completion Readiness | Is the globally controlled artifact chain ready for or through completion audit? | NOT ESTABLISHED, READY FOR AUDIT, AUDIT PASSED |
+| Required Work | What work remains without assigning lifecycle or evidential strength? | Definition, Derivation, Proof, Validation, Review, Bridge Construction, Empirical Test, Completion Audit, or another explicitly descriptive work item |
+| Object Type | What kind of object is being described? | Explicit repository-supported type description; not a status value |
+| Scope | Under what limits does the record apply? | Explicit local, model, domain, temporal, or evidential limitation; not a status value |
 | Scientific Domain | In which scientific or governance domain does the claim operate? | Integrity_Nexus governance, TIG-E research architecture, TIG gravitational architecture, QIC quantum-bridge research, SIR mathematical recursion, Cube research, SSC deferred application projection |
 | Repository Container | In which repository is the artifact stored? | Integrity_Nexus, TIG-E, Quantum_Integrity_Core, Structural_Integrity_Recursion, Structural_State_Controller |
 
 `Scientific Status Applicability` is an applicability control field. It is not a Scientific Status value and does not itself assign any status.
+
+`Required Work`, `Object Type`, and `Scope` are descriptive control fields. They are not Claim Status values.
 
 ### 3.1 Exact-Spelling and Axis Rule
 
@@ -127,6 +145,14 @@ Registry Status Registered != Question State CLOSED
 Completion Readiness AUDIT PASSED != Question State CLOSED
 Progress Classification != Question State
 Completion Readiness != Scientific Status
+Claim Status != Scientific Status
+Claim Status != Operational Status
+Claim Status != Required Work
+Claim Status != Object Type
+Claim Status != Scope
+Claim Status != Artifact Status
+Claim Status != Maturity Status
+Claim Status != Definition State
 ```
 
 ### 3.2 Applicability Rule
@@ -146,7 +172,70 @@ Rules:
 - Missing or unknown scientific status is not the same as inapplicability.
 - Governance-question lifecycle is controlled by Question State, not Scientific Status.
 
-### 3.3 Multi-Axis Examples
+### 3.3 Claim-Status Assignment Rule
+
+Canonical Claim Status values are exclusively:
+
+```text
+Working Assumption
+Candidate
+Declared
+Partial
+Compatible
+Admissible
+Selected
+Derived
+Proven
+Validated
+Physical Candidate
+Empirically Supported
+Fundamental Candidate
+```
+
+The following are not Claim Status values:
+
+```text
+Scientifically Open
+Resolved
+Pending
+Addressed
+Blocked
+Operationally Closed
+Definition
+Derivation
+Proof
+Validation
+Review
+Bridge Construction
+Empirical Test
+Completion Audit
+Canonical Artifact
+Preliminary
+Defined
+Partially Defined
+Declared but Not Fully Defined
+Named but Undefined
+Undefined
+formal gate
+minimum placeholder
+scoped condition
+candidate lifecycle
+evidence anchor
+```
+
+Rules:
+
+- Scientific Status values remain on Scientific Status.
+- Workflow values remain on Operational Status.
+- Work descriptions remain under Required Work.
+- Repository acceptance remains under Artifact Status.
+- Development level remains under Maturity Status.
+- Object-definition completeness remains under Definition State.
+- Object Type and Scope remain descriptive controls.
+- A phrase containing a canonical word does not become a canonical Claim Status unless the exact value is assigned on that axis and supported by evidence.
+- Unsupported Claim Status remains unassigned.
+
+### 3.4 Multi-Axis Examples
 
 A registered scientific question may simultaneously be:
 
@@ -161,9 +250,11 @@ Artifact Status: Canonical Artifact
 Maturity Status: Preliminary
 Definition State: Partially Defined
 Bridge State: Missing
+Required Work: Definition and Bridge Construction
+Scope: Explicitly declared local scope
 ```
 
-None of these values cancels or upgrades another.
+None of these values cancels, replaces, or upgrades another.
 
 A registered governance question may instead be:
 
@@ -174,6 +265,18 @@ Scientific Status Applicability: NOT APPLICABLE
 Scientific Status: no value assigned
 Progress Classification: READY FOR COMPLETION AUDIT
 Completion Readiness: controlled globally by registry/repository_status.md
+```
+
+A named scientific object may correctly have no assigned Claim Status:
+
+```text
+Object Type: Named scientific object
+Scientific Status Applicability: APPLICABLE
+Scientific Status: Scientifically Open
+Operational Status: Blocked
+Definition State: Undefined
+Required Work: Definition
+Claim Status: unassigned because no canonical value is supported
 ```
 
 ---
@@ -225,6 +328,10 @@ SSC application projection != core scientific definition
 | Empirically Supported | Supported by observational or experimental evidence under a declared model | Unrestricted truth or final theory |
 | Fundamental Candidate | Candidate for underlying structure or ontology | Fundamental structure or truth |
 
+No other value is permitted on the Claim Status axis.
+
+A missing Claim Status must remain unassigned rather than being filled with another axis value or descriptive phrase.
+
 ### 5.2 Scientific Status Applicability
 
 | Marker | Meaning | Boundary |
@@ -236,8 +343,8 @@ SSC application projection != core scientific definition
 
 | Value | Meaning | Boundary |
 |---|---|---|
-| Scientifically Open | Further definition, derivation, proof, validation, empirical work, or scientific review is required | Does not imply failed terminology governance or Question State `OPEN` by itself |
-| Resolved | The exact scientific question or blocker is closed by explicit accepted scientific evidence | Does not close a governance question, dependency, or neighboring question automatically |
+| Scientifically Open | Further definition, derivation, proof, validation, empirical work, or scientific review is required | Does not imply failed terminology governance, Question State `OPEN`, or a Claim Status value by itself |
+| Resolved | The exact scientific question or blocker is closed by explicit accepted scientific evidence | Does not close a governance question, dependency, neighboring question, or assign Claim Status automatically |
 
 ### 5.4 Question State
 
@@ -272,10 +379,10 @@ corrections completed
 
 | Value | Meaning | Boundary |
 |---|---|---|
-| Pending | Declared workflow work has not yet been processed | No scientific inference |
-| Addressed | Declared workflow item was processed within stated operational scope | Not Resolved and not CLOSED |
-| Blocked | Work cannot proceed until named dependencies are satisfied | Does not establish impossibility or alter Question State |
-| Operationally Closed | Workflow or gate sequence is closed within declared process scope | Scientific dependencies and Question State remain separate |
+| Pending | Declared workflow work has not yet been processed | No scientific inference; not Claim Status |
+| Addressed | Declared workflow item was processed within stated operational scope | Not Resolved, not CLOSED, and not Claim Status |
+| Blocked | Work cannot proceed until named dependencies are satisfied | Does not establish impossibility, alter Question State, or assign Claim Status |
+| Operationally Closed | Workflow or gate sequence is closed within declared process scope | Scientific dependencies and Question State remain separate; not Claim Status |
 
 `Operational` is the axis name, not a status value.
 
@@ -285,14 +392,14 @@ corrections completed
 |---|---|---|
 | Raw Note | Unprocessed note, idea, or fragment | No canonical scientific claim |
 | Non-Canonical Input | Preserved material not accepted as current canonical claim-bearing output | Must not be cited as current canonical result |
-| Canonical Artifact | Repository-recognized file or governance object | Not automatically true, Proven, Validated, Resolved, or completed theory |
+| Canonical Artifact | Repository-recognized file or governance object | Not automatically true, Proven, Validated, Resolved, completed theory, or Claim Status |
 
 ### 5.8 Maturity Status
 
 | Value | Meaning | Boundary |
 |---|---|---|
-| Preliminary | Analysis, result, or artifact exists but remains incomplete, provisional, or not fully validated | Not Claim Status Validated |
-| M0–M5 | Repository or artifact maturity under `governance/maturity_model.md` | Maturity is not scientific truth |
+| Preliminary | Analysis, result, or artifact exists but remains incomplete, provisional, or not fully validated | Not Claim Status Validated and not a Claim Status value |
+| M0–M5 | Repository or artifact maturity under `governance/maturity_model.md` | Maturity is not scientific truth or Claim Status |
 | Explicit Local L-Level | Repository-local maturity label when explicitly defined and mapped | Local level must not be generalized without mapping |
 
 ### 5.9 Definition State
@@ -306,6 +413,8 @@ corrections completed
 | Undefined | No accepted definition exists |
 
 Claim Status `Declared` and Definition State `Declared but Not Fully Defined` remain distinct.
+
+No Definition State value is a Claim Status value.
 
 ### 5.10 Bridge State
 
@@ -333,7 +442,7 @@ Candidate Bridge != Established Within Scope
 
 A local artifact may contribute `READY FOR COMPLETION AUDIT` when no correction remains in that artifact. Only `registry/repository_status.md` may authoritatively assign the global Progress Classification and Completion Readiness after evaluating the complete chain.
 
-Progress Classification is not Scientific Status, Question State, or Completion Readiness.
+Progress Classification is not Scientific Status, Question State, Claim Status, or Completion Readiness.
 
 ### 5.12 Completion Readiness
 
@@ -350,6 +459,8 @@ Only `registry/repository_status.md` may authoritatively assign these global val
 ## 6. Composite Status Phrases
 
 Composite phrases are permitted only when every component can be decomposed into canonical axes and applicability controls.
+
+A composite phrase must never be copied verbatim into Claim Status unless it is exactly one canonical Claim Status value.
 
 ### Scoped Canonical Field-Equation Architecture
 
@@ -371,7 +482,7 @@ Definition State: Defined or Partially Defined, as locally evidenced
 Scope: Minimum placeholder only
 ```
 
-It does not mean uniquely Derived or final ontology.
+`Selected minimum placeholder` is not itself a Claim Status value.
 
 ### Preliminary Effective Stress Analysis
 
@@ -382,7 +493,7 @@ Scientific Status Applicability: APPLICABLE
 Scientific Status: Scientifically Open where interpretation remains unresolved
 ```
 
-It does not mean independently Validated physical stress-energy.
+`Preliminary` is not Claim Status and the phrase does not mean independently Validated physical stress-energy.
 
 ### PARTIALLY RESOLVED — CORRECTION REQUIRED
 
@@ -391,6 +502,7 @@ Axis: Progress Classification
 Question State: unchanged
 Scientific Status Applicability: unchanged
 Scientific Status: unchanged where applicable
+Claim Status: unchanged or unassigned according to evidence
 Global Completion Readiness: NOT ESTABLISHED
 ```
 
@@ -401,6 +513,7 @@ Axis: Progress Classification
 Question State: OPEN
 Scientific Status Applicability: unchanged
 Scientific Status: unchanged where applicable
+Claim Status: unchanged or unassigned according to evidence
 Global Completion Readiness: assigned only by registry/repository_status.md
 ```
 
@@ -419,20 +532,20 @@ Global Completion Readiness: assigned only by registry/repository_status.md
 | Declared | Derived | Independent derivation without circular premise |
 | Compatible | Derived | Derivation showing that the target follows, not merely fits |
 | Selected | Derived | Derivation showing necessity or origin |
-| Preliminary | Validated | Completed validation against declared criteria; explicit cross-axis update |
-| Addressed | Resolved | Scientific closure evidence and Scientific Status Applicability `APPLICABLE`; operational processing alone is insufficient |
-| Operationally Closed | Resolved | Exact scientific closure criteria and dependencies satisfied; Scientific Status Applicability must be `APPLICABLE` |
+| Preliminary | Validated | Completed validation against declared criteria; explicit cross-axis update, not a direct same-axis transition |
+| Addressed | Resolved | Scientific closure evidence and Scientific Status Applicability `APPLICABLE`; operational processing alone is insufficient and no Claim Status follows automatically |
+| Operationally Closed | Resolved | Exact scientific closure criteria and dependencies satisfied; Scientific Status Applicability must be `APPLICABLE`; no Claim Status follows automatically |
 | Registerable | Registered | Registry admission under registry rules |
 | Registered | Canonical Artifact | Separate artifact-acceptance action |
 | Registered | Question State CLOSED | Forbidden direct transition; closure rule and accepted result required |
-| Canonical Artifact | Proven | Explicit proof |
-| Validated | Resolved | Validation addresses the exact scientific question and dependencies |
-| Mathematical Object | Physical Candidate | Explicit physical interpretation bridge |
-| Effective Description | Fundamental Candidate | Explicit argument beyond effective scope |
+| Canonical Artifact | Proven | Explicit proof and explicit Claim Status assignment; artifact acceptance alone is insufficient |
+| Validated | Resolved | Validation addresses the exact scientific question and dependencies; cross-axis update must be explicit |
+| Mathematical Object | Physical Candidate | Explicit physical interpretation bridge and supported Claim Status assignment |
+| Effective Description | Fundamental Candidate | Explicit argument beyond effective scope and supported Claim Status assignment |
 | Physical Candidate | Empirically Supported | Observational or experimental evidence under a declared model |
 | Required or Missing | Established Within Scope | Typed interface, assumptions, and validation of transfer |
-| Named but Undefined | Defined | Explicit definition, type, scope, and non-circular dependencies |
-| Scientific Status Applicability NOT APPLICABLE | APPLICABLE | Explicit reclassification showing that the object is now an exact scientific question or blocker; no Scientific Status follows automatically |
+| Named but Undefined | Defined | Explicit definition, type, scope, and non-circular dependencies; Definition State change does not itself assign Claim Status |
+| Scientific Status Applicability NOT APPLICABLE | APPLICABLE | Explicit reclassification showing that the object is now an exact scientific question or blocker; no Scientific Status or Claim Status follows automatically |
 | PARTIALLY RESOLVED — CORRECTION REQUIRED | READY FOR COMPLETION AUDIT | Required corrections complete in the evaluated scope |
 | Completion Readiness READY FOR AUDIT | AUDIT PASSED | Independent completion audit passes |
 | Completion Readiness AUDIT PASSED | Question State CLOSED | Governing registry explicitly applies the accepted audit result to the exact question |
@@ -484,6 +597,32 @@ Question State CLOSED = scientific truth
 Question State CLOSED = closure of dependencies
 Completion Readiness AUDIT PASSED = automatic Question State CLOSED
 Progress Classification = Question State
+Claim Status Scientifically Open
+Claim Status Resolved
+Claim Status Pending
+Claim Status Addressed
+Claim Status Blocked
+Claim Status Operationally Closed
+Claim Status Definition
+Claim Status Derivation
+Claim Status Proof
+Claim Status Validation
+Claim Status Review
+Claim Status Bridge Construction
+Claim Status Empirical Test
+Claim Status Completion Audit
+Claim Status Canonical Artifact
+Claim Status Preliminary
+Claim Status Defined
+Claim Status Partially Defined
+Claim Status Declared but Not Fully Defined
+Claim Status Named but Undefined
+Claim Status Undefined
+Claim Status formal gate
+Claim Status minimum placeholder
+Claim Status scoped condition
+Claim Status candidate lifecycle
+Claim Status evidence anchor
 local synchronization statement = global synchronization authority
 ```
 
@@ -506,9 +645,11 @@ Progress Classification:
 Completion Readiness:
 Repository:
 Scientific Domain:
+Object Type:
 Scope:
 Definition State:
 Bridge State:
+Required Work:
 Dependencies:
 Allowed Claims:
 Non-Claims:
@@ -516,14 +657,17 @@ Evidence Required For Upgrade:
 Closure Rule:
 ```
 
-Applicability rules:
+Applicability and Claim Status rules:
 
 - When `Scientific Status Applicability: APPLICABLE`, assign `Scientifically Open` or `Resolved` where known.
 - When `Scientific Status Applicability: NOT APPLICABLE`, leave Scientific Status unassigned and state explicitly that no value is assigned.
 - Never write `Scientific Status: NOT APPLICABLE`.
 - A missing or unknown applicable Scientific Status must not be disguised as inapplicability.
+- Claim Status may use only one canonical Claim Status value supported by evidence.
+- Scientific Status, Operational Status, Required Work, Object Type, Scope, Artifact Status, Maturity Status, and Definition State must not be written as Claim Status.
+- When no canonical Claim Status is supported, leave Claim Status unassigned and state that no value is assigned where ambiguity would otherwise arise.
 
-For fields other than Scientific Status, a field-specific `NOT APPLICABLE` marker may be used only where the governing schema explicitly permits it and no canonical value is being replaced.
+For fields other than Scientific Status or Claim Status, a field-specific `NOT APPLICABLE` marker may be used only where the governing schema explicitly permits it and no canonical value is being replaced.
 
 For cross-repository or cross-domain material, also include:
 
@@ -551,7 +695,7 @@ Permitted `Required Work` examples include:
 - Empirical Test
 - Completion Audit
 
-They must never be placed in a generic `Status` field.
+They must never be placed in a generic `Status` field or in Claim Status.
 
 ---
 
@@ -570,11 +714,13 @@ Scientific Status Applicability: NOT APPLICABLE
 Scientific Status: no value assigned
 ```
 
+A governance question does not receive Claim Status merely because it has progress, registry, operational, or artifact metadata.
+
 ### 10.2 TIG-E Research Architecture
 
 TIG-E may define gates, candidate lifecycle, registry admission, blocker states, audit procedures, preservation conditions, and operational workflow.
 
-It may not convert gate passage into truth, compatibility into derivation, registration into physical selection, or Operationally Closed into Question State CLOSED.
+It may not convert gate passage into truth, compatibility into derivation, registration into physical selection, Operationally Closed into Question State CLOSED, or workflow descriptions into Claim Status.
 
 ### 10.3 TIG Gravitational Architecture
 
@@ -585,10 +731,26 @@ The current scoped architecture must not be promoted to complete covariant theor
 ### 10.4 QIC Quantum-Bridge Research
 
 ```text
-Σ_QIC = selected minimum abstract placeholder only
-I_QIC = Named but Undefined scientific object
-Read_QIC = formal readout concept; physical measurement bridge open
-Pres_QM = structural compatibility condition; not QM derivation
+Σ_QIC:
+  Claim Status: Selected
+  Scope: minimum abstract placeholder only
+
+I_QIC:
+  Scientific Status: Scientifically Open
+  Operational Status: Blocked
+  Definition State: Named but Undefined
+  Required Work: Definition
+  Claim Status: unassigned unless separately supported
+
+Read_QIC:
+  Scientific Status: Scientifically Open
+  Operational Status: Blocked
+  Definition State: Partially Defined
+  Required Work: measurement-semantics definition
+
+Pres_QM:
+  Claim Status: Compatible
+  Scope: structural compatibility condition
 ```
 
 QIC may not inherit TIG status from repository proximity.
@@ -596,6 +758,8 @@ QIC may not inherit TIG status from repository proximity.
 ### 10.5 SIR Mathematical Recursion
 
 SIR mathematical claims require explicit local definitions and proof conditions. They may not become physical claims without typed bridge, physical interpretation, and validation.
+
+Descriptive phrases such as `exploratory mathematical structure` are not Claim Status values.
 
 ### 10.6 Cube Research
 
@@ -611,6 +775,8 @@ Cube transience question != established Cube transience
 
 Cube-local labels must be mapped onto canonical axes. `WORKING DERIVATION` does not mean Claim Status Derived unless the derivation is complete and auditable.
 
+`Blocked`, `Scientifically Open`, `Recognized`, `not yet formalized`, and similar descriptions must remain on their proper axes or descriptive fields rather than Claim Status.
+
 ### 10.7 SSC Deferred Application Projection
 
 SSC remains outside active scientific-core derivation scope. It may not define TIG, QIC, SIR, Cube structures, the common substrate, or upgrade core claims.
@@ -622,11 +788,11 @@ SSC remains outside active scientific-core derivation scope. It may not define T
 | Repository / Object | Scientific Domain | Status Boundary |
 |---|---|---|
 | `Quantum_Integrity_Core` repository | Repository container | Contains TIG gravitational architecture; name does not establish QIC identity |
-| `Iμν[g,r_c]` | TIG gravitational architecture | Scoped effective tensor realization; independent foundation open |
-| `I_QIC` | QIC quantum-bridge research | Named but Undefined object |
-| `Σ_QIC` | QIC quantum-bridge research | Selected minimum abstract state set |
+| `Iμν[g,r_c]` | TIG gravitational architecture | Claim Status Physical Candidate inside a scoped effective realization; independent foundation open |
+| `I_QIC` | QIC quantum-bridge research | Named but Undefined object; Scientifically Open and Blocked; no Claim Status inferred from those values |
+| `Σ_QIC` | QIC quantum-bridge research | Claim Status Selected; minimum abstract state-set scope |
 | TIG field-equation architecture | TIG gravitational architecture | Physical Candidate under scope; not QIC theory |
-| QIC bridge program | QIC quantum-bridge research | Scientifically Open; not completed QM |
+| QIC bridge program | QIC quantum-bridge research | Scientifically Open; not completed QM and not a Claim Status assignment |
 
 ---
 
@@ -639,13 +805,16 @@ Terminology-governance completion requires every unresolved object or bridge to 
 - explicitly identified,
 - assigned to the correct repository container and scientific domain,
 - given exact applicability and applicable status-axis values,
+- given a canonical Claim Status only when supported,
+- left with Claim Status unassigned when no canonical value is supported,
 - given exact Definition State and Bridge State,
 - protected by Relation Class, Relation Target, Allowed Transfer, and Forbidden Transfer,
-- and prevented from silent status upgrade.
+- and prevented from silent status or axis upgrade.
 
 ```text
 scientifically open object != incomplete terminology governance
 missing bridge != incomplete terminology governance when absence is correctly controlled
+unassigned Claim Status != governance failure when no canonical value is supported
 ```
 
 For OQ-030 and OQ-031:
@@ -670,6 +839,13 @@ Before accepting, transferring, or upgrading a claim or question, check:
 
 - Is the exact axis or applicability control named?
 - Is a generic `Status` field being used for mixed semantics?
+- Is every assigned Claim Status one exact canonical Claim Status value?
+- Is Scientific Status being written as Claim Status?
+- Is Operational Status being written as Claim Status?
+- Is Required Work being written as Claim Status?
+- Is Object Type or Scope being written as Claim Status?
+- Is Artifact Status, Maturity Status, or Definition State being written as Claim Status?
+- Is an unsupported Claim Status being invented rather than left unassigned?
 - Is Scientific Status Applicability explicit where ambiguity is possible?
 - Is `NOT APPLICABLE` being used incorrectly as a Scientific Status value?
 - Is a Scientific Status value assigned despite applicability being `NOT APPLICABLE`?
@@ -677,9 +853,9 @@ Before accepting, transferring, or upgrading a claim or question, check:
 - Is `OPEN` being confused with Scientifically Open?
 - Is `CLOSED` being confused with Resolved?
 - Is Registered being confused with CLOSED?
-- Is Blocked being confused with Question State?
+- Is Blocked being confused with Question State or Claim Status?
 - Is AUDIT PASSED being treated as automatic closure?
-- Is Progress Classification being treated as Question State?
+- Is Progress Classification being treated as Question State or Claim Status?
 - Is Completion Readiness being assigned outside `registry/repository_status.md` as a global authority claim?
 - Are `Partial` and `Partially Defined` separated?
 - Are Candidate and Candidate Bridge separated?
@@ -703,25 +879,27 @@ Before accepting, transferring, or upgrading a claim or question, check:
 
 This revision reconciles the taxonomy with:
 
-- `shared/terminology_inventory.md` content SHA `06b2371b4cc65739aa93fa569fcd808553e054fb`, and
-- `shared/terminology_drift_matrix.md` content SHA `3270635e015931f12fd5c8de6fbc2107a541ab5a`.
+- `shared/terminology_inventory.md` content SHA `b5b877cbb536b8626df4b39e54d0f8936c69b8b8`, and
+- `shared/terminology_drift_matrix.md` content SHA `4be24a9b1cef0eaa3014bee5aff3c9a158c8089d`.
 
 It propagates the current audit corrections by:
 
-1. changing the local OQ status contribution to `READY FOR COMPLETION AUDIT` because no taxonomy-local correction remains;
-2. adding Scientific Status Applicability as a separate control field;
-3. defining only `APPLICABLE` and `NOT APPLICABLE` as applicability markers;
-4. retaining only `Scientifically Open` and `Resolved` as Scientific Status values;
-5. prohibiting `Scientific Status: NOT APPLICABLE`;
-6. requiring no Scientific Status value when applicability is `NOT APPLICABLE`;
-7. preserving Question State as a separate canonical axis;
-8. preserving Registry admission, Operational Status, Progress Classification, and Completion Readiness as separate controls;
-9. preserving the explicit governance-question closure sequence;
-10. preserving generic mixed-semantics `Status` prohibition;
-11. preserving `Required Work` as metadata rather than status;
-12. preserving `registry/repository_status.md` as sole global synchronization and Completion Readiness authority;
-13. reporting no global synchronization count or authoritative globally pending-file list;
-14. preserving all QIC/TIG, Cube, SIR, SSC, evidence, bridge, and status anti-collapse controls.
+1. preserving the local OQ status contribution `READY FOR COMPLETION AUDIT` because no taxonomy-local correction remains;
+2. limiting Claim Status to the thirteen canonical Claim Status values;
+3. prohibiting Scientific Status, Operational Status, Required Work, Object Type, Scope, Artifact Status, Maturity Status, and Definition State as Claim Status assignments;
+4. requiring unsupported Claim Status to remain unassigned;
+5. adding Required Work, Object Type, and Scope as explicit separate control fields;
+6. preserving Scientific Status Applicability as a separate control field;
+7. retaining only `Scientifically Open` and `Resolved` as Scientific Status values;
+8. prohibiting `Scientific Status: NOT APPLICABLE`;
+9. requiring no Scientific Status value when applicability is `NOT APPLICABLE`;
+10. preserving Question State as a separate canonical axis;
+11. preserving Registry admission, Operational Status, Progress Classification, and Completion Readiness as separate controls;
+12. preserving the explicit governance-question closure sequence;
+13. preserving generic mixed-semantics `Status` prohibition;
+14. preserving `registry/repository_status.md` as sole global synchronization and Completion Readiness authority;
+15. reporting no global synchronization count or authoritative globally pending-file list;
+16. preserving all QIC/TIG, Cube, SIR, SSC, evidence, bridge, and status anti-collapse controls.
 
 ---
 
@@ -748,9 +926,11 @@ Those values are controlled only by:
 registry/repository_status.md
 ```
 
-The boundary matrix and registries must now adopt the progress and applicability corrections before a subsequent Completion & Consistency Audit can pass.
+The earlier progress/applicability propagation was completed before the current Claim-Status audit finding.
 
-This propagation statement is not a global synchronization report.
+This revision creates a new downstream reconciliation requirement: the boundary matrix and registries must adopt the canonical Claim Status assignment controls and later record this propagation as completed rather than retaining stale present-tense propagation language.
+
+This statement is not a global synchronization report.
 
 ---
 
@@ -760,7 +940,7 @@ Any document introducing or changing a claim-bearing or question-bearing artifac
 
 Any stronger status requires the evidence or registry action required for that exact transition.
 
-Any new status phrase must be decomposable into the independent axes and applicability controls defined here.
+Any new status phrase must be decomposable into the independent axes and control fields defined here.
 
 Any change to the terminology inventory or drift matrix invalidates this taxonomy's local reconciliation until explicitly updated against the new content SHAs.
 
