@@ -3,7 +3,7 @@
 **Repository:** Integrity_Nexus  
 **Scope:** Scientific-core TIG Research Ecosystem with controlled Cube-domain coverage  
 **Status:** CANONICAL INVENTORY / LOCKED MODE / AUDIT-CORRECTED  
-**OQ Status Contribution:** READY FOR COMPLETION AUDIT  
+**OQ Status Contribution:** PARTIALLY RESOLVED — CORRECTION REQUIRED  
 **Claim Type:** Terminology control / evidence inventory  
 **Related Open Questions:** OQ-030 / OQ-NEXUS-001; OQ-031 / OQ-NEXUS-002  
 **Primary Evidence Base:** `registry/shared_concepts.md` plus the exact repository-local evidence paths recorded for each term  
@@ -565,7 +565,8 @@ The generic word `defect` is not automatically a technical object.
 
 ### TERM-029 — Read_QIC
 
-- **Evidence:** `TIG-E/research/quantum/qic_readout_measurement_boundary_audit.md`; `TIG-E/registry/next_generation_scientific_blocker_queue.md`.
+- **Evidence:** `TIG-E/registry/next_generation_scientific_blocker_queue.md`.
+- **Planned Output (not present at the audited TIG-E HEAD):** `TIG-E/research/quantum/qic_readout_semantics_measurement_boundary_audit.md`.
 - **Scientific Domain:** QIC quantum-bridge research.
 - **Object Type:** named readout structure / audit-output concept.
 - **Scientific Status Applicability:** APPLICABLE.
@@ -944,19 +945,21 @@ This revision preserves the earlier audit corrections and applies the latest Com
 19. Cross-ID presence is recorded without claiming global file synchronization.
 20. The primary-inventory/downstream-control dependency direction remains explicit and non-circular.
 21. Relation class and relation target remain separate fields.
-22. Exact Read_QIC and Cube evidence paths remain recorded.
+22. Existing Read_QIC and Cube evidence paths remain recorded; planned outputs are identified separately from existing evidence.
 23. OQ-031 governance completion remains explicitly separated from closure of underlying scientific objects.
 24. Dynamic global synchronization statements remain excluded from this primary inventory.
 25. `registry/repository_status.md` remains the sole global synchronization and Completion Readiness authority.
 26. `Question State` remains a separate governance-question lifecycle axis with canonical values `OPEN` and `CLOSED`.
 27. Scientific Status `Resolved`, Registry admission `Registered`, Completion Readiness `AUDIT PASSED`, and Question State `CLOSED` remain explicitly non-identical.
-28. The local OQ status contribution is reconciled to `READY FOR COMPLETION AUDIT` because no inventory-local correction remains after this revision.
+28. The local OQ status contribution is `PARTIALLY RESOLVED — CORRECTION REQUIRED` until the new inventory SHA is propagated through the controlled chain and the global index is reconciled.
 29. `Scientific Status Applicability` remains a separate marker with values `APPLICABLE` and `NOT APPLICABLE`.
 30. `NOT APPLICABLE` remains explicitly excluded from the canonical Scientific Status value set.
 31. Claim Status is restricted to the canonical Claim Status value set.
 32. Scientific Status, Operational Status, Required Work, Object Type, Scope, Artifact Status, and Definition State have been removed from Claim Status assignments.
 33. The affected entries for `Iμν`, metric-like, source-like, physical stress-energy, effective realization, substrate, `DefectSpace`, `Rel_TIG`, `B_TIG`, `I_QIC`, `Σ_QIC`, `Read_QIC`, `Pres_QM`, `Gate_E`, `Registerable_E`, generator, and Hamiltonian are normalized without inventing stronger claims.
-34. The Claim-Status normalization introduced by the preceding inventory revision was subsequently adopted across the downstream control chain before this temporal-status correction; this inventory now records that completed substantive propagation without claiming global synchronization authority.
+34. The Claim-Status normalization introduced by the preceding inventory revision was adopted across the downstream control chain before the independent audit that identified the present temporal and evidence-path findings.
+35. The nonexistent Read_QIC audit path has been removed from current evidence and the queue-declared future output is explicitly marked as planned and not present at the audited TIG-E HEAD.
+36. Temporal propagation language now records historical completion separately from the invariant dependency protocol and defers every current global synchronization determination to `registry/repository_status.md`.
 
 ---
 
@@ -975,7 +978,8 @@ This revision preserves the earlier audit corrections and applies the latest Com
 11. Governance questions require a dedicated Question State axis because Scientific Status is not their closure mechanism.
 12. Governance questions require `Scientific Status Applicability: NOT APPLICABLE` rather than an invalid Scientific Status value.
 13. Claim Status assignments must use only canonical Claim Status values; absent Claim Status evidence remains unassigned.
-14. No known inventory-local governance correction remains after this revision.
+14. The inventory-local content findings concerning the Read_QIC evidence path and stale temporal wording are corrected in this revision.
+15. This file does not determine whether the complete downstream chain has subsequently been reconciled or has passed a later independent audit.
 
 ---
 
@@ -987,7 +991,7 @@ Current evidence in this inventory supports:
 Question State: OPEN
 Registry Status: Registered
 Scientific Status Applicability: NOT APPLICABLE
-Progress Classification: READY FOR COMPLETION AUDIT
+Progress Classification: PARTIALLY RESOLVED — CORRECTION REQUIRED
 ```
 
 No Scientific Status value is assigned to OQ-031 because the Scientific Status axis is not applicable to this governance question.
@@ -1018,25 +1022,20 @@ Scientific openness is therefore compatible with terminology-governance closure.
 
 ### Downstream Propagation State
 
-The earlier propagation of Question State, Scientific Status Applicability, corrected Progress Classification, and single-authority synchronization controls was completed before the Claim-Status normalization revision.
+The earlier propagation of Question State, Scientific Status Applicability, corrected Progress Classification, single-authority synchronization controls, and the substantive Claim-Status normalization was completed across the then-current downstream chain before the independent audit that identified the present findings.
 
-The substantive Claim-Status normalization introduced by that revision was subsequently adopted across:
-
-1. `shared/terminology_drift_matrix.md`;
-2. `governance/claim_status_taxonomy.md`;
-3. `governance/cross_repository_claim_boundary_matrix.md`;
-4. `registry/open_questions.md`;
-5. `registry/master_open_question_backlog.md`;
-6. `registry/repository_status.md`.
-
-That completed adoption preserves:
+That completed historical adoption preserved:
 
 - the canonical Claim Status value set;
 - separation of Scientific Status, Operational Status, Required Work, Object Type, Scope, Artifact Status, Maturity Status, and Definition State from Claim Status;
 - unassigned Claim Status where no canonical value is supported;
 - and `registry/repository_status.md` as the sole authority for global synchronization and Completion Readiness.
 
-This temporal-status correction changes the primary inventory content SHA. The downstream artifacts must therefore be reconciled to the new SHA in dependency order, but that SHA reconciliation does not reopen or reverse the already adopted Claim-Status controls.
+This revision corrects the inventory evidence path and temporal wording and therefore changes the primary inventory content SHA.
+
+Downstream artifacts are reconciled to this revision only when their own synchronization bases reference this content SHA in dependency order and `registry/repository_status.md` records the resulting chain.
+
+Whether that reconciliation is currently pending or complete is not asserted by this inventory and must be read exclusively from `registry/repository_status.md`.
 
 The dependency-correct SHA-reconciliation path is:
 
@@ -1050,7 +1049,7 @@ terminology inventory
 → repository-status index
 ```
 
-This section records completed substantive propagation and the resulting new SHA-reconciliation requirement. It does not report a global synchronization count, assign global Completion Readiness, or claim audit passage.
+This section records historical substantive completion and the invariant reconciliation protocol. It does not report a global synchronization count, assign global Completion Readiness, claim that downstream reconciliation is currently pending or complete, or claim audit passage.
 
 ---
 
