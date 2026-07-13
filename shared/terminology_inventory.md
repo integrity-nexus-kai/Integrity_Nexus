@@ -3,7 +3,7 @@
 **Repository:** Integrity_Nexus  
 **Scope:** Scientific-core TIG Research Ecosystem with controlled Cube-domain coverage  
 **Status:** CANONICAL INVENTORY / LOCKED MODE / AUDIT-CORRECTED  
-**OQ Status Contribution:** PARTIALLY RESOLVED — CORRECTION REQUIRED  
+**OQ Status Contribution:** READY FOR COMPLETION AUDIT  
 **Claim Type:** Terminology control / evidence inventory  
 **Related Open Questions:** OQ-030 / OQ-NEXUS-001; OQ-031 / OQ-NEXUS-002  
 **Primary Evidence Base:** `registry/shared_concepts.md` plus the exact repository-local evidence paths recorded for each term  
@@ -840,18 +840,21 @@ No explicit SIR Candidate class, general emergence mechanism, or technical recur
 
 The Cube corpus is a registered research block, not a completed theory.
 
-Primary controls include the following exact TIG-E paths:
+Primary controls include the following exact existing TIG-E paths:
 
 - `registry/cube_research_block_inventory.md`
 - `docs/foundations/cube_claim_boundary_maturity_audit.md`
 - `docs/foundations/cube_state_space.md`
 - `docs/foundations/cube_state_transitions.md`
-- `docs/foundations/cube_scale_planck_manifestation_consistency_audit.md`
 - `docs/recursive_constraints/cube_scale_derivation.md`
 - `docs/recursive_constraints/cube_scale_working_hypothesis.md`
 - `docs/recursive_constraints/cube_scale_constraints.md`
 - `research/evolution/ROADMAP.md`
 - `registry/next_generation_scientific_blocker_queue.md`
+
+Planned or absent output, not current evidence:
+
+- `docs/foundations/cube_scale_planck_manifestation_consistency_audit.md` — not present at the independently audited TIG-E snapshot and not used here as existing evidence.
 
 | TERM ID | Term | Evidence Path | Object Type | Claim / Maturity / Scope | Definition / Bridge | Forbidden Transfer |
 |---|---|---|---|---|---|---|
@@ -860,7 +863,7 @@ Primary controls include the following exact TIG-E paths:
 | TERM-077 | Cube ontology | `TIG-E/docs/foundations/cube_claim_boundary_maturity_audit.md` | Strong scientific interpretation category | Scientifically open | Not established | Cube hypothesis or working assumption = physical ontology |
 | TERM-078 | Cube scale | `TIG-E/research/evolution/ROADMAP.md`; `TIG-E/docs/recursive_constraints/cube_scale_derivation.md`; `TIG-E/docs/recursive_constraints/cube_scale_working_hypothesis.md` | Scale research family | Recognized / not fully derived | Fixed, dynamic, relative, and emergent options remain open | Working scale = derived physical scale |
 | TERM-079 | recursive scale | `TIG-E/docs/recursive_constraints/cube_scale_constraints.md`; `TIG-E/docs/recursive_constraints/cube_scale_working_hypothesis.md` | Recursive constraint / scale candidate language | Working or candidate status | No universal scale law established | Recursive relation = derived fractal or physical law |
-| TERM-080 | Planck-scale manifestation | `TIG-E/docs/foundations/cube_scale_planck_manifestation_consistency_audit.md`; `TIG-E/docs/foundations/cube_claim_boundary_maturity_audit.md` | Controlled observable-lower-bound interpretation | Working assumption where `L_min = l_P` is used | Cube identity remains open | Planck manifestation = Cube identity or Cube = Planck length |
+| TERM-080 | Planck-scale manifestation | `TIG-E/docs/recursive_constraints/cube_scale_working_hypothesis.md`; `TIG-E/docs/foundations/cube_claim_boundary_maturity_audit.md`; `TIG-E/docs/recursive_constraints/cube_scale_derivation.md` | Controlled observable-lower-bound interpretation | Working Assumption where `L_min = l_P` is used | Cube identity remains open; no completed consistency-audit artifact is claimed | Planck manifestation = Cube identity or Cube = Planck length |
 | TERM-081 | Cube-to-QIC bridge | `TIG-E/registry/next_generation_scientific_blocker_queue.md`; `Integrity_Nexus/registry/master_open_question_backlog.md` | Required scientific interface | Blocked / scientifically open | Relation between Cube state and `Σ_QIC` absent | Bridge requirement = existing bridge |
 | TERM-082 | fractal Cube organization | `TIG-E/research/evolution/ROADMAP.md` | Open structural research question | Recognized / not yet formalized | No self-similarity theorem or fractal dimension | Fractal language = derived fractal law or ontology |
 | TERM-083 | Cube transience / persistence | `TIG-E/research/evolution/ROADMAP.md` | Open structural research question | Recognized / not yet formalized | No transient Cube, persistent substrate, metastability criterion, or pattern-persistence theorem established | Transient state = transient Cube; persistent pattern = persistent object |
@@ -945,21 +948,22 @@ This revision preserves the earlier audit corrections and applies the latest Com
 19. Cross-ID presence is recorded without claiming global file synchronization.
 20. The primary-inventory/downstream-control dependency direction remains explicit and non-circular.
 21. Relation class and relation target remain separate fields.
-22. Existing Read_QIC and Cube evidence paths remain recorded; planned outputs are identified separately from existing evidence.
+22. Existing Read_QIC and Cube evidence paths remain recorded; absent or planned outputs are identified separately and are not presented as current evidence.
 23. OQ-031 governance completion remains explicitly separated from closure of underlying scientific objects.
 24. Dynamic global synchronization statements remain excluded from this primary inventory.
 25. `registry/repository_status.md` remains the sole global synchronization and Completion Readiness authority.
 26. `Question State` remains a separate governance-question lifecycle axis with canonical values `OPEN` and `CLOSED`.
 27. Scientific Status `Resolved`, Registry admission `Registered`, Completion Readiness `AUDIT PASSED`, and Question State `CLOSED` remain explicitly non-identical.
-28. The local OQ status contribution is `PARTIALLY RESOLVED — CORRECTION REQUIRED` until the new inventory SHA is propagated through the controlled chain and the global index is reconciled.
+28. The local OQ status contribution is `READY FOR COMPLETION AUDIT` because the inventory-local evidence-path and temporal corrections are complete; this local classification is independent of downstream SHA reconciliation.
 29. `Scientific Status Applicability` remains a separate marker with values `APPLICABLE` and `NOT APPLICABLE`.
 30. `NOT APPLICABLE` remains explicitly excluded from the canonical Scientific Status value set.
 31. Claim Status is restricted to the canonical Claim Status value set.
-32. Scientific Status, Operational Status, Required Work, Object Type, Scope, Artifact Status, and Definition State have been removed from Claim Status assignments.
-33. The affected entries for `Iμν`, metric-like, source-like, physical stress-energy, effective realization, substrate, `DefectSpace`, `Rel_TIG`, `B_TIG`, `I_QIC`, `Σ_QIC`, `Read_QIC`, `Pres_QM`, `Gate_E`, `Registerable_E`, generator, and Hamiltonian are normalized without inventing stronger claims.
-34. The Claim-Status normalization introduced by the preceding inventory revision was adopted across the downstream control chain before the independent audit that identified the present temporal and evidence-path findings.
-35. The nonexistent Read_QIC audit path has been removed from current evidence and the queue-declared future output is explicitly marked as planned and not present at the audited TIG-E HEAD.
-36. Temporal propagation language now records historical completion separately from the invariant dependency protocol and defers every current global synchronization determination to `registry/repository_status.md`.
+32. Scientific Status, Operational Status, Required Work, Object Type, Scope, Artifact Status, and Definition State remain excluded from Claim Status assignments.
+33. The affected entries for `Iμν`, metric-like, source-like, physical stress-energy, effective realization, substrate, `DefectSpace`, `Rel_TIG`, `B_TIG`, `I_QIC`, `Σ_QIC`, `Read_QIC`, `Pres_QM`, `Gate_E`, `Registerable_E`, generator, and Hamiltonian remain normalized without inventing stronger claims.
+34. The Claim-Status normalization introduced by the preceding inventory revision was adopted across the downstream control chain before the independent audit that identified the later temporal and evidence-path findings.
+35. The nonexistent Read_QIC audit path remains removed from current evidence and the queue-declared future output remains explicitly marked as planned and not present at the audited TIG-E HEAD.
+36. Temporal propagation language records historical completion separately from the invariant dependency protocol and defers every current global synchronization determination to `registry/repository_status.md`.
+37. The nonexistent Cube scale/Planck-manifestation consistency-audit path has been removed from existing Primary Controls and TERM-080 evidence; the absent path is explicitly classified as non-current evidence.
 
 ---
 
@@ -978,7 +982,7 @@ This revision preserves the earlier audit corrections and applies the latest Com
 11. Governance questions require a dedicated Question State axis because Scientific Status is not their closure mechanism.
 12. Governance questions require `Scientific Status Applicability: NOT APPLICABLE` rather than an invalid Scientific Status value.
 13. Claim Status assignments must use only canonical Claim Status values; absent Claim Status evidence remains unassigned.
-14. The inventory-local content findings concerning the Read_QIC evidence path and stale temporal wording are corrected in this revision.
+14. The inventory-local content findings concerning the Read_QIC evidence path, the Cube scale/Planck-manifestation evidence path, stale temporal wording, and local Progress Classification are corrected in this revision.
 15. This file does not determine whether the complete downstream chain has subsequently been reconciled or has passed a later independent audit.
 
 ---
@@ -991,7 +995,7 @@ Current evidence in this inventory supports:
 Question State: OPEN
 Registry Status: Registered
 Scientific Status Applicability: NOT APPLICABLE
-Progress Classification: PARTIALLY RESOLVED — CORRECTION REQUIRED
+Progress Classification: READY FOR COMPLETION AUDIT
 ```
 
 No Scientific Status value is assigned to OQ-031 because the Scientific Status axis is not applicable to this governance question.
@@ -1022,7 +1026,7 @@ Scientific openness is therefore compatible with terminology-governance closure.
 
 ### Downstream Propagation State
 
-The earlier propagation of Question State, Scientific Status Applicability, corrected Progress Classification, single-authority synchronization controls, and the substantive Claim-Status normalization was completed across the then-current downstream chain before the independent audit that identified the present findings.
+The earlier propagation of Question State, Scientific Status Applicability, corrected Progress Classification, single-authority synchronization controls, and the substantive Claim-Status normalization was completed across the then-current downstream chain before the independent audits that identified the later findings.
 
 That completed historical adoption preserved:
 
@@ -1031,7 +1035,9 @@ That completed historical adoption preserved:
 - unassigned Claim Status where no canonical value is supported;
 - and `registry/repository_status.md` as the sole authority for global synchronization and Completion Readiness.
 
-This revision corrects the inventory evidence path and temporal wording and therefore changes the primary inventory content SHA.
+This revision corrects the inventory-local Cube evidence path and local Progress Classification and therefore changes the primary inventory content SHA.
+
+The local classification `READY FOR COMPLETION AUDIT` means only that no inventory-local correction remains. It does not claim that downstream artifacts are reconciled or that the global chain is audit-ready.
 
 Downstream artifacts are reconciled to this revision only when their own synchronization bases reference this content SHA in dependency order and `registry/repository_status.md` records the resulting chain.
 
@@ -1049,7 +1055,7 @@ terminology inventory
 → repository-status index
 ```
 
-This section records historical substantive completion and the invariant reconciliation protocol. It does not report a global synchronization count, assign global Completion Readiness, claim that downstream reconciliation is currently pending or complete, or claim audit passage.
+This section records historical substantive completion, the local inventory state, and the invariant reconciliation protocol. It does not report a global synchronization count, assign global Completion Readiness, claim that downstream reconciliation is currently pending or complete, or claim audit passage.
 
 ---
 
