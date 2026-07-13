@@ -3,7 +3,7 @@
 **Repository:** Integrity_Nexus  
 **Scope:** Scientific-core TIG Research Ecosystem with controlled Cube-domain coverage  
 **Status:** CANONICAL / LOCKED MODE / AUDIT-CORRECTED  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `b5b877cbb536b8626df4b39e54d0f8936c69b8b8`; `shared/terminology_drift_matrix.md` content SHA `4be24a9b1cef0eaa3014bee5aff3c9a158c8089d`; `governance/claim_status_taxonomy.md` content SHA `267f1b1320310cc1c22765d2fabf3bce6e13d346`  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `61c983e7d40792d6d93b67f5e1b2351b1e098203`; `shared/terminology_drift_matrix.md` content SHA `349bf02c81ad471f16adf2518676673957036822`; `governance/claim_status_taxonomy.md` content SHA `63fdca80075c7c1e3a2bd49c67fad6a5ef7a7bba`  
 **Position in Control Chain:** terminology inventory → drift matrix → claim-status taxonomy → this boundary matrix → registries → repository-status index  
 **Global Synchronization and Completion-Readiness Authority:** `registry/repository_status.md`  
 **OQ Status Contribution:** READY FOR COMPLETION AUDIT  
@@ -789,11 +789,11 @@ Before a transfer is accepted, check:
 
 This revision reconciles the boundary matrix with:
 
-- inventory SHA `b5b877cbb536b8626df4b39e54d0f8936c69b8b8`,
-- drift-matrix SHA `4be24a9b1cef0eaa3014bee5aff3c9a158c8089d`,
-- taxonomy SHA `267f1b1320310cc1c22765d2fabf3bce6e13d346`.
+- inventory SHA `61c983e7d40792d6d93b67f5e1b2351b1e098203`,
+- drift-matrix SHA `349bf02c81ad471f16adf2518676673957036822`,
+- taxonomy SHA `63fdca80075c7c1e3a2bd49c67fad6a5ef7a7bba`.
 
-It propagates:
+It preserves and records:
 
 1. local OQ status contribution `READY FOR COMPLETION AUDIT` because no boundary-matrix-local correction remains;
 2. Claim Status limited to the thirteen canonical Claim Status values;
@@ -811,7 +811,9 @@ It propagates:
 14. generic `Status` fields prohibited for mixed semantics;
 15. `registry/repository_status.md` preserved as sole global synchronization and Completion Readiness authority;
 16. no global synchronization count or authoritative globally pending-file list reported in this matrix;
-17. all prior domain, relation, bridge, Cube, QIC/TIG, SIR, and SSC boundaries preserved.
+17. all prior domain, relation, bridge, Cube, QIC/TIG, SIR, and SSC boundaries preserved;
+18. the substantive Claim-Status normalization recorded as already adopted across the preceding downstream chain;
+19. the current revision recorded as a SHA reconciliation only, without reopening or reversing the adopted controls.
 
 ---
 
@@ -832,9 +834,9 @@ This matrix is reconciled with its three current upstream SHAs.
 
 It does not authoritatively assign global Completion Readiness and does not report a global synchronization count.
 
-The earlier progress/applicability propagation was completed before the current Claim-Status audit finding.
+The earlier progress/applicability propagation and the substantive Claim-Status normalization were completed across the downstream control chain before this temporal-status correction.
 
-This revision creates a new downstream reconciliation requirement: the local registry, master backlog, and repository-status index must adopt the canonical Claim Status assignment and transfer controls and later record this propagation as completed.
+This revision records that completed substantive propagation. Because the inventory, drift matrix, taxonomy, and boundary matrix now have new content SHAs, the local registry, master backlog, and repository-status index must be reconciled to those SHAs in dependency order. That SHA reconciliation does not reopen or reverse the already adopted Claim-Status controls.
 
 This statement is not a global synchronization report.
 
