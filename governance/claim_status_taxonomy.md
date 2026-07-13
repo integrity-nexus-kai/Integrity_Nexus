@@ -3,7 +3,7 @@
 **Repository:** Integrity_Nexus  
 **Scope:** Scientific-core TIG Research Ecosystem with controlled Cube-domain coverage  
 **Status:** CANONICAL / LOCKED MODE / AUDIT-CORRECTED  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `f606e88848441374355f71bda117e12a52b8c42a`; `shared/terminology_drift_matrix.md` content SHA `4e76c99f7af891ef1309b5f61551679006ce7481`  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `c36eb5aa64cd947905f8b41b7cee867cd971c8a3`; `shared/terminology_drift_matrix.md` content SHA `5318c17681b70d34e6b25321331c1e53b0ec8dd5`  
 **Position in Control Chain:** terminology inventory → terminology drift matrix → this taxonomy → claim-boundary matrix → registries → repository-status index  
 **Global Synchronization and Completion-Readiness Authority:** `registry/repository_status.md`  
 **OQ Status Contribution:** READY FOR COMPLETION AUDIT  
@@ -627,10 +627,10 @@ This taxonomy is locally reconciled with:
 
 ```text
 shared/terminology_inventory.md
-f606e88848441374355f71bda117e12a52b8c42a
+c36eb5aa64cd947905f8b41b7cee867cd971c8a3
 
 shared/terminology_drift_matrix.md
-4e76c99f7af891ef1309b5f61551679006ce7481
+5318c17681b70d34e6b25321331c1e53b0ec8dd5
 ```
 
 It preserves:
@@ -641,9 +641,10 @@ It preserves:
 4. exact relation classes and separate Relation Targets;
 5. the governance closure sequence;
 6. TIG/QIC, Cube, SIR, and SSC anti-collapse controls;
-7. `registry/repository_status.md` as sole global authority.
+7. the corrected distinction between existing Cube scale evidence and the absent Cube scale/Planck-manifestation consistency-audit output;
+8. `registry/repository_status.md` as sole global authority.
 
-The substantive status-axis and Claim-Status controls were historically adopted across the then-current downstream chain before the independent audit identified the later temporal and evidence-path findings.
+The substantive status-axis and Claim-Status controls were historically adopted across the then-current downstream chain before the independent audits identified the later temporal, Read_QIC, and Cube evidence-path findings.
 
 This revision records that historical substantive state and locally reconciles the taxonomy to the corrected inventory and drift matrix.
 
