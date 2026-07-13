@@ -4,7 +4,7 @@
 **Scope:** Repository-container, scientific-domain, maturity, governance-status, synchronization, and completion-readiness index for the TIG Research Ecosystem  
 **Artifact Status:** Canonical Artifact  
 **Mode:** LOCKED MODE / AUDIT-CORRECTED  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `61c983e7d40792d6d93b67f5e1b2351b1e098203`; `shared/terminology_drift_matrix.md` content SHA `349bf02c81ad471f16adf2518676673957036822`; `governance/claim_status_taxonomy.md` content SHA `63fdca80075c7c1e3a2bd49c67fad6a5ef7a7bba`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `b418482c0620ea7cf7d7dc175f6aa94e63d40ed1`; `registry/open_questions.md` content SHA `56b9eadf726df40f976b16531841800aecf51097`; `registry/master_open_question_backlog.md` content SHA `651e0afdafb9addc2f5c3d5f2a0fc3a8cce9efd7`  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `f606e88848441374355f71bda117e12a52b8c42a`; `shared/terminology_drift_matrix.md` content SHA `4e76c99f7af891ef1309b5f61551679006ce7481`; `governance/claim_status_taxonomy.md` content SHA `d0506e71d47ee08863dae516a61078ef7a8275ca`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `ff4d3debd6864dc056df04c39e4d5483baa7daa1`; `registry/open_questions.md` content SHA `888d819a978215b17c7123cdec44831fd961d0be`; `registry/master_open_question_backlog.md` content SHA `036e6f8cd012bf9bd62bbb49d6771f33bfd60b2e`  
 **Position in Control Chain:** terminology inventory → drift matrix → claim-status taxonomy → claim-boundary matrix → local registry → master backlog → this repository-status index  
 **Related Open Questions:** OQ-030 / OQ-NEXUS-001; OQ-031 / OQ-NEXUS-002  
 **Question State:** OPEN  
@@ -414,12 +414,12 @@ The following seven controlled artifacts are linked at current HEAD through the 
 
 | Order | Artifact | Current Content SHA | Current State |
 |---|---|---|---|
-| 1 | `shared/terminology_inventory.md` | `61c983e7d40792d6d93b67f5e1b2351b1e098203` | Locally reconciled; substantive Claim-Status propagation recorded as completed; READY FOR COMPLETION AUDIT |
-| 2 | `shared/terminology_drift_matrix.md` | `349bf02c81ad471f16adf2518676673957036822` | Reconciled to artifact 1; READY FOR COMPLETION AUDIT |
-| 3 | `governance/claim_status_taxonomy.md` | `63fdca80075c7c1e3a2bd49c67fad6a5ef7a7bba` | Reconciled to artifacts 1–2; READY FOR COMPLETION AUDIT |
-| 4 | `governance/cross_repository_claim_boundary_matrix.md` | `b418482c0620ea7cf7d7dc175f6aa94e63d40ed1` | Reconciled to artifacts 1–3; READY FOR COMPLETION AUDIT |
-| 5 | `registry/open_questions.md` | `56b9eadf726df40f976b16531841800aecf51097` | Reconciled to artifacts 1–4; OQ-030/OQ-031 remain OPEN; READY FOR COMPLETION AUDIT |
-| 6 | `registry/master_open_question_backlog.md` | `651e0afdafb9addc2f5c3d5f2a0fc3a8cce9efd7` | Reconciled to artifacts 1–5; OQ-030/OQ-031 remain OPEN; READY FOR COMPLETION AUDIT |
+| 1 | `shared/terminology_inventory.md` | `f606e88848441374355f71bda117e12a52b8c42a` | Evidence-path and temporal findings corrected; primary SHA recorded; local pre-global Progress marker does not supersede this index |
+| 2 | `shared/terminology_drift_matrix.md` | `4e76c99f7af891ef1309b5f61551679006ce7481` | Reconciled to artifact 1; READY FOR COMPLETION AUDIT |
+| 3 | `governance/claim_status_taxonomy.md` | `d0506e71d47ee08863dae516a61078ef7a8275ca` | Reconciled to artifacts 1–2; READY FOR COMPLETION AUDIT |
+| 4 | `governance/cross_repository_claim_boundary_matrix.md` | `ff4d3debd6864dc056df04c39e4d5483baa7daa1` | Reconciled to artifacts 1–3; READY FOR COMPLETION AUDIT |
+| 5 | `registry/open_questions.md` | `888d819a978215b17c7123cdec44831fd961d0be` | Reconciled to artifacts 1–4; OQ-030/OQ-031 remain OPEN; READY FOR COMPLETION AUDIT |
+| 6 | `registry/master_open_question_backlog.md` | `036e6f8cd012bf9bd62bbb49d6771f33bfd60b2e` | Reconciled to artifacts 1–5; OQ-030/OQ-031 remain OPEN; READY FOR COMPLETION AUDIT |
 | 7 | `registry/repository_status.md` | Current file | Authoritative global index reconciled to artifacts 1–6; READY FOR AUDIT |
 
 ### Synchronization Result
@@ -436,6 +436,8 @@ Independent Completion Audit Outstanding: YES
 The dependency-ordered current-SHA chain is fully reconciled.
 
 No known governance correction remains in the seven controlled artifacts.
+
+The `PARTIALLY RESOLVED — CORRECTION REQUIRED` marker retained in the primary inventory is a non-authoritative pre-global-reconciliation contribution. Its stated downstream condition is satisfied by the six-artifact reconciliation recorded in this index; it does not represent an outstanding inventory-content correction and does not supersede the global decision recorded here.
 
 The controlled chain is authorized for an independent Completion & Consistency Audit.
 
@@ -462,6 +464,7 @@ Governance completion requires:
 - Allowed Transfer and Forbidden Transfer controls;
 - no silent status, applicability, axis, or domain upgrade;
 - no stale statement representing completed downstream propagation as outstanding;
+- exact existing Evidence Paths distinguished from planned outputs;
 - global current-HEAD synchronization of all seven artifacts.
 
 All listed governance controls are represented in the current synchronized chain.
@@ -481,20 +484,20 @@ Completion Readiness: AUDIT PASSED
 
 ## 12. Current Completion Readiness Decision
 
-The latest failed Completion & Consistency Audit identified:
+The latest independent Completion & Consistency Audit identified:
 
-- invalid cross-axis Claim Status assignments in the primary terminology inventory;
-- incomplete downstream governance of canonical Claim Status assignment;
-- stale temporal propagation statements after downstream adoption had occurred.
+- stale present-tense wording that described completed downstream reconciliation as outstanding;
+- a nonexistent `Read_QIC` evidence path represented as current evidence;
+- and a resulting contradiction between upstream wording and the former global `READY FOR AUDIT` claim.
 
 The corrective sequence has now been completed dependency-first:
 
-1. the primary inventory normalizes Claim Status assignments and records substantive propagation as completed;
-2. the drift matrix controls cross-axis Claim-Status drift and reconciles to the inventory;
-3. the taxonomy limits Claim Status to thirteen exact values and reconciles to artifacts 1–2;
-4. the boundary matrix preserves Claim Status during transfer and reconciles to artifacts 1–3;
-5. the local registry adopts the corrected model and reconciles to artifacts 1–4;
-6. the master backlog adopts and applies the corrected model and reconciles to artifacts 1–5;
+1. the primary inventory removes the nonexistent current evidence path, marks the queue-declared future output as planned, and corrects temporal wording;
+2. the drift matrix reconciles to the corrected inventory and removes stale current-state assertions;
+3. the taxonomy reconciles to artifacts 1–2 while preserving the canonical status-axis model;
+4. the boundary matrix reconciles to artifacts 1–3 while preserving transfer and anti-collapse controls;
+5. the local registry reconciles to artifacts 1–4 without claiming global synchronization;
+6. the master backlog reconciles to artifacts 1–5 without claiming global synchronization;
 7. this index records the authoritative globally synchronized state.
 
 No known correction remains in the controlled chain.
@@ -529,7 +532,7 @@ until an independent Completion & Consistency Audit passes and the accepted resu
 Conduct an independent Completion & Consistency Audit against the seven current-HEAD controlled artifacts and the SHA chain recorded in this index.
 ```
 
-The audit must determine whether the synchronized chain passes without introducing new scientific claims, status inflation, axis collapse, bridge invention, or question closure.
+The audit must determine whether the synchronized chain passes without introducing new scientific claims, status inflation, axis collapse, bridge invention, invalid evidence-path representation, or question closure.
 
 Until that audit passes:
 
