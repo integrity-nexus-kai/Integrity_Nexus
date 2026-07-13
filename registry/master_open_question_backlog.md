@@ -4,9 +4,10 @@
 **Scope:** Complete TIG Research Ecosystem  
 **Status:** CANONICAL / LOCKED MODE / AUDIT-CORRECTED  
 **Source:** Master Research Consistency Auditor output, consolidated into canonical backlog form  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `74364a3c4f3575363ce3305ea0d68203f1d0e75f`; `shared/terminology_drift_matrix.md` content SHA `77f7e0c37336a262f51c765ae0f3ab314ed3f203`; `governance/claim_status_taxonomy.md` content SHA `ebc22076da4221a80dcdfbd1f5388f49a1044a2a`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `af1123666144136dac05c97ddd9b42f897ad26ae`; `registry/open_questions.md` content SHA `29765a4b5098b5699b5c51e4acfe8b45864b9245`  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `06b2371b4cc65739aa93fa569fcd808553e054fb`; `shared/terminology_drift_matrix.md` content SHA `3270635e015931f12fd5c8de6fbc2107a541ab5a`; `governance/claim_status_taxonomy.md` content SHA `7913b6b2a99c8bd08ec7ae3bbf13ff203d64bb77`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `973aef177638920b7dbdd7fe50e73033de892774`; `registry/open_questions.md` content SHA `f141babfcf114300cf183563eeb69650d87dac7c`  
 **Position in Control Chain:** terminology inventory → drift matrix → claim-status taxonomy → claim-boundary matrix → local registry → this master backlog → repository-status index  
 **Global Synchronization and Completion-Readiness Authority:** `registry/repository_status.md`  
+**Local OQ Status Contribution:** READY FOR COMPLETION AUDIT  
 **Last Updated:** 2026-07-12
 
 ---
@@ -23,19 +24,27 @@ It does **not** promote operational closure to scientific or question closure.
 It does **not** treat registry admission as truth.
 It does **not** treat scientifically open objects as failed governance when their boundaries are explicit.
 It does **not** report the global synchronization count or authoritatively assign global Completion Readiness.
+It does **not** use `NOT APPLICABLE` as a Scientific Status value.
 
-Every entry must use independent canonical axes rather than a generic mixed-semantics `Status` field.
+Every entry must use independent canonical axes and applicability controls rather than a generic mixed-semantics `Status` field.
 
 Canonical question controls are:
 
 ```text
 Question State: OPEN | CLOSED
 Registry Status: Registerable | Registered
-Scientific Status: Scientifically Open | Resolved | NOT APPLICABLE
+Scientific Status Applicability: APPLICABLE | NOT APPLICABLE
+Scientific Status: Scientifically Open | Resolved
 Operational Status: Pending | Addressed | Blocked | Operationally Closed
 ```
 
-`Required Work` is descriptive metadata, not a status axis.
+Rules:
+
+- `NOT APPLICABLE` is a Scientific Status Applicability marker outside the Scientific Status value set.
+- When applicability is `NOT APPLICABLE`, no Scientific Status value is assigned.
+- Applicability does not itself assign `Scientifically Open` or `Resolved`.
+- Governance-question lifecycle is controlled by Question State, not Scientific Status.
+- `Required Work` is descriptive metadata, not a status axis.
 
 ---
 
@@ -110,9 +119,10 @@ Cube science remains open because there is no completed ontology, fully derived 
 1. Maturity classifications remain conservative and do not upgrade science.
 2. Shared terms require active cross-domain drift protection.
 3. Registry Status `Registered` is admission metadata, not truth or closure.
-4. Question State is separate from Registry Status, Scientific Status, and Operational Status.
-5. Scientifically open objects and Missing bridges may coexist with completed terminology governance.
-6. Global synchronization and Completion Readiness are controlled only by `registry/repository_status.md`.
+4. Scientific Status Applicability is separate from Scientific Status.
+5. Question State is separate from Registry Status, Scientific Status, and Operational Status.
+6. Scientifically open objects and Missing bridges may coexist with completed terminology governance.
+7. Global synchronization and Completion Readiness are controlled only by `registry/repository_status.md`.
 
 ---
 
@@ -122,6 +132,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Pending  
 **Required Work:** Definition and candidate audit
@@ -144,6 +155,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Definition State:** Named but Undefined  
@@ -165,6 +177,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Definition State:** Declared but Not Fully Defined  
@@ -186,6 +199,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Definition State:** Named but Undefined  
@@ -207,6 +221,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Claim Status:** Partial  
 **Operational Status:** Blocked  
@@ -229,6 +244,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Definition State:** Partially Defined  
@@ -250,6 +266,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Definition State:** Undefined  
@@ -269,6 +286,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Definition State:** Partially Defined  
@@ -290,6 +308,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Required Work:** Proof or counterexample
@@ -308,6 +327,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Pending  
 **Claim Status:** Candidate  
@@ -325,6 +345,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Required Work:** Derivation or non-derivability result
@@ -343,6 +364,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Required Work:** Assumption-boundary definition
@@ -361,6 +383,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Required Work:** Reconstruction
@@ -379,6 +402,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Claim Status:** Candidate  
@@ -398,6 +422,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Required Work:** Compatibility audit
@@ -416,6 +441,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Required Work:** Protocol definition
@@ -434,6 +460,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Definition State:** Partially Defined  
@@ -455,6 +482,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Required Work:** Derivation
@@ -473,6 +501,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Required Work:** Derivation
@@ -491,6 +520,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Required Work:** Derivation
@@ -509,6 +539,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Pending  
 **Maturity Status:** Preliminary  
@@ -526,6 +557,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Addressed  
 **Claim Status:** Partial  
@@ -543,6 +575,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Required Work:** Empirical-program construction
@@ -561,6 +594,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Bridge State:** Missing  
@@ -578,7 +612,8 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** CLOSED  
 **Registry Status:** Registered  
-**Scientific Status:** NOT APPLICABLE; this was a governance inventory task  
+**Scientific Status Applicability:** NOT APPLICABLE  
+**Scientific Status:** No value assigned  
 **Operational Status:** Operationally Closed  
 **Artifact Status:** Canonical Artifact
 
@@ -594,7 +629,8 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** CLOSED  
 **Registry Status:** Registered  
-**Scientific Status:** NOT APPLICABLE; this was a governance audit task  
+**Scientific Status Applicability:** NOT APPLICABLE  
+**Scientific Status:** No value assigned  
 **Operational Status:** Operationally Closed  
 **Artifact Status:** Canonical Artifact
 
@@ -612,7 +648,8 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** CLOSED  
 **Registry Status:** Registered  
-**Scientific Status:** NOT APPLICABLE; this was a governance consistency task  
+**Scientific Status Applicability:** NOT APPLICABLE  
+**Scientific Status:** No value assigned  
 **Operational Status:** Operationally Closed  
 **Artifact Status:** Canonical Artifact
 
@@ -630,6 +667,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Bridge State:** Missing  
@@ -651,6 +689,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
 **Scientific Status:** Scientifically Open  
 **Operational Status:** Blocked  
 **Required Work:** Review
@@ -671,16 +710,17 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
-**Scientific Status:** NOT APPLICABLE; this is a governance question  
+**Scientific Status Applicability:** NOT APPLICABLE  
+**Scientific Status:** No value assigned  
 **Operational Status:** Addressed  
 **Progress Classification:** READY FOR COMPLETION AUDIT  
 **Completion Readiness:** Authoritative value controlled only by `registry/repository_status.md`
 
 **Description:** Show relationships between repository containers and scientific domains without inflating claims or changing status during transfer.
 
-**Evidence:** The current terminology inventory, drift matrix, taxonomy, boundary matrix, local registry, and this master backlog establish container/domain separation, exact status axes, Question State, relation/transfer controls, TIG/QIC boundaries, Cube interfaces, SIR boundaries, and deferred SSC scope.
+**Evidence:** The current terminology inventory, drift matrix, taxonomy, boundary matrix, local registry, and this master backlog establish container/domain separation, exact applicability and status axes, Question State, relation/transfer controls, TIG/QIC boundaries, Cube interfaces, SIR boundaries, and deferred SSC scope.
 
-**Completion Criterion:** A canonical general boundary architecture exists; Missing and deferred bridges are correctly classified; interface-specific documentation is required only when an actual new transfer or bridge is attempted.
+**Completion Criterion:** A canonical general boundary architecture exists; Scientific Status applicability and status values are separated; Missing and deferred bridges are correctly classified; interface-specific documentation is required only when an actual new transfer or bridge is attempted.
 
 **Remaining Closure Step:** Independent Completion & Consistency Audit, authoritative `AUDIT PASSED` record, and explicit closure application in local and master registries.
 
@@ -694,7 +734,8 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
-**Scientific Status:** NOT APPLICABLE; this is a terminology-governance question  
+**Scientific Status Applicability:** NOT APPLICABLE  
+**Scientific Status:** No value assigned  
 **Operational Status:** Addressed  
 **Progress Classification:** READY FOR COMPLETION AUDIT  
 **Completion Readiness:** Authoritative value controlled only by `registry/repository_status.md`
@@ -703,12 +744,13 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Active Scope:** Integrity_Nexus governance, TIG-E research architecture, TIG gravitational architecture, QIC quantum-bridge research, SIR mathematical recursion, and Cube research.
 
-**Governance Completion Criterion:** Every unresolved term, object, or interface is explicitly identified, assigned to the correct domain, given exact applicable status axes, Definition State, Bridge State, Relation Class and Relation Target, scoped correctly, and protected by transfer controls.
+**Governance Completion Criterion:** Every unresolved term, object, or interface is explicitly identified, assigned to the correct domain, given exact Scientific Status applicability and exact applicable status axes, Definition State, Bridge State, Relation Class and Relation Target, scoped correctly, and protected by transfer controls.
 
 ```text
 scientifically open object != incomplete terminology governance
 missing bridge != incomplete terminology governance when absence is correctly controlled
 deferred scientific definition != terminology-governance failure when deferral is explicit
+Scientific Status Applicability NOT APPLICABLE != Scientific Status value
 ```
 
 **Remaining Closure Step:** Independent Completion & Consistency Audit, authoritative `AUDIT PASSED` record, and explicit Question State change to `CLOSED` in both registries.
@@ -721,7 +763,8 @@ deferred scientific definition != terminology-governance failure when deferral i
 
 **Question State:** OPEN  
 **Registry Status:** Registered  
-**Scientific Status:** NOT APPLICABLE; this is a governance and architecture question  
+**Scientific Status Applicability:** NOT APPLICABLE  
+**Scientific Status:** No value assigned  
 **Operational Status:** Pending  
 **Required Work:** Schema definition and validation
 
@@ -777,9 +820,37 @@ Their scientific non-claims remain protected.
 
 ---
 
+## Local Reconciliation Result
+
+This master backlog is reconciled with:
+
+- inventory SHA `06b2371b4cc65739aa93fa569fcd808553e054fb`,
+- drift-matrix SHA `3270635e015931f12fd5c8de6fbc2107a541ab5a`,
+- taxonomy SHA `7913b6b2a99c8bd08ec7ae3bbf13ff203d64bb77`,
+- boundary-matrix SHA `973aef177638920b7dbdd7fe50e73033de892774`,
+- local-registry SHA `f141babfcf114300cf183563eeb69650d87dac7c`.
+
+It propagates:
+
+1. local OQ status contribution `READY FOR COMPLETION AUDIT`;
+2. Scientific Status Applicability as a separate control field;
+3. only `APPLICABLE` and `NOT APPLICABLE` as applicability markers;
+4. only `Scientifically Open` and `Resolved` as Scientific Status values;
+5. prohibition of `Scientific Status: NOT APPLICABLE`;
+6. no Scientific Status value when applicability is `NOT APPLICABLE`;
+7. applicability `APPLICABLE` for scientific questions and blockers;
+8. applicability `NOT APPLICABLE` for governance questions OQ-025–OQ-027 and OQ-030–OQ-032;
+9. OQ-030 and OQ-031 remaining Question State `OPEN` and Progress Classification `READY FOR COMPLETION AUDIT`;
+10. OQ-025–OQ-027 remaining Question State `CLOSED` only for their exact governance tasks;
+11. `registry/repository_status.md` as sole global synchronization and Completion Readiness authority.
+
+This local reconciliation is not a global synchronization report.
+
+---
+
 ## Global-State Authority Rule
 
-This master backlog records question lifecycle, dependencies, and execution order.
+This master backlog records question lifecycle, dependencies, applicability, and execution order.
 
 It does not authoritatively state:
 
@@ -797,9 +868,9 @@ registry/repository_status.md
 
 ## Maintenance and Closure Rule
 
-Any future result that changes Question State, Registry Status, Scientific Status, Operational Status, dependencies, claim boundaries, bridges, scientific-domain scope, Cross-ID mapping, execution order, Progress Classification, or closure evidence must update this file.
+Any future result that changes Scientific Status Applicability, Scientific Status, Question State, Registry Status, Operational Status, dependencies, claim boundaries, bridges, scientific-domain scope, Cross-ID mapping, execution order, Progress Classification, or closure evidence must update this file.
 
-A generic `Status` field is prohibited because it can collapse lifecycle, scientific, operational, maturity, definition, and required-work semantics.
+A generic `Status` field is prohibited because it can collapse lifecycle, scientific, operational, maturity, applicability, definition, and required-work semantics.
 
 `Required Work` is metadata, not a status axis.
 
