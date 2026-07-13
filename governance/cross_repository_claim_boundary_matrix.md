@@ -3,7 +3,7 @@
 **Repository:** Integrity_Nexus  
 **Scope:** Scientific-core TIG Research Ecosystem with controlled Cube-domain coverage  
 **Status:** CANONICAL / LOCKED MODE / AUDIT-CORRECTED  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `61c983e7d40792d6d93b67f5e1b2351b1e098203`; `shared/terminology_drift_matrix.md` content SHA `349bf02c81ad471f16adf2518676673957036822`; `governance/claim_status_taxonomy.md` content SHA `63fdca80075c7c1e3a2bd49c67fad6a5ef7a7bba`  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `f606e88848441374355f71bda117e12a52b8c42a`; `shared/terminology_drift_matrix.md` content SHA `4e76c99f7af891ef1309b5f61551679006ce7481`; `governance/claim_status_taxonomy.md` content SHA `d0506e71d47ee08863dae516a61078ef7a8275ca`  
 **Position in Control Chain:** terminology inventory → drift matrix → claim-status taxonomy → this boundary matrix → registries → repository-status index  
 **Global Synchronization and Completion-Readiness Authority:** `registry/repository_status.md`  
 **OQ Status Contribution:** READY FOR COMPLETION AUDIT  
@@ -787,11 +787,11 @@ Before a transfer is accepted, check:
 
 ## 17. Synchronization Result
 
-This revision reconciles the boundary matrix with:
+This boundary matrix is locally reconciled with:
 
-- inventory SHA `61c983e7d40792d6d93b67f5e1b2351b1e098203`,
-- drift-matrix SHA `349bf02c81ad471f16adf2518676673957036822`,
-- taxonomy SHA `63fdca80075c7c1e3a2bd49c67fad6a5ef7a7bba`.
+- inventory SHA `f606e88848441374355f71bda117e12a52b8c42a`,
+- drift-matrix SHA `4e76c99f7af891ef1309b5f61551679006ce7481`,
+- taxonomy SHA `d0506e71d47ee08863dae516a61078ef7a8275ca`.
 
 It preserves and records:
 
@@ -812,8 +812,8 @@ It preserves and records:
 15. `registry/repository_status.md` preserved as sole global synchronization and Completion Readiness authority;
 16. no global synchronization count or authoritative globally pending-file list reported in this matrix;
 17. all prior domain, relation, bridge, Cube, QIC/TIG, SIR, and SSC boundaries preserved;
-18. the substantive Claim-Status normalization recorded as already adopted across the preceding downstream chain;
-19. the current revision recorded as a SHA reconciliation only, without reopening or reversing the adopted controls.
+18. the substantive status-axis and Claim-Status controls recorded as historically adopted across the then-current downstream chain;
+19. this revision recorded as a local SHA reconciliation without asserting the current state of later artifacts.
 
 ---
 
@@ -825,18 +825,23 @@ Current local contribution:
 Question State: OPEN
 Registry Status: Registered
 Scientific Status Applicability: NOT APPLICABLE
+Scientific Status: no value assigned
+Claim Status: no value assigned
+Operational Status: Addressed
 Progress Classification: READY FOR COMPLETION AUDIT
 ```
-
-No Scientific Status value is assigned to OQ-030 or OQ-031 because the axis is not applicable to these governance questions.
 
 This matrix is reconciled with its three current upstream SHAs.
 
 It does not authoritatively assign global Completion Readiness and does not report a global synchronization count.
 
-The earlier progress/applicability propagation and the substantive Claim-Status normalization were completed across the downstream control chain before this temporal-status correction.
+The substantive progress/applicability and Claim-Status controls were historically adopted across the then-current downstream chain before the independent audit identified the later temporal and evidence-path findings.
 
-This revision records that completed substantive propagation. Because the inventory, drift matrix, taxonomy, and boundary matrix now have new content SHAs, the local registry, master backlog, and repository-status index must be reconciled to those SHAs in dependency order. That SHA reconciliation does not reopen or reverse the already adopted Claim-Status controls.
+This revision records that historical substantive state and locally reconciles the boundary matrix to the corrected inventory, drift matrix, and taxonomy.
+
+Later artifacts are reconciled to this revision only when their own synchronization bases reference the current upstream SHAs in dependency order and the resulting global state is recorded by `registry/repository_status.md`.
+
+Whether that later reconciliation is currently pending or complete is not asserted by this matrix.
 
 This statement is not a global synchronization report.
 
