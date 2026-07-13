@@ -956,7 +956,7 @@ This revision preserves the earlier audit corrections and applies the latest Com
 31. Claim Status is restricted to the canonical Claim Status value set.
 32. Scientific Status, Operational Status, Required Work, Object Type, Scope, Artifact Status, and Definition State have been removed from Claim Status assignments.
 33. The affected entries for `Iμν`, metric-like, source-like, physical stress-energy, effective realization, substrate, `DefectSpace`, `Rel_TIG`, `B_TIG`, `I_QIC`, `Σ_QIC`, `Read_QIC`, `Pres_QM`, `Gate_E`, `Registerable_E`, generator, and Hamiltonian are normalized without inventing stronger claims.
-34. The previous progress/applicability propagation was completed before this revision; this revision creates a new downstream reconciliation requirement only for Claim-Status normalization and historical propagation wording.
+34. The Claim-Status normalization introduced by the preceding inventory revision was subsequently adopted across the downstream control chain before this temporal-status correction; this inventory now records that completed substantive propagation without claiming global synchronization authority.
 
 ---
 
@@ -1018,16 +1018,27 @@ Scientific openness is therefore compatible with terminology-governance closure.
 
 ### Downstream Propagation State
 
-The earlier propagation of Question State, Scientific Status Applicability, corrected Progress Classification, and single-authority synchronization controls was completed before this revision.
+The earlier propagation of Question State, Scientific Status Applicability, corrected Progress Classification, and single-authority synchronization controls was completed before the Claim-Status normalization revision.
 
-This revision introduces only the following new downstream reconciliation requirements:
+The substantive Claim-Status normalization introduced by that revision was subsequently adopted across:
 
-1. preserve the canonical Claim Status value set;
-2. prevent Scientific Status, Operational Status, Required Work, Object Type, Scope, Artifact Status, and Definition State from being assigned as Claim Status;
-3. update downstream audit language to record this correction as completed only after dependency-ordered propagation;
-4. preserve `registry/repository_status.md` as the sole authority for global synchronization and Completion Readiness.
+1. `shared/terminology_drift_matrix.md`;
+2. `governance/claim_status_taxonomy.md`;
+3. `governance/cross_repository_claim_boundary_matrix.md`;
+4. `registry/open_questions.md`;
+5. `registry/master_open_question_backlog.md`;
+6. `registry/repository_status.md`.
 
-The dependency-correct propagation path remains:
+That completed adoption preserves:
+
+- the canonical Claim Status value set;
+- separation of Scientific Status, Operational Status, Required Work, Object Type, Scope, Artifact Status, Maturity Status, and Definition State from Claim Status;
+- unassigned Claim Status where no canonical value is supported;
+- and `registry/repository_status.md` as the sole authority for global synchronization and Completion Readiness.
+
+This temporal-status correction changes the primary inventory content SHA. The downstream artifacts must therefore be reconciled to the new SHA in dependency order, but that SHA reconciliation does not reopen or reverse the already adopted Claim-Status controls.
+
+The dependency-correct SHA-reconciliation path is:
 
 ```text
 terminology inventory
@@ -1039,7 +1050,7 @@ terminology inventory
 → repository-status index
 ```
 
-This section records the normative impact of the current revision. It does not claim that the new downstream reconciliation has already occurred and does not report a global synchronization count.
+This section records completed substantive propagation and the resulting new SHA-reconciliation requirement. It does not report a global synchronization count, assign global Completion Readiness, or claim audit passage.
 
 ---
 
