@@ -3,7 +3,7 @@
 **Repository:** Integrity_Nexus  
 **Scope:** Meta-governance registry for the TIG Research Ecosystem  
 **Status:** CANONICAL REGISTRY / LOCKED MODE / AUDIT-CORRECTED  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `b5b877cbb536b8626df4b39e54d0f8936c69b8b8`; `shared/terminology_drift_matrix.md` content SHA `4be24a9b1cef0eaa3014bee5aff3c9a158c8089d`; `governance/claim_status_taxonomy.md` content SHA `267f1b1320310cc1c22765d2fabf3bce6e13d346`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `11486eb0a0763c918d52ab384ce8ccafe9bd19da`  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `61c983e7d40792d6d93b67f5e1b2351b1e098203`; `shared/terminology_drift_matrix.md` content SHA `349bf02c81ad471f16adf2518676673957036822`; `governance/claim_status_taxonomy.md` content SHA `63fdca80075c7c1e3a2bd49c67fad6a5ef7a7bba`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `b418482c0620ea7cf7d7dc175f6aa94e63d40ed1`  
 **Position in Control Chain:** terminology inventory → drift matrix → claim-status taxonomy → claim-boundary matrix → this local registry → master backlog → repository-status index  
 **Global Synchronization and Completion-Readiness Authority:** `registry/repository_status.md`  
 **Local OQ Status Contribution:** READY FOR COMPLETION AUDIT  
@@ -342,12 +342,12 @@ Should Integrity Nexus itself become citable as a research-governance artifact, 
 
 This local registry is reconciled with:
 
-- inventory SHA `b5b877cbb536b8626df4b39e54d0f8936c69b8b8`,
-- drift-matrix SHA `4be24a9b1cef0eaa3014bee5aff3c9a158c8089d`,
-- taxonomy SHA `267f1b1320310cc1c22765d2fabf3bce6e13d346`,
-- boundary-matrix SHA `11486eb0a0763c918d52ab384ce8ccafe9bd19da`.
+- inventory SHA `61c983e7d40792d6d93b67f5e1b2351b1e098203`,
+- drift-matrix SHA `349bf02c81ad471f16adf2518676673957036822`,
+- taxonomy SHA `63fdca80075c7c1e3a2bd49c67fad6a5ef7a7bba`,
+- boundary-matrix SHA `b418482c0620ea7cf7d7dc175f6aa94e63d40ed1`.
 
-It propagates:
+It preserves and records:
 
 1. local OQ status contribution `READY FOR COMPLETION AUDIT`;
 2. Claim Status limited to the thirteen canonical Claim Status values;
@@ -362,11 +362,13 @@ It propagates:
 11. applicability `APPLICABLE` for FRQ-001 and `NOT APPLICABLE` for the governance questions in this registry;
 12. Question State, Registry Status, Operational Status, Progress Classification, and Completion Readiness as separate controls;
 13. OQ-NEXUS-001 and OQ-NEXUS-002 remaining Question State `OPEN` and Progress Classification `READY FOR COMPLETION AUDIT`;
-14. `registry/repository_status.md` as sole global synchronization and Completion Readiness authority.
+14. `registry/repository_status.md` as sole global synchronization and Completion Readiness authority;
+15. the substantive Claim-Status normalization as already adopted across the preceding downstream chain;
+16. the current revision as a SHA reconciliation only, without reopening or reversing the adopted controls.
 
-The earlier progress/applicability propagation was completed before the current Claim-Status audit finding.
+The earlier progress/applicability propagation and the substantive Claim-Status normalization were completed across the downstream control chain before this temporal-status correction.
 
-This local registry now adopts the corrected Claim-Status assignment and transfer controls.
+This revision records that completed substantive propagation. Because the four upstream governance artifacts and this local registry now have new content SHAs, the master backlog and repository-status index must be reconciled to those SHAs in dependency order. That SHA reconciliation does not reopen or reverse the already adopted Claim-Status controls.
 
 This local reconciliation is not a global synchronization report.
 
