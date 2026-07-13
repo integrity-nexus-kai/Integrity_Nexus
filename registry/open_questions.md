@@ -3,7 +3,7 @@
 **Repository:** Integrity_Nexus  
 **Scope:** Meta-governance registry for the TIG Research Ecosystem  
 **Status:** CANONICAL REGISTRY / LOCKED MODE / AUDIT-CORRECTED  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `f606e88848441374355f71bda117e12a52b8c42a`; `shared/terminology_drift_matrix.md` content SHA `4e76c99f7af891ef1309b5f61551679006ce7481`; `governance/claim_status_taxonomy.md` content SHA `d0506e71d47ee08863dae516a61078ef7a8275ca`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `ff4d3debd6864dc056df04c39e4d5483baa7daa1`  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `c36eb5aa64cd947905f8b41b7cee867cd971c8a3`; `shared/terminology_drift_matrix.md` content SHA `5318c17681b70d34e6b25321331c1e53b0ec8dd5`; `governance/claim_status_taxonomy.md` content SHA `fa24184ab9427f406fa24b50de064a6ef60e0bde`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `5a131e0ab0697ddc8bed889091f56eaf7d62c8bd`  
 **Position in Control Chain:** terminology inventory → drift matrix → claim-status taxonomy → claim-boundary matrix → this local registry → master backlog → repository-status index  
 **Global Synchronization and Completion-Readiness Authority:** `registry/repository_status.md`  
 **Local OQ Status Contribution:** READY FOR COMPLETION AUDIT  
@@ -11,7 +11,7 @@
 
 This document records registered questions for Integrity Nexus as a meta-repository.
 
-These questions concern navigation, governance, dependency mapping, terminology control, and cross-repository coherence.
+These questions concern navigation, governance, dependency mapping, terminology control, evidence-path integrity, and cross-repository coherence.
 
 The following axes and control fields are distinct:
 
@@ -71,6 +71,7 @@ Rules:
 - Scientific Status, Operational Status, Required Work, Object Type, Scope, Artifact Status, Maturity Status, and Definition State must not be assigned as Claim Status.
 - When no canonical Claim Status is supported, Claim Status remains unassigned.
 - An unassigned Claim Status is not a governance failure and must not be replaced by descriptive wording.
+- A planned or absent output must not be represented as an existing Evidence Path or accepted closure evidence.
 
 This file does not report the global synchronization count and does not authoritatively assign global Completion Readiness. Those values belong only to `registry/repository_status.md`.
 
@@ -140,6 +141,7 @@ The current canonical governance layer establishes:
 - TIG/QIC anti-collapse boundaries,
 - SIR mathematical-to-physical transfer boundaries,
 - Cube-domain interfaces,
+- exact distinction between existing evidence and planned or absent outputs,
 - deferred SSC application projection,
 - the distinction between open science and failed governance,
 - and `registry/repository_status.md` as the sole global synchronization authority.
@@ -156,6 +158,7 @@ It requires:
 - no conversion of Scientific Status, Operational Status, Required Work, Object Type, Scope, Artifact Status, Maturity Status, or Definition State into Claim Status,
 - unsupported Claim Status remaining unassigned,
 - explicit relation and transfer controls,
+- exact existing Evidence Paths distinguished from planned or absent outputs,
 - correct classification of Missing or deferred bridges,
 - and a rule requiring interface-specific boundary documentation when an actual new transfer or bridge is attempted.
 
@@ -212,6 +215,7 @@ I_QIC != Iμν
 Σ_QIC != TIG spacetime state
 Cube state != Σ_QIC without explicit bridge
 shared term != identical technical definition
+planned or absent output != existing evidence
 ```
 
 ## SSC Scope Qualification
@@ -239,6 +243,7 @@ The terminology-governance layer controls:
 - state, transition, process, generator, Hamiltonian, readout, measurement, and observable terminology,
 - SIR mathematical terminology,
 - Cube state, scale, ontology, Planck manifestation, fractal organization, and transience/persistence,
+- exact Evidence Path validation and separation of absent outputs from current evidence,
 - Claim Status, Scientific Status Applicability, Scientific Status, Question State, Registry Status, Operational Status, Artifact Status, Maturity Status, Progress Classification, and Completion Readiness,
 - Definition State and Bridge State,
 - Required Work, Object Type, and Scope as separate controls,
@@ -263,6 +268,8 @@ It requires every unresolved term, object, or interface to be:
 - given exact Definition State and Bridge State,
 - assigned a canonical Relation Class and separate Relation Target where applicable,
 - scoped correctly,
+- supported only by Evidence Paths that exist at the governing fixed source snapshot,
+- protected against treating planned or absent outputs as current evidence,
 - protected by Allowed Transfer and Forbidden Transfer,
 - and prevented from silent status, applicability, axis, or domain upgrade.
 
@@ -272,6 +279,7 @@ missing bridge != incomplete terminology governance when absence is correctly co
 deferred scientific definition != terminology-governance failure when deferral is explicit
 Scientific Status Applicability NOT APPLICABLE != Scientific Status value
 unassigned Claim Status != governance failure when no canonical value is supported
+planned or absent output != existing evidence
 ```
 
 ## Remaining Closure Step
@@ -342,10 +350,10 @@ Should Integrity Nexus itself become citable as a research-governance artifact, 
 
 This local registry is reconciled with:
 
-- inventory SHA `f606e88848441374355f71bda117e12a52b8c42a`,
-- drift-matrix SHA `4e76c99f7af891ef1309b5f61551679006ce7481`,
-- taxonomy SHA `d0506e71d47ee08863dae516a61078ef7a8275ca`,
-- boundary-matrix SHA `ff4d3debd6864dc056df04c39e4d5483baa7daa1`.
+- inventory SHA `c36eb5aa64cd947905f8b41b7cee867cd971c8a3`,
+- drift-matrix SHA `5318c17681b70d34e6b25321331c1e53b0ec8dd5`,
+- taxonomy SHA `fa24184ab9427f406fa24b50de064a6ef60e0bde`,
+- boundary-matrix SHA `5a131e0ab0697ddc8bed889091f56eaf7d62c8bd`.
 
 It preserves and records:
 
@@ -362,11 +370,12 @@ It preserves and records:
 11. applicability `APPLICABLE` for FRQ-001 and `NOT APPLICABLE` for the governance questions in this registry;
 12. Question State, Registry Status, Operational Status, Progress Classification, and Completion Readiness as separate controls;
 13. OQ-NEXUS-001 and OQ-NEXUS-002 remaining Question State `OPEN` and Progress Classification `READY FOR COMPLETION AUDIT`;
-14. `registry/repository_status.md` as sole global synchronization and Completion Readiness authority;
-15. the substantive status-axis and Claim-Status controls as historically adopted across the then-current downstream chain;
-16. this revision as a local SHA reconciliation without asserting the current state of later artifacts.
+14. exact distinction between existing Evidence Paths and planned or absent outputs;
+15. `registry/repository_status.md` as sole global synchronization and Completion Readiness authority;
+16. the substantive status-axis and Claim-Status controls as historically adopted across the then-current downstream chain;
+17. this revision as a local SHA reconciliation without asserting the current state of later artifacts.
 
-The substantive progress/applicability and Claim-Status controls were historically adopted across the then-current downstream chain before the independent audit identified the later temporal and evidence-path findings.
+The substantive progress/applicability and Claim-Status controls were historically adopted across the then-current downstream chain before the independent audits identified the temporal, Read_QIC, and Cube evidence-path findings.
 
 This revision records that historical substantive state and locally reconciles the registry to the corrected inventory, drift matrix, taxonomy, and boundary matrix.
 
@@ -447,10 +456,13 @@ A governance question may be changed to Question State `CLOSED` only when:
 - `registry/repository_status.md` records `AUDIT PASSED`,
 - the accepted audit result covers the exact question,
 - the local and master registries explicitly apply that result,
+- every accepted Evidence Path is reproducible at the governing fixed source snapshot,
 - unresolved scientific objects remain correctly bounded rather than necessarily solved,
 - and no known blocking governance inconsistency remains.
 
 Registry wording must never convert governance progress into Claim Status, scientific proof, bridge implementation, ontology, or theory completion.
+
+A planned or absent output must never be used as accepted closure evidence.
 
 Any change to one of the four upstream governance artifacts invalidates this registry's local reconciliation until explicitly updated against the new content SHAs.
 
