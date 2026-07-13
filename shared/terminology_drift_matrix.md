@@ -3,7 +3,7 @@
 **Repository:** Integrity_Nexus  
 **Scope:** Scientific-core TIG Research Ecosystem with controlled Cube-domain coverage  
 **Status:** CANONICAL / LOCKED MODE / AUDIT-CORRECTED  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `f606e88848441374355f71bda117e12a52b8c42a`  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `c36eb5aa64cd947905f8b41b7cee867cd971c8a3`  
 **Position in Control Chain:** primary inventory → this drift matrix → claim-status taxonomy → claim-boundary matrix → registries → repository-status index  
 **Global Synchronization Authority:** `registry/repository_status.md`  
 **Question-State Model:** `OPEN` / `CLOSED` as a governance-question lifecycle axis, separate from Scientific Status, Registry admission, Progress Classification, and Completion Readiness  
@@ -574,7 +574,7 @@ Before accepting a cross-repository or cross-domain use of a term, check:
 This revision reconciles the drift controls with primary inventory content SHA:
 
 ```text
-f606e88848441374355f71bda117e12a52b8c42a
+c36eb5aa64cd947905f8b41b7cee867cd971c8a3
 ```
 
 It preserves and records the following normative controls:
@@ -593,8 +593,9 @@ It preserves and records the following normative controls:
 12. `registry/repository_status.md` remains the sole authority for global current-HEAD synchronization and Completion Readiness;
 13. this matrix reports no global synchronization count or authoritative globally pending-artifact list;
 14. existing QIC/TIG, Cube, SIR, SSC, relation, evidence, and transfer controls remain preserved;
-15. the substantive Claim-Status normalization is recorded as historically adopted across the then-current downstream chain;
-16. this matrix is locally reconciled to the corrected inventory SHA without asserting whether later artifacts are currently reconciled.
+15. the corrected inventory distinction between existing Cube evidence and the absent Cube scale/Planck-manifestation audit output is preserved without treating the absent output as current evidence;
+16. the substantive Claim-Status normalization is recorded as historically adopted across the then-current downstream chain;
+17. this matrix is locally reconciled to the corrected inventory SHA without asserting whether later artifacts are currently reconciled.
 
 ---
 
@@ -626,7 +627,7 @@ Those global values are controlled only by:
 registry/repository_status.md
 ```
 
-The earlier progress/applicability propagation and substantive Claim-Status normalization were completed across the then-current downstream control chain before the independent audit identified the temporal and evidence-path findings.
+The earlier progress/applicability propagation and substantive Claim-Status normalization were completed across the then-current downstream control chain before the independent audits identified the temporal, Read_QIC, and Cube evidence-path findings.
 
 This revision records that historical substantive propagation and locally reconciles this matrix to the corrected inventory. Later artifacts are reconciled to this revision only when their own synchronization bases reference the current upstream SHAs in dependency order and the resulting global state is recorded by `registry/repository_status.md`.
 
