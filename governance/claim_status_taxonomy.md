@@ -3,7 +3,7 @@
 **Repository:** Integrity_Nexus  
 **Scope:** Scientific-core TIG Research Ecosystem with controlled Cube-domain coverage  
 **Status:** CANONICAL / LOCKED MODE / AUDIT-CORRECTED  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `b5b877cbb536b8626df4b39e54d0f8936c69b8b8`; `shared/terminology_drift_matrix.md` content SHA `4be24a9b1cef0eaa3014bee5aff3c9a158c8089d`  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `61c983e7d40792d6d93b67f5e1b2351b1e098203`; `shared/terminology_drift_matrix.md` content SHA `349bf02c81ad471f16adf2518676673957036822`  
 **Position in Control Chain:** terminology inventory → terminology drift matrix → this taxonomy → claim-boundary matrix → registries → repository-status index  
 **Global Synchronization and Completion-Readiness Authority:** `registry/repository_status.md`  
 **OQ Status Contribution:** READY FOR COMPLETION AUDIT  
@@ -879,27 +879,29 @@ Before accepting, transferring, or upgrading a claim or question, check:
 
 This revision reconciles the taxonomy with:
 
-- `shared/terminology_inventory.md` content SHA `b5b877cbb536b8626df4b39e54d0f8936c69b8b8`, and
-- `shared/terminology_drift_matrix.md` content SHA `4be24a9b1cef0eaa3014bee5aff3c9a158c8089d`.
+- `shared/terminology_inventory.md` content SHA `61c983e7d40792d6d93b67f5e1b2351b1e098203`, and
+- `shared/terminology_drift_matrix.md` content SHA `349bf02c81ad471f16adf2518676673957036822`.
 
-It propagates the current audit corrections by:
+It preserves and records:
 
-1. preserving the local OQ status contribution `READY FOR COMPLETION AUDIT` because no taxonomy-local correction remains;
-2. limiting Claim Status to the thirteen canonical Claim Status values;
-3. prohibiting Scientific Status, Operational Status, Required Work, Object Type, Scope, Artifact Status, Maturity Status, and Definition State as Claim Status assignments;
-4. requiring unsupported Claim Status to remain unassigned;
-5. adding Required Work, Object Type, and Scope as explicit separate control fields;
-6. preserving Scientific Status Applicability as a separate control field;
-7. retaining only `Scientifically Open` and `Resolved` as Scientific Status values;
-8. prohibiting `Scientific Status: NOT APPLICABLE`;
-9. requiring no Scientific Status value when applicability is `NOT APPLICABLE`;
-10. preserving Question State as a separate canonical axis;
-11. preserving Registry admission, Operational Status, Progress Classification, and Completion Readiness as separate controls;
-12. preserving the explicit governance-question closure sequence;
-13. preserving generic mixed-semantics `Status` prohibition;
-14. preserving `registry/repository_status.md` as sole global synchronization and Completion Readiness authority;
-15. reporting no global synchronization count or authoritative globally pending-file list;
-16. preserving all QIC/TIG, Cube, SIR, SSC, evidence, bridge, and status anti-collapse controls.
+1. local OQ status contribution `READY FOR COMPLETION AUDIT` because no taxonomy-local correction remains;
+2. Claim Status limited to the thirteen canonical Claim Status values;
+3. Scientific Status, Operational Status, Required Work, Object Type, Scope, Artifact Status, Maturity Status, and Definition State prohibited as Claim Status assignments;
+4. unsupported Claim Status required to remain unassigned;
+5. Required Work, Object Type, and Scope as explicit separate control fields;
+6. Scientific Status Applicability as a separate control field;
+7. only `Scientifically Open` and `Resolved` as Scientific Status values;
+8. prohibition of `Scientific Status: NOT APPLICABLE`;
+9. no Scientific Status value when applicability is `NOT APPLICABLE`;
+10. Question State as a separate canonical axis;
+11. Registry admission, Operational Status, Progress Classification, and Completion Readiness as separate controls;
+12. the explicit governance-question closure sequence;
+13. generic mixed-semantics `Status` prohibition;
+14. `registry/repository_status.md` as sole global synchronization and Completion Readiness authority;
+15. no global synchronization count or authoritative globally pending-file list in this taxonomy;
+16. all QIC/TIG, Cube, SIR, SSC, evidence, bridge, and status anti-collapse controls;
+17. the substantive Claim-Status normalization as already adopted across the preceding downstream chain;
+18. the current revision as a SHA reconciliation only, without reopening or reversing the adopted controls.
 
 ---
 
@@ -926,9 +928,9 @@ Those values are controlled only by:
 registry/repository_status.md
 ```
 
-The earlier progress/applicability propagation was completed before the current Claim-Status audit finding.
+The earlier progress/applicability propagation and the substantive Claim-Status normalization were completed across the downstream control chain before this temporal-status correction.
 
-This revision creates a new downstream reconciliation requirement: the boundary matrix and registries must adopt the canonical Claim Status assignment controls and later record this propagation as completed rather than retaining stale present-tense propagation language.
+This revision records that completed substantive propagation. Because the inventory, drift matrix, and taxonomy now have new content SHAs, the boundary matrix and registries must be reconciled to those SHAs in dependency order. That SHA reconciliation does not reopen or reverse the already adopted Claim-Status controls.
 
 This statement is not a global synchronization report.
 
