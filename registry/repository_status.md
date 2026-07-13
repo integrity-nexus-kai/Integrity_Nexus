@@ -4,20 +4,22 @@
 **Scope:** Repository-container, scientific-domain, maturity, governance-status, synchronization, and completion-readiness index for the TIG Research Ecosystem  
 **Artifact Status:** Canonical Artifact  
 **Mode:** LOCKED MODE / AUDIT-CORRECTED  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `74364a3c4f3575363ce3305ea0d68203f1d0e75f`; `shared/terminology_drift_matrix.md` content SHA `77f7e0c37336a262f51c765ae0f3ab314ed3f203`; `governance/claim_status_taxonomy.md` content SHA `ebc22076da4221a80dcdfbd1f5388f49a1044a2a`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `af1123666144136dac05c97ddd9b42f897ad26ae`; `registry/open_questions.md` content SHA `29765a4b5098b5699b5c51e4acfe8b45864b9245`; `registry/master_open_question_backlog.md` content SHA `57b07cd9abe975482ddcc9fe29ad044ab32c2193`  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `06b2371b4cc65739aa93fa569fcd808553e054fb`; `shared/terminology_drift_matrix.md` content SHA `3270635e015931f12fd5c8de6fbc2107a541ab5a`; `governance/claim_status_taxonomy.md` content SHA `7913b6b2a99c8bd08ec7ae3bbf13ff203d64bb77`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `973aef177638920b7dbdd7fe50e73033de892774`; `registry/open_questions.md` content SHA `f141babfcf114300cf183563eeb69650d87dac7c`; `registry/master_open_question_backlog.md` content SHA `295d8d6a6f22a0f7c5380532ebe9418430bcf986`  
 **Position in Control Chain:** terminology inventory → drift matrix → claim-status taxonomy → claim-boundary matrix → local registry → master backlog → this repository-status index  
 **Related Open Questions:** OQ-030 / OQ-NEXUS-001; OQ-031 / OQ-NEXUS-002  
 **Question State:** OPEN  
 **Registry Status:** Registered  
-**Scientific Status:** NOT APPLICABLE as a direct scientific-object status  
+**Scientific Status Applicability:** NOT APPLICABLE  
+**Scientific Status:** No value assigned  
 **Operational Status:** Addressed  
 **Progress Classification:** READY FOR COMPLETION AUDIT  
 **Completion Readiness:** READY FOR AUDIT  
-**Last Updated:** 2026-07-12
+**Last Updated:** 2026-07-13
 
 This document is the sole authority for:
 
 - the global current-HEAD synchronization state of the seven controlled OQ-030/OQ-031 artifacts;
+- global Progress Classification for the controlled chain;
 - global Completion Readiness;
 - repository-container roles;
 - scientific-domain coverage;
@@ -29,14 +31,15 @@ It does not create scientific definitions, derivations, proofs, validations, bri
 
 ---
 
-## 1. Canonical Status Separation Rule
+## 1. Canonical Applicability and Status Separation Rule
 
-The following axes are distinct:
+The following axes and control fields are distinct:
 
 ```text
 Repository Container
 Scientific Domain
 Claim Status
+Scientific Status Applicability
 Scientific Status
 Question State
 Registry Status
@@ -49,9 +52,20 @@ Progress Classification
 Completion Readiness
 ```
 
+Canonical applicability and Scientific Status controls are:
+
+```text
+Scientific Status Applicability: APPLICABLE | NOT APPLICABLE
+Scientific Status: Scientifically Open | Resolved
+```
+
+When applicability is `NOT APPLICABLE`, no Scientific Status value is assigned.
+
+`NOT APPLICABLE` is not a Scientific Status value.
+
 The protected rule is:
 
-> Repository location, repository name, maturity, canonical placement, registry admission, operational result, or governance-audit result must not be interpreted as scientific completion or scientific-object identity.
+> Repository location, repository name, maturity, canonical placement, registry admission, operational result, applicability marker, or governance-audit result must not be interpreted as scientific completion or scientific-object identity.
 
 Mandatory non-identities include:
 
@@ -60,6 +74,9 @@ repository container != scientific domain
 repository name != scientific object identity
 canonical repository != scientific truth
 mature governance != completed theory
+Scientific Status Applicability NOT APPLICABLE != Scientific Status value
+Scientific Status Applicability APPLICABLE != Scientifically Open
+Scientific Status Applicability APPLICABLE != Resolved
 Registered != Question State CLOSED
 Operationally Closed != Question State CLOSED
 Question State OPEN != Scientific Status Scientifically Open
@@ -71,7 +88,7 @@ Quantum_Integrity_Core repository != QIC scientific object
 TIG-E repository != one single scientific domain
 ```
 
-Scientifically open objects and Missing bridges are compatible with completed terminology governance when their status, type, domain, scope, non-identity, and transfer boundaries are explicit and consistent.
+Scientifically open objects and Missing bridges are compatible with completed terminology governance when their applicability, status, type, domain, scope, non-identity, and transfer boundaries are explicit and consistent.
 
 ---
 
@@ -80,15 +97,15 @@ Scientifically open objects and Missing bridges are compatible with completed te
 | Control Function | Canonical Source |
 |---|---|
 | Repository maturity | `governance/maturity_model.md` |
-| Status vocabulary and closure sequence | `governance/claim_status_taxonomy.md` |
+| Status vocabulary, applicability, and closure sequence | `governance/claim_status_taxonomy.md` |
 | Cross-repository and cross-domain transfers | `governance/cross_repository_claim_boundary_matrix.md` |
 | Terminology evidence | `shared/terminology_inventory.md` |
 | Terminology drift protection | `shared/terminology_drift_matrix.md` |
 | Local question lifecycle | `registry/open_questions.md` |
 | Master question lifecycle and dependencies | `registry/master_open_question_backlog.md` |
-| Global synchronization and Completion Readiness | `registry/repository_status.md` |
+| Global synchronization, Progress Classification, and Completion Readiness | `registry/repository_status.md` |
 
-No upstream file may supersede this index as the authority for global synchronization count or global Completion Readiness.
+No upstream file may supersede this index as the authority for global synchronization count, global Progress Classification, or global Completion Readiness.
 
 ---
 
@@ -123,7 +140,7 @@ Integrity_Nexus governance
 ### Maturity Reference
 
 ```text
-Governance-mature canonical meta-repository; no new numeric maturity assigned by this patch
+Governance-mature canonical meta-repository; no new numeric maturity assigned by this correction chain
 ```
 
 ### OQ-030 / OQ-031 Global State
@@ -131,7 +148,8 @@ Governance-mature canonical meta-repository; no new numeric maturity assigned by
 ```text
 Question State: OPEN
 Registry Status: Registered
-Scientific Status: NOT APPLICABLE
+Scientific Status Applicability: NOT APPLICABLE
+Scientific Status: no value assigned
 Operational Status: Addressed
 Progress Classification: READY FOR COMPLETION AUDIT
 Completion Readiness: READY FOR AUDIT
@@ -139,7 +157,7 @@ Completion Readiness: READY FOR AUDIT
 
 ### Governance Boundary
 
-Integrity_Nexus may organize repository containers and scientific domains, register questions and dependencies, define status vocabulary, define transfer controls, distinguish open science from failed governance, and require audits.
+Integrity_Nexus may organize repository containers and scientific domains, register questions and dependencies, define applicability and status vocabulary, define transfer controls, distinguish open science from failed governance, and require audits.
 
 It may not define the common substrate, `Rel_TIG`, `DefectSpace`, `B_TIG`, `I_QIC`, TIG/QIC physics, SIR mathematics, Cube ontology, Missing bridges, or scientific-core truth from SSC application terminology.
 
@@ -231,6 +249,7 @@ Artifact Status: Canonical Artifact
 Scientific Domain: TIG gravitational architecture
 Claim Status: Physical Candidate within declared scope
 Scope: static spherical effective realization
+Scientific Status Applicability: APPLICABLE
 Scientific Status: Scientifically Open where completion dependencies remain
 ```
 
@@ -264,7 +283,7 @@ SIR may investigate recursion, topology, manifold structures, spectral consisten
 
 These do not automatically become TIG physical admissibility, spacetime topology, physical manifolds, physical spectra, QIC generators, Cube laws, or physical proof.
 
-OQ-029 remains Question State `OPEN` and Operational Status `Blocked` pending a separate Nexus-aligned SIR maturity and TIG-bridge review.
+OQ-029 remains Question State `OPEN`, Scientific Status Applicability `APPLICABLE`, Scientific Status `Scientifically Open`, and Operational Status `Blocked` pending a separate Nexus-aligned SIR maturity and TIG-bridge review.
 
 ---
 
@@ -347,17 +366,17 @@ Deferred SSC projection does not block OQ-031 terminology-governance completion 
 
 ## 10. Authoritative Seven-Artifact Synchronization Record
 
-The following seven controlled artifacts are synchronized at current HEAD to the status model introduced by the final audit corrections:
+The following seven controlled artifacts are synchronized at current HEAD to the corrected Progress Classification and Scientific Status Applicability model:
 
 | Order | Artifact | Current Content SHA | Local Reconciliation |
 |---|---|---|---|
-| 1 | `shared/terminology_inventory.md` | `74364a3c4f3575363ce3305ea0d68203f1d0e75f` | Primary terminology and Question State model |
-| 2 | `shared/terminology_drift_matrix.md` | `77f7e0c37336a262f51c765ae0f3ab314ed3f203` | Reconciled to artifact 1 |
-| 3 | `governance/claim_status_taxonomy.md` | `ebc22076da4221a80dcdfbd1f5388f49a1044a2a` | Reconciled to artifacts 1–2 |
-| 4 | `governance/cross_repository_claim_boundary_matrix.md` | `af1123666144136dac05c97ddd9b42f897ad26ae` | Reconciled to artifacts 1–3 |
-| 5 | `registry/open_questions.md` | `29765a4b5098b5699b5c51e4acfe8b45864b9245` | Reconciled to artifacts 1–4 |
-| 6 | `registry/master_open_question_backlog.md` | `57b07cd9abe975482ddcc9fe29ad044ab32c2193` | Reconciled to artifacts 1–5 |
-| 7 | `registry/repository_status.md` | Current file | Authoritative global index |
+| 1 | `shared/terminology_inventory.md` | `06b2371b4cc65739aa93fa569fcd808553e054fb` | Primary terminology, applicability, and local progress model |
+| 2 | `shared/terminology_drift_matrix.md` | `3270635e015931f12fd5c8de6fbc2107a541ab5a` | Reconciled to artifact 1 |
+| 3 | `governance/claim_status_taxonomy.md` | `7913b6b2a99c8bd08ec7ae3bbf13ff203d64bb77` | Reconciled to artifacts 1–2 |
+| 4 | `governance/cross_repository_claim_boundary_matrix.md` | `973aef177638920b7dbdd7fe50e73033de892774` | Reconciled to artifacts 1–3 |
+| 5 | `registry/open_questions.md` | `f141babfcf114300cf183563eeb69650d87dac7c` | Reconciled to artifacts 1–4 |
+| 6 | `registry/master_open_question_backlog.md` | `295d8d6a6f22a0f7c5380532ebe9418430bcf986` | Reconciled to artifacts 1–5 |
+| 7 | `registry/repository_status.md` | Current file | Authoritative global index reconciled to artifacts 1–6 |
 
 ### Synchronization Result
 
@@ -370,6 +389,10 @@ Independent Completion Audit Outstanding: YES
 
 The global synchronization sequence is complete for the current HEAD.
 
+Every upstream artifact now contributes `READY FOR COMPLETION AUDIT` locally or is reconciled to that model.
+
+No controlled file uses `NOT APPLICABLE` as a Scientific Status value; it is represented as a Scientific Status Applicability marker, with no Scientific Status value assigned where the axis is inapplicable.
+
 This does not mean that the independent audit has passed and does not change Question State to `CLOSED`.
 
 ---
@@ -381,13 +404,14 @@ OQ-030 and OQ-031 do not require the underlying scientific objects or Missing br
 Governance completion requires:
 
 - correct repository-container and scientific-domain assignment;
-- exact independent status axes;
+- exact independent applicability and status controls;
+- Scientific Status Applicability separate from Scientific Status;
 - Question State separate from Registry Status and Scientific Status;
 - exact Definition State and Bridge State;
 - canonical Relation Class and separate Relation Target;
 - correct scope;
 - Allowed Transfer and Forbidden Transfer controls;
-- no silent status or domain upgrade;
+- no silent status, applicability, or domain upgrade;
 - global current-HEAD synchronization of all seven artifacts.
 
 These conditions are now represented in the synchronized control chain.
@@ -405,25 +429,34 @@ Completion Readiness: AUDIT PASSED
 
 ## 12. Current Completion Readiness Decision
 
-The prior Completion & Consistency Audit failed because:
+The most recent independent Completion & Consistency Audit failed because:
 
-- upstream files reported historical local synchronization stages as global state;
-- no separate Question State axis existed;
-- Registry Status, Scientific Status, Operational Status, Required Work, and question lifecycle were mixed;
-- the master backlog used generic `Status` fields with incompatible semantics.
+- four upstream governance artifacts still reported `PARTIALLY RESOLVED — CORRECTION REQUIRED` while downstream artifacts reported `READY FOR COMPLETION AUDIT`;
+- `NOT APPLICABLE` was used as a Scientific Status value despite the canonical Scientific Status value set being limited to `Scientifically Open` and `Resolved`;
+- the primary inventory contained an ambiguous statement suggesting downstream propagation remained outstanding.
 
-The corrective propagation is now complete.
+The dependency-ordered corrective propagation is now complete:
+
+1. the primary inventory contributes `READY FOR COMPLETION AUDIT` and defines Scientific Status Applicability;
+2. the drift matrix is reconciled to the corrected inventory;
+3. the taxonomy defines applicability separately from Scientific Status;
+4. the boundary matrix preserves applicability during transfer;
+5. the local registry applies the corrected model;
+6. the master backlog is reconciled to the corrected model;
+7. this index records the resulting global state.
 
 The current authoritative decision is:
 
 ```text
 Question State: OPEN
 Registry Status: Registered
+Scientific Status Applicability: NOT APPLICABLE
+Scientific Status: no value assigned
 Progress Classification: READY FOR COMPLETION AUDIT
 Completion Readiness: READY FOR AUDIT
 ```
 
-This is the strongest supported value before an independent new audit.
+This is the strongest supported value before a new independent audit.
 
 It is forbidden to set:
 
@@ -445,14 +478,18 @@ Perform a new independent OQ-030/OQ-031 Completion & Consistency Audit over the 
 The audit must verify at minimum:
 
 - all listed SHAs and upstream references;
+- Scientific Status Applicability limited to `APPLICABLE / NOT APPLICABLE`;
+- Scientific Status limited to `Scientifically Open / Resolved`;
+- absence of `Scientific Status: NOT APPLICABLE` as a value assignment;
 - Question State `OPEN / CLOSED` usage;
 - Registry Status limited to `Registerable / Registered`;
 - Scientific Status not used to close governance questions;
 - Operational Status and Required Work not used as question lifecycle;
-- absence of generic mixed-semantics `Status` fields in the master backlog;
+- consistent `READY FOR COMPLETION AUDIT` contributions across the controlled chain;
+- absence of generic mixed-semantics `Status` fields in question entries in the master backlog;
 - single global synchronization authority;
 - OQ-025–OQ-027 governance closure boundaries;
-- OQ-028 Missing bridge status;
+- OQ-028 Question State `OPEN`, Operational Status `Blocked`, Bridge State `Missing`, Relation Class `UNDEFINED RELATION`, and Relation Target `Σ_QIC`;
 - TIG/QIC, SIR/physical, Cube/QIC, and SSC/core anti-collapse controls;
 - consistency of OQ-030/OQ-031 local and master entries.
 
@@ -460,7 +497,7 @@ The audit must verify at minimum:
 
 ## 14. Maintenance Rule
 
-Every significant repository-role, scientific-domain, maturity, governance, Definition State, Bridge State, Cross-ID, Question State, Progress Classification, Completion Readiness, or dependency change must update this file.
+Every significant repository-role, scientific-domain, maturity, governance, Scientific Status Applicability, Scientific Status, Definition State, Bridge State, Cross-ID, Question State, Progress Classification, Completion Readiness, or dependency change must update this file.
 
 Every new repository connected to Integrity Nexus requires a repository-status entry and explicit scientific-domain classification.
 
@@ -468,6 +505,6 @@ A repository name must never substitute for scientific-domain identification.
 
 Any change to one of the six upstream artifacts invalidates the global synchronization record until this file is explicitly reconciled against the new SHA.
 
-Only this file may state the global current-HEAD synchronization count and global Completion Readiness.
+Only this file may state the global current-HEAD synchronization count, global Progress Classification, and global Completion Readiness.
 
 No update may create scientific truth, physical interpretation, ontology, derivation, proof, validation, bridge, theory, audit passage, or Question State closure absent from the governing evidence and registries.
