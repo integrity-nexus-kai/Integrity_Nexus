@@ -3,7 +3,7 @@
 **Repository:** Integrity_Nexus  
 **Scope:** Meta-governance registry for the TIG Research Ecosystem  
 **Status:** CANONICAL REGISTRY / LOCKED MODE / AUDIT-CORRECTED  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `61c983e7d40792d6d93b67f5e1b2351b1e098203`; `shared/terminology_drift_matrix.md` content SHA `349bf02c81ad471f16adf2518676673957036822`; `governance/claim_status_taxonomy.md` content SHA `63fdca80075c7c1e3a2bd49c67fad6a5ef7a7bba`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `b418482c0620ea7cf7d7dc175f6aa94e63d40ed1`  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `f606e88848441374355f71bda117e12a52b8c42a`; `shared/terminology_drift_matrix.md` content SHA `4e76c99f7af891ef1309b5f61551679006ce7481`; `governance/claim_status_taxonomy.md` content SHA `d0506e71d47ee08863dae516a61078ef7a8275ca`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `ff4d3debd6864dc056df04c39e4d5483baa7daa1`  
 **Position in Control Chain:** terminology inventory → drift matrix → claim-status taxonomy → claim-boundary matrix → this local registry → master backlog → repository-status index  
 **Global Synchronization and Completion-Readiness Authority:** `registry/repository_status.md`  
 **Local OQ Status Contribution:** READY FOR COMPLETION AUDIT  
@@ -342,10 +342,10 @@ Should Integrity Nexus itself become citable as a research-governance artifact, 
 
 This local registry is reconciled with:
 
-- inventory SHA `61c983e7d40792d6d93b67f5e1b2351b1e098203`,
-- drift-matrix SHA `349bf02c81ad471f16adf2518676673957036822`,
-- taxonomy SHA `63fdca80075c7c1e3a2bd49c67fad6a5ef7a7bba`,
-- boundary-matrix SHA `b418482c0620ea7cf7d7dc175f6aa94e63d40ed1`.
+- inventory SHA `f606e88848441374355f71bda117e12a52b8c42a`,
+- drift-matrix SHA `4e76c99f7af891ef1309b5f61551679006ce7481`,
+- taxonomy SHA `d0506e71d47ee08863dae516a61078ef7a8275ca`,
+- boundary-matrix SHA `ff4d3debd6864dc056df04c39e4d5483baa7daa1`.
 
 It preserves and records:
 
@@ -363,12 +363,16 @@ It preserves and records:
 12. Question State, Registry Status, Operational Status, Progress Classification, and Completion Readiness as separate controls;
 13. OQ-NEXUS-001 and OQ-NEXUS-002 remaining Question State `OPEN` and Progress Classification `READY FOR COMPLETION AUDIT`;
 14. `registry/repository_status.md` as sole global synchronization and Completion Readiness authority;
-15. the substantive Claim-Status normalization as already adopted across the preceding downstream chain;
-16. the current revision as a SHA reconciliation only, without reopening or reversing the adopted controls.
+15. the substantive status-axis and Claim-Status controls as historically adopted across the then-current downstream chain;
+16. this revision as a local SHA reconciliation without asserting the current state of later artifacts.
 
-The earlier progress/applicability propagation and the substantive Claim-Status normalization were completed across the downstream control chain before this temporal-status correction.
+The substantive progress/applicability and Claim-Status controls were historically adopted across the then-current downstream chain before the independent audit identified the later temporal and evidence-path findings.
 
-This revision records that completed substantive propagation. Because the four upstream governance artifacts and this local registry now have new content SHAs, the master backlog and repository-status index must be reconciled to those SHAs in dependency order. That SHA reconciliation does not reopen or reverse the already adopted Claim-Status controls.
+This revision records that historical substantive state and locally reconciles the registry to the corrected inventory, drift matrix, taxonomy, and boundary matrix.
+
+Later artifacts are reconciled to this revision only when their own synchronization bases reference the current upstream SHAs in dependency order and the resulting global state is recorded by `registry/repository_status.md`.
+
+Whether that later reconciliation is currently pending or complete is not asserted by this local registry.
 
 This local reconciliation is not a global synchronization report.
 
