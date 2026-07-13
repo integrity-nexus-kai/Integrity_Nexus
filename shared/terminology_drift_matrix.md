@@ -3,7 +3,7 @@
 **Repository:** Integrity_Nexus  
 **Scope:** Scientific-core TIG Research Ecosystem with controlled Cube-domain coverage  
 **Status:** CANONICAL / LOCKED MODE / AUDIT-CORRECTED  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `b5b877cbb536b8626df4b39e54d0f8936c69b8b8`  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `61c983e7d40792d6d93b67f5e1b2351b1e098203`  
 **Position in Control Chain:** primary inventory → this drift matrix → claim-status taxonomy → claim-boundary matrix → registries → repository-status index  
 **Global Synchronization Authority:** `registry/repository_status.md`  
 **Question-State Model:** `OPEN` / `CLOSED` as a governance-question lifecycle axis, separate from Scientific Status, Registry admission, Progress Classification, and Completion Readiness  
@@ -574,10 +574,10 @@ Before accepting a cross-repository or cross-domain use of a term, check:
 This revision reconciles the drift controls with primary inventory content SHA:
 
 ```text
-b5b877cbb536b8626df4b39e54d0f8936c69b8b8
+61c983e7d40792d6d93b67f5e1b2351b1e098203
 ```
 
-It propagates the following normative corrections:
+It preserves and records the following normative controls:
 
 1. the local OQ status contribution remains `READY FOR COMPLETION AUDIT` because no drift-matrix-local correction remains;
 2. Claim Status is limited to the canonical Claim Status value set;
@@ -592,7 +592,9 @@ It propagates the following normative corrections:
 11. `Registered` does not mean Question State `CLOSED`;
 12. `registry/repository_status.md` remains the sole authority for global current-HEAD synchronization and Completion Readiness;
 13. this matrix reports no global synchronization count or authoritative globally pending-artifact list;
-14. existing QIC/TIG, Cube, SIR, SSC, relation, evidence, and transfer controls remain preserved.
+14. existing QIC/TIG, Cube, SIR, SSC, relation, evidence, and transfer controls remain preserved;
+15. the substantive Claim-Status normalization is recorded as already adopted across the preceding downstream chain;
+16. the current revision creates only a new SHA-reconciliation requirement for later artifacts and does not reopen the adopted controls.
 
 ---
 
@@ -624,9 +626,9 @@ Those global values are controlled only by:
 registry/repository_status.md
 ```
 
-The earlier progress/applicability propagation was completed before the current audit finding.
+The earlier progress/applicability propagation and the substantive Claim-Status normalization were completed across the downstream control chain before this temporal-status correction.
 
-This revision creates a new downstream reconciliation requirement: the taxonomy, boundary matrix, and registries must adopt the canonical Claim Status assignment controls and later record this propagation as completed rather than leaving stale present-tense propagation language.
+This revision records that completed substantive propagation. Because the primary inventory and this matrix now have new content SHAs, the taxonomy, boundary matrix, and registries must be reconciled to those SHAs in dependency order. That SHA reconciliation does not reopen or reverse the already adopted Claim-Status controls.
 
 This statement is not a global synchronization report.
 
