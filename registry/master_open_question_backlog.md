@@ -4,7 +4,7 @@
 **Scope:** Complete TIG Research Ecosystem  
 **Status:** CANONICAL / LOCKED MODE / AUDIT-CORRECTED  
 **Source:** Master Research Consistency Auditor output, consolidated into canonical backlog form  
-**Synchronization Base:** `shared/terminology_inventory.md` content SHA `f606e88848441374355f71bda117e12a52b8c42a`; `shared/terminology_drift_matrix.md` content SHA `4e76c99f7af891ef1309b5f61551679006ce7481`; `governance/claim_status_taxonomy.md` content SHA `d0506e71d47ee08863dae516a61078ef7a8275ca`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `ff4d3debd6864dc056df04c39e4d5483baa7daa1`; `registry/open_questions.md` content SHA `888d819a978215b17c7123cdec44831fd961d0be`  
+**Synchronization Base:** `shared/terminology_inventory.md` content SHA `c36eb5aa64cd947905f8b41b7cee867cd971c8a3`; `shared/terminology_drift_matrix.md` content SHA `5318c17681b70d34e6b25321331c1e53b0ec8dd5`; `governance/claim_status_taxonomy.md` content SHA `fa24184ab9427f406fa24b50de064a6ef60e0bde`; `governance/cross_repository_claim_boundary_matrix.md` content SHA `5a131e0ab0697ddc8bed889091f56eaf7d62c8bd`; `registry/open_questions.md` content SHA `b3459195c8ea38f424760952a2220ee80cb3e81c`  
 **Position in Control Chain:** terminology inventory → drift matrix → claim-status taxonomy → claim-boundary matrix → local registry → this master backlog → repository-status index  
 **Global Synchronization and Completion-Readiness Authority:** `registry/repository_status.md`  
 **Local OQ Status Contribution:** READY FOR COMPLETION AUDIT  
@@ -27,6 +27,7 @@ It does **not** report the global synchronization count or authoritatively assig
 It does **not** use `NOT APPLICABLE` as a Scientific Status value.
 It does **not** assign a noncanonical value to Claim Status.
 It does **not** invent Claim Status where source evidence does not support one.
+It does **not** represent planned or absent outputs as existing Evidence Paths or accepted closure evidence.
 
 Every entry must use independent canonical axes and control fields rather than a generic mixed-semantics `Status` field.
 
@@ -69,6 +70,8 @@ Rules:
 - When no canonical Claim Status is supported, Claim Status remains unassigned.
 - Absence of a Claim Status line in an entry means no Claim Status is assigned; no value may be inferred from the title, Question State, Registry Status, Operational Status, Required Work, or repository placement.
 - `Required Work`, `Object Type`, and `Scope` are descriptive controls, not Claim Status values.
+- Every accepted Evidence Path must exist at the governing fixed source snapshot.
+- Planned or absent outputs must remain explicitly separated from current evidence.
 
 ---
 
@@ -132,7 +135,9 @@ Blocked by independent `Iμν`, dynamical closure, variational formulation, cova
 
 ### Path F — Cube ontology and physical integration
 
-The Cube inventory, maturity audit, and scale/Planck-manifestation consistency audit exist as canonical governance artifacts.
+The Cube inventory and claim-boundary/maturity audit exist as canonical governance artifacts.
+
+Cube scale and Planck-manifestation consistency are controlled through reproducible existing recursive-scale, working-hypothesis, claim-boundary, and roadmap sources. No dedicated `cube_scale_planck_manifestation_consistency_audit.md` artifact is claimed to exist.
 
 Cube science remains open because there is no completed ontology, fully derived scale law, completed state/transition law, formal Cube-to-QIC bridge, derived fractal law, or established transience/persistence criterion.
 
@@ -148,7 +153,8 @@ Cube science remains open because there is no completed ontology, fully derived 
 6. Claim Status is limited to the thirteen canonical values and remains unassigned where unsupported.
 7. Scientific Status, Operational Status, Required Work, Object Type, Scope, Artifact Status, Maturity Status, and Definition State remain separate from Claim Status.
 8. Scientifically open objects, Missing bridges, and unassigned Claim Status may coexist with completed terminology governance when correctly controlled.
-9. Global synchronization and Completion Readiness are controlled only by `registry/repository_status.md`.
+9. Existing Evidence Paths must be reproducible; planned or absent outputs are not current evidence.
+10. Global synchronization and Completion Readiness are controlled only by `registry/repository_status.md`.
 
 ---
 
@@ -680,17 +686,29 @@ Cube science remains open because there is no completed ontology, fully derived 
 **Registry Status:** Registered  
 **Scientific Status Applicability:** NOT APPLICABLE  
 **Scientific Status:** No value assigned  
-**Claim Status:** No value assigned; consistency-audit completion does not establish evidential Claim Status.  
+**Claim Status:** No value assigned; governance consistency review and operational closure do not establish evidential Claim Status.  
 **Operational Status:** Operationally Closed  
 **Artifact Status:** Canonical Artifact
 
 **Description:** Audit consistency between Cube not being identical to Planck length, Planck manifestation, and recursive scale constraints.
 
-**Accepted Evidence:** `TIG-E/docs/foundations/cube_scale_planck_manifestation_consistency_audit.md` and exact recursive-scale evidence paths in the terminology inventory.
+**Accepted Evidence Snapshot:** TIG-E commit `fcec691a9ff7ddb5e046a706689d78af74ee92ad`.
+
+**Accepted Evidence:**
+
+- `TIG-E/docs/foundations/cube_claim_boundary_maturity_audit.md`
+- `TIG-E/docs/recursive_constraints/cube_scale_derivation.md`
+- `TIG-E/docs/recursive_constraints/cube_scale_working_hypothesis.md`
+- `TIG-E/docs/recursive_constraints/cube_scale_constraints.md`
+- `TIG-E/research/evolution/ROADMAP.md`
+
+**Closure Validation:** The reproducible evidence set jointly preserves that no unique Cube size is established, Planck-scale use remains a scoped Working Assumption or lower-bound interpretation, Cube identity with the Planck length is not claimed, and recursive scale constraints do not constitute a derived universal physical scale law.
+
+**Absent Output Boundary:** `TIG-E/docs/foundations/cube_scale_planck_manifestation_consistency_audit.md` is not present at the accepted snapshot and is not used as closure evidence.
 
 **Dependencies:** OQ-025 — satisfied.
 
-**Closure Boundary:** Does not derive a unique Cube scale, prove `Cube = Planck length`, or establish a physical scale law.
+**Closure Boundary:** Closure applies only to the cross-file governance consistency task. It does not derive a unique Cube scale, prove `Cube = Planck length`, establish a physical scale law, or close any Cube scientific question.
 
 ---
 
@@ -748,11 +766,11 @@ Cube science remains open because there is no completed ontology, fully derived 
 **Progress Classification:** READY FOR COMPLETION AUDIT  
 **Completion Readiness:** Authoritative value controlled only by `registry/repository_status.md`
 
-**Description:** Show relationships between repository containers and scientific domains without inflating claims, changing status during transfer, or moving values between status axes.
+**Description:** Show relationships between repository containers and scientific domains without inflating claims, changing status during transfer, moving values between status axes, or treating absent outputs as current evidence.
 
-**Evidence:** The current terminology inventory, drift matrix, taxonomy, boundary matrix, local registry, and this master backlog establish container/domain separation, exact applicability and status axes, canonical Claim Status assignment, unsupported Claim Status remaining unassigned, Question State, relation/transfer controls, TIG/QIC boundaries, Cube interfaces, SIR boundaries, and deferred SSC scope.
+**Evidence:** The current terminology inventory, drift matrix, taxonomy, boundary matrix, local registry, and this master backlog establish container/domain separation, exact applicability and status axes, canonical Claim Status assignment, unsupported Claim Status remaining unassigned, Question State, relation/transfer controls, TIG/QIC boundaries, Cube interfaces, SIR boundaries, deferred SSC scope, and exact separation of reproducible Evidence Paths from planned or absent outputs.
 
-**Completion Criterion:** A canonical general boundary architecture exists; Claim Status is assigned only as an exact supported canonical value; Scientific Status, Operational Status, Required Work, Object Type, Scope, Artifact Status, Maturity Status, and Definition State are not converted into Claim Status; Scientific Status applicability and status values are separated; Missing and deferred bridges are correctly classified; interface-specific documentation is required only when an actual new transfer or bridge is attempted.
+**Completion Criterion:** A canonical general boundary architecture exists; Claim Status is assigned only as an exact supported canonical value; Scientific Status, Operational Status, Required Work, Object Type, Scope, Artifact Status, Maturity Status, and Definition State are not converted into Claim Status; Scientific Status applicability and status values are separated; Missing and deferred bridges are correctly classified; accepted Evidence Paths are reproducible; planned or absent outputs are not used as evidence; interface-specific documentation is required only when an actual new transfer or bridge is attempted.
 
 **Remaining Closure Step:** Independent Completion & Consistency Audit, authoritative `AUDIT PASSED` record, and explicit closure application in local and master registries.
 
@@ -777,7 +795,7 @@ Cube science remains open because there is no completed ontology, fully derived 
 
 **Active Scope:** Integrity_Nexus governance, TIG-E research architecture, TIG gravitational architecture, QIC quantum-bridge research, SIR mathematical recursion, and Cube research.
 
-**Governance Completion Criterion:** Every unresolved term, object, or interface is explicitly identified, assigned to the correct domain, given exact Scientific Status applicability and exact applicable status axes, given an exact canonical Claim Status only where supported, left with Claim Status unassigned where unsupported, protected against cross-axis conversion into Claim Status, given Definition State, Bridge State, Required Work, Object Type, Scope, Relation Class and Relation Target where applicable, and protected by transfer controls.
+**Governance Completion Criterion:** Every unresolved term, object, or interface is explicitly identified, assigned to the correct domain, given exact Scientific Status applicability and exact applicable status axes, given an exact canonical Claim Status only where supported, left with Claim Status unassigned where unsupported, protected against cross-axis conversion into Claim Status, given Definition State, Bridge State, Required Work, Object Type, Scope, Relation Class and Relation Target where applicable, supported only by reproducible existing Evidence Paths, protected against planned or absent outputs being treated as current evidence, and protected by transfer controls.
 
 ```text
 scientifically open object != incomplete terminology governance
@@ -785,6 +803,7 @@ missing bridge != incomplete terminology governance when absence is correctly co
 deferred scientific definition != terminology-governance failure when deferral is explicit
 Scientific Status Applicability NOT APPLICABLE != Scientific Status value
 unassigned Claim Status != governance failure when no canonical value is supported
+planned or absent output != existing evidence
 ```
 
 **Remaining Closure Step:** Independent Completion & Consistency Audit, authoritative `AUDIT PASSED` record, and explicit Question State change to `CLOSED` in both registries.
@@ -817,7 +836,7 @@ unassigned Claim Status != governance failure when no canonical value is support
 
 1. OQ-025 — Cube Research Block Inventory
 2. OQ-026 — Cube Claim Boundary and Maturity Audit
-3. OQ-027 — Cube Scale / Planck Manifestation Consistency
+3. OQ-027 — Cube Scale / Planck Manifestation Consistency, closure revalidated only for the exact governance task against the reproducible evidence set recorded above
 
 Their scientific non-claims remain protected.
 
@@ -859,11 +878,11 @@ Their scientific non-claims remain protected.
 
 This master backlog is reconciled with:
 
-- inventory SHA `f606e88848441374355f71bda117e12a52b8c42a`,
-- drift-matrix SHA `4e76c99f7af891ef1309b5f61551679006ce7481`,
-- taxonomy SHA `d0506e71d47ee08863dae516a61078ef7a8275ca`,
-- boundary-matrix SHA `ff4d3debd6864dc056df04c39e4d5483baa7daa1`,
-- local-registry SHA `888d819a978215b17c7123cdec44831fd961d0be`.
+- inventory SHA `c36eb5aa64cd947905f8b41b7cee867cd971c8a3`,
+- drift-matrix SHA `5318c17681b70d34e6b25321331c1e53b0ec8dd5`,
+- taxonomy SHA `fa24184ab9427f406fa24b50de064a6ef60e0bde`,
+- boundary-matrix SHA `5a131e0ab0697ddc8bed889091f56eaf7d62c8bd`,
+- local-registry SHA `b3459195c8ea38f424760952a2220ee80cb3e81c`.
 
 It preserves and records:
 
@@ -884,14 +903,16 @@ It preserves and records:
 15. applicability `APPLICABLE` for scientific questions and blockers;
 16. applicability `NOT APPLICABLE` for governance questions OQ-025–OQ-027 and OQ-030–OQ-032;
 17. OQ-030 and OQ-031 remaining Question State `OPEN` and Progress Classification `READY FOR COMPLETION AUDIT`;
-18. OQ-025–OQ-027 remaining Question State `CLOSED` only for their exact governance tasks;
-19. `registry/repository_status.md` preserved as sole global synchronization and Completion Readiness authority;
-20. the substantive status-axis and Claim-Status controls recorded as historically adopted across the then-current downstream chain;
-21. this revision recorded as a local SHA reconciliation without asserting the current state of the repository-status index.
+18. OQ-025 and OQ-026 remaining Question State `CLOSED` only for their exact governance tasks;
+19. OQ-027 remaining Question State `CLOSED` only for its exact cross-file consistency task, with closure revalidated against reproducible existing evidence and the absent dedicated audit path explicitly excluded;
+20. exact separation of existing Evidence Paths from planned or absent outputs;
+21. `registry/repository_status.md` preserved as sole global synchronization and Completion Readiness authority;
+22. the substantive status-axis and Claim-Status controls recorded as historically adopted across the then-current downstream chain;
+23. this revision recorded as a local SHA reconciliation without asserting the current state of the repository-status index.
 
-The substantive progress/applicability and Claim-Status controls were historically adopted across the then-current downstream chain before the independent audit identified the later temporal and evidence-path findings.
+The substantive progress/applicability and Claim-Status controls were historically adopted across the then-current downstream chain before the independent audits identified the temporal, Read_QIC, and Cube evidence-path findings.
 
-This revision records that historical substantive state and locally reconciles the master backlog to the corrected five-artifact upstream chain.
+This revision records that historical substantive state, repairs the OQ-027 closure-evidence record, and locally reconciles the master backlog to the corrected five-artifact upstream chain.
 
 The repository-status index is reconciled to this revision only when it references the current six upstream content SHAs and records the resulting global state.
 
@@ -903,7 +924,7 @@ This local reconciliation is not a global synchronization report.
 
 ## Global-State Authority Rule
 
-This master backlog records question lifecycle, dependencies, applicability, Claim Status controls, and execution order.
+This master backlog records question lifecycle, dependencies, applicability, Claim Status controls, evidence-path integrity, and execution order.
 
 It does not authoritatively state:
 
@@ -931,14 +952,24 @@ Scientific Status, Operational Status, Required Work, Object Type, Scope, Artifa
 
 `Required Work`, `Object Type`, and `Scope` are descriptive controls, not Claim Status values.
 
-A governance question may become Question State `CLOSED` only after:
+Every accepted closure Evidence Path must be reproducible at its governing fixed source snapshot.
+
+A planned or absent output must never be used as accepted closure evidence.
+
+A governance question may become or remain Question State `CLOSED` only when:
+
+1. its exact governance closure criterion is satisfied;
+2. accepted closure evidence is reproducible;
+3. the closure is explicitly applied by the governing registry;
+4. no known blocking governance inconsistency remains.
+
+For OQ-030 and OQ-031, closure additionally requires:
 
 1. `registry/repository_status.md` records `AUDIT PASSED`;
 2. the accepted audit result covers the exact question;
-3. local and master registries explicitly apply that result;
-4. no known blocking governance inconsistency remains.
+3. local and master registries explicitly apply that result.
 
-Scientifically open objects and unassigned Claim Status do not need to be resolved before governance-question closure when their terminology, status-axis ownership, and transfer boundaries are complete and consistent.
+Scientifically open objects and unassigned Claim Status do not need to be resolved before governance-question closure when their terminology, status-axis ownership, evidence boundaries, and transfer boundaries are complete and consistent.
 
 Any change to one of the five upstream artifacts invalidates this backlog's local reconciliation until updated against the new SHAs.
 
