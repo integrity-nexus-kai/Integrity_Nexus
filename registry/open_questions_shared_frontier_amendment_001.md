@@ -154,12 +154,79 @@ registered question != derived answer
 
 ---
 
+## SFQ-NEXUS-002 — Operational Projection of Topological Consistency onto a Discrete Cube Architecture
+
+**Master Backlog ID:** OQ-034  
+**Question Class:** OQ-SF / OQ-MET / OQ-EXP  
+**Question State:** OPEN  
+**Registry Status:** Registered  
+**Scientific Status Applicability:** APPLICABLE  
+**Scientific Status:** Scientifically Open  
+**Claim Status:** No value assigned  
+**Ownership Scope:** Shared research frontier  
+**Participating Frameworks:** Koncsik emergence hypotheses; TIG/TIG-E Cube research  
+**External Permission State:** Unpublished manuscripts supplied for private scientific review; no publication, collaboration, endorsement, or co-authorship permission inferred  
+**Correspondence Type:** Preliminary operational mapping question  
+**Dependency:** Related to SFQ-NEXUS-001; neither entry resolves the other  
+
+### Question
+
+How can topological or global consistency conditions be operationally represented, simulated, and experimentally investigated within a discrete three-dimensional Cube architecture without assuming that the Cube architecture itself is already the correct physical substrate?
+
+### Structural Subquestions
+
+1. Which source-exact consistency conditions are being mapped?
+2. Which canonical Cube variables represent local state, relation, orientation, closure, or integrity?
+3. What update rule connects local Cube transitions to global consistency conditions?
+4. Which observables distinguish structural consistency preservation from ordinary numerical stability?
+5. What null model would falsify the proposed mapping?
+6. What additional bridge would be required before simulation results could receive a physical interpretation?
+
+### Current Evidence Boundary
+
+The current materials support registration of an operational research question only.
+
+They do not support:
+
+- Cube substrate identification,
+- equivalence between a three-dimensional Cube lattice and Koncsik's two-time surface construction,
+- a completed operational mapping,
+- experimental feasibility,
+- or empirical interpretation of simulation output.
+
+### Required Work
+
+- source-exact extraction of consistency conditions,
+- canonical Cube evidence inventory,
+- mapping definition,
+- simulation architecture,
+- pre-registered success, failure, and null criteria,
+- numerical-artifact controls,
+- downstream gate registration before execution.
+
+### Resolution Criterion
+
+SFQ-NEXUS-002 may be resolved only when a source-valid mapping is explicitly defined, implemented in a reproducible Cube simulation or equivalent formal model, tested against pre-defined success and falsification criteria, and separated from any physical claim unless an additional audited bridge is established.
+
+### Forbidden Inferences
+
+```text
+operational mapping candidate != physical substrate identification
+simulation success != empirical validation
+shared frontier != formal collaboration
+structural correspondence != mathematical identity
+Cube model != completed Cube ontology
+```
+
+---
+
 ## Cross-ID Addendum
 
 | Local Registry ID | Master Backlog ID | Title | Relation |
 |---|---|---|---|
 | OQ-NEXUS-006 | OQ-032 | Open-Question Classification and Shared Frontier Governance | Same governance problem core |
 | SFQ-NEXUS-001 | OQ-033 | Dynamic Preservation of Global Consistency | Same shared-frontier problem core |
+| SFQ-NEXUS-002 | OQ-034 | Operational Projection of Topological Consistency onto a Discrete Cube Architecture | Same shared-frontier problem core |
 
 ---
 
