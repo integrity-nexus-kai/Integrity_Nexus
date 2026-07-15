@@ -137,6 +137,36 @@ Its role is to:
 
 ---
 
+# Research Questions and Shared Frontiers
+
+Integrity Nexus distinguishes unresolved research objects by question class:
+
+```text
+OQ-MAT — Mathematical Open Question
+OQ-MET — Methodological Open Question
+OQ-EXP — Experimental / Computational Open Question
+OQ-SF  — Shared Frontier Question
+```
+
+A Shared Frontier Question records a common unresolved interface between independent research programs without merging their terminology, ontology, mathematics, evidence, ownership, or Claim Status.
+
+Canonical governance:
+
+```text
+governance/research_frontier_question_classification.md
+```
+
+Locked-mode registry extension:
+
+```text
+registry/open_questions_shared_frontier_amendment_001.md
+registry/master_open_question_backlog_amendment_001.md
+```
+
+The amendment pattern preserves the audit-corrected synchronization base until a dedicated synchronization audit integrates the new entries into the base registries.
+
+---
+
 # Foundation Layer
 
 The repository now contains a universal TIG-E Foundation Layer at:
