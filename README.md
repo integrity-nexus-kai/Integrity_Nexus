@@ -99,23 +99,75 @@ This means that each repository studies a different domain in which system evolu
 
 ---
 
-# Connected Research Programs
+# Connected Repository Containers and Scientific Domains
 
-## TIG — Topological Integrity Gravity
+Repository containers and scientific domains are separate control objects.
 
-TIG studies bounded structural transitions in gravitational and geometric settings.
+```text
+repository container != scientific domain
+repository name != scientific object identity
+canonical repository != scientific truth
+mature governance != completed theory
+```
 
-## SIR — Structural Integrity Recursion
+## Integrity_Nexus
 
-SIR studies recursive integrity, constraint navigation, and governance of recursive research structures.
+**Repository role:** Meta-governance, registry, dependency mapping, terminology control, maturity control, and audit coordination.  
+**Scientific domain:** Integrity_Nexus governance.
 
-## SSC — Structural State Controller
+Integrity_Nexus may govern claims and transfers. It may not define scientific objects or manufacture scientific evidence.
 
-SSC studies supervisor-independent control boundaries, state admissibility, and invariant-preserving AI-control architectures.
+## TIG-E — Topological Integrity Gravity Engine
+
+**Repository role:** Research orchestration, gates, candidate lifecycle, blockers, preservation, QIC audits, and Cube research corpus.  
+**Scientific domains represented:** TIG-E research architecture, QIC quantum-bridge research, Cube research, and selected TIG/SIR interface work.
+
+```text
+TIG-E repository != one single scientific domain
+workflow or gate passage != scientific completion
+audit result != proof
+```
+
+## Quantum_Integrity_Core
+
+**Repository role:** Container for the current public TIG gravitational field-equation architecture and validation material.  
+**Primary scientific domain:** TIG gravitational architecture.
+
+```text
+Quantum_Integrity_Core repository != QIC scientific object
+TIG gravitational architecture != QIC quantum-bridge research
+I_mu_nu != I_QIC
+```
+
+## Structural_Integrity_Recursion
+
+**Repository role:** Exploratory recursive and mathematical-structure repository.  
+**Primary scientific domain:** SIR mathematical recursion.
+
+SIR mathematics does not acquire physical meaning without an explicit bridge.
+
+## Structural_State_Controller
+
+**Repository role:** Downstream control and state-admissibility application repository.  
+**Scientific domain:** SSC deferred application projection.
+
+SSC may not define the active TIG, QIC, SIR, Cube, or common-substrate research core.
+
+## Cube Research
+
+Cube research is an active scientific domain represented primarily inside TIG-E. It is not treated here as an independent repository container or as a completed Cube theory.
 
 ---
 
 # Repository Role
+
+The canonical authority for repository-container roles, scientific-domain coverage, global synchronization, Progress Classification, and Completion Readiness is:
+
+```text
+registry/repository_status.md
+```
+
+This README is a navigation artifact. It does not independently assign global synchronization, Completion Readiness, Question State, Scientific Status, or Claim Status.
 
 Integrity Nexus is not a new theory layer.
 
@@ -206,3 +258,11 @@ exports/        compact audit exports for external review tools
 ingestion/      upload workflows and ten-file package manifests
 tools/          export and package generation utilities
 ```
+
+---
+
+# Synchronization Boundary
+
+This README reflects the canonical repository-role and scientific-domain architecture recorded in `registry/repository_status.md`.
+
+It does not import local TIG-E audit passage, close an Open Question, establish a Missing bridge, promote general or physical `B_TIG`, or change the global synchronization state. Such changes require their own accepted evidence, authorization, and controlling registry update.
