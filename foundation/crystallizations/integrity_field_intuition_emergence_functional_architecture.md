@@ -177,6 +177,46 @@ The conceptual advance recorded here is architectural:
 
 This is a terminology and architecture clarification only.
 
+## Candidate Four-Element Foundational Architecture
+
+A new high-priority candidate interpretation is now registered:
+
+```text
+Integrity Field
++ integrity as the sustaining structural principle
++ emergence as the transition function
++ intuition as the route-detection function
+```
+
+may together form a foundational architecture that is incompletely represented in existing scientific and philosophical theories.
+
+This is not a claim that prior theories contain none of these concepts. The candidate claim is narrower:
+
+- existing approaches may contain one or more partial equivalents;
+- the four functions may remain separated, implicit, conflated, or unintegrated;
+- explanatory discontinuities may arise where one of the four functions is absent or undefined;
+- and a coherent integration of all four may make cross-domain relations visible without artificial theory-merging.
+
+The corresponding unification hypothesis is:
+
+> Unification may emerge as a consequence of resolving the four-element architecture rather than as an independently constructed fifth layer.
+
+This is a **candidate meta-hypothesis** only. It requires systematic comparison, formal reconstruction, and independent audit.
+
+## Audit Requirements for the Candidate Architecture
+
+Before any claim promotion, the following must be established:
+
+1. operational definitions for all four elements;
+2. non-circular relations among them;
+3. criteria distinguishing conceptual analogy from formal equivalence;
+4. a theory-comparison protocol identifying presence, absence, conflation, and unresolved interfaces;
+5. at least one reconstructed domain-specific pathway;
+6. counterexample and failure-condition analysis;
+7. and evidence that apparent unification is not produced merely by broad terminology.
+
+No claim that all previous theories are deficient is authorized without a documented comparison corpus.
+
 ## Scope Boundary
 
 This file does not authorize:
@@ -187,6 +227,8 @@ This file does not authorize:
 - a gravitational derivation,
 - a quantum derivation,
 - a psychological causal law,
+- superiority over existing theories,
+- automatic unification,
 - or closure of any foundational question.
 
 ## Canonical Meta Rule
@@ -194,4 +236,5 @@ This file does not authorize:
 ```text
 Meta-level crystallization preserves conceptual role separation.
 Repository-specific research must perform the actual scientific reconstruction.
+Candidate unification must emerge from validated relations, not from terminological compression.
 ```
