@@ -203,6 +203,54 @@ The corresponding unification hypothesis is:
 
 This is a **candidate meta-hypothesis** only. It requires systematic comparison, formal reconstruction, and independent audit.
 
+## General Relativity and the Missing-Architecture Hypothesis
+
+A further audit-level clarification is registered for the gravitational route:
+
+> General Relativity is not classified here as false. It is treated as a highly successful geometric theory whose incompleteness, if established, may be architectural rather than reducible to one omitted geometric degree of freedom.
+
+The currently admissible distinction is:
+
+```text
+GR success within tested domain != foundational completeness
+missing torsion != complete diagnosis of the foundational gap
+```
+
+Torsion remains a legitimate candidate ingredient in an extended gravitational description, but the present architecture does not authorize treating torsion alone as the missing key to unification.
+
+The stronger candidate is that a UFT route may require three physical-architectural modules:
+
+1. **Integrity Field** — candidate source-level structure;
+2. **Integrity** — sustaining admissibility, coherence, identity, and persistence structure;
+3. **Emergence** — transition mechanism from source-level relations to geometry, matter, dynamics, and observables.
+
+A fourth module is retained with a different status:
+
+4. **Intuition** — epistemic route-detection and prioritization function within the research process.
+
+This yields a required status separation:
+
+```text
+three candidate ontological/dynamical modules
++
+one epistemic research module
+```
+
+Intuition is therefore fundamental to the complete TICI/TIG research architecture, but it must not be inserted into a physical field equation or UFT ontology unless an independent physical derivation establishes such a role.
+
+The candidate gravitational chain is:
+
+```text
+Integrity Field
+    -> integrity-bearing constraints and relations
+    -> emergent transition
+    -> geometry and geometric degrees of freedom
+    -> curvature and possibly torsion
+    -> effective gravitational dynamics
+```
+
+This chain is not derived. It records the research hypothesis that curvature and torsion may both be downstream manifestations rather than the complete foundational source architecture.
+
 ## Audit Requirements for the Candidate Architecture
 
 Before any claim promotion, the following must be established:
@@ -214,6 +262,15 @@ Before any claim promotion, the following must be established:
 5. at least one reconstructed domain-specific pathway;
 6. counterexample and failure-condition analysis;
 7. and evidence that apparent unification is not produced merely by broad terminology.
+
+For the GR/UFT route, additional audit requirements are:
+
+8. specify the exact validated domain in which GR is being retained;
+9. identify a concrete explanatory or formal discontinuity not resolved by curvature-only geometry;
+10. test whether torsion resolves that discontinuity fully, partially, or not at all;
+11. define the first formal entry point of the Integrity Field, integrity constraints, and emergence mechanism;
+12. distinguish a low-energy or effective-limit relation from a claim of derivation;
+13. and prohibit any UFT-completeness claim before the three physical modules are mathematically connected and independently audited.
 
 No claim that all previous theories are deficient is authorized without a documented comparison corpus.
 
@@ -229,6 +286,10 @@ This file does not authorize:
 - a psychological causal law,
 - superiority over existing theories,
 - automatic unification,
+- a claim that GR has been shown incomplete by this file,
+- a claim that torsion is insufficient by proof,
+- a claim that the three physical modules already constitute a UFT,
+- physicalization of intuition,
 - or closure of any foundational question.
 
 ## Canonical Meta Rule
@@ -237,4 +298,7 @@ This file does not authorize:
 Meta-level crystallization preserves conceptual role separation.
 Repository-specific research must perform the actual scientific reconstruction.
 Candidate unification must emerge from validated relations, not from terminological compression.
+Successful effective theory != complete foundational architecture.
+Torsion candidate != sufficient UFT completion.
+Epistemic module != physical field module without derivation.
 ```
