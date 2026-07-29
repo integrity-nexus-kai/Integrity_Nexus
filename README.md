@@ -267,10 +267,10 @@ The approved German reference edition of the TIG / TIG-E Strategic Research Brie
 
 ```text
 publication/briefings/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.md
-publication/briefings/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.txt
+publication/briefings/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0_METADATA.md
 ```
 
-The briefing consolidates the TIG physical research program, the TIG-E human–AI research infrastructure, current scientific status, open research boundaries, and the requirements for structured external review.
+The full-text Markdown artifact contains the complete, searchable content of the approved German reference edition. The separate metadata record preserves status, provenance, language, checksum, and claim-effect boundaries. The briefing consolidates the TIG physical research program, the TIG-E human–AI research infrastructure, current scientific status, open research boundaries, and the requirements for structured external review.
 
 It is a communication, orientation, and review artifact. It does not modify the scientific or canonical status of any underlying research result.
 
