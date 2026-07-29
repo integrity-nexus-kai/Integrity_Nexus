@@ -68,44 +68,58 @@ Complete operating layers and audit initial repository status.
 
 Repository: Integrity Nexus  
 Source domains: TIG and TIG-E  
-Artifact: German reference edition v1.0  
-Status: approved German reference edition  
-Artifact class: strategic-scientific research briefing  
+Primary artifact: English Version 1.0  
+Primary repository role: institutional and scientific entry document  
+Edition: Controlled Academic Pre-Review Edition  
+Circulation: for qualified institutional and scientific assessment only  
+Repository integration: authorized  
+Secondary language artifact: approved German Reference Edition v1.0  
+Artifact class: strategic-scientific research briefing and repository orientation document  
 Priority: critical
 
 Scientific effect:
 
 ```text
-Communication and review artifact only.
-No new scientific claim and no canonical theory modification.
+Communication, navigation, orientation, and review artifact only.
+No new scientific claim.
+No canonical theory modification.
+No Open Question closure.
+No external-validation effect.
 ```
 
 International outreach status:
 
 ```text
-English edition pending controlled manual transfer and
-claim-strength equivalence audit.
+English Version 1.0 is available as the primary repository entry document.
+Qualified institutional and scientific assessment is requested.
 ```
 
 Available repository artifacts:
 
 ```text
+TIG_TIGE_Strategic_Research_Briefing_EN_v1.0.md
+publication/briefings/TIG_TIGE_Strategic_Research_Briefing_EN_v1.0_METADATA.md
 publication/briefings/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.md
 publication/briefings/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0_METADATA.md
 ```
 
-Approved source PDF checksum (source PDF not currently stored in this repository):
+Repository Markdown checksum:
 
 ```text
-SHA-256 b4a1f0059e274e90d7d53660b654cb8647837a9b91301d3a5f59852a92e81b6a
+SHA-256 cc60acb45cb847822e3ba5bc2371537e1706890b523f1057c4d85b5090154bfa
+```
+
+Controlled layout-reference PDF checksum (PDF not stored in this repository):
+
+```text
+SHA-256 f6a462c691d14a44ed0c00f5912ee065cc0215db0121fa0271973dfe7c678bc2
 ```
 
 Next action:
 
 ```text
-Prepare English version 1.0 and verify terminology,
-limitations, and scientific-status equivalence against
-the German reference edition.
+Obtain qualified institutional and scientific assessment.
+Maintain entry-point visibility, claim boundaries, and cross-repository link integrity.
 ```
 
 ---
