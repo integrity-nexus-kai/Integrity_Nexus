@@ -8,6 +8,26 @@ It provides navigation, conceptual alignment, dependency orientation, shared gov
 
 ---
 
+> [!IMPORTANT]
+> ### START HERE - TIG / TIG-E Strategic Research Briefing
+>
+> First-time scientific and institutional reviewers should begin with the English Strategic Research Briefing. It is the primary orientation document for the connected research ecosystem.
+>
+> **Primary English full text:** [Open the TIG / TIG-E Strategic Research Briefing - English Version 1.0](./TIG_TIGE_Strategic_Research_Briefing_EN_v1.0.md)
+>
+> **Edition:** Controlled Academic Pre-Review Edition  
+> **Assessment scope:** For qualified institutional and scientific assessment only
+>
+> The briefing explains the TIG physical research program, the TIG-E human-AI research infrastructure, the relationship between the connected repositories, the present scientific status, the applicable claim and validation boundaries, the principal open research programs, and the recommended path for external review.
+>
+> It is a communication, navigation, orientation, and review artifact. It does not introduce a new scientific claim, close an Open Question, establish external validation, or modify the canonical status of an underlying research result.
+>
+> **Status and provenance:** [English briefing metadata](./publication/briefings/TIG_TIGE_Strategic_Research_Briefing_EN_v1.0_METADATA.md)  
+> **Secondary language reference:** [German Reference Edition v1.0](./publication/briefings/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.md)
+
+
+---
+
 # Author
 
 **Kai Stefan Dietrich**  
@@ -241,6 +261,7 @@ Domain packs describe their application to concrete problem spaces.
 # Operating Structure
 
 ```text
+TIG_TIGE_Strategic_Research_Briefing_EN_v1.0.md  primary institutional and scientific entry document
 foundation/     universal TIG-E discovery kernel and foundation documents
 architecture/   research program maps and structural diagrams
 governance/     constitution, maturity model, claim boundaries, standards
@@ -258,23 +279,6 @@ exports/        compact audit exports for external review tools
 ingestion/      upload workflows and ten-file package manifests
 tools/          export and package generation utilities
 ```
-
----
-
-# Strategic Research Briefing
-
-The approved German reference edition of the TIG / TIG-E Strategic Research Briefing is registered at:
-
-```text
-publication/briefings/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.md
-publication/briefings/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0_METADATA.md
-```
-
-The full-text Markdown artifact contains the complete, searchable content of the approved German reference edition. The separate metadata record preserves status, provenance, language, checksum, and claim-effect boundaries. The briefing consolidates the TIG physical research program, the TIG-E human–AI research infrastructure, current scientific status, open research boundaries, and the requirements for structured external review.
-
-It is a communication, orientation, and review artifact. It does not modify the scientific or canonical status of any underlying research result.
-
-The international English edition is in preparation and will be produced through a controlled manual transfer with claim-strength equivalence review.
 
 ---
 
