@@ -1,0 +1,508 @@
+TIG / TIG-E | Strategisches Forschungsbriefing | Version 1.0
+
+WEITERLEITBARES STRATEGISCHES FORSCHUNGSBRIEFING - DEUTSCHE
+VERSION 1.0
+
+
+Topological Integrity Gravity (TIG)
+und TIG-E
+Physikalisches Forschungsprogramm und integrierte KI-
+Forschungsinfrastruktur für hochkomplexe wissenschaftliche
+Suchräume
+
+Kai Stefan Dietrich - Initiator und Systemarchitekt von TIG-E; Leiter des
+physikalischen TIG-Forschungsprogramms
+
+1. Executive Summary
+ Was ist TIG?
+ TIG - Topological Integrity Gravity - ist das physikalische Forschungsprogramm. Es
+ untersucht, ob Raumzeit fundamental ist oder als effektive Struktur aus
+ tieferliegenden topologischen Integritätsbedingungen emergiert. „Topologisch“
+ bezeichnet grundlegende Beziehungen wie Zusammenhang, Nachbarschaft,
+ Grenzflächen und Orientierung, bevor Abstände und Krümmung vorausgesetzt
+ werden; daraus folgt jedoch nicht automatisch eine eindeutige physikalische Metrik.
+ „Integrität“ ist nicht moralisch gemeint, sondern als mathematisch beschreibbare
+ strukturelle Selbstkonsistenz zulässiger Zustände und Übergänge.
+
+ Welches wissenschaftliche Ziel verfolgt TIG?
+ Ziel ist ein mathematisch konsistenter und physikalisch prüfbarer Rahmen, in dem
+ gravitative und quantenmechanische Strukturen als unterschiedliche effektive
+ Erscheinungsformen einer gemeinsamen tieferen Ordnungs- und
+ Aktualisierungsstruktur untersucht werden können. Aus ihr sollen Dynamik,
+ Geometrie, Gravitation, quantisierte Übergänge und belastbare Feldgleichungen
+ hergeleitet und validiert werden. Diese Zielrichtung ist ein Forschungsprogramm,
+ kein bereits abgeschlossener Nachweis.
+
+ Was ist TIG-E?
+ TIG-E - Topological Integrity Gravity Engine - ist nicht lediglich ein KI-gestütztes
+ Analysewerkzeug, sondern eine integrierte Mensch-KI-Forschungsinfrastruktur. Sie
+ verbindet Suchraumkompression, versionierte Dokumentation, Open-Question- und
+ Blocker-Register, adversariale Prüfung sowie Governance gegen Begriffs- und
+ Theoriedrift zu einem kontrollierbaren Forschungsprozess. TIG ist der erste
+ großskalige wissenschaftliche Anwendungs- und Validierungsfall dieser Infrastruktur.
+
+ Was liegt bereits vor?
+ Öffentlich dokumentiert sind eine validierte Feldgleichungsarchitektur innerhalb der
+ gegenwärtigen TIG-Realisierung, eine kanonische sphärische Realisierung, die
+ exakte kubische Horizontstruktur x³ - x² + β³ = 0, kritische Horizontübergänge, GR-,
+ Schwarzschild- und Newton-Grenzfälle sowie repräsentative Geometrien mit
+ begrenzter Krümmung. Offen bleiben unter anderem die fundamentale Herleitung
+ des Integritätstensors, Variationsprinzip, kovariante und dynamische Schließung, die
+ mikroskopische Update-Struktur, die mögliche Rekonstruktion einer Metrik aus
+ prämetrischen Relationen und die unabhängige Prüfung.
+
+ Was ist der gewünschte nächste Schritt?
+ Zunächst eine qualifizierte wissenschaftliche Einordnung. Sofern der Ansatz als
+ prüfenswert eingeschätzt wird, wäre der nächste Schritt die Verbindung zu
+ geeigneten theoretischen Physikern, Mathematikern oder Institutionen. Besonders
+ wertvoll wäre eine erste Priorisierung der mathematischen und physikalischen
+ Prüfungen für die nächste Entwicklungsstufe.
+
+Kontakt: kai.physics@protonmail.ch | https://integrity-nexus-kai.github.io/
+
+
+ENTSCHEIDERPERSPEKTIVE
+
+2. Warum dieses Forschungsprogramm relevant sein
+könnte
+Der mögliche Wert liegt auf zwei miteinander verbundenen Ebenen: TIG eröffnet
+einen neuen, prüfbaren Forschungsweg in der fundamentalen Physik; TIG-E soll
+den eigentlichen Erkenntnisprozess in hochkomplexen Suchräumen strukturell
+beschleunigen. Für einen strategischen Leser ist deshalb nicht nur die
+physikalische Hypothese relevant, sondern auch die Frage, ob die zugrunde
+liegende Infrastruktur Forschungszeit, Kosten und vermeidbares Trial-and-Error
+erheblich reduzieren kann.
+
+2.1 Wissenschaftlicher Wert
+Die Verbindung von Allgemeiner Relativitätstheorie und Quantenphysik gehört
+zu den schwierigsten offenen Aufgaben der Grundlagenforschung. TIG stellt
+eine vorgelagerte Frage: Welche topologischen Beziehungen, Zustände und
+Übergänge sind innerhalb einer physikalischen Gesamtstruktur überhaupt
+zulässig, stabil und realisierbar - und kann aus diesen Bedingungen eine
+effektive Raumzeit entstehen?
+
+2.2 Vom ungerichteten Trial-and-Error zur strukturierten Suche
+In vielen Forschungsfeldern müssen sehr große Mengen möglicher Hypothesen,
+Kandidaten oder Versuchswege geprüft werden. Experimente und Fehlversuche
+bleiben unverzichtbar. TIG-E soll jedoch den ungerichteten, redundanten und
+schlecht dokumentierten Anteil der Suche verringern:
+- Suchräume werden schrittweise komprimiert und in überprüfbare Teilprobleme zerlegt.
+- Widersprüchliche oder strukturell unzulässige Pfade sollen früher sichtbar werden.
+- Negative Ergebnisse und verworfene Wege bleiben als nutzbares Wissen erhalten.
+- Teure Labor-, Rechen- und Facharbeit kann auf besser begründete Kandidaten konzentriert werden.
+
+2.3 Möglicher Zeit- und Ressourcenhebel
+Der Rahmen soll nicht nur Kommunikation oder Aufgabenverwaltung
+verbessern. Er soll die epistemischen Suchkosten senken: weniger
+Kontextverlust, weniger Doppelarbeit, weniger stille Begriffsverschiebungen,
+frühere Erkennung von Sackgassen und schnellere Konzentration auf tragfähige
+Strukturen. Die konkrete Größenordnung muss anhand definierter
+Vergleichsfälle gemessen werden; feste Prozentwerte werden deshalb noch
+nicht behauptet.
+
+ Was hat der Empfänger beziehungsweise sein Netzwerk davon?
+ Frühzeitigen Zugang zu einem potenziell relevanten physikalischen
+ Forschungsansatz und zu einer Forschungsinfrastruktur, die - nach erfolgreicher
+ Validierung - auch in Medizin, Biotechnologie, Materialforschung, Energie, KI-
+ Sicherheit und weiteren komplexen Domänen Forschungszyklen verkürzen könnte.
+
+PHYSIKALISCHER KERN
+
+3. Das wissenschaftliche Kernproblem und die Zielrichtung
+von TIG
+Allgemeine Relativitätstheorie und Quantenphysik sind jeweils außerordentlich
+erfolgreich, aber noch nicht in einer vollständig konsistenten fundamentalen
+Beschreibung vereint. TIG untersucht, ob ein Teil dieser Lücke daraus entsteht,
+dass Raumzeit, Geometrie und Zustandszulässigkeit gewöhnlich bereits
+vorausgesetzt werden, statt ihre Entstehungsbedingungen selbst zum
+Gegenstand der Theorie zu machen.
+
+3.1 Warum „topological“?
+Topologie beschreibt grundlegende Beziehungen eines Systems -
+Zusammenhang, Nachbarschaft, Grenzflächen, Orientierung und zulässige
+Verknüpfungen - zunächst unabhängig von konkreten Abständen, Winkeln oder
+einer bereits vorausgesetzten Metrik. Sie bestimmt für sich allein weder
+physikalische Maßstäbe noch eine eindeutige Metrik. TIG fragt deshalb zuerst,
+welche strukturellen Beziehungen erhalten bleiben, sich ändern oder einen
+kritischen Übergang durchlaufen müssen, bevor eine effektive
+Raumzeitgeometrie beschrieben oder rekonstruiert werden kann.
+
+3.2 Was bedeutet „Integrity“?
+Integrität bezeichnet im TIG-Rahmen die Fähigkeit eines Systems, seine
+konstitutiven Beziehungen, Randbedingungen und zulässigen Übergänge
+gemeinsam konsistent zu erhalten. Gemeint ist keine moralische Eigenschaft,
+sondern eine potenziell formalisierbare Systemeigenschaft. Topologie
+beschreibt, wie Strukturen verbunden sind; Integrität bestimmt, welche dieser
+Beziehungen und Veränderungen zulässig und konsistent sind.
+
+3.3 Konkretes wissenschaftliches Ziel
+TIG untersucht, ob Raumzeit nicht fundamental, sondern eine emergente
+makroskopische Struktur ist. Die weitergehende Zielhypothese lautet, dass
+gravitative Geometrie und quantenmechanisch diskrete Zustands- oder
+Energieübergänge aus einer gemeinsamen tieferliegenden Integritäts- und
+Update-Struktur hervorgehen könnten. Eine tragfähige Theorie müsste daraus
+Dynamik, Geometrie, Gravitation, Quantisierung und geeignete Feldgleichungen
+ableiten sowie bekannte physikalische Grenzfälle reproduzieren.
+
+3.4 Konzeptionelle Entwicklungskette
+Arbeitsarchitektur
+Topologische Beziehungen → strukturelle Integrität → zulässige Zustände →
+Realisierung / Update → quantisierte Übergänge und Dynamik → offene
+Rekonstruktion kausaler und metrischer Struktur → effektive Geometrie, Raumzeit
+und Gravitation
+
+Die Kette beschreibt eine Forschungsrichtung, keine bereits vollständig
+geschlossene Herleitung. Insbesondere die Realisierungs- und Update-Dynamik
+bildet eine noch offene Schnittstelle zwischen Zustandszulässigkeit,
+quantisierten Übergängen und effektiver Geometrie.
+
+3.5 Metrik als offene Brückenfrage
+Die gegenwärtige TIG-Feldgleichungsarchitektur ist metrisch formuliert und setzt
+gμν bereits voraus; sie leitet die Metrik noch nicht aus einer prämetrischen
+Topological-Integrity-Struktur ab. Das weiterführende Forschungsprogramm
+untersucht, ob und unter welchen zusätzlichen Bedingungen aus Ordnungs-,
+Nachbarschafts- und Übergangsrelationen zunächst eine kausale oder konforme
+und schließlich eine vollständige Lorentz-Geometrie emergieren oder
+rekonstruiert werden kann.
+
+3.6 Mögliche mikroskopische Zellstruktur
+Als aktuelle Forschungshypothese wird geprüft, ob eine vierdimensionale
+zelluläre oder hyperkubische Grundstruktur - mathematisch etwa durch
+Hyperzellen beziehungsweise Tesserakte beschrieben - einen mikroskopischen
+Träger der Update-Dynamik bilden könnte. Dreidimensionale Schnitte könnten
+kubische Zellen zeigen; Übergänge an Grenzflächen könnten einen strukturellen
+Mechanismus für quantisierte Energie- oder Wirkungsübertragung bereitstellen.
+Diese Hypothese ist nicht aus der aktuellen Horizontgleichung abgeleitet und
+noch nicht validiert.
+
+3.7 Torsion als möglicher mikroskopischer Träger
+Torsion ist in kontinuierlichen Riemann-Cartan- oder Einstein-Cartan-Geometrien
+möglich. Eine zelluläre Struktur würde Torsion daher nicht erstmals ermöglichen.
+Sie könnte jedoch eine mikroskopische Träger- oder diskrete
+Repräsentationsstruktur für Verdrehung, Defekte oder gerichtete Übergänge
+bereitstellen. Diese Verbindung ist offen und muss von Professor Imre Koncsiks
+separater Hypothese quantisierter Wirkungsänderungen unterschieden werden.
+
+4. Gegenwärtiger wissenschaftlicher Stand
+
+4.1 Bestehende Feldgleichungsarchitektur
+Die gegenwärtige TIG-Realisierung verwendet
+Gμν = Iμν[g, rc]
+mit Einstein-Tensor Gμν, einer aktuellen Realisierung des Integritätstensors Iμν,
+der Metrik g und der Integritätsskala rc.
+
+4.2 Bestehende Resultate
+- Tensor construction innerhalb der aktuellen Realisierung.
+- GR-, Schwarzschild- und Newton-Grenzfälle.
+- Exakte kubische Horizontgleichung x³ - x² + β³ = 0.
+- Kritischer Punkt xc = 2/3 und βc = (4/27)^(1/3).
+- Sphärische Realisierung mit begrenzter Krümmung.
+- Struktur- und Stabilitätsanalysen sowie aktuelle Admissibility Closure.
+
+4.3 Statusgrenze
+Diese Ergebnisse begründen eine strukturell validierte
+Feldgleichungsarchitektur und einen wissenschaftlich prüfbaren Kandidaten. Sie
+begründen noch keine vollständig geschlossene fundamentale Gravitationstheorie.
+
+4.4 Priorisierte offene Programme
+- unabhängige Definition des Integritätstensors;
+- variationale Fundierung über Wirkungsfunktional oder Lagrangedichte;
+- kovariante Erweiterung;
+- dynamische Schließung und Freiheitsgrade;
+- breitere Störungs- und Stabilitätsanalyse;
+- Energiebedingungen;
+- beobachtbare Vorhersagen;
+- prämetrische Rekonstruktion kausaler und metrischer Struktur;
+- mikroskopische Update-Regeln und Quantisierung.
+
+5. TIG-E - integrierte Mensch-KI-Forschungsinfrastruktur
+
+5.1 Funktion
+TIG-E strukturiert komplexe Forschungsräume durch Suchraumzerlegung,
+Constraint-Extraktion, Aufbau zulässiger Zustandsräume, Vergleich,
+Rekombination, adversariale Prüfung, Audit und dokumentierte Kristallisation.
+
+5.2 Governance
+Die Infrastruktur trennt kanonische Ergebnisse, aktive Forschung,
+explorative Hypothesen und offene Fragen. Versionierung, Statusregister,
+Locked Mode, Blocker-Management und repositoryübergreifende Consistency
+Audits sollen Begriffs- und Theoriedrift reduzieren.
+
+5.3 Rolle von TIG
+TIG ist der erste großskalige physikalische Anwendungs- und Validierungsfall
+von TIG-E. Die physikalische Schwierigkeit zwingt die Infrastruktur, mit
+widersprüchlichen Annahmen, offenen Beweisen, langen Abhängigkeitsketten und
+mehreren mathematischen Sprachen umzugehen.
+
+5.4 Methodische Hypothese
+TIG-E könnte Forschungszeit und Ressourcen sparen, indem es offene Pfade,
+Sackgassen, Voraussetzungen und Statusgrenzen dauerhaft nachvollziehbar
+macht. Dieser Nutzen ist noch nicht allgemein quantitativ validiert und muss
+an Vergleichsfällen geprüft werden.
+
+6. Erwarteter nächster Schritt
+
+6.1 Wissenschaftliche Einordnung
+Erbeten wird zunächst eine qualifizierte wissenschaftliche Einordnung der
+bestehenden Architektur und ihrer offenen Grenzen.
+
+6.2 Besonders wertvolle Prüfungen
+- unabhängige Prüfung der Horizontverzweigung;
+- Variationsprinzip und Lagrange-Struktur;
+- kovariante und dynamische Schließung;
+- Metrikrekonstruktion und prämetrische Grundstruktur;
+- Tensorfundament und Freiheitsgrade;
+- geeignete wissenschaftliche Umgebung für die Weiterentwicklung.
+
+6.3 Gewünschte Form des Zugangs
+Sofern der Ansatz als prüfenswert eingeschätzt wird, wäre die Herstellung
+eines Kontakts zu geeigneten Fachwissenschaftlern oder Institutionen der
+bevorzugte nächste Schritt. Vertiefende technische Rückfragen können auf
+Grundlage der dokumentierten Forschungsinfrastruktur strukturiert und schriftlich
+beantwortet werden.
+
+TECHNISCHER ANHANG
+
+A. Horizontstruktur
+Die aktuelle sphärische TIG-Realisierung führt auf die dimensionslose
+Horizontgleichung
+x³ - x² + β³ = 0.
+Der kritische Punkt liegt bei
+xc = 2/3, βc = (4/27)^(1/3).
+
+Die kubische Struktur beschreibt eine Saddle-Node-Verzweigung mit
+unterschiedlichen Horizontsektoren. Sie ist ein konkretes mathematisches
+Resultat innerhalb der aktuellen Realisierung.
+
+A.1 Status
+- exakt abgeleitet innerhalb der Modellannahmen;
+- analytisch untersuchbar;
+- noch keine vollständige fundamentale Feldtheorie;
+- externe unabhängige Prüfung offen.
+
+A.2 Grenzfälle
+Die aktuelle Realisierung reproduziert geeignete GR-, Schwarzschild- und
+Newton-Grenzfälle.
+
+A.3 Kritische Fragen
+- Stabilität unter allgemeinen Störungen;
+- Einbettung in eine kovariante dynamische Theorie;
+- physikalische Freiheitsgrade;
+- Zusammenhang mit beobachtbaren Größen.
+
+B. Feldgleichungsarchitektur
+
+B.1 Gegenwärtige Form
+Gμν = Iμν[g, rc].
+
+B.2 Metrischer Status und offene Rekonstruktion
+Die Gleichung ist metrisch formuliert. Topologie und strukturelle Zulässigkeit
+allein garantieren keine eindeutige physikalische Metrik. Zu prüfen sind
+kausale Ordnung, Lorentz-Signatur, Maß- und Volumenstruktur, Dimension,
+Kontinuumsgrenzfall, Existenz und Eindeutigkeit der Rekonstruktion sowie die
+Verbindung zur bestehenden gμν-Architektur.
+
+B.3 Sphärische Realisierung
+Die aktuelle Massenfunktion lautet
+m(r) = M r³ / (r³ + rc³)
+und führt zu
+F(r) = 1 - 2 M r² / (r³ + rc³).
+
+B.4 Exakte Horizontgleichung
+Nach Dimensionslosmachung folgt
+x³ - x² + β³ = 0,
+mit x = rH/(2M) und β = rc/(2M).
+
+B.5 Aussagegrenzen
+Die bestehende Architektur ist ein strukturell validierter Forschungskandidat.
+Offen bleiben fundamentale Herleitung, Variationsprinzip, Kovarianz,
+dynamische Schließung und Beobachtungsvalidierung.
+
+C. Mögliche mikroskopische Integritätsstruktur
+
+C.1 Arbeitshypothese: Hyperzellen
+Eine vierdimensionale hyperkubische Zellstruktur könnte Zustände,
+Nachbarschaften und Update-Regeln tragen. Dies ist eine explorative Hypothese,
+keine kanonische TIG-Ableitung.
+
+C.2 Quantisierte Übergänge
+Diskrete Übergänge zwischen Zellen könnten einen Mechanismus für
+quantisierte Energie- oder Wirkungsübertragung bereitstellen. Eine diskrete
+Zellstruktur erklärt Quantisierung jedoch nicht automatisch. Erforderlich sind
+Zustandsräume, Kopplungen, Update-Regeln, eine elementare Wirkungs- oder
+Energieskala sowie ein geeigneter Kontinuums- und Quantenmechanikgrenzfall.
+
+C.3 Torsion
+Zellgrenzen, gerichtete Übergänge oder Defektstrukturen könnten eine diskrete
+Repräsentation von Torsion ermöglichen. Zu prüfen sind insbesondere der
+Zusammenhang mit Spin, der Kontinuumsgrenzfall und die effektive
+geometrische Beschreibung.
+
+C.4 Notwendige Validierung
+- mathematisch konsistenter Zellkomplex und eindeutige Update-Dynamik;
+- Herleitung quantisierter statt nur numerisch diskreter Übergänge;
+- geeigneter Kontinuumsgrenzfall und Wiedergewinnung etablierter GR-Grenzfälle;
+- Lorentz-Symmetrie oder präzise Erklärung ihres effektiven Auftretens;
+- Verbindung zur Feldgleichungsarchitektur, zur Horizontgleichung und zu einem expliziten Metrikrekonstruktionspfad;
+- klare Abgrenzung zu externen Hypothesen über Wirkungsquantisierung.
+
+D. Validierung von TIG-E
+TIG-E ist eine eigenständige Innovationshypothese. TIG zeigt, dass sich ein
+großer, interdisziplinärer Suchraum über längere Zeit strukturieren und
+governance-gestützt entwickeln lässt. Daraus folgt noch kein allgemeiner
+Nachweis, dass der Mechanismus in jeder Domäne schneller oder
+kostengünstiger ist. Dieser Nachweis muss anhand definierter Vergleichsfälle
+geführt werden.
+
+D.1 Zu prüfende Leistungsdimensionen
+- Zeit bis zur Formulierung überprüfbarer Teilfragen und Resultate.
+- Anzahl vermiedener Wiederholungen und früh erkannter Sackgassen.
+- Stabilität von Begriffen, Annahmen und Statuszuweisungen über längere Zeiträume.
+- Qualität der Übergabe an neue Fachwissenschaftler oder Institutionen.
+- Reproduzierbarkeit von Herleitungen, Entscheidungen und Korrekturen.
+- Verhältnis zwischen eingesetzten menschlichen, KI-infrastrukturellen und institutionellen Ressourcen.
+
+D.2 Governance-Instrumente
+- versionierte Dokumentation und klare kanonische beziehungsweise explorative Schichten;
+- Open-Question- und Blocker-Register;
+- explizite Trennung von Hypothese, Resultat, Korrektur und externer Rückmeldung;
+- adversariale Prüfungen und repositoryübergreifende Consistency Audits;
+- dokumentierte Nicht-Entscheidungen und offene Abhängigkeiten, damit Lücken nicht stillschweigend geschlossen werden.
+
+D.3 Ziel der nächsten Entwicklungsphase
+Die nächste Phase verbindet die physikalische Arbeit und die
+Methodenvalidierung: Repositories und Open Questions werden konsolidiert; die
+vorhandene Feldgleichungsarchitektur wird auf variationale Fundierung,
+fundamentale Herleitung, Kovarianz und dynamische Schließung geprüft; die
+mikroskopische Update- und Metrikrekonstruktionsstruktur wird formalisiert.
+Parallel soll der bereits begonnene wissenschaftliche Austausch durch
+zusätzliche theoretisch-physikalische und mathematische Fachkompetenz
+verbreitert werden.
+
+ Kernthese von TIG-E
+ Komplexität wird nicht durch Vereinfachung des Problems beseitigt, sondern durch
+ strukturierte Zerlegung, kontrollierte Rekombination, dokumentierte Emergenz und
+ Governance so organisiert, dass Erkenntnis schneller entstehen und langfristig
+ stabil bleiben kann.
+
+E. Öffentliche Forschungsbasis
+Die öffentlich zugängliche Schicht ist bewusst von internen Governance-
+Strukturen, aktiven Forschungszweigen und unveröffentlichten Entwicklungen
+getrennt. Dadurch soll verhindert werden, dass explorative Arbeit ohne klare
+Kennzeichnung als kanonisches Resultat erscheint.
+
+E.1 Öffentliche Papers
+- TIG1 - Foundational Structural Framework: Grundlagen der strukturellen Zulässigkeit und Horizontarchitektur.
+- TIG2 - Exact Cubic Branch Structure of Structural Horizon Formation: exakte algebraische Verzweigungsstruktur der Horizontbildung.
+- TIG3 - Conditional Vacuum Admissibility and Bounded Curvature Structure: repräsentative Untersuchung von Vakuumzulässigkeit und begrenzter Krümmung.
+
+E.2 Öffentliche Repositories
+- Quantum Integrity Core: physikalische Zulässigkeit, Feldgleichungsarchitektur und Horizontstruktur.
+- Structural Integrity Recursion: mathematisch getrennte Untersuchung rekursiver Zulässigkeit und struktureller Stabilisierung.
+- TIG Derivation Architecture: operatorentheoretische, Vakuum- und Ableitungsarchitektur.
+
+E.3 Öffentliche Quellen
+TIG-Website: https://integrity-nexus-kai.github.io/
+TIG1: https://integrity-nexus-kai.github.io/releases/TIG_v1.0.pdf
+TIG2: https://integrity-nexus-kai.github.io/releases/TIG2_v1.0.pdf
+TIG3: https://integrity-nexus-kai.github.io/releases/TIG3_v1.0.pdf
+GitHub: https://github.com/integrity-nexus-kai
+
+F. FAQ - Zentrale Fragen
+
+1. Was ist der Unterschied zwischen TIG und TIG-E?
+TIG ist das physikalische Forschungsprogramm. TIG-E ist die integrierte
+Mensch-KI-Forschungsinfrastruktur und Governance, mit der komplexe
+Suchräume strukturiert, geprüft und entwickelt werden.
+
+2. Warum heißt der Ansatz „Topological Integrity Gravity“?
+„Topological“ verweist auf grundlegende Beziehungen wie Zusammenhang,
+Nachbarschaft, Grenzflächen und Orientierung vor oder unabhängig von einer
+konkreten Metrik. Daraus folgt nicht automatisch eine Metrik. „Integrity“
+bezeichnet die strukturelle Konsistenz und Zulässigkeit von Zuständen und
+Übergängen.
+
+3. Welches konkrete wissenschaftliche Ziel verfolgt TIG?
+TIG untersucht, ob Raumzeit, Gravitation und quantisierte Übergänge aus einer
+gemeinsamen tieferliegenden Integritäts- und Update-Struktur emergieren und
+in einem mathematisch konsistenten, physikalisch prüfbaren Rahmen
+beschrieben werden können.
+
+4. Behauptet TIG bereits, dass Raumzeit nicht fundamental ist?
+Nein. Die Emergenz der Raumzeit ist eine begründete Forschungsrichtung und
+Arbeitshypothese, kein bereits abgeschlossener Nachweis.
+
+5. Welche Ergebnisse liegen bereits vor?
+Öffentlich dokumentiert sind eine validierte Feldgleichungsarchitektur innerhalb
+der aktuellen Realisierung, eine sphärische Modellrealisierung, die exakte
+Horizontgleichung und kritische Übergänge sowie GR-, Schwarzschild- und
+Newton-Grenzfälle.
+
+6. Sind die TIG-Feldgleichungen bereits fertig?
+Es liegt eine validierte Feldgleichungsarchitektur vor. Fundamentale Herleitung,
+unabhängige Definition des Integritätstensors, Variationsprinzip, volle Kovarianz
+und dynamische Schließung bleiben aktive Forschungsprogramme.
+
+7. Setzt TIG eine Metrik voraus oder leitet es sie ab?
+Die gegenwärtige Feldgleichungsarchitektur setzt gμν voraus. Eine Herleitung der
+Metrik aus prämetrischen topologischen Integritätsbeziehungen liegt noch nicht
+vor. Untersucht werden muss, welche zusätzlichen Kausal-, Maß- und
+Volumenstrukturen eine Lorentz-Geometrie bestimmen könnten.
+
+8. Warum ist eine variationale Fundierung wichtig?
+Ein geeignetes Wirkungsfunktional könnte die Feldgleichungsarchitektur, ihre
+dynamischen Freiheitsgrade, Erhaltungseigenschaften und kovariante
+Schließung auf eine einheitliche Grundlage stellen. Eine solche Herleitung ist
+gegenwärtig offen.
+
+9. Welche Bedeutung hat die Horizontgleichung?
+Sie beschreibt eine exakte kubische Verzweigungsstruktur der Horizontbildung
+innerhalb der aktuellen sphärischen Realisierung. Sie ist ein konkretes Resultat,
+aber noch keine vollständige fundamentale Feldtheorie.
+
+10. Was ist die Hyperzellen- beziehungsweise Tesserakt-Hypothese?
+Sie prüft, ob eine vierdimensionale zelluläre Grundstruktur Zustände, Update-
+Regeln, quantisierte Übergänge und eine diskrete Repräsentation von Torsion
+tragen könnte. Sie ist noch nicht kanonisch hergeleitet oder experimentell
+bestätigt.
+
+11. Welche Rolle spielt die KI-Infrastruktur?
+Sie unterstützt Suchraumzerlegung, Vergleich, Rekombination, Gegenprüfung,
+Dokumentation und Konsistenzkontrolle. Sie ersetzt weder
+fachwissenschaftliche Verantwortung noch unabhängige Prüfung.
+
+12. Was bedeutet Operationalisierung von Emergenz?
+Der Forschungsprozess wird so strukturiert, dass Zerlegung, Vergleich,
+Rekombination und Konsistenzprüfung neue tragfähige Zusammenhänge
+systematischer sichtbar und dokumentierbar machen. Die vollständige
+Formalisierung bleibt offen.
+
+13. Wie wird wissenschaftliche Drift reduziert?
+Versionierung, Statuskategorien, Open-Question- und Blocker-Register,
+dokumentierte Korrekturen und adversariale Audits machen
+Bedeutungsverschiebungen, verdeckte Annahmen und Widersprüche sichtbar
+und korrigierbar.
+
+14. Findet die Entwicklung ohne wissenschaftlichen Austausch statt?
+Nein. Zu ausgewählten Fragestellungen bestehen bereits punktuelle fachliche
+Kontakte und erste Rückmeldungen aus dem Hochschulumfeld. Dies ist noch
+keine unabhängige Gesamtvalidierung und soll durch zusätzliche theoretisch-
+physikalische und mathematische Expertise systematisch verstärkt werden.
+
+15. Welche Form externer Prüfung ist gegenwärtig besonders wichtig?
+Im Vordergrund stehen die unabhängige mathematische Prüfung der Horizont-
+und Feldgleichungsarchitektur, die Untersuchung einer möglichen variationalen,
+kovarianten und metrischen Fundierung sowie die Bewertung der offenen
+Schritte zur dynamischen Schließung.
+
+16. Was ist der gewünschte nächste Schritt?
+Zunächst eine qualifizierte Einordnung. Sofern der Ansatz als prüfenswert
+eingeschätzt wird, wäre der nächste Schritt die Verbindung zu geeigneten
+Physikern, Mathematikern oder Institutionen. Vertiefende technische Rückfragen
+können strukturiert und schriftlich beantwortet werden.
+
+Kontakt für Rückfragen und vertiefenden Austausch
+Kai Stefan Dietrich
+E-Mail: kai.physics@protonmail.ch
+Website: https://integrity-nexus-kai.github.io/
+GitHub: https://github.com/integrity-nexus-kai
