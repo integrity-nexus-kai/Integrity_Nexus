@@ -8,7 +8,7 @@ This directory manages the publication pipeline for Integrity Nexus and connecte
 
 ## Scope
 
-The publication layer tracks papers, technical notes, whitepapers, preprints, repository releases, and citation readiness.
+The publication layer tracks papers, technical notes, whitepapers, preprints, repository releases, strategic research briefings, and citation readiness.
 
 ---
 
@@ -18,6 +18,7 @@ The publication layer tracks papers, technical notes, whitepapers, preprints, re
 - `publication_status.md` — current publication status by repository.
 - `target_journals.md` — candidate outlets and publication venues.
 - `publication_checklist.md` — pre-publication readiness checklist.
+- `briefings/` — approved strategic research briefings and their metadata.
 
 ---
 
@@ -32,3 +33,4 @@ Initial publication layer established.
 - Populate repository-specific publication plans.
 - Attach claim-boundary and limitation checks before external release.
 - Link publication items to repository status and audit findings.
+- Maintain language, version, checksum, and claim-effect metadata for approved briefings.
