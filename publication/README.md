@@ -18,7 +18,7 @@ The publication layer tracks papers, technical notes, whitepapers, preprints, re
 - `publication_status.md` — current publication status by repository.
 - `target_journals.md` — candidate outlets and publication venues.
 - `publication_checklist.md` — pre-publication readiness checklist.
-- `briefings/` — approved strategic research briefings and their metadata.
+- `briefings/` — approved strategic research briefings as complete Markdown full texts with separate metadata records.
 
 ---
 
