@@ -91,10 +91,10 @@ Available repository artifacts:
 
 ```text
 publication/briefings/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.md
-publication/briefings/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.txt
+publication/briefings/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0_METADATA.md
 ```
 
-Approved source PDF checksum:
+Approved source PDF checksum (source PDF not currently stored in this repository):
 
 ```text
 SHA-256 b4a1f0059e274e90d7d53660b654cb8647837a9b91301d3a5f59852a92e81b6a
