@@ -64,6 +64,52 @@ Complete operating layers and audit initial repository status.
 
 ---
 
+### PUB-005 — TIG / TIG-E Strategic Research Briefing
+
+Repository: Integrity Nexus  
+Source domains: TIG and TIG-E  
+Artifact: German reference edition v1.0  
+Status: approved German reference edition  
+Artifact class: strategic-scientific research briefing  
+Priority: critical
+
+Scientific effect:
+
+```text
+Communication and review artifact only.
+No new scientific claim and no canonical theory modification.
+```
+
+International outreach status:
+
+```text
+English edition pending controlled manual transfer and
+claim-strength equivalence audit.
+```
+
+Available repository artifacts:
+
+```text
+publication/briefings/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.md
+publication/briefings/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.txt
+```
+
+Approved source PDF checksum:
+
+```text
+SHA-256 b4a1f0059e274e90d7d53660b654cb8647837a9b91301d3a5f59852a92e81b6a
+```
+
+Next action:
+
+```text
+Prepare English version 1.0 and verify terminology,
+limitations, and scientific-status equivalence against
+the German reference edition.
+```
+
+---
+
 ## Maintenance Rule
 
 Every publication candidate must link to a repository status entry and audit status before external submission.
