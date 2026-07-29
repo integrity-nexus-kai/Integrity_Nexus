@@ -8,7 +8,7 @@
 **Status:** APPROVED GERMAN REFERENCE EDITION  
 **Scientific claim effect:** NONE  
 **Canonical theory effect:** NONE  
-**International outreach edition:** PENDING  
+**International outreach edition:** AVAILABLE - CONTROLLED ACADEMIC PRE-REVIEW EDITION  
 **Date:** 29 July 2026
 
 ---
@@ -34,14 +34,15 @@ It does not introduce a new physical derivation, change the scientific status of
 
 ## Language Status
 
-The German edition is the semantic reference version.
+The German edition remains the semantic reference version.
 
-The international English edition will be prepared through a controlled manual transfer rather than an automatic literal translation. It must preserve scientific terminology, claim strength, limitation wording, status boundaries, and the distinction between TIG and TIG-E.
+The English Version 1.0 is now registered as the primary institutional and scientific entry point in the repository. It was prepared through a controlled, claim-equivalent semantic transfer that preserves scientific terminology, claim strength, limitation wording, status boundaries, and the distinction between TIG and TIG-E.
 
 ---
 
 ## Registered Repository Artifact
 
+- `/TIG_TIGE_Strategic_Research_Briefing_EN_v1.0.md` - primary English institutional and scientific entry document.
 - `TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.md` — complete, searchable Markdown full text of the approved German reference edition.
 
 The original source PDF is not currently stored in this repository. No unavailable PDF path is registered or represented as an existing artifact. An original layout copy may be added later through a binary-capable upload path and must then be registered by an explicit metadata update.
