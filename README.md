@@ -261,6 +261,23 @@ tools/          export and package generation utilities
 
 ---
 
+# Strategic Research Briefing
+
+The approved German reference edition of the TIG / TIG-E Strategic Research Briefing is registered at:
+
+```text
+publication/briefings/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.md
+publication/briefings/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.txt
+```
+
+The briefing consolidates the TIG physical research program, the TIG-E human–AI research infrastructure, current scientific status, open research boundaries, and the requirements for structured external review.
+
+It is a communication, orientation, and review artifact. It does not modify the scientific or canonical status of any underlying research result.
+
+The international English edition is in preparation and will be produced through a controlled manual transfer with claim-strength equivalence review.
+
+---
+
 # Synchronization Boundary
 
 This README reflects the canonical repository-role and scientific-domain architecture recorded in `registry/repository_status.md`.
