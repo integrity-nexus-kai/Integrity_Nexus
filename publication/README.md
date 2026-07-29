@@ -18,7 +18,8 @@ The publication layer tracks papers, technical notes, whitepapers, preprints, re
 - `publication_status.md` — current publication status by repository.
 - `target_journals.md` — candidate outlets and publication venues.
 - `publication_checklist.md` — pre-publication readiness checklist.
-- `briefings/` — approved strategic research briefings as complete Markdown full texts with separate metadata records.
+- `../TIG_TIGE_Strategic_Research_Briefing_EN_v1.0.md` — primary English institutional and scientific entry document.
+- `briefings/` — briefing metadata records and secondary language reference artifacts.
 
 ---
 
@@ -33,4 +34,5 @@ Initial publication layer established.
 - Populate repository-specific publication plans.
 - Attach claim-boundary and limitation checks before external release.
 - Link publication items to repository status and audit findings.
-- Maintain language, version, checksum, and claim-effect metadata for approved briefings.
+- Maintain the root-README entry point and its link to the current English briefing.
+- Maintain language, version, checksum, provenance, and claim-effect metadata for registered briefings.
