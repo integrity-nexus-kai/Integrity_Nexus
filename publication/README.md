@@ -18,8 +18,9 @@ The publication layer tracks papers, technical notes, whitepapers, preprints, re
 - `publication_status.md` — current publication status by repository.
 - `target_journals.md` — candidate outlets and publication venues.
 - `publication_checklist.md` — pre-publication readiness checklist.
-- `../TIG_TIGE_Strategic_Research_Briefing_EN_v1.0.md` — primary English institutional and scientific entry document.
-- `briefings/` — briefing metadata records and secondary language reference artifacts.
+- `../docs/TIG_TIGE_Strategic_Research_Briefing_EN_v1.0.md` — primary English institutional and scientific entry document.
+- `../docs/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.md` — German reference edition.
+- `briefings/` — briefing metadata records.
 
 ---
 

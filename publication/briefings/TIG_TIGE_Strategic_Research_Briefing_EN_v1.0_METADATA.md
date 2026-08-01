@@ -47,7 +47,7 @@ The German edition remains available as a secondary language reference. Its pres
 
 ## Registered Repository Artifact
 
-- `/TIG_TIGE_Strategic_Research_Briefing_EN_v1.0.md` - complete, searchable Markdown full text and primary repository entry document.
+- `/docs/TIG_TIGE_Strategic_Research_Briefing_EN_v1.0.md` - complete, searchable Markdown full text and primary repository entry document.
 
 The controlled layout PDF is not stored in this repository. No unavailable PDF path is registered or represented as an existing repository artifact.
 

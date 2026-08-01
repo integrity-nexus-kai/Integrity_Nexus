@@ -13,9 +13,9 @@ It provides navigation, conceptual alignment, dependency orientation, shared gov
 >
 > Scientific and institutional reviewers should begin with the Strategic Research Briefing. It is the primary orientation and reading guide for the eight-repository research ecosystem.
 >
-> **[Read the complete English Strategic Research Briefing - Version 1.0](./TIG_TIGE_Strategic_Research_Briefing_EN_v1.0.md)**
+> **[Read the complete English Strategic Research Briefing - Version 1.0](./docs/TIG_TIGE_Strategic_Research_Briefing_EN_v1.0.md)**
 >
-> Supporting records: [English metadata](./publication/briefings/TIG_TIGE_Strategic_Research_Briefing_EN_v1.0_METADATA.md) · [German reference edition (secondary)](./publication/briefings/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.md)
+> Supporting records: [English metadata](./publication/briefings/TIG_TIGE_Strategic_Research_Briefing_EN_v1.0_METADATA.md) · [German reference edition (secondary)](./docs/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.md)
 >
 > The briefing explains the TIG physical research program, the TIG-E human-AI research infrastructure, the roles and relationships of the connected repositories, the present scientific status, the applicable claim and validation boundaries, the principal open research programs, and the recommended path for qualified external review.
 >
@@ -258,7 +258,7 @@ Domain packs describe their application to concrete problem spaces.
 # Operating Structure
 
 ```text
-TIG_TIGE_Strategic_Research_Briefing_EN_v1.0.md  primary institutional and scientific entry document
+docs/          English primary briefing and German reference edition
 foundation/     universal TIG-E discovery kernel and foundation documents
 architecture/   research program maps and structural diagrams
 governance/     constitution, maturity model, claim boundaries, standards

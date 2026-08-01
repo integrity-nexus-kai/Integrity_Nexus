@@ -97,9 +97,9 @@ Qualified institutional and scientific assessment is requested.
 Available repository artifacts:
 
 ```text
-TIG_TIGE_Strategic_Research_Briefing_EN_v1.0.md
+docs/TIG_TIGE_Strategic_Research_Briefing_EN_v1.0.md
 publication/briefings/TIG_TIGE_Strategic_Research_Briefing_EN_v1.0_METADATA.md
-publication/briefings/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.md
+docs/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.md
 publication/briefings/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0_METADATA.md
 ```
 

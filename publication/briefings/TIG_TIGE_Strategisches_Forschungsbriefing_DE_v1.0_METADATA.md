@@ -45,8 +45,8 @@ English Version 1.0 is registered as the primary institutional and scientific en
 
 ## Registered Repository Artifacts
 
-- `/TIG_TIGE_Strategic_Research_Briefing_EN_v1.0.md` - primary English institutional and scientific entry document.
-- `/publication/briefings/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.md` - complete, searchable Markdown full text of the approved German reference edition.
+- `/docs/TIG_TIGE_Strategic_Research_Briefing_EN_v1.0.md` - primary English institutional and scientific entry document.
+- `/docs/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.md` - complete, searchable Markdown full text of the approved German reference edition.
 
 The German Markdown incorporates the expressly approved typographic, equation-formatting, hyphenation, and encoding corrections. These corrections do not change scientific claims or status boundaries.
 
