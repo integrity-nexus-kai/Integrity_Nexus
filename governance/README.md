@@ -52,6 +52,23 @@ registered != Question State CLOSED
 
 This table is an entry-point map. The governance directory may contain additional controlled amendments, matrices, protocols, and audit-support artifacts.
 
+## TRGS Review Candidate
+
+The proposed integrated control plane is prepared for future independent review; that review has not started:
+
+```text
+tig_research_governance_standard.md
+academic_quality_benchmark.md
+references.bib
+research_record_and_disclosure_standard.md
+integrity_concern_protocol.md
+competence_risk_collaboration_standard.md
+trgs_candidate_implementation_record.md
+../registry/repository_governance_conformance.md
+```
+
+These preparation artifacts do not alter the canonical control architecture, scientific status, or global synchronization before independent audit and explicit author approval.
+
 ## Status-Axis Separation
 
 The following controls remain distinct:
