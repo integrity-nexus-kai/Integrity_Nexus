@@ -84,6 +84,63 @@ Require publication checklist and pre-publication audit.
 
 ---
 
+## RISK-005 — Rule Presence Mistaken for Implementation
+
+Severity: high  
+Status: active
+
+Risk:
+
+```text
+A governance rule may be marked present although no completed implementation or evidence record exists.
+```
+
+Mitigation:
+
+```text
+Apply the evidence conditions in academic_quality_benchmark.md and keep incomplete controls PARTIAL.
+```
+
+---
+
+## RISK-006 — Incomplete AI and Publication Provenance
+
+Severity: high  
+Status: active
+
+Risk:
+
+```text
+Publication or governance artifacts may omit material AI use, bibliography ownership, contributor roles, or required disclosures.
+```
+
+Mitigation:
+
+```text
+Use research_record_and_disclosure_standard.md and operations/ai_use_register.md before release review.
+```
+
+---
+
+## RISK-007 — Competence and Dual-Use Boundary Not Assessed
+
+Severity: high  
+Status: active
+
+Risk:
+
+```text
+An artifact may exceed documented competence or proceed without ethics, safety, security, dual-use, legal, societal, or environmental applicability review.
+```
+
+Mitigation:
+
+```text
+Apply competence_risk_collaboration_standard.md and obtain qualified review where the competence boundary requires it.
+```
+
+---
+
 ## Maintenance Rule
 
 Risks should be reviewed during weekly operations.
