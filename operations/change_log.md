@@ -42,7 +42,7 @@ Affected areas:
 ## CHG-002 — TRGS Implementation Correction Pass
 
 Date: 2026-08-02  
-Status: correction in progress
+Status: internally verified; independent audit pending
 
 Change:
 
@@ -50,15 +50,16 @@ Change:
 Replaced rule-presence self-attestation with evidence-based implementation states;
 separated historical C0-C4 statement grades from canonical Relation Classes;
 added audit, research-record, disclosure, integrity-concern, correction, competence,
-risk, collaboration, and AI-use evidence paths; and exposed incomplete publication
-metadata without inventing missing facts or references.
+risk, collaboration, and AI-use evidence paths; added the briefing-specific verified
+bibliography and literature-scope record; and recorded author-confirmed publication disclosures.
 ```
 
 Boundary:
 
 ```text
-TRGS remains draft. Independent audit is blocked until the corrected fixed snapshot
-has passed a fresh internal read-only implementation check.
+TRGS remains draft. The corrected content snapshot
+d47e815092e7e7c14544700221e7c8536d5fe766 passed an internal, non-independent
+implementation check and is ready for independent governance audit.
 ```
 
 Scientific effect: none. No Claim Status, Question State, synchronization state, or Completion Readiness changed.
