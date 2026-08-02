@@ -8,6 +8,33 @@ This document records unresolved audit findings across Integrity Nexus and conne
 
 # Active Findings
 
+## F-NEXUS-TRGS-001 — Evidence-Based Implementation Correction
+
+Class: governance implementation  
+Scope: Integrity Nexus TRGS candidate  
+Severity: high
+
+Finding:
+
+```text
+The 2026-08-02 implementation preflight found AQB-02 present and the other thirteen
+academic-quality controls partial. Rule text alone was previously treated as sufficient evidence.
+```
+
+Correction work:
+
+- correct the self-audit and benchmark matrix;
+- separate C0-C4 statement grades from canonical Relation Classes;
+- add audit, disclosure, correction, integrity-concern, AI-use, competence, risk, and collaboration evidence paths;
+- expose incomplete publication bibliography and disclosures without inventing values;
+- verify the corrected fixed snapshot in a fresh read-only run.
+
+Status: correction in progress.  
+Closure condition: a fresh fixed-snapshot implementation check verifies each correction and updates the conformance register.  
+Scientific effect: none.
+
+---
+
 ## F-NEXUS-001 — Initial Full Audit Required
 
 Class: F2 — status validation  
