@@ -424,6 +424,14 @@ The publicly accessible layer is deliberately separated from internal governance
 
 - GitHub: https://github.com/integrity-nexus-kai
 
+#### E.4 Literature and Citation Boundary
+
+The canonical bibliography for this briefing is `publication/briefings/references.bib`; its scope and source roles are documented in `publication/briefings/TIG_TIGE_Strategic_Research_Briefing_v1.0_LITERATURE_SCOPE.md`.
+
+Established context is anchored to primary literature on general relativity and the Einstein tensor [@einstein1916generalRelativity; @lovelock1971einsteinTensor], the Schwarzschild reference solution [@schwarzschild1916massPoint], canonical quantum gravity [@dewitt1967canonicalQuantumGravity], gravitational singularities [@penrose1965singularities], thermodynamic/emergent-gravity perspectives [@jacobson1995thermodynamicsSpacetime], and nonsingular black-hole models [@hayward2006nonsingularBlackHoles]. TIG-specific statements remain governed by the public TIG papers [@dietrich2026tig1; @dietrich2026tig2; @dietrich2026tig3]. Responsible AI use is contextualized by [@ec2026responsibleGenAIResearch].
+
+These sources provide context and comparison. They do not validate TIG, derive its open structures, or transfer external authority to its claims.
+
 ### F. FAQ - Key Questions
 
 #### 1. What is the difference between TIG and TIG-E?
