@@ -415,6 +415,14 @@ Die öffentlich zugängliche Schicht ist bewusst von internen Governance-Struktu
 
 TIG-Website: https://integrity-nexus-kai.github.io/ TIG1: https://integrity-nexus-kai.github.io/releases/TIG_v1.0.pdf TIG2: https://integrity-nexus-kai.github.io/releases/TIG2_v1.0.pdf TIG3: https://integrity-nexus-kai.github.io/releases/TIG3_v1.0.pdf GitHub: https://github.com/integrity-nexus-kai
 
+#### E.4 Literatur- und Zitationsgrenze
+
+Die kanonische Bibliografie dieses Briefings liegt unter `publication/briefings/references.bib`; Umfang und Quellenrollen sind in `publication/briefings/TIG_TIGE_Strategic_Research_Briefing_v1.0_LITERATURE_SCOPE.md` dokumentiert.
+
+Der etablierte Kontext stützt sich auf Primärliteratur zur Allgemeinen Relativitätstheorie und zum Einstein-Tensor [@einstein1916generalRelativity; @lovelock1971einsteinTensor], zur Schwarzschild-Referenzlösung [@schwarzschild1916massPoint], zur kanonischen Quantengravitation [@dewitt1967canonicalQuantumGravity], zu gravitativen Singularitäten [@penrose1965singularities], zu thermodynamischen beziehungsweise emergenten Gravitationsperspektiven [@jacobson1995thermodynamicsSpacetime] und zu nichtsingulären Schwarze-Loch-Modellen [@hayward2006nonsingularBlackHoles]. TIG-spezifische Aussagen bleiben durch die öffentlichen TIG-Papiere kontrolliert [@dietrich2026tig1; @dietrich2026tig2; @dietrich2026tig3]. Der verantwortliche KI-Einsatz wird durch [@ec2026responsibleGenAIResearch] kontextualisiert.
+
+Diese Quellen dienen Einordnung und Vergleich. Sie validieren TIG nicht, leiten seine offenen Strukturen nicht her und übertragen keine externe Autorität auf TIG-Aussagen.
+
 ### F. FAQ - Zentrale Fragen
 
 #### 1. Was ist der Unterschied zwischen TIG und TIG-E?
