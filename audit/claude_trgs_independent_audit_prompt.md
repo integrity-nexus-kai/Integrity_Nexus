@@ -1,35 +1,17 @@
-# Claude Independent TRGS Audit Prompt
+# Claude Independent Eight-Repository Governance Audit Prompt
 
-Perform an independent read-only governance audit of the provided `Integrity_Nexus` candidate snapshot only after the repository implementation preflight has been corrected and a new fixed snapshot has been supplied.
+Perform a read-only governance audit of the eight supplied repository snapshots. Do not access GitHub, modify files, audit scientific truth, or repeat correct content.
 
-If the supplied snapshot still states `CORRECTION PASS REQUIRED BEFORE INDEPENDENT GOVERNANCE AUDIT`, stop and report `PRECONDITION NOT MET`.
+Use `Integrity_Nexus/governance/tig_research_governance_standard.md`, `academic_quality_benchmark.md`, and `references.bib` as the candidate baseline. `AQB` means Academic Quality Benchmark. Verify requirements 01–14 against actual evidence in each snapshot, including local `governance/TRGS_LOCAL_PROFILE.md` and `audit/TRGS_CANDIDATE_IMPLEMENTATION_RECORD.md` where present.
 
-`TRGS` means `TIG Research Governance Standard`. It is the draft candidate in:
+Check only: authority conflicts; competing taxonomies/registers; status-axis collapse; missing operational evidence; bibliography ownership and unresolved citations; authorship/funding/interests/AI disclosures; review independence; correction, integrity, competence, risk, privacy/security, and collaboration gates; unsupported conformance claims.
 
-```text
-governance/tig_research_governance_standard.md
-```
+Return no more than three highest-severity findings per repository, then a one-line verdict per repository. Use this table only:
 
-Audit it strictly against:
-
-```text
-governance/academic_quality_benchmark.md
-governance/references.bib
-audit/trgs_meta_self_audit_2026-08-02.md
-```
-
-Verify all benchmark items `AQB-01` through `AQB-14` against actual repository evidence. Check for missing controls, contradictions, non-operational rules, unsupported status claims, circular authority, unverifiable source references, and gaps that would prevent research governance at rigorous leading-academic quality.
-
-Do not audit the scientific truth of TIG. Do not modify files. Do not begin auditing the other seven repositories. Do not repeat correct repository contents.
-
-Output only:
-
-| Nr. | Severity | AQB-ID | File | Exact governance gap | Required correction |
+| Repository | Severity | Requirement 01–14 | File | Exact gap | Required correction |
 |---|---|---|---|---|---|
 
-Use at most 15 independently evidenced findings. If no blocking or major findings remain, say so explicitly.
-
-End with exactly one verdict:
+Finish with exactly one ecosystem verdict:
 
 ```text
 READY FOR AUTHOR APPROVAL
