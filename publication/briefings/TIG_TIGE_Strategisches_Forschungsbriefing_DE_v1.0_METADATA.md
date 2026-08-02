@@ -14,6 +14,27 @@
 **International outreach edition:** AVAILABLE - CONTROLLED ACADEMIC PRE-REVIEW EDITION  
 **Date:** 29 July 2026
 
+## Angaben zur Forschungsgovernance
+
+```text
+Verantwortlicher Mensch und Autor: Kai Stefan Dietrich
+Beitragsrollen: Kai Stefan Dietrich — alleiniger verantwortlicher menschlicher Autor und alleiniger verantwortlicher menschlicher Mitwirkender
+Kanonischer Bibliografiepfad: publication/briefings/references.bib
+Finanzierungsangabe: Keine externe Finanzierung
+Interessenkonflikte: Keine bekannten Interessenkonflikte nach Erklärung des Autors
+Datenverfügbarkeit: FÜR DIESES ORIENTIERUNGSDOKUMENT NICHT ANWENDBAR; wissenschaftliche Evidenz verbleibt in den Quell-Repositories
+Codeverfügbarkeit: FÜR DIESES ORIENTIERUNGSDOKUMENT NICHT ANWENDBAR; rechnerische Evidenz verbleibt in den Quell-Repositories
+Ethik-Anwendbarkeit: FÜR DIESES ARTEFAKT NICHT ANWENDBAR — das Briefing enthält keine Forschung an Menschen oder Tieren, keine klinische Forschung und keine personenbezogene Datenerhebung; nachgelagerte Forschung benötigt eine eigene Prüfung
+Datenschutz-Anwendbarkeit: ANWENDBAR — ausschließlich die beabsichtigte öffentliche berufliche Identität und Kontaktmöglichkeit des Autors dürfen erscheinen; private oder sensible personenbezogene Daten sind nicht vorgesehen
+Sicherheits- und Dual-Use-Anwendbarkeit: ANWENDBAR BEI DERZEIT GERINGER EXPOSITION — nur konzeptioneller Kontext zu Cybersicherheit und KI-Infrastruktur; keine operativen Angriffs- oder Einsatzanleitungen; erneute Prüfung bei Implementierungsartefakten erforderlich
+Lizenz- und IP-Grenze: Die Repository-LICENSE gilt; zitierte externe Werke unterliegen ihren eigenen Rechten und werden referenziert, nicht übernommen
+Materielle KI-Unterstützung: JA — KI diente als Forschungsinfrastruktur und als Hilfsmittel für Entwurf, Übersetzung, Formatierung und Konsistenzprüfung; sie ist kein Autor
+KI-Provenienz: UNVOLLSTÄNDIGER ALT-DATENSATZ; genaue sitzungsbezogene Modelldaten wurden nicht vollständig erhalten
+Menschliche Prüfung und Verantwortung: Kai Stefan Dietrich ist der alleinige verantwortliche menschliche Autor; Governance-Prüfung und unabhängige wissenschaftliche Prüfung stehen noch aus
+```
+
+Diese Angaben wurden am 2. August 2026 durch den verantwortlichen Autor bestätigt. Die autorisierte Repository-Integration ist weder ein TRGS-Publikationsreifeurteil noch ein wissenschaftliches Validierungsurteil.
+
 ---
 
 ## Purpose
@@ -66,7 +87,7 @@ Corrected layout-reference PDF SHA-256:
 
 Repository Markdown SHA-256:
 
-`c9db070970b4efdaab0913cf210313a2cb2bf85ee467ec15b3728724776b0583`
+`4961d5f7333321c1b30d0cce4aaa91cade5719b6247f84d1edc23aeea676700c`
 
 The PDF checksums record source and layout-reference provenance only. They do not imply that either PDF is available in the repository.
 
