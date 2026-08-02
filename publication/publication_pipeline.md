@@ -26,10 +26,13 @@ P7 — Post-publication maintenance
 1. Register the publication candidate.
 2. Identify source repository and claim scope.
 3. Confirm bibliography and citation metadata.
-4. Confirm limitations and non-claims.
-5. Run pre-publication audit.
-6. Prepare release or submission package.
-7. Update repository and Nexus status.
+4. Confirm data, code, method, and provenance statements where applicable.
+5. Confirm authorship, contributions, funding, conflicts, ethics, and AI-use disclosures.
+6. Confirm limitations and non-claims.
+7. Run pre-publication audit.
+8. Prepare release or submission package.
+9. Update repository and Nexus status only through the authorized status process.
+10. Maintain corrections, withdrawals, replacements, and retractions after release.
 
 ---
 
@@ -40,6 +43,8 @@ Every publication candidate must pass:
 - claim-boundary review,
 - limitation review,
 - citation review,
+- data/code/provenance review where applicable,
+- authorship and disclosure review,
 - dependency review,
 - and maturity-status review.
 
