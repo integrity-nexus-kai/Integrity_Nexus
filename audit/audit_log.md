@@ -12,6 +12,31 @@ This document records completed audits for Integrity Nexus and connected reposit
 
 Entries created before adoption of `audit/audit_record_template.md` are legacy records. Missing snapshot, auditor, independence, conflict, competence, exclusion, or evidence fields must not be inferred. A legacy result is not automatically valid under TRGS.
 
+## AUD-NEXUS-TRGS-2026-08-02 — Candidate Implementation Recheck
+
+```text
+Audit ID: AUD-NEXUS-TRGS-2026-08-02
+Date and time: 2026-08-02; exact time not retained
+Repository: Integrity_Nexus
+Fixed snapshot / commit: d47e815092e7e7c14544700221e7c8536d5fe766
+Auditor or review system: ChatGPT / Codex internal correction recheck
+Assurance level: internal implementation verification only
+Independence: NOT INDEPENDENT
+Relevant conflicts: the review system produced material parts of the correction
+Competence scope and limits: repository structure, metadata, citation-key resolution, governance mapping, and internal consistency; no independent physics, mathematics, legal, or institutional assurance
+Included paths: TRGS candidate governance, audit, conformance, operations, briefing metadata, briefing bibliography, literature-scope record, and English/German briefing citation sections
+Excluded paths: scientific-content validation; seven other research repositories; website-content audit
+Governing standards: governance/tig_research_governance_standard.md; governance/academic_quality_benchmark.md
+Evidence paths: audit/trgs_meta_self_audit_2026-08-02.md; governance/trgs_candidate_implementation_record.md; registry/repository_governance_conformance.md
+Outcome: READY FOR INDEPENDENT GOVERNANCE AUDIT; NOT CANONICAL; NOT ACTIVE
+Findings: implementation correction F-NEXUS-TRGS-001 verified; independent audit and author approval remain outstanding
+Unresolved uncertainty: independent assessment may identify additional governance gaps
+Correction conditions: dispose any independent-audit findings before activation
+Required handoff: independent read-only governance audit
+```
+
+Scientific status, Question State, synchronization state, Progress Classification, and Completion Readiness were not changed.
+
 ## AUD-000 — Initial Operating Layer Creation
 
 Date: 2026-06-25  
