@@ -6,7 +6,8 @@
 Record ID: TRGS-IMPL-NEXUS-2026-08-02
 Repository: Integrity_Nexus
 Record date: 2026-08-02
-State: CORRECTIONS RECORDED; FIXED-SNAPSHOT VERIFICATION PENDING
+Content snapshot: d47e815092e7e7c14544700221e7c8536d5fe766
+State: INTERNAL FIXED-SNAPSHOT VERIFICATION COMPLETED; INDEPENDENT AUDIT PENDING
 Canonical effect: NONE
 Scientific effect: NONE
 Independent-review effect: NONE
@@ -53,12 +54,12 @@ The bibliography provides context and traceability. It does not validate TIG or 
 
 ## Verification Gate
 
-Before this candidate may be described as ready for independent governance audit:
+The internal, non-independent check of fixed content snapshot `d47e815092e7e7c14544700221e7c8536d5fe766` verified paths, publication metadata, bibliography identifiers, citation-key resolution, and the candidate control mappings. Before activation:
 
-1. record the corrected Git commit as a fixed snapshot;
-2. verify paths, metadata, bibliography identifiers, citation-key resolution, and control mappings against that snapshot;
-3. update the self-audit, conformance register, metrics, and open-finding record with evidence from that snapshot;
-4. preserve `NOT INDEPENDENT` for the correction and internal verification work;
-5. obtain an independent governance audit before any activation or conformance claim.
+1. preserve `NOT INDEPENDENT` for the correction and internal verification work;
+2. obtain an independent governance audit of the resulting repository snapshot;
+3. dispose all blocking audit findings;
+4. obtain explicit author approval before activation;
+5. apply the candidate standard to each remaining repository through its own fixed-snapshot mapping and correction cycle before the planned ecosystem-wide independent audit; this preparation does not activate TRGS.
 
 No step in this record changes scientific status, claim status, question state, global synchronization, or Completion Readiness.
