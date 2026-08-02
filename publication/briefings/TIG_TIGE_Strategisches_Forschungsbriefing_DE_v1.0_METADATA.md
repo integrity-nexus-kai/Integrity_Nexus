@@ -14,6 +14,26 @@
 **International outreach edition:** AVAILABLE - CONTROLLED ACADEMIC PRE-REVIEW EDITION  
 **Date:** 29 July 2026
 
+## Angaben zur Forschungsgovernance
+
+```text
+Verantwortlicher Mensch und Autor: Kai Stefan Dietrich
+Beitragsrollen: UNTER TRGS NOCH NICHT BESTÄTIGT
+Kanonischer Bibliografiepfad: NOCH NICHT EINGERICHTET — verhindert ein TRGS-Urteil „release-ready“
+Finanzierungsangabe: DURCH DEN AUTOR NOCH NICHT BESTÄTIGT
+Interessenkonflikte: DURCH DEN AUTOR NOCH NICHT BESTÄTIGT
+Datenverfügbarkeit: FÜR DIESES ORIENTIERUNGSDOKUMENT NICHT ANWENDBAR; wissenschaftliche Evidenz verbleibt in den Quell-Repositories
+Codeverfügbarkeit: FÜR DIESES ORIENTIERUNGSDOKUMENT NICHT ANWENDBAR; rechnerische Evidenz verbleibt in den Quell-Repositories
+Ethik-Anwendbarkeit: UNTER TRGS NOCH NICHT GEPRÜFT
+Datenschutz- und Sicherheitsanwendbarkeit: UNTER TRGS NOCH NICHT GEPRÜFT
+Lizenz- und IP-Grenze: Repository-LICENSE gilt; publikationsspezifische Bestätigung ausstehend
+Materielle KI-Unterstützung: JA — Entwurf, Übersetzung, Formatierung und Konsistenzprüfung
+KI-Provenienz: UNVOLLSTÄNDIGER ALT-DATENSATZ; genaue sitzungsbezogene Modelldaten wurden nicht vollständig erhalten
+Menschliche Prüfung und Verantwortung: Kai Stefan Dietrich; TRGS-Prüfung ausstehend
+```
+
+Diese Angaben machen fehlende Nachweise sichtbar, statt sie durch Annahmen zu füllen. Die autorisierte Repository-Integration ist kein TRGS-Publikationsreifeurteil.
+
 ---
 
 ## Purpose
