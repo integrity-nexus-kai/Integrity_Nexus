@@ -8,6 +8,31 @@ This document records operational changes to Integrity Nexus as a research opera
 
 # Change Entries
 
+## CHG-003 — Eight-Repository Candidate Mapping Pass
+
+Date: 2026-08-02  
+Status: internally verified; ecosystem-wide independent audit pending
+
+Change:
+
+```text
+Applied the TRGS candidate through separate fixed-snapshot branches to all seven
+remaining active repositories; recorded local authority and status mappings,
+publication-specific bibliography ownership, author disclosures, responsible-AI
+boundaries, competence and risk gates, corrections, and independent-review handoffs.
+Corrected the evidenced TIG-E status/maturity conflict, QIC/SIR/derivation CFF
+duplicates, TIG YM double register, SSC double taxonomy, and one unresolved
+TIG/YM citation key.
+```
+
+Boundary:
+
+```text
+All pull requests remain drafts. No candidate is canonical or active. No scientific
+claim, proof, Open Question, synchronization state, Progress Classification, or
+Completion Readiness changed.
+```
+
 ## CHG-001 — TRGS Control Plane and Literature-Governance Baseline
 
 Date: 2026-08-02
