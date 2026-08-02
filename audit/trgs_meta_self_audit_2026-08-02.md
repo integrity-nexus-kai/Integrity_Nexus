@@ -6,9 +6,9 @@
 Date: 2026-08-02
 Audit type: INTERNAL SELF-AUDIT
 Audit ID: AUD-NEXUS-TRGS-2026-08-02
-Fixed content snapshot: TO BE RECORDED AFTER DIRECT MAIN INTEGRATION
+Fixed content snapshot: cd642ee0d1173f32b8c6eca32ba086cbce21e921
 Auditor or review system: ChatGPT / Codex internal correction recheck
-Assurance level: internal implementation verification only
+Assurance level: AIL-0 — internal implementation verification only
 Independence: NOT INDEPENDENT
 Relevant conflicts: the review system produced material parts of the correction
 Competence scope and limits: repository structure, metadata, citation-key resolution, governance mapping, and internal consistency; no independent physics, mathematics, legal, or institutional assurance
@@ -46,11 +46,11 @@ This self-audit records the corrected implementation and the internal recheck ag
 
 ## Open Review Findings
 
-### TRGS-SA-001 — Implementation correction prepared
+### TRGS-SA-001 — Implementation correction verified
 
 ```text
-Severity: PENDING DIRECT-MAIN VERIFICATION
-Condition: Record and verify the resulting direct-main content snapshot, including citation keys and document checksums.
+Severity: CLOSED INTERNALLY
+Condition: Direct-main content snapshot recorded; citation keys, structured metadata, and document checksums verified.
 ```
 
 ### TRGS-SA-002 — Independent assurance outstanding
@@ -79,7 +79,7 @@ Condition: Implement and internally verify the standard directly in each of the 
 ## Self-Audit Verdict
 
 ```text
-INTEGRITY NEXUS IMPLEMENTATION PREPARED; DIRECT-MAIN VERIFICATION PENDING
+INTEGRITY NEXUS IMPLEMENTATION COMPLETE; INTERNAL VERIFICATION PASSED AT AIL-0
 ECOSYSTEM ROLLOUT PENDING
 NOT CANONICAL
 NOT ACTIVE
