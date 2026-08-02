@@ -14,6 +14,26 @@
 **External-validation effect:** NONE  
 **Date:** 29 July 2026
 
+## Research-Governance Disclosures
+
+```text
+Responsible human and author: Kai Stefan Dietrich
+Contributor-role statement: NOT YET CONFIRMED UNDER TRGS
+Canonical bibliography path: NOT YET ESTABLISHED — blocks a TRGS release-ready verdict
+Funding statement: NOT YET CONFIRMED BY AUTHOR
+Competing-interest statement: NOT YET CONFIRMED BY AUTHOR
+Data availability: NOT APPLICABLE TO THIS ORIENTATION DOCUMENT; underlying scientific evidence remains in source repositories
+Code availability: NOT APPLICABLE TO THIS ORIENTATION DOCUMENT; underlying computational evidence remains in source repositories
+Ethics applicability: NOT YET ASSESSED UNDER TRGS
+Privacy and security applicability: NOT YET ASSESSED UNDER TRGS
+License and IP boundary: governed by the repository LICENSE; publication-specific confirmation pending
+Material AI assistance: YES — drafting, translation, formatting, and consistency review
+AI provenance: INCOMPLETE LEGACY RECORD; exact session-level model metadata was not fully preserved
+Human verification and responsibility: Kai Stefan Dietrich; TRGS verification pass outstanding
+```
+
+These fields expose missing evidence rather than filling it by assumption. `AUTHORIZED` repository integration is not a TRGS publication-readiness verdict.
+
 ---
 
 ## Purpose
