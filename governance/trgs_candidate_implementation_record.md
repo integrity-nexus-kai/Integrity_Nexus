@@ -6,8 +6,8 @@
 Record ID: TRGS-IMPL-NEXUS-2026-08-02
 Repository: Integrity_Nexus
 Record date: 2026-08-02
-Content snapshot: TO BE RECORDED AFTER DIRECT MAIN INTEGRATION
-State: DIRECT-MAIN INTEGRATION AND VERIFICATION PENDING
+Content snapshot: cd642ee0d1173f32b8c6eca32ba086cbce21e921
+State: DIRECT-MAIN IMPLEMENTATION COMPLETE; INTERNAL AIL-0 VERIFICATION PASSED
 Canonical effect: NONE
 Scientific effect: NONE
 Independent-review effect: NONE
@@ -52,14 +52,16 @@ The bibliography provides context and traceability. It does not validate TIG or 
 | Collaboration | No accepted external collaboration represented by this record | Informal discussion or feedback is not endorsement, co-authorship, or independent review |
 | Material AI use | Applicable and recorded | AI is infrastructure and assistance; the human author retains responsibility |
 
-## Verification Gate
+## Verification Result and Remaining Gates
+
+The direct-main implementation was checked against the fourteen academic quality requirements. Structured YAML/CFF data parse, all eleven briefing citation keys resolve, and both briefing metadata records match their document SHA-256 checksums. This is an internal same-process verification only.
 
 Before activation:
 
-1. preserve `NOT INDEPENDENT` for the correction and internal verification work;
-2. obtain an independent governance audit of the resulting repository snapshot;
-3. dispose all blocking audit findings;
-4. obtain explicit author approval before activation;
-5. implement and verify the standard directly in each remaining repository before any ecosystem-wide external audit handoff.
+1. preserve `NOT INDEPENDENT` and AIL-0 for this correction and internal verification work;
+2. implement and verify the standard directly in each remaining repository;
+3. obtain an independent governance audit only after all eight repositories are complete;
+4. dispose all blocking audit findings;
+5. obtain explicit author approval before activation.
 
 No step in this record changes scientific status, claim status, question state, global synchronization, or Completion Readiness.
