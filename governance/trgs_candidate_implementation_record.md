@@ -60,6 +60,6 @@ The internal, non-independent check of fixed content snapshot `d47e815092e7e7c14
 2. obtain an independent governance audit of the resulting repository snapshot;
 3. dispose all blocking audit findings;
 4. obtain explicit author approval before activation;
-5. apply the candidate standard to each remaining repository through its own fixed-snapshot mapping and correction cycle before the planned ecosystem-wide independent audit; this preparation does not activate TRGS.
+5. preserve the seven completed local candidate mappings as separate fixed snapshots for the planned ecosystem-wide independent audit; this preparation does not activate TRGS.
 
 No step in this record changes scientific status, claim status, question state, global synchronization, or Completion Readiness.
