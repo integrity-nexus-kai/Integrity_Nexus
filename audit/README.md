@@ -18,6 +18,8 @@ Audits cover repository structure, claim boundaries, dependency maps, publicatio
 - `audit_protocol.md` — audit method and criteria.
 - `audit_log.md` — chronological audit record.
 - `open_audit_findings.md` — unresolved audit findings.
+- `audit_record_template.md` — mandatory fields for current-standard audits.
+- `post_publication_actions.md` — public correction, replacement, withdrawal, and retraction record.
 
 ---
 
