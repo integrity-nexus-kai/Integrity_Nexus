@@ -30,6 +30,7 @@ This layer also maintains the broader Integrity Nexus management structure:
 - `risk_register.md` — risks and blockers.
 - `change_log.md` — operational changes.
 - `research_board.md` — active board of priorities and tracks.
+- `ai_use_register.md` — material AI assistance, human verification, and provenance limits.
 
 ## TIG-E Operations Direction
 
