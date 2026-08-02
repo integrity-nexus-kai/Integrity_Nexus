@@ -27,6 +27,16 @@ Each active connected repository must provide, either at the named root path or 
 
 The effective path for every required function must be discoverable from `README.md` or the repository governance entry point.
 
+Upon author-approved activation of TRGS, the local governance entry point must also identify:
+
+- its mapping to `Integrity_Nexus/governance/tig_research_governance_standard.md`;
+- any local governance extensions and their limited scope;
+- every local status vocabulary and its Nexus-axis mapping;
+- `NO DIRECT EQUIVALENCE` where no safe mapping exists; and
+- its citation and bibliography paths where publication or external-evidence artifacts exist.
+
+Until activation, this is a review requirement and has no canonical effect. The mapping may be contained in an existing governance file. A new placeholder file is not required.
+
 ---
 
 ## Recommended Presentation Files
