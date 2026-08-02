@@ -14,6 +14,27 @@
 **External-validation effect:** NONE  
 **Date:** 29 July 2026
 
+## Research-Governance Disclosures
+
+```text
+Responsible human and author: Kai Stefan Dietrich
+Contributor-role statement: Kai Stefan Dietrich — sole accountable human author and sole responsible human contributor
+Canonical bibliography path: publication/briefings/references.bib
+Funding statement: No external funding
+Competing-interest statement: No known competing interests declared by the author
+Data availability: NOT APPLICABLE TO THIS ORIENTATION DOCUMENT; underlying scientific evidence remains in source repositories
+Code availability: NOT APPLICABLE TO THIS ORIENTATION DOCUMENT; underlying computational evidence remains in source repositories
+Ethics applicability: NOT APPLICABLE TO THIS ARTIFACT — no human-participant, animal, clinical, or personal-data research is conducted in the briefing; downstream research requires its own assessment
+Privacy applicability: APPLICABLE — only the author's intended public professional identity and contact channel may be exposed; no private or sensitive personal data is intended
+Security and dual-use applicability: APPLICABLE AT LOW CURRENT EXPOSURE — conceptual cybersecurity and AI-infrastructure context only; no operational exploit or deployment instructions; reassessment required for implementation artifacts
+License and IP boundary: governed by the repository LICENSE; cited external works remain subject to their own rights and are referenced rather than incorporated
+Material AI assistance: YES — AI served as research infrastructure and as a drafting, translation, formatting, and consistency-review tool; it is not an author
+AI provenance: INCOMPLETE LEGACY RECORD; exact session-level model metadata was not fully preserved
+Human verification and responsibility: Kai Stefan Dietrich is the sole accountable human author; governance verification and independent scientific review remain outstanding
+```
+
+These disclosures were confirmed by the responsible author on 2 August 2026. `AUTHORIZED` repository integration is not a TRGS publication-readiness or scientific-validation verdict.
+
 ---
 
 ## Purpose
@@ -57,7 +78,7 @@ The controlled layout PDF is not stored in this repository. No unavailable PDF p
 
 Repository Markdown SHA-256:
 
-`cc60acb45cb847822e3ba5bc2371537e1706890b523f1057c4d85b5090154bfa`
+`9bbd8be0a5259e8cb5d35d98831f78084aa9e5f83fe082fd0cc8f59017cca035`
 
 Controlled layout-reference PDF SHA-256:
 
