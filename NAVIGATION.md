@@ -78,9 +78,18 @@ Understand how TIG fits into the broader integrity ecosystem without collapsing 
 Start with:
 
 1. `governance/README.md`
-2. `governance/repository_standard.md`
-3. `governance/claim_boundary_standard.md`
-4. `registry/open_questions.md`
+2. `governance/tig_research_governance_standard.md`
+3. `governance/academic_quality_benchmark.md`
+4. `governance/repository_standard.md`
+5. `governance/claim_boundary_standard.md`
+6. `governance/citation_standard.md`
+7. `registry/repository_governance_conformance.md`
+8. `registry/open_questions.md`
+9. `governance/research_record_and_disclosure_standard.md`
+10. `governance/integrity_concern_protocol.md`
+11. `governance/competence_risk_collaboration_standard.md`
+12. `audit/audit_record_template.md`
+13. `audit/post_publication_actions.md`
 
 Purpose:
 
