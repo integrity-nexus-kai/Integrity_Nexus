@@ -10,7 +10,11 @@ A relationship between repositories must not be presented as a proof unless a re
 
 ---
 
-# Claim Classes
+# Historical Statement Grades
+
+The labels C0-C4 below are retained only as historical descriptive grades for statement strength. They are not Claim Status values and are not permitted Relation Class values.
+
+Every current cross-repository record must instead assign exactly one Relation Class from `claim_status_taxonomy.md` and `cross_repository_claim_boundary_matrix.md`. No C0-C4 grade maps automatically to a Relation Class.
 
 ## C0 — Navigation Statement
 
@@ -31,6 +35,14 @@ A relationship supported by registered evidence.
 ## C4 — Formal Relationship
 
 A relationship supported by a formal result.
+
+Historical C0-C4 records require case-specific reclassification. Until that review occurs, their Relation Class is:
+
+```text
+INSUFFICIENT REPOSITORY EVIDENCE
+```
+
+This prevents a descriptive grade from silently becoming identity, derivation, compatibility, or proof.
 
 ---
 
