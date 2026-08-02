@@ -42,7 +42,7 @@ Affected areas:
 ## CHG-002 — TRGS Implementation Correction Pass
 
 Date: 2026-08-02  
-Status: direct-main integration and verification pending
+Status: direct-main implementation complete; internal AIL-0 verification passed
 
 Change:
 
@@ -57,8 +57,9 @@ bibliography and literature-scope record; and recorded author-confirmed publicat
 Boundary:
 
 ```text
-TRGS remains draft. The corrected direct-main content snapshot must be recorded and
-internally verified before the standard is applied to the next repository.
+TRGS remains a candidate. Integrity Nexus content snapshot
+`cd642ee0d1173f32b8c6eca32ba086cbce21e921` was internally verified. Independent
+assurance and author activation remain pending until the remaining repositories are implemented.
 ```
 
 Scientific effect: none. No Claim Status, Question State, synchronization state, or Completion Readiness changed.
