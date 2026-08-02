@@ -26,7 +26,7 @@ No repository may receive `CONFORMANT` without a fixed snapshot, evidence paths,
 
 | Repository | TRGS mapping | Citation / bibliography mapping | Fixed snapshot | Conformance state |
 |---|---|---|---|---|
-| `Integrity_Nexus` | Direct-main implementation in progress | `governance/references.bib`; `publication/briefings/references.bib`; scoped literature record prepared | Direct-main content snapshot pending | CORRECTION IN PROGRESS |
+| `Integrity_Nexus` | Fourteen academic quality controls implemented; internal AIL-0 verification passed | `governance/references.bib`; `publication/briefings/references.bib`; scoped literature record verified | `cd642ee0d1173f32b8c6eca32ba086cbce21e921` | CONFORMANT WITH FINDINGS |
 | `TIG-E-Topological_integrity-_gravity_engine-` | Pending repository-by-repository implementation | Pending | Not assessed | NOT ASSESSED |
 | `Quantum_Integrity_Core` | Pending repository-by-repository implementation | Pending | Not assessed | NOT ASSESSED |
 | `TIG_YM_derivation_architecture` | Pending repository-by-repository implementation | Pending | Not assessed | NOT ASSESSED |
