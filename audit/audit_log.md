@@ -8,6 +8,10 @@ This document records completed audits for Integrity Nexus and connected reposit
 
 # Audit Entries
 
+## Current-Standard Boundary
+
+Entries created before adoption of `audit/audit_record_template.md` are legacy records. Missing snapshot, auditor, independence, conflict, competence, exclusion, or evidence fields must not be inferred. A legacy result is not automatically valid under TRGS.
+
 ## AUD-000 — Initial Operating Layer Creation
 
 Date: 2026-06-25  
@@ -81,3 +85,5 @@ Every audit entry should record:
 - open findings,
 - next actions,
 - and status.
+
+New entries must use `audit/audit_record_template.md`.
