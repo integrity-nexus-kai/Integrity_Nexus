@@ -18,9 +18,9 @@ Entries created before adoption of `audit/audit_record_template.md` are legacy r
 Audit ID: AUD-NEXUS-TRGS-2026-08-02
 Date and time: 2026-08-02; exact time not retained
 Repository: Integrity_Nexus
-Fixed snapshot / commit: TO BE RECORDED AFTER DIRECT MAIN INTEGRATION
+Fixed snapshot / commit: cd642ee0d1173f32b8c6eca32ba086cbce21e921
 Auditor or review system: ChatGPT / Codex internal correction recheck
-Assurance level: internal implementation verification only
+Assurance level: AIL-0 — internal implementation verification only
 Independence: NOT INDEPENDENT
 Relevant conflicts: the review system produced material parts of the correction
 Competence scope and limits: repository structure, metadata, citation-key resolution, governance mapping, and internal consistency; no independent physics, mathematics, legal, or institutional assurance
@@ -28,8 +28,8 @@ Included paths: TRGS candidate governance, audit, conformance, operations, brief
 Excluded paths: scientific-content validation; seven other research repositories; website-content audit
 Governing standards: governance/tig_research_governance_standard.md; governance/academic_quality_benchmark.md
 Evidence paths: audit/trgs_meta_self_audit_2026-08-02.md; governance/trgs_candidate_implementation_record.md; registry/repository_governance_conformance.md
-Outcome: DIRECT-MAIN VERIFICATION PENDING; NOT CANONICAL; NOT ACTIVE
-Findings: direct-main implementation must be verified before this internal record is complete
+Outcome: INTERNAL IMPLEMENTATION VERIFICATION PASSED; NOT CANONICAL; NOT ACTIVE
+Findings: independent assurance and the remaining seven repository implementations are outstanding
 Unresolved uncertainty: independent assessment may identify additional governance gaps
 Correction conditions: dispose any independent-audit findings before activation
 Required handoff: independent read-only governance audit
