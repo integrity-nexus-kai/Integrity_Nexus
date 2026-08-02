@@ -25,8 +25,11 @@ This checklist must be completed before a publication candidate is externally re
 ### Evidence Check
 
 - [ ] Evidence is separated from interpretation.
-- [ ] Bibliography is present.
-- [ ] External references are current.
+- [ ] Canonical bibliography path is declared where external sources are cited.
+- [ ] Every citation key resolves and every entry is source-verified.
+- [ ] Primary sources and review/context sources are distinguished where material.
+- [ ] Multiple versions of the same artifact share a source bibliography or document their divergence.
+- [ ] External references are current for the asserted scope.
 - [ ] No unsupported result is implied.
 
 ### Governance Check
@@ -41,6 +44,8 @@ This checklist must be completed before a publication candidate is externally re
 - [ ] Version or release label assigned.
 - [ ] Citation metadata present.
 - [ ] License present.
+- [ ] Authorship, contributor, funding, conflict-of-interest, data/code, and applicable ethics statements reviewed.
+- [ ] Material AI assistance disclosed and all released content human-verified.
 - [ ] Nexus repository status updated.
 
 ---
