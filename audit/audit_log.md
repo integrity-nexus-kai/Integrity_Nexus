@@ -37,6 +37,21 @@ Required handoff: independent read-only governance audit
 
 Scientific status, Question State, synchronization state, Progress Classification, and Completion Readiness were not changed.
 
+## AUD-TRGS-ECOSYSTEM-PREP-2026-08-02 — Eight-Repository Candidate Preparation
+
+```text
+Date: 2026-08-02
+Review type: internal technical and governance-mapping verification
+Independence: NOT INDEPENDENT
+Scope: Integrity Nexus plus seven local TRGS candidate branches
+Outcome: EIGHT CANDIDATE SNAPSHOTS PREPARED FOR INDEPENDENT GOVERNANCE AUDIT
+Verification: all eight draft pull requests are open and mergeable; local profiles and implementation records are readable at the recorded heads; targeted taxonomy, registry, CFF, maturity, and citation repairs were fetched back and checked
+Excluded: scientific-content validation; independent assurance; author approval; merge or activation
+Required handoff: independent read-only governance audit of the eight recorded snapshots
+```
+
+Candidate snapshots are recorded in `registry/repository_governance_conformance.md`.
+
 ## AUD-000 — Initial Operating Layer Creation
 
 Date: 2026-06-25  
