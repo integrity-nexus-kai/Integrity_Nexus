@@ -52,7 +52,7 @@ NOT APPLICABLE
 
 `PRESENT IN CANDIDATE` means the control exists in the review snapshot but has not yet passed independent audit and author approval.
 
-The implementation preflight is evidence-based. Rule text by itself is not implementation evidence. The initial preflight found one control `PRESENT` and thirteen controls `PARTIAL`. The prepared correction evidence upgrades the thirteen controls to `PRESENT IN CANDIDATE` only after the resulting direct-main content snapshot is recorded and internally rechecked. Independent audit and author approval remain separate later gates.
+The implementation preflight is evidence-based. Rule text by itself is not implementation evidence. The initial preflight found one control `PRESENT` and thirteen controls `PARTIAL`. The direct-main correction at fixed content snapshot `cd642ee0d1173f32b8c6eca32ba086cbce21e921` provides implementation evidence for all fourteen controls and has passed an internal AIL-0 technical recheck. Independent audit and author approval remain separate later gates.
 
 An item passes only when:
 
