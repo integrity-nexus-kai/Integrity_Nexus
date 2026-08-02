@@ -67,11 +67,12 @@ Severity: BLOCKING FOR ACTIVATION
 Condition: Kai Stefan Dietrich explicitly approves the audited version.
 ```
 
-### TRGS-SA-004 — Other repository conformance not assessed
+### TRGS-SA-004 — Other repository candidate mappings prepared
 
 ```text
-Severity: NOT BLOCKING FOR META-STANDARD REVIEW
-Condition: Each remaining repository receives a separate fixed-snapshot candidate mapping and correction pass before the planned ecosystem-wide independent audit. Candidate application does not activate TRGS.
+Severity: RESOLVED FOR HANDOFF
+Evidence: seven separate fixed-snapshot candidate branches and mergeable draft pull requests; local profiles, implementation records, author disclosures, literature ownership, and identified taxonomy/registry/CFF repairs verified on GitHub.
+Boundary: candidate application does not activate TRGS or validate scientific content.
 ```
 
 ---
