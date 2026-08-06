@@ -9,15 +9,37 @@ It provides navigation, conceptual alignment, dependency orientation, shared gov
 ---
 
 > [!IMPORTANT]
-> ### START HERE — TIG / TIG-E Strategic Research Briefing
+> ### START HERE — CURRENT INTEGRITY-CENTERED OPERATING ARCHITECTURE
 >
-> Scientific and institutional reviewers should begin with the Strategic Research Briefing. It is the primary orientation and reading guide for the eight-repository research ecosystem.
+> Integrity Nexus maintains the current domain-neutral operating architecture for structured discovery, complex cognition, knowledge formation, information governance, canonical memory, and controlled system development across the research ecosystem.
+>
+> The current architecture is integrity-centered. Governance remains an essential control and authorization mechanism, but it is not the source of scientific truth and does not define the complete identity of TIG-E.
+>
+> **Primary architecture entry point:**  
+> **[Foundation Layer Index](./foundation/01_foundation_index.md)**
+>
+> **Core architecture documents:**
+>
+> - [Integrity-Centered Research Lifecycle v0.2](./foundation/07_integrity_centered_research_lifecycle.md)
+> - [Integrity-Centered Discovery Framework](./foundation/13_integrity_centered_discovery_framework.md)
+> - [TIG-E Product Definition v2.0](https://github.com/integrity-nexus-kai/TIG-E-Topological_integrity-_gravity_engine-/blob/main/docs/product/TIG-E_Product_Definition_v2.0.md)
+>
+> These sources define the current operating architecture and its authority boundaries. Detailed mechanisms remain governed by their respective Foundation, governance, TIG-E, Runtime, and domain-specific source documents.
+
+---
+
+> [!NOTE]
+> ### SCIENTIFIC AND INSTITUTIONAL ORIENTATION — TIG / TIG-E Strategic Research Briefing v1.0
+>
+> The Strategic Research Briefing remains the controlled scientific and institutional orientation for the TIG physical research program and the research-ecosystem state documented on 29 July 2026.
 >
 > **[Read the complete English Strategic Research Briefing — Version 1.0](./docs/TIG_TIGE_Strategic_Research_Briefing_EN_v1.0.md)**
 >
 > Supporting records: [English metadata](./publication/briefings/TIG_TIGE_Strategic_Research_Briefing_EN_v1.0_METADATA.md) · [German reference edition (secondary)](./docs/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.md)
 >
-> The briefing explains the TIG physical research program, the TIG-E human–AI research infrastructure, the roles and relationships of the connected repositories, the present scientific status, the applicable claim and validation boundaries, the principal open research programs, and the recommended path for qualified external review.
+> The briefing explains the TIG physical research program, the then-current TIG-E human–AI research infrastructure, the roles and relationships of the connected repositories, the documented scientific status, the applicable claim and validation boundaries, the principal open research programs, and the recommended path for qualified external review.
+>
+> Its TIG-E description reflects the architecture stage available on 29 July 2026. The current TIG-E positioning and operating architecture are defined by the newer canonical sources listed above. The briefing itself remains unchanged in this repository.
 >
 > **Edition:** Controlled Academic Pre-Review Edition  
 > **Assessment scope:** For qualified institutional and scientific assessment only
@@ -276,6 +298,7 @@ foundation/01_foundation_index.md
 | Methodology of structured discovery | `foundation/10_methodology_of_structured_discovery.md` |
 | Abstraction architecture | `foundation/11_abstraction_architecture.md` |
 | Externalized cognition and canonical memory | `foundation/12_externalized_cognition_and_canonical_memory.md` |
+| Integrity-centered discovery framework | `foundation/13_integrity_centered_discovery_framework.md` |
 | Canonicalization readiness gate | `governance/canonicalization_threshold.md` |
 
 ## Integrated Research Architecture
@@ -323,7 +346,7 @@ State Reconstruction and Bottleneck Re-Detection
 
 Abstraction operates across multiple stages through structural extraction, scale transition, controlled domain transfer, and principle formation.
 
-Research Signal-to-Noise Optimization is a working unifying architecture principle. It is not a validated quantitative law.
+Integrity is the cross-cutting preservation principle. Research Signal-to-Noise Optimization is the working operational objective and remains subject to integrity-preservation constraints. Neither formulation is presented here as a validated quantitative law or universal scientific result.
 
 ---
 
