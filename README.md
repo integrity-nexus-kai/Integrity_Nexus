@@ -1,27 +1,26 @@
 # Integrity Nexus
 
-Integrity Nexus is a meta-repository for research governance, dependency mapping, cross-repository integrity architecture, and operational research-program management.
+Integrity Nexus is the meta-repository for research governance, dependency mapping, cross-repository integrity architecture, and operational research-program management across the integrity-oriented research ecosystem.
 
 It does not replace the underlying research repositories.
 
-It provides navigation, conceptual alignment, dependency orientation, shared governance standards, audit flow, publication coordination, strategy, operations, and metrics across the integrity-oriented research ecosystem.
+It provides navigation, conceptual alignment, dependency orientation, shared governance standards, audit flow, publication coordination, strategy, operations, metrics, and meta-level research architecture.
 
 ---
 
 > [!IMPORTANT]
-> ### START HERE - TIG / TIG-E Strategic Research Briefing
+> ### START HERE — TIG / TIG-E Strategic Research Briefing
 >
 > Scientific and institutional reviewers should begin with the Strategic Research Briefing. It is the primary orientation and reading guide for the eight-repository research ecosystem.
 >
-> **[Read the complete English Strategic Research Briefing - Version 1.0](./docs/TIG_TIGE_Strategic_Research_Briefing_EN_v1.0.md)**
+> **[Read the complete English Strategic Research Briefing — Version 1.0](./docs/TIG_TIGE_Strategic_Research_Briefing_EN_v1.0.md)**
 >
 > Supporting records: [English metadata](./publication/briefings/TIG_TIGE_Strategic_Research_Briefing_EN_v1.0_METADATA.md) · [German reference edition (secondary)](./docs/TIG_TIGE_Strategisches_Forschungsbriefing_DE_v1.0.md)
 >
-> The briefing explains the TIG physical research program, the TIG-E human-AI research infrastructure, the roles and relationships of the connected repositories, the present scientific status, the applicable claim and validation boundaries, the principal open research programs, and the recommended path for qualified external review.
+> The briefing explains the TIG physical research program, the TIG-E human–AI research infrastructure, the roles and relationships of the connected repositories, the present scientific status, the applicable claim and validation boundaries, the principal open research programs, and the recommended path for qualified external review.
 >
 > **Edition:** Controlled Academic Pre-Review Edition  
 > **Assessment scope:** For qualified institutional and scientific assessment only
-
 
 ---
 
@@ -63,6 +62,8 @@ Integrity Nexus answers five questions:
 3. What is their shared structural denominator?
 4. What is the current status of each repository?
 5. What needs to happen next operationally?
+
+It also maintains the meta-level architecture for how structured discovery, validation, governance, canonicalization, and reusable research memory relate across the ecosystem.
 
 ---
 
@@ -112,7 +113,9 @@ Across the connected repositories, the central research object is:
 Integrity-preserving bounded structural evolution
 ```
 
-This means that each repository studies a different domain in which system evolution is constrained by admissibility, boundary conditions, invariants, or structural integrity principles.
+Each repository studies a different domain in which system evolution is constrained by admissibility, boundary conditions, invariants, or structural integrity principles.
+
+This common denominator does not make the repositories mathematically, ontologically, or evidentially identical.
 
 ---
 
@@ -129,14 +132,14 @@ mature governance != completed theory
 
 ## Integrity_Nexus
 
-**Repository role:** Meta-governance, registry, dependency mapping, terminology control, maturity control, and audit coordination.  
-**Scientific domain:** Integrity_Nexus governance.
+**Repository role:** Meta-governance, registry, dependency mapping, terminology control, maturity control, audit coordination, and shared research-architecture mapping.  
+**Scientific domain:** Integrity_Nexus governance and meta-architecture.
 
-Integrity_Nexus may govern claims and transfers. It may not define scientific objects or manufacture scientific evidence.
+Integrity_Nexus may govern claims, relationships, transitions, and transfers. It may not manufacture scientific evidence or redefine local scientific objects without an authorized source transition.
 
 ## TIG-E — Topological Integrity Gravity Engine
 
-**Repository role:** Research orchestration, gates, candidate lifecycle, blockers, preservation, QIC audits, and Cube research corpus.  
+**Repository role:** Research orchestration, gates, candidate lifecycle, bottleneck work, preservation, QIC audits, and Cube research corpus.  
 **Scientific domains represented:** TIG-E research architecture, QIC quantum-bridge research, Cube research, and selected TIG/SIR interface work.
 
 ```text
@@ -176,7 +179,7 @@ Cube research is an active scientific domain represented primarily inside TIG-E.
 
 ---
 
-# Repository Role
+# Repository Role and Authority
 
 The canonical authority for repository-container roles, scientific-domain coverage, global synchronization, Progress Classification, and Completion Readiness is:
 
@@ -186,22 +189,21 @@ registry/repository_status.md
 
 This README is a navigation artifact. It does not independently assign global synchronization, Completion Readiness, Question State, Scientific Status, or Claim Status.
 
-Integrity Nexus is not a new theory layer.
-
-It is a navigation, coherence, governance, and operations layer.
+Integrity Nexus is not a new scientific theory layer.
 
 Its role is to:
 
-- map repository relationships,
-- define shared terminology,
-- maintain cross-repository governance standards,
-- identify shared dependencies,
-- preserve claim boundaries,
-- coordinate roadmap execution,
-- track publication status,
-- run audits,
-- maintain operational decisions and risks,
-- measure maturity and governance health,
+- map repository relationships;
+- define shared terminology;
+- maintain cross-repository governance standards;
+- identify shared dependencies;
+- preserve claim boundaries;
+- coordinate roadmap execution;
+- track publication status;
+- run audits;
+- maintain operational decisions and risks;
+- measure maturity and governance health;
+- maintain the shared Foundation Layer;
 - and make the full research ecosystem readable for human reviewers and automated research-audit systems.
 
 ---
@@ -232,25 +234,123 @@ registry/open_questions_shared_frontier_amendment_001.md
 registry/master_open_question_backlog_amendment_001.md
 ```
 
-The amendment pattern preserves the audit-corrected synchronization base until a dedicated synchronization audit integrates the new entries into the base registries.
+The amendment pattern preserves the audit-corrected synchronization base until a dedicated synchronization audit integrates new entries into the base registries.
 
 ---
 
 # Foundation Layer
 
-The repository now contains a universal TIG-E Foundation Layer at:
+The repository contains the domain-neutral TIG-E Foundation Layer at:
 
 ```text
 foundation/
 ```
 
-The Foundation Layer defines the domain-neutral discovery architecture below all domain packs. It separates the universal discovery engine from its first reference domain, physics.
+The Foundation Layer separates universal research architecture from domain-specific science and implementation.
 
 Core rule:
 
 ```text
-Foundation describes the universal principles of discovery.
-Domain packs describe their application to concrete problem spaces.
+Foundation describes domain-neutral discovery architecture.
+Domain packs define domain-specific application, evidence, terminology, and validation.
+```
+
+## Foundation Entry Point
+
+```text
+foundation/01_foundation_index.md
+```
+
+## Current Architecture Map
+
+| Function | Source |
+|---|---|
+| Generator / projection distinction | `foundation/02_what_is_a_generator.md` |
+| Search-space compression | `foundation/03_search_space_compression.md` |
+| Controlled emergence protocol | `foundation/04_emergence_protocol.md` |
+| Candidate admission criteria | `foundation/05_fundamental_candidate_admission_criteria.md` |
+| Discovery-engine component architecture | `foundation/06_discovery_engine_architecture.md` |
+| Integrity-centered research lifecycle | `foundation/07_integrity_centered_research_lifecycle.md` |
+| Research signal-to-noise optimization | `foundation/08_research_signal_to_noise_optimization.md` |
+| Bottleneck detection architecture | `foundation/09_bottleneck_detection_architecture.md` |
+| Methodology of structured discovery | `foundation/10_methodology_of_structured_discovery.md` |
+| Abstraction architecture | `foundation/11_abstraction_architecture.md` |
+| Externalized cognition and canonical memory | `foundation/12_externalized_cognition_and_canonical_memory.md` |
+| Canonicalization readiness gate | `governance/canonicalization_threshold.md` |
+
+## Integrated Research Architecture
+
+```text
+Available Observations and Assets
+        ↓
+State Reconstruction
+        ↓
+Problem and Target Analysis
+        ↓
+Bottleneck Detection
+        ↓
+Constraint Extraction
+        ↓
+Search-Space Orientation and Compression
+        ↓
+Intuitive Candidate Formation
+        ↓
+Open Structural Hypothesis
+        ↓
+Evidence Search and Formal Reconstruction
+        ↓
+Constraint and Dependency Testing
+        ↓
+Emergence Candidate
+        ↓
+Crystallization
+        ↓
+Validation and Audit
+        ↓
+Canonicalization Threshold
+        ↓
+Governance Decision
+        ↓
+Canonical Documentation and Memory
+        ↓
+Cognitive Load Release
+        ↓
+Renewed Search Capacity
+        ↓
+State Reconstruction and Bottleneck Re-Detection
+        ↺
+```
+
+Abstraction operates across multiple stages through structural extraction, scale transition, controlled domain transfer, and principle formation.
+
+Research Signal-to-Noise Optimization is a working unifying architecture principle. It is not a validated quantitative law.
+
+---
+
+# Governance Layer
+
+Governance controls status, authority, placement, transitions, synchronization, and preservation.
+
+It does not create scientific truth.
+
+Primary entry point:
+
+```text
+governance/README.md
+```
+
+Canonicalization readiness is controlled by:
+
+```text
+governance/canonicalization_threshold.md
+```
+
+Core boundary:
+
+```text
+governance authority != scientific truth authority
+canonicalization != proof
+repository status != epistemic completion
 ```
 
 ---
@@ -258,29 +358,42 @@ Domain packs describe their application to concrete problem spaces.
 # Operating Structure
 
 ```text
-docs/          English primary briefing and German reference edition
-foundation/     universal TIG-E discovery kernel and foundation documents
-architecture/   research program maps and structural diagrams
-governance/     constitution, maturity model, claim boundaries, standards
-registry/       repository status, shared concepts, dependency maps, open questions
-shared/         canonical shared glossary
-projects/       compact project cards for TIG, SIR, SSC
-roadmap/        master research program and execution milestones
-publication/    publication pipeline, status, venues, checklist
-audit/          audit protocol, schedule, log, and findings
-strategy/       objectives, priorities, metrics, long-term direction
-operations/     weekly review, decisions, risks, changes, research board
-metrics/        dashboards for maturity, publication, dependencies, governance
-objects/        canonical research objects and object templates
-exports/        compact audit exports for external review tools
-ingestion/      upload workflows and ten-file package manifests
-tools/          export and package generation utilities
+Integrity Nexus
+├── foundation/     domain-neutral discovery architecture
+├── governance/     authority, status, transition, and control rules
+├── registry/       repository, question, dependency, and lifecycle state
+├── shared/         terminology and cross-repository control artifacts
+├── operations/     decisions, risks, reviews, and execution coordination
+├── audit/          audit evidence and controlled assessment artifacts
+├── publication/    briefing and publication coordination
+└── docs/           strategic, explanatory, and supporting documents
 ```
 
 ---
 
-# Synchronization Boundary
+# Scientific and Governance Boundaries
 
-This README reflects the canonical repository-role and scientific-domain architecture recorded in `registry/repository_status.md`.
+```text
+navigation != validation
+registration != closure
+compatibility != derivation
+formal admissibility != physical truth
+audit result != proof
+canonicalization != finality
+workflow completion != scientific completion
+```
 
-It does not import local TIG-E audit passage, close an Open Question, establish a Missing bridge, promote general or physical `B_TIG`, or change the global synchronization state. Such changes require their own accepted evidence, authorization, and controlling registry update.
+An unresolved object may be documented canonically when its unresolved status, provenance, dependencies, and non-claims are represented accurately.
+
+---
+
+# Current Status
+
+```text
+Repository role: META-GOVERNANCE / ARCHITECTURE / COORDINATION
+Foundation Layer: ACTIVE WORKING ARCHITECTURE
+Governance Layer: ACTIVE
+Scientific truth authority: retained by evidence and local controlling artifacts
+Open Question closure: not performed by navigation updates
+Cross-repository synchronization: controlled by registry/repository_status.md
+```
