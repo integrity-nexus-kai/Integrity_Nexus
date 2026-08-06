@@ -4,7 +4,7 @@
 
 This document defines and indexes the Foundation Layer of the TIG-E discovery architecture inside the Integrity Nexus meta-repository.
 
-The Foundation Layer is not a physics theory, not a domain pack, and not a software implementation. It is the domain-neutral kernel for structured discovery, research governance, signal-to-noise optimization, bottleneck prioritization, search-space compression, controlled emergence, auditable candidate handling, canonicalization, and governed research memory.
+The Foundation Layer is not a physics theory, not a domain pack, and not a software implementation. It is the domain-neutral kernel for integrity-centered structured discovery, research governance, signal-to-noise optimization, bottleneck prioritization, search-space compression, controlled emergence, auditable candidate handling, canonicalization, and governed research memory.
 
 ---
 
@@ -120,6 +120,14 @@ foundation/12_externalized_cognition_and_canonical_memory.md
 
 Defines governed externalization, cognitive-load release, canonical and controlled non-canonical memory, and reusable repository-based research infrastructure.
 
+### 12. Integrity-Centered Discovery Framework
+
+```text
+foundation/13_integrity_centered_discovery_framework.md
+```
+
+Defines integrity as the cross-cutting preservation principle relating structured discovery, validation, governance, canonical memory, cognitive background load, Integrity Friction, signal-to-noise optimization, and human–AI complementarity.
+
 ---
 
 ## Related Governance Gate
@@ -137,6 +145,9 @@ Defines the readiness requirements that must be met before a research object may
 ## Architecture Relationship
 
 ```text
+                              Integrity
+                  cross-cutting preservation principle
+                                  │
 Research Signal-to-Noise Optimization
         ↓
 Bottleneck Detection
@@ -161,6 +172,8 @@ The Discovery Engine Architecture provides the component view.
 
 The Integrity-Centered Research Lifecycle provides the process and state-transition view.
 
+The Integrity-Centered Discovery Framework defines the cross-cutting preservation principle and relates the remaining mechanisms without replacing their detailed source documents.
+
 The remaining foundation documents define the governing mechanisms and capabilities used by those views.
 
 ---
@@ -171,6 +184,7 @@ The Foundation Layer does not:
 
 - prove a physical theory;
 - define the Integrity Field mathematically;
+- establish a universal mathematical integrity invariant;
 - derive a field equation;
 - privilege one domain over another;
 - replace human research judgment;
@@ -188,6 +202,8 @@ No domain-specific projection may be smuggled into the Foundation Layer as if it
 
 No research stage may substitute its epistemic function for another stage.
 
+No signal-to-noise optimization may destroy identity, provenance, dependencies, admissible alternatives, or epistemic status.
+
 No canonicalization may occur merely because a document is polished, complete-looking, or repository-visible.
 ```
 
@@ -199,4 +215,4 @@ The Foundation Layer is an active working architecture.
 
 Its documents are explicit, reviewable, and subject to refinement through the same TIG-E governance, audit, validation, and canonicalization logic they define.
 
-Cross-domain generality, quantitative performance, and universal methodological validity remain open.
+Cross-domain generality, quantitative performance, universal methodological validity, the Cognitive Background Load model, and the Integrity Friction model remain open for independent validation.
