@@ -1,6 +1,6 @@
 # Research Mechanism Architecture
 
-## Integrity-Centered Research Lifecycle v0.1
+## Integrity-Centered Research Lifecycle v0.2
 
 **Status:** Working meta-architecture reference  
 **Repository authority:** Integrity Nexus  
@@ -11,39 +11,45 @@
 
 ## 1. Purpose
 
-This document defines the relationship between the principal mechanisms currently used across the TIG-E research ecosystem.
+This document defines the governed lifecycle through which observations, problems, structural signals, candidates, evidence, emergent structures, validated results, and repository memory are related across the TIG-E research ecosystem.
 
 It is a meta-architecture document.
 
 It does not replace the detailed source documents for:
 
+- signal-to-noise optimization;
+- bottleneck detection;
 - search-space compression;
 - intuition;
+- abstraction;
 - emergence;
 - crystallization;
 - validation and audit;
-- canonical documentation.
+- canonicalization;
+- externalized cognition and canonical memory.
 
-Its function is to show how these mechanisms form one governed research lifecycle.
-
-The lifecycle is domain-neutral at the architectural level. Domain-specific evidence standards, mathematical objects, ontologies, and validation procedures remain the responsibility of the applicable Domain Pack and research repository.
+Its function is to show how these mechanisms form one controlled and recursive research lifecycle.
 
 ---
 
-## 2. Core Research Mechanism
-
-The principal lifecycle is:
+## 2. Complete Lifecycle
 
 ```text
+Phenomenon / Reality
+        ↓
+Observation, Measurement, and Perception
+        ↓
 State Reconstruction
         ↓
 Problem Analysis
         ↓
 Target Analysis
         ↓
-Bottleneck and Constraint Extraction
+Bottleneck Detection
         ↓
-Search-Space Compression
+Constraint Extraction
+        ↓
+Search-Space Orientation and Compression
         ↓
 Intuitive Candidate Formation
         ↓
@@ -57,32 +63,84 @@ Emergence Candidate
         ↓
 Crystallization
         ↓
-Validation and Audit
+Mathematical / Scientific Validation and Audit
+        ↓
+Canonicalization Threshold
+        ↓
+Governance Decision
         ↓
 Canonical Documentation
         ↓
-Repository Preservation and Reuse
+Asset Preservation and Canonical Memory
+        ↓
+Cognitive Load Release
+        ↓
+Renewed Search Capacity
+        ↓
+State Reconstruction and Bottleneck Re-Detection
+        ↺
 ```
 
-This sequence is a governed research architecture.
+The lifecycle is ordered but recursive.
 
-It is not a claim that every discovery follows one psychologically or physically identical process.
+It does not claim that every discovery follows one psychologically or physically identical sequence.
 
 ---
 
-## 3. Stage 0 — State Reconstruction
+## 3. Unifying Objective
+
+The lifecycle is coordinated by a working architecture principle:
+
+> Increase relevant, admissible, traceable, differentiating, persistent, and generative research structure relative to redundancy, ambiguity, contradiction, status noise, dependency noise, misplaced information, and cognitive overload.
+
+Canonical source:
+
+```text
+foundation/08_research_signal_to_noise_optimization.md
+```
+
+This is a methodological objective, not a validated quantitative metric.
+
+---
+
+## 4. Stage 0 — Phenomenon, Observation, Measurement, and Perception
 
 ### Function
 
-Reconstruct the current system state before proposing changes or new research objects.
+Provide the accessible material from which research begins.
+
+This may include:
+
+- measurements;
+- observations;
+- experiences;
+- anomalies;
+- documents;
+- code and system behavior;
+- empirical records;
+- or external events.
+
+### Boundary
+
+Reality is not treated as direct epistemic possession.
+
+Observation and perception supply material. They do not automatically determine interpretation.
+
+---
+
+## 5. Stage 1 — State Reconstruction
+
+### Function
+
+Reconstruct the current research and repository state before proposing new objects or changes.
 
 ### Required questions
 
-- Which repositories, documents, registries, and prior decisions already exist?
+- Which repositories, files, registries, decisions, and prior candidates already exist?
 - Which source is authoritative for each object?
 - Which work has already been completed?
-- Which conflicts, gaps, duplicates, and unresolved dependencies are present?
-- What is observation, candidate, validated result, canon, or historical record?
+- Which contradictions, duplicates, gaps, and unresolved dependencies are present?
+- What is canonical, controlled non-canonical, historical, rejected, parked, or superseded?
 
 ### Output
 
@@ -92,118 +150,123 @@ A sufficiently explicit current-state model.
 
 > No new object should be created merely because an existing object has not yet been rediscovered.
 
-State reconstruction protects the lifecycle against duplicate work, false novelty, and accidental authority conflicts.
-
 ---
 
-## 4. Stage 1 — Problem Analysis
+## 6. Stage 2 — Problem Analysis
 
 ### Function
 
-Define the actual problem rather than beginning from an assumed solution.
-
-### Required questions
-
-- What exactly is failing, missing, inconsistent, unknown, or underdetermined?
-- What is inside and outside the active scope?
-- Which terms require definition?
-- Which levels, domains, or object classes must remain separate?
-- Which apparent problem may only be a symptom of another bottleneck?
+Define what is failing, missing, inconsistent, unknown, or underdetermined without beginning from a preferred solution.
 
 ### Output
 
-A bounded problem statement with explicit scope and unresolved components.
+A bounded problem statement with explicit scope, terminology needs, affected objects, and unresolved components.
 
 ---
 
-## 5. Stage 2 — Target Analysis
+## 7. Stage 3 — Target Analysis
 
 ### Function
 
 Define what would count as useful progress or successful resolution.
 
-### Required questions
+### Required elements
 
-- What target state is sought?
-- Which success criteria apply?
-- Which non-goals and forbidden shortcuts apply?
-- Which evidence or validation would be required?
-- Which uncertainty may remain open?
+- target state;
+- success criteria;
+- non-goals;
+- forbidden shortcuts;
+- evidence and validation requirements;
+- admissible open uncertainty;
+- and stopping conditions.
 
-### Output
+### Boundary
 
-A target description, success criteria, non-goals, and admissible stopping conditions.
-
-### Governing rule
-
-A target is not a preferred answer. It is a controlled description of the result conditions.
+A target is a controlled description of result conditions, not a selected answer.
 
 ---
 
-## 6. Stage 3 — Bottleneck and Constraint Extraction
+## 8. Stage 4 — Bottleneck Detection
 
 ### Function
 
-Identify the dominant dependency and the conditions that bound admissible work.
+Identify the currently dominant unresolved dependency, ambiguity, missing structure, contradiction, or constraint whose resolution is expected to release the greatest amount of admissible progress.
 
-### Bottleneck analysis
+### Process
 
-The bottleneck is the unresolved object, dependency, ambiguity, or contradiction whose resolution would most strongly change the effective problem space.
+```text
+Bottleneck Candidate Detection
+        ↓
+Dependency and Impact Analysis
+        ↓
+Competing Bottleneck Comparison
+        ↓
+Active Bottleneck Selection
+```
 
-### Constraint extraction
+### Intuition sensor role
+
+Intuition may flag a possible bottleneck before formal analysis.
+
+Such a signal has low authority and must be reconstructed and compared against alternatives.
+
+### Output
+
+An active Bottleneck Record with scope, release value, evidence, competing candidates, and re-detection trigger.
+
+Canonical source:
+
+```text
+foundation/09_bottleneck_detection_architecture.md
+```
+
+---
+
+## 9. Stage 5 — Constraint Extraction
+
+### Function
+
+Identify the conditions bounding admissible work.
 
 Constraints may include:
 
 - definitions;
 - invariants;
 - dependency order;
-- repository authority;
 - mathematical consistency;
 - empirical requirements;
-- claim boundaries;
-- status rules;
-- non-circularity requirements;
-- resource or implementation limits.
+- repository authority;
+- claim and status boundaries;
+- non-circularity;
+- resource limits;
+- and domain-specific rules.
 
 ### Output
 
-A bottleneck statement and an explicit constraint set.
-
-### Intuition sensor note
-
-Intuition may act at this early stage as a weak sensor for a possible bottleneck, contradiction, or neglected relation.
-
-Such a signal has low authority. It must be preserved as an observation and reconstructed before it changes the governed research state.
+An explicit Constraint Set linked to the active bottleneck and target.
 
 ---
 
-## 7. Stage 4 — Search-Space Compression
+## 10. Stage 6 — Search-Space Orientation and Compression
 
 ### Function
 
-Reduce an initially unbounded or weakly structured problem space into a smaller, governed, auditable set of candidate paths.
+Determine where search should occur and reduce an initially unbounded or weakly structured space into a smaller, governed, auditable set of candidate paths.
 
-Compression may use:
+Compression may:
 
-- candidate classification;
-- dependency mapping;
-- generator/projection separation;
-- level control;
-- contradiction detection;
-- circularity checks;
-- evidence thresholds;
-- scope control;
-- rejection and parking decisions.
-
-### Output
-
-A structured residual search space with visible dependencies, exclusions, candidate classes, and review requirements.
+- reject;
+- park;
+- deprioritize;
+- classify;
+- split;
+- or preserve outside the active space.
 
 ### Governing rule
 
-> Compression removes or marks inadmissible routes without silently selecting a final answer.
+> Compression removes or marks inadmissible and irrelevant routes without silently selecting a final answer or deleting counterevidence.
 
-Canonical source inside Integrity Nexus:
+Canonical source:
 
 ```text
 foundation/03_search_space_compression.md
@@ -211,113 +274,120 @@ foundation/03_search_space_compression.md
 
 ---
 
-## 8. Stage 5 — Intuitive Candidate Formation
+## 11. Cross-Cutting Capability — Abstraction
+
+Abstraction acts across several stages rather than occupying one exclusive point in the sequence.
+
+Its four working functions are:
+
+```text
+Structural Extraction
+Scale Transition
+Domain Transfer
+Principle Formation
+```
+
+It supports bottleneck diagnosis, compression, candidate formation, emergence analysis, and reuse.
+
+Core boundaries:
+
+```text
+Analogy ≠ identity
+Scale transition ≠ invariance
+Domain transfer ≠ validation
+Recurring pattern ≠ universal law
+```
+
+Canonical source:
+
+```text
+foundation/11_abstraction_architecture.md
+```
+
+---
+
+## 12. Stage 7 — Intuitive Candidate Formation
 
 ### Function
 
-Identify a potentially relevant relation, bottleneck, constraint, or higher-order integration before complete formal reconstruction is available.
-
-High-value intuitive synthesis occurs after initial search-space compression, when the remaining candidate space is constrained enough for implicit pattern recognition to become methodically useful.
+Identify a potentially relevant relation, constraint, bottleneck, or higher-order integration before complete formal reconstruction is available.
 
 ### Two roles
 
 ```text
 Intuition as Sensor
-→ early low-authority orientation
+→ early orientation before or during bottleneck analysis
 
 Intuition as Synthesis
-→ candidate formation inside a compressed search space
+→ candidate integration inside a constrained residual search space
 ```
 
 ### Output
 
-An Intuition Event or a candidate relation requiring reconstruction.
+An Intuition Event or candidate relation requiring reconstruction.
 
 ### Governing rule
 
-> Intuition may prioritize where rigorous work begins. It may not determine where rigorous work ends.
+> Intuition may choose where rigorous work begins. It may not decide where rigorous work ends.
 
-Detailed source authority in the TIG-E repository:
+Detailed source authority in TIG-E:
 
 ```text
-docs/research/intuition/
-TIG-E_Intuition_Operationalization_Framework_v0.1.md
+docs/research/intuition/TIG-E_Intuition_Operationalization_Framework_v0.1.md
 ```
 
 ---
 
-## 9. Stage 6 — Open Structural Hypothesis
+## 13. Stage 8 — Open Structural Hypothesis
 
 ### Function
 
-Convert a surviving intuitive signal or structural observation into an explicit, auditable research object.
+Convert a surviving intuition signal or structural observation into an explicit, auditable, revisable research object.
 
-An Open Structural Hypothesis preserves a potentially important relation without treating it as:
+An Open Structural Hypothesis is not:
 
 - evidence;
 - derivation;
 - validation;
 - proof;
-- an established result;
-- or a canonical claim.
+- established result;
+- or canonical claim.
 
 ### Output
 
-A named structural hypothesis with:
-
-- scope;
-- originating observation;
-- relevant dependencies;
-- current constraints;
-- expected explanatory or compression value;
-- possible counterevidence;
-- next tests.
+A named hypothesis with scope, provenance, dependencies, expected value, counterevidence, and next tests.
 
 ---
 
-## 10. Stage 7 — Evidence Search and Formal Reconstruction
+## 14. Stage 9 — Evidence Search and Formal Reconstruction
 
 ### Function
 
-Make the implicit candidate explicit and seek independent material capable of supporting, constraining, differentiating, or falsifying it.
+Seek independent support, constraints, counterevidence, competing explanations, prior art, and testable representations.
 
-### Evidence Search
-
-Evidence Search identifies:
-
-- canonical sources;
-- independent observations;
-- relevant literature;
-- mathematical constraints;
-- prior counterexamples;
-- competing hypotheses;
-- empirical or computational tests.
-
-### Formal Reconstruction
-
-Formal reconstruction translates the candidate into an explicit:
+Formal reconstruction may produce an explicit:
 
 - proposition;
-- relation;
 - model;
+- mathematical object;
 - dependency structure;
 - algorithm;
-- mathematical object;
-- or testable work hypothesis.
+- experiment;
+- or falsifiable work hypothesis.
 
 ### Output
 
-A reviewable candidate no longer dependent solely on the subjective force of its originating intuition.
+A reviewable candidate no longer dependent solely on the originating intuition.
 
 ---
 
-## 11. Stage 8 — Constraint and Dependency Testing
+## 15. Stage 10 — Constraint and Dependency Testing
 
 ### Function
 
-Test whether the reconstructed candidate remains admissible under known formal, semantic, empirical, repository, and domain-specific constraints.
+Test the reconstructed candidate against known formal, semantic, empirical, repository, and domain constraints.
 
-### Required outcomes
+Possible outcomes:
 
 ```text
 RETAIN
@@ -328,44 +398,39 @@ SPLIT
 ESCALATE
 ```
 
-### Output
-
-A classified candidate and an explicit test record.
-
-A candidate that fails this stage does not proceed by rhetorical reformulation or silent status promotion.
+A failing candidate may not proceed through rhetorical reformulation or silent status promotion.
 
 ---
 
-## 12. Stage 9 — Emergence Candidate
+## 16. Stage 11 — Emergence Candidate
 
 ### Function
 
 Identify the appearance of a previously undocumented higher-order structure from an already organized, constrained, and internally related system.
 
-An emergence candidate may integrate multiple surviving elements and reveal a structure that was not explicitly designed as an independent object.
-
-### Required boundary
+### Boundary
 
 Emergence is not:
 
 - proof;
 - automatic truth;
-- unexplained novelty;
 - intuition itself;
+- unexplained novelty;
 - uncontrolled invention;
 - or canonical status.
 
-### Output
+### Retrospective obviousness
 
-A reviewable emergent structure candidate.
+An emergence candidate may appear obvious after the relevant relations become visible.
+
+This retrospective obviousness may indicate strong integration and compression. It does not establish necessity, uniqueness, or correctness.
 
 Canonical and supporting sources:
 
 ```text
-Integrity Nexus:
 foundation/04_emergence_protocol.md
 
-TIG-E repository:
+TIG-E:
 docs/research/EMERGENCE_ARCHITECTURE.md
 docs/research/TIG-E_Emergence_Operationalization_Framework_v0.1.md
 docs/research/Working_Paper_0_Methodological_Foundations_EN.md
@@ -373,75 +438,111 @@ docs/research/Working_Paper_0_Methodological_Foundations_EN.md
 
 ---
 
-## 13. Stage 10 — Crystallization
+## 17. Stage 12 — Crystallization
 
 ### Function
 
 Determine whether an emergent or otherwise developed structure remains stable under continued constraint pressure, reconstruction, comparison, and review.
 
-The lifecycle distinguishes three uses of crystallization:
+The lifecycle distinguishes:
 
-1. **Conceptual crystallization** — stabilization and persistence of an emergent structure;
-2. **Governance crystallization** — controlled preservation of an audited research state;
-3. **Applied crystallization** — a concrete scope-specific checkpoint.
+1. conceptual crystallization;
+2. governance crystallization;
+3. applied crystallization checkpoints.
 
-### Output
+### Boundary
 
-A stable, explicitly bounded structure or checkpoint suitable for validation and controlled preservation.
+Persistence is not proof or physical truth.
 
-### Governing boundaries
+Open and unresolved states may be crystallized when their boundaries remain explicit.
 
-- Emergence creates or reveals a candidate structure.
-- Crystallization tests and records persistence.
-- Crystallization does not itself prove physical truth.
-- Open and unresolved states may be crystallized if their boundaries are preserved accurately.
-
-Detailed authority map in the TIG-E repository:
+Detailed authority map in TIG-E:
 
 ```text
 docs/research/crystallization/README.md
 ```
 
-Normative crystallization process:
+---
+
+## 18. Stage 13 — Mathematical / Scientific Validation and Audit
+
+### Function
+
+Evaluate the crystallized structure against the obligations corresponding to its claimed status.
+
+Validation and audit may examine:
+
+- formal validity;
+- mathematical correctness;
+- empirical support;
+- derivation completeness;
+- semantic consistency;
+- reproducibility;
+- domain compatibility;
+- repository authority;
+- dependency state;
+- and governance compliance.
+
+### Governing rule
+
+> Compatibility is not derivation. Formal admissibility is not physical validation. Audit passage is not proof unless proof is the audited object and all proof obligations are satisfied.
+
+---
+
+## 19. Stage 14 — Canonicalization Threshold
+
+### Function
+
+Determine whether the current research state is sufficiently explicit, bounded, traceable, status-clear, reviewed, reconstructable, correctly placed, and ready for durable preservation.
+
+### Boundary
 
 ```text
-docs/governance/CRYSTALLIZATION_PROTOCOL.md
+Canonicalization Threshold ≠ Truth Threshold
+Canonicalization Threshold ≠ Proof Threshold
+Canonicalization Threshold ≠ Open-Question Closure
+```
+
+An accurately represented open state may meet the threshold.
+
+Canonical source:
+
+```text
+governance/canonicalization_threshold.md
 ```
 
 ---
 
-## 14. Stage 11 — Validation and Audit
+## 20. Stage 15 — Governance Decision
 
 ### Function
 
-Evaluate the crystallized structure against the evidence, derivation, dependency, consistency, reproducibility, domain, and governance standards required for its claimed status.
+Authorize the repository outcome after readiness assessment.
 
-Validation and audit must distinguish:
+Possible decisions:
 
-- formal validity;
-- semantic consistency;
-- mathematical correctness;
-- empirical support;
-- domain compatibility;
-- repository authority;
-- claim status;
-- unresolved dependencies.
+```text
+CANONICALIZE
+CANONICALIZE_AS_OPEN_STATE
+RETURN_FOR_RECONSTRUCTION
+RETURN_FOR_VALIDATION
+RETURN_FOR_AUDIT
+REVISE_STATUS
+RELOCATE
+PARK
+ARCHIVE
+REJECT
+```
 
-### Output
-
-A traceable verdict, correction requirement, status decision, or open-question record.
-
-### Governing rule
-
-> Compatibility is not derivation. Formal admissibility is not physical validation. Audit passage is not proof unless proof is the specific audited object and all proof obligations are satisfied.
+Governance controls authorized representation. It does not manufacture scientific truth.
 
 ---
 
-## 15. Stage 12 — Canonical Documentation
+## 21. Stage 16 — Canonical Documentation
 
 ### Function
 
-Translate the validated or accurately bounded research state into a stable repository artifact.
+Translate the authorized research state into a stable repository artifact.
 
 Canonical documentation must preserve:
 
@@ -449,14 +550,10 @@ Canonical documentation must preserve:
 - how it was established;
 - what remains assumed;
 - what remains open;
-- which dependencies remain unresolved;
-- which claims are expressly not made;
-- which source has authority;
-- which future work is permitted.
-
-### Output
-
-A governed repository artifact with explicit status, scope, dependencies, authority, and traceability.
+- unresolved dependencies;
+- non-claims;
+- authority and placement;
+- and authorized next work.
 
 ### Governing rule
 
@@ -464,94 +561,101 @@ A governed repository artifact with explicit status, scope, dependencies, author
 
 ---
 
-## 16. Stage 13 — Repository Preservation and Reuse
+## 22. Stage 17 — Asset Preservation and Canonical Memory
 
 ### Function
 
-Preserve the canonical artifact as institutional memory and make it reusable without detaching it from its status and evidence boundaries.
+Preserve the canonical artifact and relevant controlled non-canonical records as reusable institutional memory.
 
 ```text
-Validated or Bounded Structure
+Authorized Research State
         ↓
 Canonical Documentation
         ↓
-Repository Preservation
+Asset Preservation
         ↓
-Reusable Asset
+Canonical Memory
         ↓
-Institutional Memory
+Reusable Research Infrastructure
 ```
 
-Repository preservation is not merely storage. It externalizes the governed research state so that future work does not depend exclusively on individual memory or access to the original conversation.
+Preservation is not limited to validated positive results. It may also preserve rejected, parked, superseded, historical, or unresolved objects when their provenance or comparison value matters.
 
----
-
-## 17. Non-Linearity and Feedback Loops
-
-The lifecycle is ordered but not strictly one-directional.
-
-Permitted feedback loops include:
+Canonical source:
 
 ```text
-Evidence Search
-→ revised Problem Analysis
-
-Constraint Testing
-→ additional Search-Space Compression
-
-Audit
-→ revised Formal Reconstruction
-
-Crystallization
-→ newly visible Constraints
-
-Canonical Documentation
-→ new Open Questions
-```
-
-Feedback must be explicit and traceable. A loop may revise an earlier stage but may not silently bypass a later gate.
-
----
-
-## 18. Object and Status Separation
-
-The lifecycle distinguishes process stage from epistemic status.
-
-Examples:
-
-```text
-Intuition Event
-= process object
-≠ evidence
-
-Open Structural Hypothesis
-= governed research object
-≠ established hypothesis confirmation
-
-Emergence Candidate
-= higher-order candidate structure
-≠ validated result
-
-Crystallized Checkpoint
-= stabilized research state
-≠ proof or physical truth
-
-Canonical Documentation
-= authorized repository representation
-≠ guarantee that every contained open question is solved
+foundation/12_externalized_cognition_and_canonical_memory.md
 ```
 
 ---
 
-## 19. Cross-Repository Authority Model
+## 23. Stage 18 — Cognitive Load Release and Renewed Search Capacity
 
-Integrity Nexus owns the meta-level lifecycle and relationship architecture.
+### Function
 
-It does not replace local authority for detailed mechanisms or domain content.
+Reduce the burden of maintaining prior states, dependencies, paths, and decisions in transient memory.
+
+Externalized governed memory allows renewed capacity for:
+
+- state comparison;
+- abstraction;
+- bottleneck detection;
+- intuition;
+- evidence search;
+- and further emergence.
+
+Cognitive relief is not evidence that the preserved object is correct.
+
+---
+
+## 24. Recursive Re-Entry
+
+Every preserved result changes the system state.
+
+The lifecycle therefore re-enters through:
+
+```text
+Canonical or Controlled Memory
+        ↓
+New Observation and State Retrieval
+        ↓
+State Reconstruction
+        ↓
+Bottleneck Re-Detection
+```
+
+The next bottleneck may differ from the previous one because prior work has changed the dependency structure.
+
+---
+
+## 25. Epistemic Non-Substitution Rule
+
+Research stages may interact recursively, but their epistemic functions may not be exchanged or collapsed.
+
+```text
+Intuition ≠ validation
+Emergence ≠ proof
+Crystallization ≠ derivation
+Governance ≠ scientific truth
+Canonicalization ≠ evidence
+Formal correctness ≠ structural novelty
+Proof ≠ automatic research-question generation
+Mathematics ≠ automatic search-space orientation
+```
+
+Canonical source:
+
+```text
+foundation/10_methodology_of_structured_discovery.md
+```
+
+---
+
+## 26. Cross-Repository Authority Model
 
 ```text
 Integrity Nexus
-→ lifecycle map, cross-repository relationships, shared governance boundaries
+→ lifecycle, cross-repository relationships, shared governance boundaries
 
 TIG-E
 → detailed method operationalization, Runtime design, event schemas, Domain Packs
@@ -560,59 +664,36 @@ Scientific repositories
 → domain objects, mathematics, evidence, derivations, experiments, validation
 ```
 
-A meta-level reference may point to a local source. It may not silently rewrite the local source or promote its status.
+A meta-level reference may point to a local source. It may not silently rewrite or promote the local source.
 
 ---
 
-## 20. Relationship to the Discovery Engine Architecture
-
-The existing Discovery Engine Architecture describes the structural system components through which governed discovery work is processed:
-
-```text
-Free Input
-→ Structuring
-→ Filters
-→ Registry
-→ Compression
-→ Emergence
-→ Review
-→ Repository Integration
-```
-
-This document complements that component architecture by defining the **research-state lifecycle** and the roles of intuition, Open Structural Hypotheses, Evidence Search, crystallization, validation, and canonicalization.
-
-Therefore:
-
-```text
-Discovery Engine Architecture
-= system-component view
-
-Integrity-Centered Research Lifecycle
-= research-process and state-transition view
-```
-
-Neither document replaces the other.
-
-Canonical component source:
+## 27. Relationship to the Discovery Engine Architecture
 
 ```text
 foundation/06_discovery_engine_architecture.md
+= component and implementation view
+
+foundation/07_integrity_centered_research_lifecycle.md
+= research-process and state-transition view
 ```
+
+The documents are complementary and neither replaces the other.
 
 ---
 
-## 21. Runtime Translation
+## 28. Runtime Translation
 
-The lifecycle provides the future Runtime with candidate governed objects and transitions.
+Candidate machine-readable objects include:
 
-Possible machine-readable objects include:
-
+- Observation Record;
 - State Reconstruction Record;
 - Problem Definition;
 - Target Definition;
 - Bottleneck Record;
 - Constraint Set;
 - Compression Record;
+- Abstraction Record;
 - Intuition Event;
 - Open Structural Hypothesis;
 - Evidence Search Record;
@@ -620,27 +701,30 @@ Possible machine-readable objects include:
 - Crystallization Checkpoint;
 - Validation Record;
 - Audit Finding;
-- Canonicalization Decision.
+- Canonicalization Record;
+- Memory and Supersession Record.
 
-A future Runtime may support these transitions. It may not infer authority merely from sequence completion.
+Sequence completion must not be interpreted as authority without explicit review and decision.
 
 ---
 
-## 22. Current Scientific and Governance Status
+## 29. Current Status
 
-- **Lifecycle architecture:** working meta-architecture;
-- **Stage ordering:** current controlled model;
-- **Intuition sensor/synthesis distinction:** working methodological candidate;
-- **Open Structural Hypothesis:** working governed process object;
-- **Emergence mechanism:** operationally described; general theory open;
-- **Crystallization mechanism:** multiple meanings separated; universal theory open;
-- **Cross-domain reproducibility:** unverified;
-- **Formal mathematical model:** open;
-- **Physical interpretation:** not claimed;
+- **Lifecycle architecture:** working meta-architecture v0.2;
+- **Signal-to-noise objective:** working unifying candidate;
+- **Bottleneck Detection:** specified, comparative validation open;
+- **Abstraction architecture:** specified, cross-domain validation open;
+- **Intuition sensor/synthesis distinction:** working candidate;
+- **Open Structural Hypothesis:** governed process object;
+- **Emergence mechanism:** operationally described, general theory open;
+- **Crystallization mechanism:** meanings separated, universal theory open;
+- **Canonicalization Threshold:** working governance gate;
+- **Externalized Cognition and Canonical Memory:** working architecture candidate;
+- **Formal quantitative model:** open;
 - **Open-question closure:** not authorized by this document.
 
 ---
 
-## 23. Governing Statement
+## 30. Governing Statement
 
-> Reconstruct the state, define the problem and target, expose the bottleneck and constraints, compress the search space, preserve intuition as a testable route signal, permit emergence only as a candidate, crystallize only what remains stable, validate explicitly, and canonize only the currently authorized state.
+> Reconstruct the state, define the problem and target, detect the dominant bottleneck, expose constraints, compress the search space, preserve intuition as a testable route signal, formalize and test candidates, treat emergence as candidate formation, crystallize only stable structure, validate explicitly, cross the canonicalization threshold before authorization, preserve the bounded state in canonical memory, and use the released capacity to begin the cycle again.
