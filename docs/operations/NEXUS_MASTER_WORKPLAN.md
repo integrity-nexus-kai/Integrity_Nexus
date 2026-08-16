@@ -1,6 +1,6 @@
 # NEXUS_PROJECTS — MASTER WORKPLAN
 **Stand:** 16.08.2026, 09:31 MESZ  
-**Version:** v2  
+**Version:** v3  
 **Status:** Arbeitsreferenz / aktueller Wiedereinstiegspunkt — noch nicht vollständig reconciliert
 
 ## 0. Arbeitsregel für diesen Plan
@@ -102,15 +102,21 @@ Recovery-Reihenfolge:
 - klarer Authority-/Provenienzstatus
 - erst danach weitere ΩE-Vergleichs- oder Consciousness-Arbeit auf diesem Corpus fortsetzen
 
-## A9 — Noch nicht reconciliert: historische Aufgaben-/Fragenbestände
+## A9 — Historische Tagesaufgaben gesichert; Reconciliation noch offen
 
-Der Masterplan ist weiterhin **noch nicht vollständig kanonisch**, solange folgende Bestände nicht gemappt wurden:
-- 21 historische Tagesaufgaben
-- ca. 70 Open Questions aus den Forschungssträngen
+Die kanonische Tagesaufgabenliste vom 06.08.2026 ist jetzt als eigener Referenzbestand unter
+`docs/operations/Tagesaufgaben_2026-08-06_kanonischer_Stand.md` zu sichern und im Masterplan referenziert.
 
-Diese werden nicht als flache Anhänge übernommen, sondern gegen den Critical Path gemappt:
+Präzisierung zur Anzahl: Die Quelldatei enthält **18 nummerierte Aufgaben [0]–[17] plus 3 zusätzlich abgeschlossene Folgearbeiten A–C = 21 getrackte Einträge**.
+
+Die 21 Einträge sind damit als Bestand gesichert; ihre heutige Priorität ist **noch nicht vollständig gegen den aktuellen Critical Path reconciliert**. Historische Statusangaben werden nicht blind übernommen. Insbesondere sind Intuition und Emergenz heute wieder/weiter offen und dürfen nicht aufgrund des historischen ✅-Status als abgeschlossen behandelt werden.
+
+Die ca. 70 Open Questions werden vorerst **nicht manuell dupliziert**, weil sie repository-lokal und dependency-aware aus den Forschungsrepos rekonstruiert werden sollen.
+
+Reconciliation-Klassen:
 - offen
 - erledigt
+- historisch erledigt, heute wieder offen
 - überholt
 - zusammengeführt
 - blockiert
@@ -400,3 +406,36 @@ Prüfen:
 # M. Aktueller Hauptpfad in einem Satz
 
 **Masterplan einfrieren → Claude-v1.0-Rootfehler beheben → Claude-Anweisung korrigieren → Claude neu ausführen und verifizieren → parallel Emergenz-Corpus/Notebook-Pipeline als Referenzimplementierung aufbauen → Audit-System mit 6 Auditoren + Source-Intake-Pipeline konsolidieren → TIG korrigieren + Expert-Gates → TIG-E → Runtime/Assurance → External Readiness → Aachen/Jülich → wirtschaftliche Verwertung.**
+---
+
+# N. Historische Tagesaufgaben — gesicherter Referenzbestand
+
+Quelle: `docs/operations/Tagesaufgaben_2026-08-06_kanonischer_Stand.md`
+
+Diese Liste wird als **historischer operativer Referenzbestand** erhalten. Die Reihenfolge ist nicht automatisch die heutige Prioritätsreihenfolge.
+
+| ID | Aufgabe | Historischer Status | Heutiger Reconciliation-Hinweis |
+|---|---|---|---|
+| [0] | Vollständige Rekonstruktion und Bergung des Arbeitstages | ◐ | weiter relevant für Recovery/State Reconstruction |
+| [1] | Dokumenten- und Ergebnisinventar erstellen | ◐ | weiter offen / in Master-Inventory integrieren |
+| [2] | Formale Bereinigung der entstandenen Dokumente | ⏳ | weiter offen, aber nach State-Recovery |
+| [3] | Konsistenzabgleich Produkt- und Positionierungsdokumente | ⏳ | offen / späterer Produkt- und Positionierungsblock |
+| [4] | Website-Arbeitsphase | ⏳ | offen / nachrangig |
+| [5] | Öffentliche Webpräsenz konsistent verbinden | ⏳ | offen / nachrangig |
+| [6] | LinkedIn-Profil aktualisieren | ⏳ | offen / nachrangig |
+| [7] | Runtime-Dokumentation konsolidieren und Autorität normalisieren | ⏳ | weiterhin zentral; heute unter Runtime-Reconciliation geführt |
+| [8] | Unternehmenswert / Asset Register vorbereiten | ⏳ | offen / nachrangig |
+| [9] | Operationalisierung von Intuition | ✅ historisch | **heute offen; historische Completion nicht übernehmen** |
+| [10] | Operationalisierung von Emergenz | ✅ historisch | **heute offen und hohe Priorität; wissenschaftlicher Anschluss** |
+| [11] | Umgebungskongruenz und Integrity Friction | ⏳ | offen |
+| [12] | Arbeits- und Dokumentationsregeln formalisieren | ◐ | offen / Governance- und Workflow-Reconciliation |
+| [13] | Bewusstseinsforschung getrennt weiterführen | ◐ | offen / ΩE- und Consciousness-Recovery |
+| [14] | Rückkehr zum übergeordneten Arbeitsprogramm | ⏳ | als historischer Gate-Punkt erhalten; heutiger Critical Path ersetzt Reihenfolge |
+| [15] | Master Governance Specification entwickeln | ⏳ | historisch; gegen aktuelles Audit-Control-System reconciliieren |
+| A | Foundation-Pakete 1–3 | ✅ | historisch abgeschlossen; nicht neu öffnen ohne Finding |
+| B | README-Synchronisierung | ✅ | historisch abgeschlossen; nur bei Drift neu prüfen |
+| C | Kristallisationsbestand zentral navigierbar gemacht | ✅ | historisch abgeschlossen; Kristallisationsforschung selbst bleibt separat offen |
+| [16] | Erkenntnisstruktur und zentrale Rolle der Integrität prüfen | ⏳ | weiterhin offen / Forschungs- und Wissensarchitektur |
+| [17] | Strategisches Briefing versionsübergreifend synchronisieren | ⏳ | weiterhin offen / External Readiness |
+
+**Bestand:** 18 nummerierte Aufgaben + 3 abgeschlossene Folgearbeiten = **21 getrackte Einträge**.
