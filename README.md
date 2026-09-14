@@ -170,6 +170,21 @@ workflow or gate passage != scientific completion
 audit result != proof
 ```
 
+## Ex-I-Greater-Than-Zero — The First Necessity
+
+**Repository role:** Lokale Autorität für registrierte Foundation-, World-Model- und fundamentale Bridge-Forschungsobjekte sowie für deren kontrollierte semantische Klassifikation.  
+**Scientific domains represented:** Existenz, Integrity, Emergenz, Integrity State, Integrity Field, P1, World Model und fundamentale Bridges im ausdrücklich vorläufigen Forschungsstatus.
+
+**Registered transfer boundary:** Der historische TIG-E-Quellbestand wurde technisch und provenienzgebunden übertragen. TIG-E bleibt Autorität seiner physikalischen Projektionen; der Transfer erzeugt keine semantische Abnahme, keinen Current-Pointer, keine Kanonisierung, keine Claim-Promotion und keine wissenschaftliche Validierung.
+
+```text
+TIG-E source commit: 286cf72c5fbc76e56830cb157c73c05843c612ee
+technical cutover merge: 99c37df24cc53f3412821f6dd042350604004acd
+accepted Ex-I-Greater-Than-Zero main snapshot: cf71b37f1a727bc4ef0ffa15445f5f1ac1f6f226
+semantic classification: PENDING
+independent post-deletion audit: PENDING
+```
+
 ## Quantum_Integrity_Core
 
 **Repository role:** Container for the current public TIG gravitational field-equation architecture and validation material.  

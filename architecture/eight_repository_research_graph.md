@@ -1,4 +1,4 @@
-# Eight-Repository Research Architecture Inventory v1.0
+# Nine-Repository Research Architecture Inventory v1.1
 
 ## Status
 
@@ -23,13 +23,13 @@ It does not solve any open problem.
 It does not promote any repository claim.
 It does not merge repositories.
 It does not reassign source-of-truth authority.
-It records the visible eight-repository research architecture and its governance boundaries.
+It records the visible nine-repository research architecture and its governance boundaries.
 
 ---
 
 # Purpose
 
-This document creates a first canonical inventory of the eight-repository research architecture associated with the Integrity Nexus research program.
+This document maintains the canonical inventory of the nine-repository research architecture associated with the Integrity Nexus research program.
 
 The purpose is to distinguish:
 
@@ -49,7 +49,7 @@ and to make explicit which repositories are responsible for governance, physics,
 
 # Scope
 
-This inventory covers the eight repositories visible in the current research structure:
+This inventory covers the nine repositories visible in the current research structure:
 
 ```text
 1. TIG-E-Topological_integrity-_gravity_engine-
@@ -60,6 +60,7 @@ This inventory covers the eight repositories visible in the current research str
 6. TIG_YM_Research
 7. Structural_Integrity_Recursion
 8. Structural_State_Controller
+9. Ex-I-Greater-Than-Zero
 ```
 
 This inventory does not inspect full content of each repository.
@@ -100,7 +101,7 @@ meta-repository governance != physical theory
 
 # Repository Layer Model
 
-The current eight-repository architecture can be grouped into layers.
+The current nine-repository architecture can be grouped into layers.
 
 ```text
 Layer 0 — Meta Governance
@@ -108,7 +109,12 @@ Integrity_Nexus
 ```
 
 ```text
-Layer 1 — Core Physics / TIG Development
+Layer 1 — Foundation / World Model
+Ex-I-Greater-Than-Zero
+```
+
+```text
+Layer 2 — Core Physics / TIG Development
 TIG-E-Topological_integrity-_gravity_engine-
 Quantum_Integrity_Core
 TIG_YM_derivation_architecture
@@ -116,13 +122,13 @@ TIG_YM_Research
 ```
 
 ```text
-Layer 2 — Recursion / Controller / Operational Enforcement
+Layer 3 — Recursion / Controller / Operational Enforcement
 Structural_Integrity_Recursion
 Structural_State_Controller
 ```
 
 ```text
-Layer 3 — Public Presentation
+Layer 4 — Public Presentation
 integrity-nexus-kai.github.io
 ```
 
@@ -814,6 +820,65 @@ controller/theory interface boundary
 
 ---
 
+## REPO-009 — Ex-I-Greater-Than-Zero
+
+```text
+VISIBILITY:
+Public
+
+PRIMARY ROLE:
+Foundation / World Model / controlled semantic-classification repository
+
+DOMAIN:
+Existence, Integrity, emergence, Integrity State, Integrity Field, P1,
+World Model, and fundamental bridges
+```
+
+Source-of-truth responsibility:
+
+```text
+Registered native Foundation, World-Model, and fundamental-bridge objects,
+subject to local lifecycle controls and Human Authority decisions.
+```
+
+Registered technical transfer:
+
+```text
+TIG-E source commit: 286cf72c5fbc76e56830cb157c73c05843c612ee
+technical cutover merge: 99c37df24cc53f3412821f6dd042350604004acd
+accepted target main snapshot: cf71b37f1a727bc4ef0ffa15445f5f1ac1f6f226
+technical source transfer: COMPLETE
+semantic classification: PENDING
+independent post-deletion audit: PENDING
+```
+
+Mandatory boundary:
+
+```text
+technical transfer != semantic acceptance
+repository registration != scientific validation
+historical TIG-E source != automatic native authority
+no Current pointer, canonization, Claim Promotion, or question closure follows
+```
+
+---
+
+# Registered Transfer Boundaries
+
+## XRT-001 — TIG-E → Ex-I-Greater-Than-Zero
+
+The historical TIG-E source set is preserved in `Ex-I-Greater-Than-Zero` with provenance bound to source commit `286cf72c5fbc76e56830cb157c73c05843c612ee`. The accepted target snapshot is `cf71b37f1a727bc4ef0ffa15445f5f1ac1f6f226`, containing technical cutover merge `99c37df24cc53f3412821f6dd042350604004acd`.
+
+TIG-E retains authority for its physical projections. `Ex-I-Greater-Than-Zero` becomes local authority only for Foundation-, World-Model-, and bridge objects that are individually registered and activated under its lifecycle controls.
+
+```text
+technical preservation != authority promotion
+transfer completeness != semantic classification
+local object registration != proof
+```
+
+---
+
 # Cross-Repository Blocker Alignments
 
 ## XRB-001 — Hamiltonian Foundation / Evolution Generator
@@ -1008,6 +1073,12 @@ Cube/TIG-E field-equation/QIC-QM boundary research status
 ```
 
 ```text
+Ex-I-Greater-Than-Zero:
+registered Foundation, World-Model, and fundamental-bridge objects;
+historical TIG-E sources remain provenance material until individually classified
+```
+
+```text
 Quantum_Integrity_Core:
 formal QIC/TIG singularity-regularization formalization
 ```
@@ -1118,7 +1189,7 @@ Ensure public-facing language imports only bounded summaries from canonical repo
 This architecture inventory does not claim:
 
 ```text
-The eight repositories are scientifically complete.
+The nine repositories are scientifically complete.
 ```
 
 ```text
@@ -1154,18 +1225,18 @@ Repository dependency equals mathematical derivation.
 # Locked Verdict
 
 ```text
-EIGHT-REPOSITORY RESEARCH ARCHITECTURE INVENTORY:
+NINE-REPOSITORY RESEARCH ARCHITECTURE INVENTORY:
 REGISTERED
 ```
 
 ```text
 REPOSITORIES INVENTORIED:
-8
+9
 ```
 
 ```text
 PRIMARY RESULT:
-The Integrity Nexus program is represented as a governed eight-repository research architecture, not a single-repository project.
+The Integrity Nexus program is represented as a governed nine-repository research architecture, not a single-repository project.
 ```
 
 ```text
@@ -1181,5 +1252,5 @@ GATE-META-INTERFACE-001
 Repository status:
 
 ```text
-EIGHT-REPOSITORY RESEARCH GRAPH REGISTERED
+NINE-REPOSITORY RESEARCH GRAPH REGISTERED
 ```

@@ -15,7 +15,7 @@
 **Operational Status:** Addressed  
 **Progress Classification:** READY FOR COMPLETION AUDIT  
 **Completion Readiness:** READY FOR AUDIT  
-**Last Updated:** 2026-07-13
+**Last Updated:** 2026-09-14
 
 This document is the sole authority for:
 
@@ -151,6 +151,7 @@ No upstream file may supersede this index as the authority for global synchroniz
 |---|---|---|---|
 | Integrity_Nexus | Meta-governance, registry, dependency, maturity, terminology, and audit coordination | Integrity_Nexus governance | May govern claims; may not define scientific objects or invent Claim Status |
 | TIG-E-Topological_integrity-_gravity_engine- | Research orchestration, gates, candidate lifecycle, blockers, preservation, QIC audits, and Cube corpus | TIG-E research architecture; QIC quantum-bridge research; Cube research; selected TIG/SIR interface work | Process, audit, gate, and registry status are not scientific completion or Claim Status |
+| Ex-I-Greater-Than-Zero | Foundation, World Model, fundamental bridges, controlled source intake, and semantic-classification lifecycle | Existence; Integrity; emergence; Integrity State; Integrity Field; P1; World Model; fundamental bridges | Technical source transfer is not semantic acceptance, Current selection, canonization, Claim Promotion, proof, or validation |
 | Quantum_Integrity_Core | Container for the current public TIG field-equation architecture and validation material | TIG gravitational architecture | Container name does not establish QIC identity; scoped realization is not complete theory |
 | Structural_Integrity_Recursion | Exploratory recursive and mathematical-structure repository | SIR mathematical recursion | Mathematical structure is not physical without bridge |
 | Structural_State_Controller | Downstream control and state-admissibility application repository | SSC deferred application projection | Application terminology may not define the active scientific core |
@@ -414,7 +415,69 @@ Deferred SSC projection does not block OQ-031 terminology-governance completion 
 
 ---
 
-## 10. Authoritative Seven-Artifact Synchronization Record
+## 10. Ex-I-Greater-Than-Zero
+
+### Repository Role
+
+```text
+Foundation / World Model / fundamental bridges / controlled semantic classification
+```
+
+### Scientific Domains Represented
+
+```text
+Existence
+Integrity
+Emergence
+Integrity State
+Integrity Field
+P1
+World Model
+Fundamental bridges
+```
+
+These are registered research domains, not validated theories or promoted claims.
+
+### Accepted Repository Snapshot
+
+```text
+Repository: integrity-nexus-kai/Ex-I-Greater-Than-Zero
+Accepted main commit: cf71b37f1a727bc4ef0ffa15445f5f1ac1f6f226
+Technical cutover merge commit: 99c37df24cc53f3412821f6dd042350604004acd
+TIG-E source commit: 286cf72c5fbc76e56830cb157c73c05843c612ee
+Technical source transfer: COMPLETE
+Semantic classification: PENDING
+Current pointers created by transfer: 0
+Claim promotions created by transfer: 0
+Independent post-deletion audit: PENDING
+```
+
+### Authority and Transfer Boundary
+
+`Ex-I-Greater-Than-Zero` is local authority for its individually registered and lifecycle-controlled Foundation-, World-Model-, and fundamental-bridge objects. Imported historical TIG-E material remains provenance-bound source material until individually classified and activated.
+
+TIG-E retains authority for its physical projections. Integrity_Nexus registers repository role, domain coverage, accepted synchronization, and assurance state but does not replace local scientific content authority.
+
+```text
+technical migration != semantic acceptance
+repository registration != scientific validation
+source preservation != Current selection
+transfer != canonization
+transfer != Claim Promotion
+transfer != question closure
+```
+
+### Assurance State
+
+```text
+Repair applied: YES
+Independent AIL-2 post-deletion audit: OUTSTANDING
+Release state: REVIEW_REQUIRED
+```
+
+---
+
+## 11. Authoritative Seven-Artifact Synchronization Record
 
 The following seven controlled artifacts are linked at current HEAD through the current dependency-ordered SHA chain:
 
@@ -458,7 +521,7 @@ No audit passage is recorded and Question State remains `OPEN`.
 
 ---
 
-## 11. OQ-030 / OQ-031 Completion Criterion
+## 12. OQ-030 / OQ-031 Completion Criterion
 
 OQ-030 and OQ-031 do not require the underlying scientific objects or Missing bridges to be solved.
 
@@ -497,7 +560,7 @@ Completion Readiness: AUDIT PASSED
 
 ---
 
-## 12. Current Completion Readiness Decision
+## 13. Current Completion Readiness Decision
 
 The most recent independent Completion & Consistency Audit returned `FAIL` and identified:
 
@@ -542,7 +605,7 @@ until a fresh independent Completion & Consistency Audit passes and the accepted
 
 ---
 
-## 13. Sole Next Governance Action
+## 14. Sole Next Governance Action
 
 ```text
 Conduct a fresh independent Completion & Consistency Audit against the seven current-HEAD controlled artifacts and the SHA chain recorded in this index.
@@ -559,7 +622,7 @@ Question State: OPEN
 
 ---
 
-## 14. Maintenance Rule
+## 15. Maintenance Rule
 
 Every significant repository-role, scientific-domain, maturity, governance, Claim Status, Scientific Status Applicability, Scientific Status, Definition State, Bridge State, Required Work, Object Type, Scope, Cross-ID, Question State, Progress Classification, Completion Readiness, closure-evidence, or dependency change must update this file.
 
