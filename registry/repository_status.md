@@ -442,10 +442,13 @@ These are registered research domains, not validated theories or promoted claims
 
 ```text
 Repository: integrity-nexus-kai/Ex-I-Greater-Than-Zero
-Accepted main commit: e279756032a71c1fbdf8b81330152fbabb267646
+Accepted main commit: 66d3e233d197a168c9f443f905dbe8cfa2b1ac70
 Technical cutover merge commit: 99c37df24cc53f3412821f6dd042350604004acd
 TIG-E source commit: 286cf72c5fbc76e56830cb157c73c05843c612ee
 Technical source transfer: COMPLETE
+Validated content commit: e279756032a71c1fbdf8b81330152fbabb267646
+Validated content tree: 9dab7b19bb27803e8103b09ac13b06d64944bbf6
+Current accepted main has identical tree after ancestry-only merges: YES
 Snapshot CI run: 35083432144 / SUCCESS
 Snapshot ID: TFN-20260916T100939Z-9859374ddb18
 Snapshot root hash: aa7f765a9a2e41204b8bf405ccca36cb6936aaca0ff363d7ef0a410c382e2fe6

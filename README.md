@@ -180,8 +180,11 @@ audit result != proof
 ```text
 TIG-E source commit: 286cf72c5fbc76e56830cb157c73c05843c612ee
 technical cutover merge: 99c37df24cc53f3412821f6dd042350604004acd
-accepted Ex-I-Greater-Than-Zero main snapshot: e279756032a71c1fbdf8b81330152fbabb267646
+accepted Ex-I-Greater-Than-Zero main snapshot: 66d3e233d197a168c9f443f905dbe8cfa2b1ac70
 semantic classification: PENDING
+validated content commit: e279756032a71c1fbdf8b81330152fbabb267646
+validated content tree: 9dab7b19bb27803e8103b09ac13b06d64944bbf6
+current main has identical tree after ancestry-only merges: YES
 snapshot CI run: 35083432144 / SUCCESS
 package integrity: PASS
 source completeness: PASS
