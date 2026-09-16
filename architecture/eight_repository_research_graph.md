@@ -846,8 +846,13 @@ Registered technical transfer:
 ```text
 TIG-E source commit: 286cf72c5fbc76e56830cb157c73c05843c612ee
 technical cutover merge: 99c37df24cc53f3412821f6dd042350604004acd
-accepted target main snapshot: cf71b37f1a727bc4ef0ffa15445f5f1ac1f6f226
+accepted target main snapshot: e279756032a71c1fbdf8b81330152fbabb267646
 technical source transfer: COMPLETE
+snapshot CI run: 35083432144 / SUCCESS
+package integrity: PASS
+source completeness: PASS
+semantic completeness: NOT_VERIFIED
+audit readiness: NOT_ASSESSED
 semantic classification: PENDING
 independent post-deletion audit: PENDING
 ```
@@ -867,7 +872,7 @@ no Current pointer, canonization, Claim Promotion, or question closure follows
 
 ## XRT-001 — TIG-E → Ex-I-Greater-Than-Zero
 
-The historical TIG-E source set is preserved in `Ex-I-Greater-Than-Zero` with provenance bound to source commit `286cf72c5fbc76e56830cb157c73c05843c612ee`. The accepted target snapshot is `cf71b37f1a727bc4ef0ffa15445f5f1ac1f6f226`, containing technical cutover merge `99c37df24cc53f3412821f6dd042350604004acd`.
+The historical TIG-E source set is preserved in `Ex-I-Greater-Than-Zero` with provenance bound to source commit `286cf72c5fbc76e56830cb157c73c05843c612ee`. The accepted target snapshot is `e279756032a71c1fbdf8b81330152fbabb267646`, containing technical cutover merge `99c37df24cc53f3412821f6dd042350604004acd`.
 
 TIG-E retains authority for its physical projections. `Ex-I-Greater-Than-Zero` becomes local authority only for Foundation-, World-Model-, and bridge objects that are individually registered and activated under its lifecycle controls.
 

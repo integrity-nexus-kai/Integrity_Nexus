@@ -180,8 +180,13 @@ audit result != proof
 ```text
 TIG-E source commit: 286cf72c5fbc76e56830cb157c73c05843c612ee
 technical cutover merge: 99c37df24cc53f3412821f6dd042350604004acd
-accepted Ex-I-Greater-Than-Zero main snapshot: cf71b37f1a727bc4ef0ffa15445f5f1ac1f6f226
+accepted Ex-I-Greater-Than-Zero main snapshot: e279756032a71c1fbdf8b81330152fbabb267646
 semantic classification: PENDING
+snapshot CI run: 35083432144 / SUCCESS
+package integrity: PASS
+source completeness: PASS
+semantic completeness: NOT_VERIFIED
+audit readiness: NOT_ASSESSED
 independent post-deletion audit: PENDING
 ```
 

@@ -442,10 +442,18 @@ These are registered research domains, not validated theories or promoted claims
 
 ```text
 Repository: integrity-nexus-kai/Ex-I-Greater-Than-Zero
-Accepted main commit: cf71b37f1a727bc4ef0ffa15445f5f1ac1f6f226
+Accepted main commit: e279756032a71c1fbdf8b81330152fbabb267646
 Technical cutover merge commit: 99c37df24cc53f3412821f6dd042350604004acd
 TIG-E source commit: 286cf72c5fbc76e56830cb157c73c05843c612ee
 Technical source transfer: COMPLETE
+Snapshot CI run: 35083432144 / SUCCESS
+Snapshot ID: TFN-20260916T100939Z-9859374ddb18
+Snapshot root hash: aa7f765a9a2e41204b8bf405ccca36cb6936aaca0ff363d7ef0a410c382e2fe6
+Package integrity: PASS
+Source completeness: PASS
+Semantic completeness: NOT_VERIFIED
+Audit readiness: NOT_ASSESSED
+Authenticity: NOT_ATTESTED
 Semantic classification: PENDING
 Current pointers created by transfer: 0
 Claim promotions created by transfer: 0
@@ -471,6 +479,7 @@ transfer != question closure
 
 ```text
 Repair applied: YES
+Technical snapshot validation: PASS_WITH_BOUNDARIES
 Independent AIL-2 post-deletion audit: OUTSTANDING
 Release state: REVIEW_REQUIRED
 ```
