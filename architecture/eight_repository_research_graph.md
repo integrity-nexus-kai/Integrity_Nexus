@@ -850,7 +850,7 @@ accepted target main snapshot: 66d3e233d197a168c9f443f905dbe8cfa2b1ac70
 technical source transfer: COMPLETE
 validated content commit: e279756032a71c1fbdf8b81330152fbabb267646
 validated content tree: 9dab7b19bb27803e8103b09ac13b06d64944bbf6
-current accepted main has identical tree after ancestry-only merges: YES
+accepted baseline main has identical validated tree after ancestry-only merges: YES
 snapshot CI run: 35083432144 / SUCCESS
 package integrity: PASS
 source completeness: PASS
@@ -859,6 +859,22 @@ audit readiness: NOT_ASSESSED
 semantic classification: PENDING
 independent post-deletion audit: PENDING
 ```
+
+Current observed definition-authority state:
+
+```text
+observed current main: 1ff2c43fa624c9bde0abdfdac4c59e96ce7ddde5
+relation to accepted baseline: LOCAL_AHEAD
+ahead by: 21 commits
+global definition authority registry: research/foundation_definitions/GLOBAL_DEFINITION_AUTHORITY_REGISTRY.md
+registry blob: 977e7f1f5b34771c02b23f22f915cb88e18dc3d0
+Foundation candidate coverage: 18/18
+semantic activation: 0
+Current pointers: 0
+Nexus synchronization: SYNC_REQUIRED
+```
+
+This observation updates repository architecture and routing only. It does not accept the local delta as scientific truth and does not transfer Foundation authority into SSC. SSC-local technical, Alignment-domain and HT-domain registers remain physically and semantically owned by their registered SSC paths; the TFN global registry is a pointer-based cross-repository index.
 
 Mandatory boundary:
 
