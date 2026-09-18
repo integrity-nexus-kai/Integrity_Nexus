@@ -427,7 +427,7 @@ HT cross-repository master map:
 research/homo_transcendens/HT_CROSS_REPO_SOURCE_AND_DEPENDENCY_MAP_v0.1_2026-09-18.md
 
 HT cross-repository map blob:
-eca276aac777f5d45e735e16876d34024bd40e7b
+377a3258ec039e58f28cbd3ffad63aae174b4e8b
 
 Historical HT provenance:
 TIG-E-Topological_integrity-_gravity_engine-
@@ -441,7 +441,7 @@ Alignment relation:
 SIBLING BOUNDARY INPUT ONLY
 
 HT AIL-2 repair state:
-F01-F04 + F06 REPAIR MATERIALIZED / F05 + F07-F08 OPEN
+F01-F06 except F07/F08 REPAIR MATERIALIZED; F05 EMERGENCE TEST OPEN; F07-F08 OPEN
 
 HT qualification:
 OPEN
