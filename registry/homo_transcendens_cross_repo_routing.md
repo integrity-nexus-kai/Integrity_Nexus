@@ -115,17 +115,21 @@ Current repair controller:
 Current state at registration:
 
 ~~~text
-HT-AIL2-F01 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
-HT-AIL2-F02 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
-HT-AIL2-F03 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
-HT-AIL2-F04 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
-HT-AIL2-F05 = REPAIR MATERIALIZED / EMERGENCE TEST OPEN / CLOSURE RE-AUDIT OPEN
-HT-AIL2-F06 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
-HT-AIL2-F07 = REPAIR MATERIALIZED / TEST EXECUTION OPEN / CLOSURE RE-AUDIT OPEN
-HT-AIL2-F08 = REPAIR MATERIALIZED / TECHNICAL VERIFICATION PASS / CLOSURE RE-AUDIT OPEN
+HT-AIL2-F01 = FORMALLY CLOSED
+HT-AIL2-F02 = FORMALLY CLOSED
+HT-AIL2-F03 = FORMALLY CLOSED
+HT-AIL2-F04 = FORMALLY CLOSED
+HT-AIL2-F05 = FORMALLY CLOSED / EMERGENCE TEST OPEN
+HT-AIL2-F06 = FORMALLY CLOSED
+HT-AIL2-F07 = FORMALLY CLOSED / TEST EXECUTION OPEN
+HT-AIL2-F08 = FORMALLY CLOSED / TECHNICAL VERIFICATION PASS
+
+AIL-2 CLOSURE = PASS
+REPAIR_REGRESSION = NO
 
 HT qualification = OPEN
 HT-MAX qualification = OPEN
+HT Emergence qualification = NO
 Superaddition proved = NO
 Public release = NOT_AUTHORIZED
 ~~~
@@ -280,4 +284,62 @@ CHECKSUM_FILE_SELF_BINDING = Git blob + package commit
 recursive checksum self-hash = prohibited
 ```
 
-Next gate is the independent limited AIL-2 closure re-audit of F01-F08 plus repair regressions.
+The independent limited AIL-2 closure re-audit is complete.
+
+```text
+AIL-2 CLOSURE = PASS
+F01-F08 FORMALLY CLOSED
+REPAIR_REGRESSION = NO
+```
+
+Independent audit record in SSC:
+
+`Structural_State_Controller/research/homo_transcendens/audits/HT_HALOGEN2_INDEPENDENT_LIMITED_AIL2_CLOSURE_REAUDIT_2026-09-18.md`
+
+Audit record materialization commit:
+
+`9c9ddb2c6d2200d33db8a2e8f3e90ff04accb7b3`
+
+Next active scientific controller:
+
+`Structural_State_Controller/research/homo_transcendens/HT_POST_CLOSURE_SCIENTIFIC_QUALIFICATION_QUEUE_v0.1_2026-09-18.md`
+
+This registry update does not promote any scientific claim.
+
+
+## 15. Formal AIL-2 closure registration
+
+Closure documentation event in SSC:
+
+`Structural_State_Controller/research/homo_transcendens/audits/HT_AIL2_CLOSURE_DOCUMENTATION_EVENT_2026-09-18.md`
+
+Closure seal in SSC:
+
+`Structural_State_Controller/research/homo_transcendens/provenance/HT_AIL2_STRUCTURAL_CLOSURE_SEAL_v1.0_2026-09-18.md`
+
+Registered state:
+
+```text
+STRUCTURAL REPAIR CYCLE = CLOSED
+F01-F08 = FORMALLY CLOSED
+AIL-2 CLOSURE = PASS
+REPAIR_REGRESSION = NO
+```
+
+Scientific boundaries preserved:
+
+```text
+SUPERADDITION_PROVED = NO
+HT_EMERGENCE_QUALIFIED = NO
+HT_QUALIFICATION = OPEN
+HT_MAX_QUALIFICATION = OPEN
+FIRSTNESS = NOT_SUPPORTED
+REPLICATION = OPEN
+GENERALIZATION = OPEN
+80:20 = OPEN
+HUMAN_PRESENCE_QUOTAS = OPEN
+METAMAX_AUTOMATIC_ENFORCEMENT = NOT_ESTABLISHED
+PUBLIC_RELEASE = NOT_AUTHORIZED
+```
+
+`Integrity_Nexus` records routing and state only. Scientific ownership remains in `Structural_State_Controller/research/homo_transcendens/`.
