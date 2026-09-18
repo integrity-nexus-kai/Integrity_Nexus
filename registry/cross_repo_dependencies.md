@@ -238,3 +238,58 @@ alignment pending detailed audit
 Expanded cross-repository dependency graph.
 
 All dependencies remain conceptual or governance-level unless a repository-specific proof or evidence object explicitly upgrades the dependency class.
+
+---
+
+# Homo Transcendens Cross-Repository Thread
+
+Master routing record:
+
+`registry/homo_transcendens_cross_repo_routing.md`
+
+Current scientific owner:
+
+~~~text
+Structural_State_Controller/research/homo_transcendens/
+~~~
+
+Dependency graph:
+
+~~~text
+TIG-E historical HT provenance
+        ↓ D0/D4 provenance/evidence input
+Structural_State_Controller / HT
+        ↑ D1/D4 typed Foundation dependency
+Ex-I-Greater-Than-Zero / Foundation
+
+Structural_State_Controller / AI Alignment
+        ↔ D0/D1 sibling boundary only
+Structural_State_Controller / HT
+~~~
+
+Bound navigation source:
+
+`Structural_State_Controller/research/homo_transcendens/HT_CROSS_REPO_SOURCE_AND_DEPENDENCY_MAP_v0.1_2026-09-18.md`
+
+Bound historical source:
+
+`TIG-E-Topological_integrity-_gravity_engine-@636b2d4320e131c67a75fc1ebbdacabe1dfb9ba5`
+
+Bound Foundation snapshot:
+
+`Ex-I-Greater-Than-Zero@1ff2c43fa624c9bde0abdfdac4c59e96ce7ddde5`
+
+Boundary:
+
+~~~text
+historical provenance != current owner
+Foundation import != Foundation redefinition
+Alignment boundary input != HT claim ownership
+HT repair readiness != HT scientific proof
+~~~
+
+Current AIL-2 repair status is controlled locally by:
+
+`Structural_State_Controller/research/homo_transcendens/audits/HT_AIL2_REPAIR_TRACEABILITY_v0.1_2026-09-18.md`
+
+No dependency-class entry here promotes any HT, Foundation, Alignment, Superaddition, Emergence, HT-MAX, replication, or generalization claim.
