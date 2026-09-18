@@ -15,7 +15,7 @@
 **Operational Status:** Addressed  
 **Progress Classification:** READY FOR COMPLETION AUDIT  
 **Completion Readiness:** READY FOR AUDIT  
-**Last Updated:** 2026-09-14
+**Last Updated:** 2026-09-18
 
 This document is the sole authority for:
 
@@ -412,6 +412,52 @@ application description != Claim Status
 ```
 
 Deferred SSC projection does not block OQ-031 terminology-governance completion when deferral and transfer prohibition are explicit.
+
+### Current Observed HT Cross-Repository State — 2026-09-18
+
+The Structural_State_Controller repository now also contains the current scientific owner workspace for the Homo Transcendens research strand.
+
+This observation does not change the protected SSC application boundary for TIG/QIC/SIR/Cube science.
+
+~~~text
+HT current owner:
+Structural_State_Controller/research/homo_transcendens/
+
+HT cross-repository master map:
+research/homo_transcendens/HT_CROSS_REPO_SOURCE_AND_DEPENDENCY_MAP_v0.1_2026-09-18.md
+
+HT cross-repository map blob:
+84913d5d1eb620d853978d2f9fbba5923d2d82d0
+
+Historical HT provenance:
+TIG-E-Topological_integrity-_gravity_engine-
+@ 636b2d4320e131c67a75fc1ebbdacabe1dfb9ba5
+
+Foundation authority:
+Ex-I-Greater-Than-Zero
+@ 1ff2c43fa624c9bde0abdfdac4c59e96ce7ddde5
+
+Alignment relation:
+SIBLING BOUNDARY INPUT ONLY
+
+HT AIL-2 repair state:
+F01 REPAIR MATERIALIZED / F02-F08 OPEN
+
+HT qualification:
+OPEN
+
+HT-MAX qualification:
+OPEN
+
+Public release:
+NOT_AUTHORIZED
+~~~
+
+Integrity Nexus registration source:
+
+`registry/homo_transcendens_cross_repo_routing.md`
+
+This is a meta-registry observation only. It does not accept, prove, validate, canonize, or promote HT, Foundation, Alignment, Superaddition, Emergence, HT-MAX, replication, or generalization claims.
 
 ---
 
