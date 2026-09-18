@@ -343,3 +343,48 @@ PUBLIC_RELEASE = NOT_AUTHORIZED
 ```
 
 `Integrity_Nexus` records routing and state only. Scientific ownership remains in `Structural_State_Controller/research/homo_transcendens/`.
+
+
+## 16. P1 scientific qualification execution — 2026-09-18
+
+SSC scientific owner has executed the first post-closure P1 gates.
+
+Registered source objects:
+
+`Structural_State_Controller/research/homo_transcendens/qualification/HT_SQ01_EMERGENCE_QUALIFICATION_EXECUTION_v0.1_2026-09-18.md`
+
+`Structural_State_Controller/research/homo_transcendens/qualification/HT_SQ02_SUPERADDITION_TEST_GATE_EXECUTION_v0.1_2026-09-18.md`
+
+`Structural_State_Controller/research/homo_transcendens/qualification/HT_SQ01_SQ02_PROSPECTIVE_EMERGENCE_SUPERADDITION_TEST_PROTOCOL_v0.3_2026-09-18.md`
+
+`Structural_State_Controller/research/homo_transcendens/qualification/HT_SQ01_SQ02_PROSPECTIVE_TEST_PROTOCOL_INTERNAL_PREFLIGHT_v0.1_2026-09-18.md`
+
+Registered state:
+
+```text
+HT-SQ-01 EXECUTION = COMPLETE
+QUALIFICATION_RESULT = NOT_ESTABLISHED
+HT_EMERGENCE_QUALIFIED = NO
+
+HT-SQ-02 PARITY GATE EXECUTION = COMPLETE
+SUPERADDITION_TEST_RESULT = NOT_RUN
+PARITY_GATE_PASS = NO
+SUPERADDITION_PROVED = NO
+
+PROSPECTIVE TEST PROTOCOL v0.3 = MATERIALIZED
+INTERNAL PREFLIGHT = PASS TO INDEPENDENT REVIEW
+APPROVED_FOR_TEST = NO
+```
+
+Next gate:
+
+```text
+INDEPENDENT PROTOCOL REVIEW
+-> exact test-instance freeze
+-> evaluator/ground-truth freeze
+-> pre-registration hash
+-> APPROVED_FOR_TEST
+-> isolated prospective arm execution
+```
+
+This is a routing registration only. `Integrity_Nexus` does not create or promote the scientific result.
