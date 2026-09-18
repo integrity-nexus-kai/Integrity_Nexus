@@ -120,7 +120,7 @@ HT-AIL2-F02 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
 HT-AIL2-F03 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
 HT-AIL2-F04 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
 HT-AIL2-F05 = OPEN
-HT-AIL2-F06 = OPEN
+HT-AIL2-F06 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
 HT-AIL2-F07 = OPEN
 HT-AIL2-F08 = OPEN
 
@@ -172,3 +172,21 @@ F02: functional continuation dependency != validity/standing dependency
 F03: standing != universal functional non-substitutability
 F04: RIK != Alignment pass; Alignment remains sibling boundary input
 ```
+
+
+## 11. P_CAP owner/import control
+
+Current SSC control:
+
+`Structural_State_Controller/research/homo_transcendens/HT_FOUNDATION_AND_RELATIONAL_TERM_IMPORT_CONTROL_v0.1_2026-09-18.md`
+
+Registered owner rule:
+
+```text
+P_CAP primary owner = Alignment A1 / AA-CL-009
+HT role = specialized import only
+HT specialization = P_CAP^HT
+competing HT definition = prohibited
+```
+
+This registration is routing-only and does not promote `P_CAP`, HT, Superaddition or Alignment.
