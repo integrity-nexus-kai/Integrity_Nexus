@@ -216,6 +216,8 @@ SIR mathematics does not acquire physical meaning without an explicit bridge.
 **Repository role:** Downstream control and state-admissibility application repository.  
 **Scientific domain:** SSC deferred application projection.
 
+**Additional registered research strand:** Homo Transcendens is currently scientifically owned under `Structural_State_Controller/research/homo_transcendens/`. Its cross-repository provenance and dependency thread is registered in [`registry/homo_transcendens_cross_repo_routing.md`](./registry/homo_transcendens_cross_repo_routing.md). This registration does not alter SSC's protected boundary against defining TIG/QIC/SIR/Cube science.
+
 SSC may not define the active TIG, QIC, SIR, Cube, or common-substrate research core.
 
 ## Cube Research
