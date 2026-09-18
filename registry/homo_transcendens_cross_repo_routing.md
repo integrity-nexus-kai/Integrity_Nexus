@@ -31,7 +31,7 @@ Current HT cross-repository master map:
 
 Current Git blob:
 
-`377a3258ec039e58f28cbd3ffad63aae174b4e8b`
+`7d4d60c11c64eeb366513976d955f2a2867811dd`
 
 Direct source:
 
@@ -121,7 +121,7 @@ HT-AIL2-F03 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
 HT-AIL2-F04 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
 HT-AIL2-F05 = REPAIR MATERIALIZED / EMERGENCE TEST OPEN / CLOSURE RE-AUDIT OPEN
 HT-AIL2-F06 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
-HT-AIL2-F07 = OPEN
+HT-AIL2-F07 = REPAIR MATERIALIZED / TEST EXECUTION OPEN / CLOSURE RE-AUDIT OPEN
 HT-AIL2-F08 = OPEN
 
 HT qualification = OPEN
@@ -216,3 +216,23 @@ K_HT = possible capability output, not Emergence itself
 Superaddition != Emergence
 HT Emergence qualification remains OPEN
 ```
+
+
+## 13. F07 superaddition normalization control
+
+Current SSC control:
+
+`Structural_State_Controller/research/homo_transcendens/governance/HT_SUPERADDITION_QUALIFICATION_AND_BUDGET_NORMALIZATION_v0.2_2026-09-18.md`
+
+Registered control:
+
+```text
+PARITY_STRICT
+PARITY_FUNCTIONAL
+PARITY_SENSITIVITY_BOUND
+normalizer-dependent result -> INDETERMINATE
+test execution -> OPEN
+SUPERADDITION_PROVED -> NO
+```
+
+This is a repair/control registration only; no positive HT or Superaddition claim is promoted.
