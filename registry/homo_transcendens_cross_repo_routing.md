@@ -31,7 +31,7 @@ Current HT cross-repository master map:
 
 Current Git blob:
 
-`84913d5d1eb620d853978d2f9fbba5923d2d82d0`
+`eca276aac777f5d45e735e16876d34024bd40e7b`
 
 Direct source:
 
@@ -116,9 +116,9 @@ Current state at registration:
 
 ~~~text
 HT-AIL2-F01 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
-HT-AIL2-F02 = OPEN
-HT-AIL2-F03 = OPEN
-HT-AIL2-F04 = OPEN
+HT-AIL2-F02 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
+HT-AIL2-F03 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
+HT-AIL2-F04 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
 HT-AIL2-F05 = OPEN
 HT-AIL2-F06 = OPEN
 HT-AIL2-F07 = OPEN
@@ -159,3 +159,16 @@ Structural_State_Controller/research/ai_alignment = current Alignment sibling ow
 ~~~
 
 Registration in Integrity Nexus does not create scientific truth, proof, validation, Claim Status, Current selection in another repository, or audit passage.
+
+
+## 10. Current F02-F04 repair object
+
+`Structural_State_Controller/research/homo_transcendens/governance/HT_DOMAIN_DEFINITION_CONTROL_v0.2_2026-09-18.md`
+
+Current repair boundaries:
+
+```text
+F02: functional continuation dependency != validity/standing dependency
+F03: standing != universal functional non-substitutability
+F04: RIK != Alignment pass; Alignment remains sibling boundary input
+```
