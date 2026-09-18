@@ -31,7 +31,7 @@ Current HT cross-repository master map:
 
 Current Git blob:
 
-`7d4d60c11c64eeb366513976d955f2a2867811dd`
+`b5fd2f342c2681fec35bbe786e34977b0a73433a`
 
 Direct source:
 
@@ -122,7 +122,7 @@ HT-AIL2-F04 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
 HT-AIL2-F05 = REPAIR MATERIALIZED / EMERGENCE TEST OPEN / CLOSURE RE-AUDIT OPEN
 HT-AIL2-F06 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
 HT-AIL2-F07 = REPAIR MATERIALIZED / TEST EXECUTION OPEN / CLOSURE RE-AUDIT OPEN
-HT-AIL2-F08 = OPEN
+HT-AIL2-F08 = REPAIR MATERIALIZED / TECHNICAL VERIFICATION PASS / CLOSURE RE-AUDIT OPEN
 
 HT qualification = OPEN
 HT-MAX qualification = OPEN
@@ -236,3 +236,48 @@ SUPERADDITION_PROVED -> NO
 ```
 
 This is a repair/control registration only; no positive HT or Superaddition claim is promoted.
+
+
+## 14. F08 repair freeze and closure package
+
+SSC repair-source freeze:
+
+`6c947c4ebac6222d2b22937b5e01e36cb7a88dbb`
+
+Current F08 freeze:
+
+`Structural_State_Controller/research/homo_transcendens/provenance/HT_AIL2_REPAIR_FREEZE_MANIFEST_v1.1_2026-09-18.md`
+
+Closure package pointer:
+
+`Structural_State_Controller/research/homo_transcendens/audits/HT_AIL2_CLOSURE_AUDIT_PACKAGE_POINTER_2026-09-18.md`
+
+Closure package identity:
+
+```text
+branch:
+audit/ht-ail2-closure-2026-09-18
+
+commit:
+863de77687ac324cdc21b1d61ae24a0f255237e3
+
+source copies checked:
+25
+
+source copy mismatches:
+0
+
+technical verification:
+PASS
+```
+
+F08 binding model:
+
+```text
+SCIENTIFIC_SOURCE = SHA-256 + Git blob + frozen source ref
+PACKAGE_NATIVE_CONTROL = Git blob + package commit + manifest
+CHECKSUM_FILE_SELF_BINDING = Git blob + package commit
+recursive checksum self-hash = prohibited
+```
+
+Next gate is the independent limited AIL-2 closure re-audit of F01-F08 plus repair regressions.
