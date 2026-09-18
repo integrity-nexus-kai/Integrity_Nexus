@@ -463,6 +463,28 @@ Claim promotions created by transfer: 0
 Independent post-deletion audit: PENDING
 ```
 
+### Current Observed Local State — Definition Authority Update 2026-09-18
+
+```text
+Observed current main commit: 1ff2c43fa624c9bde0abdfdac4c59e96ce7ddde5
+Accepted baseline commit: 66d3e233d197a168c9f443f905dbe8cfa2b1ac70
+Ancestry relation: LOCAL_AHEAD
+Ahead by: 21 commits
+Behind by: 0 commits
+Definition authority registry: research/foundation_definitions/GLOBAL_DEFINITION_AUTHORITY_REGISTRY.md
+Definition authority registry blob: 977e7f1f5b34771c02b23f22f915cb88e18dc3d0
+Registered Foundation slots: 18
+Foundation slots with candidate material: 18
+Semantically activated definitions: 0
+Active Current pointers: 0
+Claim promotions: 0
+Open-question closures: 0
+Nexus synchronization state: SYNC_REQUIRED
+Observation timestamp UTC: 2026-09-18T10:08:12Z
+```
+
+The observed current main is a reproducible descendant of the accepted baseline. Recording it does not accept, canonize, prove or activate the 21-commit delta. The local global-definition-authority registry is recognized as an organizational routing index; exact Foundation, SSC-local, Alignment-domain and HT-domain objects remain owned by their registered source repositories and paths.
+
 ### Authority and Transfer Boundary
 
 `Ex-I-Greater-Than-Zero` is local authority for its individually registered and lifecycle-controlled Foundation-, World-Model-, and fundamental-bridge objects. Imported historical TIG-E material remains provenance-bound source material until individually classified and activated.
