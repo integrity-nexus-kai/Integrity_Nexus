@@ -31,7 +31,7 @@ Current HT cross-repository master map:
 
 Current Git blob:
 
-`eca276aac777f5d45e735e16876d34024bd40e7b`
+`377a3258ec039e58f28cbd3ffad63aae174b4e8b`
 
 Direct source:
 
@@ -119,7 +119,7 @@ HT-AIL2-F01 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
 HT-AIL2-F02 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
 HT-AIL2-F03 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
 HT-AIL2-F04 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
-HT-AIL2-F05 = OPEN
+HT-AIL2-F05 = REPAIR MATERIALIZED / EMERGENCE TEST OPEN / CLOSURE RE-AUDIT OPEN
 HT-AIL2-F06 = REPAIR MATERIALIZED / CLOSURE RE-AUDIT OPEN
 HT-AIL2-F07 = OPEN
 HT-AIL2-F08 = OPEN
@@ -190,3 +190,29 @@ competing HT definition = prohibited
 ```
 
 This registration is routing-only and does not promote `P_CAP`, HT, Superaddition or Alignment.
+
+
+## 12. FD-002 emergence bridge
+
+Current SSC adapter:
+
+`Structural_State_Controller/research/homo_transcendens/bridges/HT_FD002_EMERGENCE_BRIDGE_v0.1_AUDIT_CANDIDATE_2026-09-18.md`
+
+Upstream authority:
+
+```text
+Ex-I-Greater-Than-Zero
+@ 1ff2c43fa624c9bde0abdfdac4c59e96ce7ddde5
+
+FD-002 blob:
+cb2fb1ce1e28d5b64155fb4a050b0bebb30b1c4b
+```
+
+Registered boundary:
+
+```text
+HT bridge != FD-002 redefinition
+K_HT = possible capability output, not Emergence itself
+Superaddition != Emergence
+HT Emergence qualification remains OPEN
+```
