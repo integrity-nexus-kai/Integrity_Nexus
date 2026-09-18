@@ -355,9 +355,9 @@ Registered source objects:
 
 `Structural_State_Controller/research/homo_transcendens/qualification/HT_SQ02_SUPERADDITION_TEST_GATE_EXECUTION_v0.1_2026-09-18.md`
 
-`Structural_State_Controller/research/homo_transcendens/qualification/HT_SQ01_SQ02_PROSPECTIVE_EMERGENCE_SUPERADDITION_TEST_PROTOCOL_v0.3_2026-09-18.md`
+`Structural_State_Controller/research/homo_transcendens/qualification/HT_SQ01_SQ02_PROSPECTIVE_EMERGENCE_SUPERADDITION_TEST_PROTOCOL_v0.4_2026-09-18.md`
 
-`Structural_State_Controller/research/homo_transcendens/qualification/HT_SQ01_SQ02_PROSPECTIVE_TEST_PROTOCOL_INTERNAL_PREFLIGHT_v0.1_2026-09-18.md`
+`Structural_State_Controller/research/homo_transcendens/qualification/HT_SQ01_SQ02_PROSPECTIVE_TEST_PROTOCOL_INTERNAL_PREFLIGHT_v0.2_2026-09-18.md`
 
 Registered state:
 
