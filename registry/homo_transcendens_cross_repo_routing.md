@@ -355,7 +355,7 @@ Registered source objects:
 
 `Structural_State_Controller/research/homo_transcendens/qualification/HT_SQ02_SUPERADDITION_TEST_GATE_EXECUTION_v0.1_2026-09-18.md`
 
-`Structural_State_Controller/research/homo_transcendens/qualification/HT_SQ01_SQ02_PROSPECTIVE_EMERGENCE_SUPERADDITION_TEST_PROTOCOL_v0.4_2026-09-18.md`
+`Structural_State_Controller/research/homo_transcendens/qualification/HT_SQ01_SQ02_PROSPECTIVE_EMERGENCE_SUPERADDITION_TEST_PROTOCOL_v0.5_2026-09-19.md`
 
 `Structural_State_Controller/research/homo_transcendens/qualification/HT_SQ01_SQ02_PROSPECTIVE_TEST_PROTOCOL_INTERNAL_PREFLIGHT_v0.2_2026-09-18.md`
 
@@ -399,3 +399,39 @@ Prompt blob:
 `ebfe81707c699bd44700c8deddcf8393473018a4`
 
 This is routing only; no scientific status change.
+
+
+## 17. Independent protocol review / repair route — 2026-09-19
+
+Registered independent review:
+
+Structural_State_Controller/research/homo_transcendens/qualification/HT_SQ01_SQ02_PROTOCOL_INDEPENDENT_REVIEW_v0.1_2026-09-19.md
+
+Registered repair successor:
+
+Structural_State_Controller/research/homo_transcendens/qualification/HT_SQ01_SQ02_PROSPECTIVE_EMERGENCE_SUPERADDITION_TEST_PROTOCOL_v0.5_2026-09-19.md
+
+Repair traceability:
+
+Structural_State_Controller/research/homo_transcendens/qualification/HT_SQ01_SQ02_PROTOCOL_REPAIR_TRACEABILITY_v0.1_2026-09-19.md
+
+Closure re-audit entry:
+
+Structural_State_Controller/research/homo_transcendens/qualification/HT_SQ01_SQ02_PROTOCOL_REPAIR_CLOSURE_REAUDIT_STARTPROMPT_2026-09-19.md
+
+~~~text
+PARENT PROTOCOL REVIEW = REQUEST_CHANGES
+IR-F01..IR-F07 = REPAIR MATERIALIZED / CLOSURE OPEN
+BUDGET NORMALIZATION = PASS
+STOP / RETRY / INVALIDATION = PASS
+
+PASS_TO_TEST_INSTANCE_FREEZE = NO
+APPROVED_FOR_TEST = NO
+
+HT_EMERGENCE_QUALIFIED = NO
+SUPERADDITION_PROVED = NO
+HT_QUALIFICATION = OPEN
+HT_MAX_QUALIFICATION = OPEN
+~~~
+
+This registration is routing-only and creates no scientific status change.
