@@ -518,27 +518,63 @@ Claim promotions created by transfer: 0
 Independent post-deletion audit: PENDING
 ```
 
-### Current Observed Local State — Definition Authority Update 2026-09-18
+### Current Observed Local State — TFN Repair Closure Update 2026-09-19
 
 ```text
-Observed current main commit: 1ff2c43fa624c9bde0abdfdac4c59e96ce7ddde5
+Observed current main commit: 8d5d44b1e7e225bc75c57c08c89ef0dcc1a7759b
 Accepted baseline commit: 66d3e233d197a168c9f443f905dbe8cfa2b1ac70
 Ancestry relation: LOCAL_AHEAD
-Ahead by: 21 commits
-Behind by: 0 commits
-Definition authority registry: research/foundation_definitions/GLOBAL_DEFINITION_AUTHORITY_REGISTRY.md
-Definition authority registry blob: 977e7f1f5b34771c02b23f22f915cb88e18dc3d0
-Registered Foundation slots: 18
+Exact ahead-count in this routing update: NOT RECALCULATED
+
+Definition authority registry:
+research/foundation_definitions/GLOBAL_DEFINITION_AUTHORITY_REGISTRY.md
+Definition authority registry blob:
+8ba6571b460f6c2623a8b26bbd03ce1cac1b3d03
+
+TERM_REGISTER blob:
+479a8667f01ffa5df4e3e02231d04dacaee3cc3a
+TERM_REGISTER entries: 151
+DEFINED: 149
+OPEN: 1
+WITHDRAWN_RESERVED: 1
+
+Single OPEN definition:
+TFN-TERM-025 Cmp_I
+classification = SEMANTIC_PLACEHOLDER / FORMAL_OPERATOR_TYPE_DEFERRED
+
+Foundation slots: 18
 Foundation slots with candidate material: 18
+Definition-version metadata rows: 18/18
+Definition metadata blob:
+e6580752740d7eeb1fd5d46217a05b36dbd7bf4d
+
 Semantically activated definitions: 0
 Active Current pointers: 0
 Claim promotions: 0
 Open-question closures: 0
-Nexus synchronization state: SYNC_REQUIRED
-Observation timestamp UTC: 2026-09-18T10:08:12Z
+
+TFN-F-001..008: CLOSED
+TFN-TR02-F-002: CLOSED
+TFN REPAIR CLOSURE: PASS
+
+Closure review:
+audits/reports/TFN_REPOSITORY_REPAIR_LIMITED_CLOSURE_REAUDIT_RESULT_2026-09-19.md
+Closure-review blob:
+8f6de4ce4ae285cfaf88319a2542a4a7308ddf7a
+
+Assurance characterization:
+FRESH SEPARATED / ADVERSARIAL CLOSURE REVIEW
+NOT EXTERNAL HUMAN AUDIT
+NOT INSTITUTIONAL ASSURANCE
+
+Nexus synchronization state:
+SYNCED_TO_OBSERVED_TFN_REPAIR_CLOSURE
+Observation date: 2026-09-19
 ```
 
-The observed current main is a reproducible descendant of the accepted baseline. Recording it does not accept, canonize, prove or activate the 21-commit delta. The local global-definition-authority registry is recognized as an organizational routing index; exact Foundation, SSC-local, Alignment-domain and HT-domain objects remain owned by their registered source repositories and paths.
+This synchronization records the observed TFN repository and repair-closure state only. It does not accept, canonize, prove, activate or release the scientific content of the local-ahead delta.
+
+The local global-definition-authority registry remains an organizational routing index; exact Foundation, SSC-local, Alignment-domain and HT-domain objects remain owned by their registered source repositories and paths.
 
 ### Authority and Transfer Boundary
 
