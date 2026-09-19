@@ -12,6 +12,40 @@ This document records completed audits for Integrity Nexus and connected reposit
 
 Entries created before adoption of `audit/audit_record_template.md` are legacy records. Missing snapshot, auditor, independence, conflict, competence, exclusion, or evidence fields must not be inferred. A legacy result is not automatically valid under TRGS.
 
+## EPA-CA-001 — EPA v0.1 Internal Correctness & Completeness Counter-Audit
+
+```text
+Audit ID: EPA-CA-001
+Date and time: 2026-09-19; exact audit time not separately retained
+Repository: Integrity_Nexus
+Fixed snapshot / commit: EPA v0.1 @ 240a138afb6ac7f003d19b27f16e9a03ba613c81; target blob 54cc8866fe27bec1db6e4c457e7931784a361df7
+Auditor or review system: ChatGPT — same working system that materially authored the target, instructed to perform an adversarial self-counteraudit
+Assurance level: INTERNAL SELF-CHECK / SAME-SYSTEM COUNTERAUDIT; no independent assurance
+Independence: NOT INDEPENDENT
+Relevant conflicts: review system materially authored the target baseline
+Competence scope and limits: repository provenance, chronology, dependency/governance reconstruction, artifact/status separation, internal consistency, completeness against already-established EPA findings; no scientific truth validation, external peer review, biomedical/private biographical audit, or institutional assurance
+Included paths: EPA v0.1 target plus already-inspected connected-repository evidence and current EPA discussion state
+Excluded paths: exhaustive re-audit of all 4,256 self-reported commits; external scientific validation; complete machine-readable evidence appendix; provider/account telemetry
+Governing standards: audit/audit_protocol.md; audit/audit_record_template.md; EPA evidence taxonomy
+Evidence paths: audit/EPA_EPISTEMIC_PROVENANCE_AUDIT_v0.1_INTERNAL_COUNTERAUDIT_2026-09-19.md; audit/EPA_EPISTEMIC_PROVENANCE_AUDIT_v0.1_WORKING_BASELINE_2026-09-19.md
+Outcome: NEEDS_REVISION for completeness and qualification; no core-thesis contradiction found
+Findings: two overqualified VERIFIED statements; missing method/completion/timing models; under-recorded current Human–AI orchestration; missing Consistency Audit vs EPA distinction; missing EPA precursor/prospective-retrospective controls; incomplete evidence appendix
+Unresolved uncertainty: first-leg freeze reconstruction; exact provenance of reported ~40h AI-infrastructure phase; platform telemetry for 18 chats / 29 projects; earlier source binding for retrospective capability-choreography reconstruction; full machine-readable evidence map
+Correction conditions: preserve v0.1 unchanged; materialize repaired v0.1.1; narrow evidence statuses; add missing control distinctions and evidence caveats
+Required handoff: continue EPA from v0.1.1; build machine-readable transition/dependency/evidence layer and quantify selected latency windows
+```
+
+Repair result:
+
+- v0.1 preserved unchanged.
+- repaired v0.1.1 materialized at commit `0c4d4b96eddb1315782e5564426c53c64f9b2bed`;
+- v0.1.1 blob `862c904a30ce8d62cd1339a66f34d40dd8501ec7`;
+- freeze record materialized in `audit/EPA_EPISTEMIC_PROVENANCE_AUDIT_v0.1.1_FREEZE_RECORD_2026-09-19.md`.
+
+No independent-assurance, scientific-validation, or canonical-status claim is created by this entry.
+
+---
+
 ## AUD02-AUD00V10-TCR-20260816-01 — R001 Targeted Closure Re-Audit
 
 ```text
