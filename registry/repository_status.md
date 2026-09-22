@@ -760,3 +760,128 @@ Any change to one of the six upstream artifacts invalidates the global synchroni
 Only this file may state the global current-HEAD synchronization count, global Progress Classification, and global Completion Readiness.
 
 No update may create scientific truth, physical interpretation, ontology, derivation, proof, validation, bridge, theory, audit passage, Claim Status, unsupported closure evidence, or Question State closure absent from the governing evidence and registries.
+
+---
+
+## 16. TFN Emergence Workspace Snapshot Synchronization — 2026-09-22
+
+### Purpose
+
+This section supersedes the earlier **TFN local observation only for the Emergence-workspace routing state**. It does not alter OQ-030/OQ-031 scientific or governance closure status and does not promote any TFN scientific claim.
+
+### Privacy-Re-root Qualification
+
+The previous Nexus observation recorded TFN at:
+
+`8d5d44b1e7e225bc75c57c08c89ef0dcc1a7759b`.
+
+The current TFN history has undergone a privacy re-root. Therefore:
+
+```text
+OLD_TFN_OBSERVATION -> CURRENT_TFN
+ANCESTRY COMPARISON: NOT RELIED UPON
+STATUS INFERENCE LOCAL_AHEAD: FORBIDDEN FOR THIS UPDATE
+IDENTITY METHOD: EXACT COMMIT + TREE + WORKSPACE TREE + MANIFEST DIGEST
+```
+
+### Current Frozen TFN Emergence Snapshot
+
+```text
+Repository:
+integrity-nexus-kai/Ex-I-Greater-Than-Zero
+
+Frozen workspace:
+research/emergence_operationalization/
+
+Freeze ref:
+freeze/emops-masteraudit-repair-v4.0-2026-09-22
+
+Freeze commit:
+df5ebbf9e08731674aef49b239a13506029a49a8
+
+Repository tree at freeze:
+6683950149275ba5d5b2604c61f8129588cad3da
+
+Workspace tree:
+9b7b0fbd799893c2f30e69ed23e5485cfd69ee7b
+
+Workspace files:
+104
+
+Workspace bytes:
+338446
+
+Manifest digest:
+e9da16d8539ee1bfcb17e313068383e282b980c5e857df74f11cea4915bb2588
+
+Digest algorithm:
+SHA-256(sorted(relative_path + NUL + byte_size + NUL + git_blob_sha + NUL))
+
+TFN freeze manifest:
+governance/freeze_manifests/TFN_EMOPS_MASTER_AUDIT_REPAIR_FREEZE_v4.0_2026-09-22.md
+```
+
+The TFN `main` may contain later governance-only artifacts outside the frozen workspace. The freeze ref and workspace tree above are the authoritative Emergence re-audit identity.
+
+### Masteraudit State
+
+```text
+Masteraudit:
+MA-TFN-EMOPS-001
+
+Audit source SHA-256:
+a28744b8fe298c96bfc7b5f5abce33c192e26c9443144603e9e3c69ff0fdf9d4
+
+Original verdict:
+REQUEST_CHANGES
+
+Findings:
+EM-AUD-001 ... EM-AUD-009
+
+Repair state:
+REPAIR MATERIALIZED
+
+Finding closure:
+NONE RECORDED
+
+Required next assurance:
+FRESH SEPARATED AIL-1 RE-AUDIT AGAINST THE EXACT V4.0 FREEZE
+```
+
+### Scientific and Governance Boundaries
+
+```text
+TFN Emergence Workspace Sync State:
+SYNCED_TO_TFN_EMOPS_V4_REPAIR_FREEZE
+
+Scientific Claim Promotion:
+NONE
+
+Open Question Closure:
+NONE
+
+Canonicalization:
+NONE
+
+Release Authorization:
+NONE
+
+Audit Passage:
+NONE
+
+Cross-Repository Scientific Integration:
+NOT AUTHORIZED BY THIS SYNC
+```
+
+The active FD-002 working source within the frozen workspace is `v0.6 Revision 2`, explicitly retained as a re-audit candidate, not canonical and not proved.
+
+The HT/Carrier routing in the frozen workspace is explicitly separated as:
+
+```text
+CORE  = Human Reference Pole
+CLASS = HT / HTMAX
+CASE  = HTMAX-001 / 52-capability profile
+```
+
+This repository-status update records the exact TFN snapshot and open audit state only. It does not accept or validate the underlying scientific relations.
+
