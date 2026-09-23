@@ -924,3 +924,47 @@ Audit Passage: NONE
 
 Detailed snapshot record:
 `registry/tfn_emops_v4_1_snapshot_sync_2026-09-23.md`
+
+---
+
+## 18. TFN Emergence Post-AIL1 Documentation Snapshot — v4.2 / 2026-09-23
+
+Dieser Abschnitt supersediert Abschnitt 17 ausschließlich für die **aktuelle Dokumentations-/Routingidentität** des Emergenz-Workspace. Die wissenschaftliche fokussierte AIL-1-Feststellung bezieht sich weiterhin auf den geprüften v4.1-Freeze.
+
+```text
+Freeze ref: freeze/emops-post-ail1-doc-v4.2-2026-09-23
+Freeze commit: 966d5a071e33c6513866d5bb759072351b987d88
+Workspace tree: d2b84d0495762f760acfc9d3cfc8807e597e58a8
+Files / bytes: 115 / 398362
+Manifest digest: 0dced59891ee335565785f47e9b8106863d0ef1a7ec125d1973a6a962144cb49
+```
+
+Änderung gegenüber v4.1:
+
+```text
+focused AIL-1 audit report materialized in workspace
+EM-FRA-001 terminology repair materialized
+current/readiness/navigation updated to PASS_WITH_FINDINGS outcome
+no scientific claim delta
+```
+
+Audit:
+
+```text
+MA-TFN-EMOPS-AIL1-002 = PASS_WITH_FINDINGS
+EM-RA-001 = closure criteria satisfied
+EM-RA-002 = closure criteria satisfied
+EM-FRA-001 = repair materialized
+P2 gate = satisfied
+P2 execution = not started
+```
+
+Boundary:
+
+```text
+Claim Promotion: NONE
+OQ Closure: NONE
+Canonicalization: NONE
+Release Authorization: NONE
+AIL-2 remains required for integration/canonical/release
+```
