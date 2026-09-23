@@ -885,3 +885,42 @@ CASE  = HTMAX-001 / 52-capability profile
 
 This repository-status update records the exact TFN snapshot and open audit state only. It does not accept or validate the underlying scientific relations.
 
+
+---
+
+## 17. TFN Emergence Workspace Snapshot Synchronization — v4.1 / 2026-09-23
+
+Dieser Abschnitt supersediert Abschnitt 16 ausschließlich für den aktuellen Emergenz-Workspace-Routingstand.
+
+```text
+Repository: integrity-nexus-kai/Ex-I-Greater-Than-Zero
+Freeze ref: freeze/emops-reaudit-repair-v4.1-2026-09-23
+Freeze commit: f00f5adac45409d849b42fd2e67aa35312ac796a
+Repository tree: ac010fc3279f29ddc2255a8d5dc38bfb4922e8fd
+Workspace tree: 4ba4e31d1043f8e9befff5fd46912dc102caa27b
+Files / bytes: 113 / 396248
+Manifest digest: 0b268cca82f4b7cbe031343d3b6b07aa558fb2e32924d526c3779a59f40e4f96
+```
+
+Re-Audit:
+
+```text
+MA-TFN-EMOPS-REAUDIT-001
+Verdict: REQUEST_CHANGES
+EM-RA-001: REPAIR MATERIALIZED / VERIFY
+EM-RA-002: REPAIR MATERIALIZED / VERIFY
+Required next assurance: focused fresh-separated AIL-1
+```
+
+Boundary:
+
+```text
+Scientific Claim Promotion: NONE
+Open Question Closure: NONE
+Canonicalization: NONE
+Release Authorization: NONE
+Audit Passage: NONE
+```
+
+Detailed snapshot record:
+`registry/tfn_emops_v4_1_snapshot_sync_2026-09-23.md`
