@@ -33,6 +33,12 @@ Foundation documents define the kernel of the TIG-E discovery architecture:
 6. `06_discovery_engine_architecture.md` — universal discovery engine architecture.
 7. `07_operations_protocol.md` — operational workflow and role separation.
 
+## Controlled Foundation Papers Audit Collection
+
+Program-level Foundation Papers for the four-paper reconciliation and audit package are collected separately at [`foundation/foundation_papers/`](./foundation_papers/README.md).
+
+This collection is an intake, reconciliation, and audit-package location. It is not an automatic extension of the domain-neutral Foundation Layer. Each paper retains its own owner, scope, source binding, epistemic status, and audit status.
+
 ## Core Principle
 
 ```text
