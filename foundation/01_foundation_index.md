@@ -130,6 +130,18 @@ Defines integrity as the cross-cutting preservation principle relating structure
 
 ---
 
+## Controlled Foundation Papers Audit Collection
+
+Program-level Foundation Papers are collected for cross-paper reconciliation and audit-package construction at:
+
+`foundation/foundation_papers/README.md`
+
+This is a controlled intake and audit-package location. It is not an automatic extension of the domain-neutral Foundation Layer. The collection currently reserves four intake slots and can grow when additional load-bearing papers are identified. Each paper retains its own owner, scope, source binding, epistemic status, and audit status.
+
+The collection must preserve a human-readable main text first and place technical audit, claim, source, status, and regression material in a subsequent appendix or package companion.
+
+---
+
 ## Related Governance Gate
 
 ### Canonicalization Threshold
