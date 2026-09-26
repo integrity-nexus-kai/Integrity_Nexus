@@ -256,6 +256,58 @@ Its role is to:
 
 ---
 
+
+# Current Research NEXUS Nodes
+
+Integrity_Nexus registers two active cross-repository research-integration nodes:
+
+### TFN / WORLD MODEL BIBLE
+
+```text
+Repository:
+integrity-nexus-kai/Ex-I-Greater-Than-Zero
+
+Node:
+research/foundation_definitions/foundation_papers/WORLD_MODEL_BIBLE/
+```
+
+Function: integrated World-Model routing, realization, challenge, OQ, audit, object and workflow structure.  
+Scientific owner boundaries remain local to TFN and its registered source objects.
+
+### SSC / HUMAN-AI RESEARCH NODE
+
+```text
+Repository:
+integrity-nexus-kai/Structural_State_Controller
+
+Node:
+research/human_ai_research_node/
+```
+
+Function: Human-AI / Alignment / HT / SSC-projection integration, challenge, audit, paper, Outreach and downstream dependency routing.  
+Alignment, HT and SSC technical owners remain distinct.
+
+Shared continuity mechanism:
+
+```text
+NEXUS Manager
+= TFN ↔ SSC Continuity / Synchronization + Canonical State Master
+```
+
+Detailed META registry:
+
+`registry/tfn_ssc_research_nexus_nodes_2026-09-26.md`
+
+Current dependency relation:
+
+`registry/cross_repo_dependencies.md`
+
+```text
+NODE ROUTING != SCIENTIFIC OWNER TRANSFER
+CANONICAL STATE != SCIENTIFIC TRUTH
+MANAGER HEALTH != AUDIT PASS
+```
+
 # Research Questions and Shared Frontiers
 
 Integrity Nexus distinguishes unresolved research objects by question class:
