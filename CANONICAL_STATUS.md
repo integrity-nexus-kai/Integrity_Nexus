@@ -85,3 +85,16 @@ LICENSE
 ```
 
 for the repository license terms.
+
+
+---
+
+## Commercial Rights Boundary
+
+Canonical status and commercial exploitation rights are separate controls.
+
+The current repository license is the **Canonical Integrity Research & Commercial Rights License v2.0**. Commercial use, monetization, sale, paid distribution, commercial product/service integration, licensing, sublicensing, and other commercial exploitation require prior explicit written agreement with Kai Stefan Dietrich and expressly negotiated economic participation for Kai Stefan Dietrich.
+
+Non-commercial permissions are governed by `LICENSE`.
+
+`CANONICAL STATUS != COMMERCIAL LICENSE`
