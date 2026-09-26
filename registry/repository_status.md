@@ -15,7 +15,7 @@
 **Operational Status:** Addressed  
 **Progress Classification:** READY FOR COMPLETION AUDIT  
 **Completion Readiness:** READY FOR AUDIT  
-**Last Updated:** 2026-09-18
+**Last Updated:** 2026-09-26
 
 This document is the sole authority for:
 
@@ -126,6 +126,26 @@ planned or absent output != existing evidence
 
 Scientifically open objects, Missing bridges, and unassigned Claim Status are compatible with completed terminology governance when their applicability, status, type, domain, scope, non-identity, evidence boundary, and transfer boundaries are explicit and consistent.
 
+### Artifact canonicalization with open questions
+
+Artifact canonicalization is additionally governed by:
+
+```text
+governance/artifact_canonicalization_and_open_question_control.md
+```
+
+Protected rule:
+
+```text
+Question State OPEN != Artifact Status Non-Canonical Input
+Scientific Status Scientifically Open != Artifact Status Non-Canonical Input
+open research question != automatic canonicalization blocker
+```
+
+Canonicality impact is assessed per question-to-artifact relation as `BLOCKING`, `NON_BLOCKING`, `NOT_APPLICABLE`, or `UNASSESSED`.
+
+A `Canonical Artifact` may therefore retain open scientific questions when all question-artifact relations relevant to its declared scope have been assessed and none is `BLOCKING`. Canonicalization does not close those questions or upgrade their scientific or claim status.
+
 ---
 
 ## 2. Canonical Control Sources
@@ -134,6 +154,7 @@ Scientifically open objects, Missing bridges, and unassigned Claim Status are co
 |---|---|
 | Repository maturity | `governance/maturity_model.md` |
 | Status vocabulary, Claim Status assignment, applicability, and closure sequence | `governance/claim_status_taxonomy.md` |
+| Artifact canonicalization and open-question canonicality impact | `governance/artifact_canonicalization_and_open_question_control.md` |
 | Cross-repository and cross-domain transfers | `governance/cross_repository_claim_boundary_matrix.md` |
 | Terminology evidence | `shared/terminology_inventory.md` |
 | Terminology drift protection | `shared/terminology_drift_matrix.md` |
