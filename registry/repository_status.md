@@ -1042,3 +1042,120 @@ OQ Closure: NONE
 Canonicalization: NONE
 Release Authorization: NONE
 ```
+
+---
+
+## 20. TFN ↔ SSC Research NEXUS Node Registration — 2026-09-26
+
+Detailed registry:
+
+`registry/tfn_ssc_research_nexus_nodes_2026-09-26.md`
+
+### TFN node
+
+```text
+Repository:
+integrity-nexus-kai/Ex-I-Greater-Than-Zero
+
+Observed main:
+7d13fe19f18e0db190686e3fffdc0e52523138f1
+
+Node:
+research/foundation_definitions/foundation_papers/WORLD_MODEL_BIBLE/
+
+Role:
+integrated World-Model research routing / execution / object / challenge / OQ / audit / controlled-view structure
+
+Primary boundary:
+node routing != scientific owner transfer
+
+Current TODO:
+research/foundation_definitions/foundation_papers/WORLD_MODEL_BIBLE/CURRENT_TODO.md
+
+NEXUS Manager:
+research/foundation_definitions/foundation_papers/WORLD_MODEL_BIBLE/NEXUS_MANAGER/CURRENT_MANAGER.md
+```
+
+Emergence operationalization is now routed as a child subtopic under:
+
+`research/foundation_definitions/foundation_papers/WORLD_MODEL_BIBLE/02_REALIZATION/02_EMERGENCE/01_OPERATIONALISIERUNG_DER_EMERGENZ/`
+
+while the existing working owner remains:
+
+`research/emergence_operationalization/`
+
+### SSC node
+
+```text
+Repository:
+integrity-nexus-kai/Structural_State_Controller
+
+Observed main:
+efda3d4745b38bc68016ebafa90e222bc768a744
+
+Node:
+research/human_ai_research_node/
+
+Role:
+Human-AI / Alignment / HT / SSC-projection integration, routing, challenge, OQ, audit, paper and Outreach control
+
+Primary boundary:
+node placement != scientific proof
+node routing != owner transfer
+
+Current TODO:
+research/human_ai_research_node/CURRENT_TODO.md
+
+NEXUS Manager:
+research/human_ai_research_node/NEXUS_MANAGER/CURRENT_MANAGER.md
+```
+
+Current SSC cross-node structural work includes the TFN→SSC WMO delta:
+
+`research/human_ai_research_node/01_UPSTREAM_FOUNDATION_IMPORTS/SSC_WMO_DELTA/CURRENT_SSC_WMO_DELTA.md`
+
+### Shared continuity / canonical-state mechanism
+
+```text
+NEXUS MANAGER
+= TFN ↔ SSC CONTINUITY / SYNCHRONIZATION + CANONICAL STATE MASTER
+
+Current shared prompt:
+START_PROMPT_NEXUS_MANAGER_v0.3_2026-09-26.md
+
+Current prompt blob:
+cc211335489ba395a169a2f88fc1e6ca217ef8ab
+
+Bootstrap:
+READY
+
+First autonomous run:
+PENDING
+```
+
+The manager consumes the following Integrity_Nexus controls read-only:
+
+- `INX-CAN-OQ-001 v1.1`
+- `INX-EVID-APP-001 v1.0`
+
+Protected semantics:
+
+```text
+OPEN QUESTION != AUTOMATIC CANONICALIZATION BLOCKER
+REQUIRED_FOR_PROMOTION + MISSING != AUTOMATIC CANONICALIZATION BLOCKER
+CANONICAL ARTIFACT != SCIENTIFIC TRUTH
+```
+
+This registration is a Human-Authority-authorized META synchronization event only.
+
+```text
+NEXUS MANAGER META READ = REQUIRED
+NEXUS MANAGER META WRITE = FORBIDDEN
+unless separately authorized
+
+CLAIM PROMOTION = NONE
+OQ CLOSURE = NONE
+SCIENTIFIC VALIDATION = NONE
+AUDIT PASSAGE = NONE
+RELEASE AUTHORIZATION = NONE
+```
