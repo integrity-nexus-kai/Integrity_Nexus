@@ -293,3 +293,77 @@ Current AIL-2 repair status is controlled locally by:
 `Structural_State_Controller/research/homo_transcendens/audits/HT_AIL2_REPAIR_TRACEABILITY_v0.1_2026-09-18.md`
 
 No dependency-class entry here promotes any HT, Foundation, Alignment, Superaddition, Emergence, HT-MAX, replication, or generalization claim.
+
+---
+
+# TFN WORLD MODEL BIBLE ↔ SSC HUMAN-AI RESEARCH NODE
+
+Registry:
+
+`registry/tfn_ssc_research_nexus_nodes_2026-09-26.md`
+
+## Node relation
+
+```text
+Ex-I-Greater-Than-Zero / WORLD MODEL BIBLE
+        ↓ typed Foundation / World-Model dependency exports
+Structural_State_Controller / HUMAN-AI RESEARCH NODE
+        ↑ bounded downstream dependency / routing feedback
+
+NEXUS Manager
+        ↕ incremental continuity + canonical-state maintenance
+```
+
+Dependency class:
+
+```text
+D1/D3/D4
+= typed source dependency
++ governance/routing dependency
++ provenance/status synchronization
+```
+
+Current observed source heads at registration:
+
+```text
+TFN:
+7d13fe19f18e0db190686e3fffdc0e52523138f1
+
+SSC:
+efda3d4745b38bc68016ebafa90e222bc768a744
+```
+
+Current local interfaces:
+
+TFN:
+`research/foundation_definitions/foundation_papers/WORLD_MODEL_BIBLE/`
+
+SSC:
+`research/human_ai_research_node/`
+
+Current cross-node dependency cut:
+
+`Structural_State_Controller/research/human_ai_research_node/01_UPSTREAM_FOUNDATION_IMPORTS/SSC_WMO_DELTA/CURRENT_SSC_WMO_DELTA.md`
+
+## Continuity mechanism
+
+```text
+CHANGE DETECTION FIRST
+→ IMPACT CLASSIFICATION
+→ CANONICALITY / EVIDENCE APPLICABILITY
+→ MINIMAL ROUTING / REGISTER UPDATE
+→ TWO-REPO TODO WRITEBACK
+```
+
+The NEXUS Manager may maintain source-bound routing and register state only within its local standing write scope.
+
+Boundary:
+
+```text
+dependency import != local scientific ownership
+routing synchronization != derivation
+canonical state != scientific truth
+manager health != audit pass
+```
+
+Integrity_Nexus remains the meta-governance authority for the canonicalization/evidence controls consumed by the manager. The manager has no standing write authority into Integrity_Nexus.
