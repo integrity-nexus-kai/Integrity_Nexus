@@ -59,7 +59,7 @@ See also: `AUTHOR.md`, `AUTHORS.md`, and `CITATION.cff`.
 
 # License and Canonical Status
 
-This repository is governed by the **Canonical Integrity License v1.0**.
+This repository is governed by the **Canonical Integrity Research & Commercial Rights License v2.0**.
 
 See: `LICENSE` and `CANONICAL_STATUS.md`.
 
@@ -69,7 +69,8 @@ Core rule:
 Share: yes.
 Cite: yes.
 Study: yes.
-Independent further development: yes.
+Non-commercial independent further development: yes.
+Commercial use: no, unless prior written agreement with Kai Stefan Dietrich including negotiated economic participation.
 Modify or redistribute canonical Integrity Nexus material as canonical: no.
 ```
 
