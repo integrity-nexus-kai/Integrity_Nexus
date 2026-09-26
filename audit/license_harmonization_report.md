@@ -1,8 +1,25 @@
 # License Harmonization Report
 
+> [!WARNING]
+> ## SUPERSEDED LICENSE CONTROL NOTICE — 2026-09-26
+>
+> This file is a **historical audit record** of the 2026-06-25 licensing state.
+> It is **not** the current repository-license authority.
+>
+> Current controlling license for active repository states:
+> `Canonical Integrity Research & Commercial Rights License v2.0`
+>
+> Current rule:
+> commercial use requires prior explicit written agreement with Kai Stefan Dietrich and expressly negotiated economic participation.
+>
+> Historical statements below referring to `Canonical Integrity License v1.0` are preserved only as audit provenance.
+> They must not be used as current licensing instructions.
+>
+> `HISTORICAL AUDIT RECORD != CURRENT LICENSE AUTHORITY`
+
 Date: 2026-06-25  
 Scope: Integrity Nexus research ecosystem  
-Status: completed with intentional exceptions
+Status: HISTORICAL / SUPERSEDED AS CURRENT LICENSE CONTROL / PRESERVED FOR AUDIT PROVENANCE
 
 ---
 
