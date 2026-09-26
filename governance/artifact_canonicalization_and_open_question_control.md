@@ -2,7 +2,7 @@
 
 **Repository:** Integrity_Nexus  
 **Control ID:** INX-CAN-OQ-001  
-**Version:** v1.0  
+**Version:** v1.1  
 **Date:** 2026-09-26  
 **Artifact Status:** Canonical Artifact  
 **Scientific Status Applicability:** NOT APPLICABLE  
