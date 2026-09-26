@@ -14,6 +14,7 @@ Registry placement does not establish scientific truth, proof, Claim Status, Que
 | Eight-repository TRGS conformance evidence | `repository_governance_conformance.md` |
 | Cross-repository dependencies | `cross_repo_dependencies.md` |
 | Homo Transcendens cross-repository provenance, owner routing, dependencies, and audit-repair navigation | `homo_transcendens_cross_repo_routing.md` |
+| TFN ↔ SSC Research NEXUS nodes, node paths, functions, boundaries and shared continuity manager | `tfn_ssc_research_nexus_nodes_2026-09-26.md` |
 | Shared concepts | `shared_concepts.md` |
 | Local Open Question lifecycle | `open_questions.md` |
 | Master Open Question lifecycle and dependencies | `master_open_question_backlog.md` |
