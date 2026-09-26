@@ -8,6 +8,7 @@
 **Scientific Status Applicability:** NOT APPLICABLE  
 **Scope:** Cross-repository governance control for Artifact Status `Canonical Artifact` and the effect of open scientific/research questions on canonicalization  
 **Status Vocabulary Authority:** `governance/claim_status_taxonomy.md`  
+**Evidence Applicability Control:** `governance/evidence_applicability_and_claim_support_control.md`  
 **Global Synchronization Authority:** `registry/repository_status.md`
 
 ---
@@ -137,6 +138,33 @@ all claims Validated
 all downstream experiments completed
 all possible generalizations completed
 ```
+
+---
+
+## 4A. Evidence-Applicability Constraint
+
+Canonicalization must not treat absent empirical confirmation as a generic defect.
+
+Before an evidence-related canonicalization blocker is created, apply:
+
+```text
+governance/evidence_applicability_and_claim_support_control.md
+```
+
+Protected rule:
+
+```text
+REQUIRED_FOR_PROMOTION + MISSING
+!=
+automatic canonicalization blocker
+
+REQUIRED_FOR_CURRENT_CLAIM + MISSING
++ load-bearing in declared artifact scope
+=
+potential canonicalization blocker
+```
+
+A theoretical candidate may therefore be represented in a canonical artifact with open empirical validation when its current claim status, scope, non-claims, and promotion boundary are explicit.
 
 ---
 
