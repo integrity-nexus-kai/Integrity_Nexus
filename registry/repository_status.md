@@ -146,6 +146,24 @@ Canonicality impact is assessed per question-to-artifact relation as `BLOCKING`,
 
 A `Canonical Artifact` may therefore retain open scientific questions when all question-artifact relations relevant to its declared scope have been assessed and none is `BLOCKING`. Canonicalization does not close those questions or upgrade their scientific or claim status.
 
+### Evidence applicability and missing-evidence findings
+
+Evidence applicability is governed by:
+
+```text
+governance/evidence_applicability_and_claim_support_control.md
+```
+
+Protected rule:
+
+```text
+no empirical evidence != automatic defect
+missing promotion evidence != current-claim defect
+required current evidence missing = current claim support defect
+```
+
+A missing-evidence finding requires prior classification of Claim Support Class, required support type, empirical-evidence requirement, and evidence state.
+
 ---
 
 ## 2. Canonical Control Sources
@@ -155,6 +173,7 @@ A `Canonical Artifact` may therefore retain open scientific questions when all q
 | Repository maturity | `governance/maturity_model.md` |
 | Status vocabulary, Claim Status assignment, applicability, and closure sequence | `governance/claim_status_taxonomy.md` |
 | Artifact canonicalization and open-question canonicality impact | `governance/artifact_canonicalization_and_open_question_control.md` |
+| Evidence applicability and claim-support requirements | `governance/evidence_applicability_and_claim_support_control.md` |
 | Cross-repository and cross-domain transfers | `governance/cross_repository_claim_boundary_matrix.md` |
 | Terminology evidence | `shared/terminology_inventory.md` |
 | Terminology drift protection | `shared/terminology_drift_matrix.md` |
